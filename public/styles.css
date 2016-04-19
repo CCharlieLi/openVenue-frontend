@@ -1,0 +1,78 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+    margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+
+a img {
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+::selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+/**** Mobile layout ****/
+
+@media (max-width: 900px) {
+    .index-navigation-container {
+        display: none;
+    }
+    .index-title {
+        display: none !important;
+    }
+    .index-mobile-title {
+        display: block !important;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 12px;
+        -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+    .index.index-search-box.is-focused ~ .index-mobile-title,
+    .index-search-box.is-focused + .index-navigation-container + .index-mobile-title {
+        opacity: 0;
+    }
+    .index-more-button {
+        display: none;
+    }
+    .index-search-box.is-focused {
+        width: calc(100% - 48px);
+    }
+    .index-search-box .mdl-textfield__expandable-holder {
+        width: 100%;
+    }
+    .index-first-section {
+        height: 350px;
+    }
+    .index-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 24px;
+    }
+}
