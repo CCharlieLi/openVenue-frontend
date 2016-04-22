@@ -1,9 +1,9 @@
 <template>
   <div class="index-first-section mdl-typography--text-center">
     <div class="logo-font index-slogan">{{Description}}</div>
-    <div class="logo-font index-sub-slogan">welcome to index... be yourself. do your thing. see what's going on.</div>
+    <div class="logo-font index-sub-slogan">welcome to Open Venue! Find the best venue for your meetup.</div>
     <div class="logo-font index-create-character">
-      <a href=""><img src="../assets/andy.png"> create your index character</a>
+      <a href="">Find more</a>
     </div>
 
     <a href="#screens">
@@ -19,7 +19,7 @@
     name: 'IndexView',
     data () {
       return {
-        Description: 'ABC'
+        Description: 'Introduction page'
       };
     },
     route: { },

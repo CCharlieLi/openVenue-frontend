@@ -24,7 +24,7 @@ router.beforeEach(function () {
 })
 
 router.redirect({
-  '*': '/map'
+  '*': '/index'
 })
 
 router.start(App, '#app')
