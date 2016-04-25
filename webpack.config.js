@@ -7,7 +7,10 @@ module.exports = {
     filename: 'index.js'
   },
   node: {
-    fs: 'empty'
+    console: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
@@ -16,6 +19,7 @@ module.exports = {
     }
   },
   module: {
+    noParse: /node_modules\/json-schema\/lib\/validate\.js/,
     postLoaders: [
       {
         loader: "transform?brfs"

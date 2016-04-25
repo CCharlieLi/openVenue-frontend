@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import App from './app.vue';
 import MapView from './components/map.vue';
 import IndexView from './components/index.vue';
+import AddVenueView from './components/addVenue.vue';
 
 // install router
 Vue.use(Router)
@@ -16,6 +17,9 @@ router.map({
   },
   '/index': {
     component: IndexView
+  },
+  '/addVenue': {
+  	component: AddVenueView
   }
 });
 

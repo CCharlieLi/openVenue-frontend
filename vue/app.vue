@@ -56,7 +56,7 @@
                 <div class="index-drawer-separator"></div>
             </nav>
         </div>
-        <div class="index-content mdl-layout__content">
+        <main class="index-content mdl-layout__content">
             <a name="top"></a>
             <!-- main view -->
             <router-view
@@ -64,7 +64,7 @@
               keep-alive
               transition="expand">
             </router-view>
-        </div>
+        </main>
     </div>
 </template>
 
@@ -198,8 +198,8 @@
   }
 
   .view {
-    position: absolute;
-    background-color: #f6f6ef;
+    /*position: absolute;*/
+    /*background-color: #f6f6ef;*/
     width: 100%;
     transition: opacity .2s ease;
     box-sizing: border-box;
@@ -207,7 +207,7 @@
 
   .expand-transition {
     transition: all .2s ease;
-    background-color: #eee;
+    /*background-color: #eee;*/
     /*overflow: hidden;*/
   }
 

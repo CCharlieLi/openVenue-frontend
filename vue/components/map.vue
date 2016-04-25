@@ -23,7 +23,7 @@
         Contours: true,
         Museums: true,
         Map : Object,
-        SelectedStyle: 'dark',
+        SelectedStyle: 'light',
         Styles: ['basic', 'streets', 'emerald', 'bright', 'light', 'dark', 'satellite']
       };
     },
@@ -38,9 +38,9 @@
       let source;
       this.Map = new DataAPI.MapBox.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v8',
+        style: 'mapbox://styles/mapbox/light-v8',
         center: [-71.97722138410576, -13.517379300798098],
-        zoom: 0
+        zoom: 15
       });
       this.Map.on('load', () => {
         this.Map.addSource('museums', {
