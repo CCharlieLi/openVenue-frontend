@@ -3,7 +3,7 @@
         <div class="index-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <span class="index-title mdl-layout-title">
-                  <img class="index-logo-image" src="assets/index-logo.png">
+                  <!-- <img class="index-logo-image" src="assets/index-logo.png"> -->
                 </span>
                 <!-- Add spacer, to align navigation to the right in desktop -->
                 <div class="index-header-spacer mdl-layout-spacer"></div>
@@ -26,7 +26,7 @@
                     </nav>
                 </div>
                 <span class="index-mobile-title mdl-layout-title">
-                  <img class="index-logo-image" src="assets/index-logo.png">
+                  <!-- <img class="index-logo-image" src="assets/index-logo.png"> -->
                 </span>
                 <button class="index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
                     <i class="material-icons">more_vert</i>

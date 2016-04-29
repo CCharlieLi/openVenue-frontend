@@ -11,7 +11,7 @@
           <p>
               Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet.
           </p>
-          <form @submit.prevent.stop="onSubmit">
+          <form id="addVenueForm" @submit.prevent.stop="onSubmit">
             <h3>Basic Information</h3>
             <!-- InputBox for venue name -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -76,6 +76,10 @@
               </button>
             </p>
           </form>
+          <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+          </div>
       </div>
     </div>
   </div>
@@ -127,24 +131,19 @@
             "Other": this.other
           }
         };
-
         request(options, (error, response, body) => {
           if (!error && response.statusCode == 200) {
-            this.clearAll();
+            document.getElementById("addVenueForm").reset()
+            this.popUp('Venue added successfully!');
+          } else {
+            this.popUp('Venue added error!');
           }
         });
       },
-      clearAll () {
-        this.venueName = '',
-        this.venueDistrict = '',
-        this.venueAddress = '',
-        this.venueCapacity = '',
-        this.checkFood = false,
-        this.checkSystem = false,
-        this.ownerName = '',
-        this.ownerEmail = '',
-        this.ownerTel = '',
-        this.other
+      popUp (msg) {
+        let snackbarContainer = document.querySelector('#snackbar');
+        let data = {message: msg};
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
       }
     },
     filters: {}
