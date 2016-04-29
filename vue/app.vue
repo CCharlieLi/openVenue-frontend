@@ -22,7 +22,7 @@
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/addVenue' }">Add a Venue</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/listVenue' }">List Venues</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/map' }">Find on Map</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/weather' }">Weather</a>
+                        <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/weather' }">Weather</a> -->
                     </nav>
                 </div>
                 <span class="index-mobile-title mdl-layout-title">
@@ -47,7 +47,7 @@
                 <a class="mdl-navigation__link" v-link="{ path: '/addVenue' }">Add a Venue</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/listVenue' }">List Venues</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/map' }">Find on Map</a>
-                <a class="mdl-navigation__link" v-link="{ path: '/weather' }">Weather</a>
+                <!-- <a class="mdl-navigation__link" v-link="{ path: '/weather' }">Weather</a> -->
                 <div class="index-drawer-separator"></div>
                 <span class="mdl-navigation__link" href="">User</span>
                 <a class="mdl-navigation__link" href="">Account Information</a>
