@@ -1,14 +1,9 @@
 <template>
   <div>
-    <nav id="menu">
-      <a :class="{'active' : Contours}" @click.prevent.stop="ContoursShow">Contours</a>
-      <a :class="{'active' : Museums}"  @click.prevent.stop="MuseumsShow">Museums</a>
-      <select v-model="SelectedStyle">
-        <option v-for="style in Styles" v-bind:value="style">
-          {{ style }}
-        </option>
-      </select>
-    </nav>
+   <!--  <nav id='menu'>
+      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>
+      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>
+    </nav> -->
     <div id='map'></div>
   </div>
 </template>
@@ -20,17 +15,25 @@
     name: 'MapView',
     data () {
       return {
-        Contours: true,
-        Museums: true,
-        Map : Object,
-        SelectedStyle: 'light',
-        Styles: ['basic', 'streets', 'emerald', 'bright', 'light', 'dark', 'satellite']
+        Map : Object.create(null),
+        Markers: {
+          'type': 'FeatureCollection',
+          'features': [{
+            'type': 'Feature',
+            'properties': {
+              'description': '<div class="marker-title">Make it Mount Pleasant</div><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+              'marker-symbol': 'theatre'
+            },
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [121.4691603379, 31.2223104171]
+            }
+          }]
+        }
       };
     },
     watch: {
-      'SelectedStyle' (val) {
-        this.Map.setStyle('mapbox://styles/mapbox/' + val + '-v8');
-      }
+
     },
     route: { },
     created () {},
@@ -38,87 +41,56 @@
       let source;
       this.Map = new DataAPI.MapBox.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/light-v8',
-        center: [-71.97722138410576, -13.517379300798098],
-        zoom: 15
+        style: 'mapbox://styles/ccharlieli/cio8phh7x001sadnmu988hd91',
+        center: [121.4691603379, 31.2223104171],
+        zoom: 13
       });
-      this.Map.on('load', () => {
-        this.Map.addSource('museums', {
-            type: 'vector',
-            url: 'mapbox://mapbox.2opop9hr'
-        });
-        this.Map.addLayer({
-            'id': 'museums',
-            'type': 'circle',
-            'source': 'museums',
-            'layout': {
-                'visibility': 'visible'
-            },
-            'paint': {
-                'circle-radius': 8,
-                'circle-color': 'rgba(55,148,179,1)'
-            },
-            'source-layer': 'museum-cusco'
-        });
 
-        this.Map.addSource('contours', {
-            type: 'vector',
-            url: 'mapbox://mapbox.mapbox-terrain-v2'
+      this.Map.on('load', () => {
+        // Add marker data as a new GeoJSON source.
+        this.Map.addSource('markers', {
+            'type': 'geojson',
+            'data': this.Markers,
+            'cluster': true,
+            'clusterRadius': 50
         });
+        // Add a layer showing the markers.
         this.Map.addLayer({
-            'id': 'contours',
-            'type': 'line',
-            'source': 'contours',
-            'source-layer': 'contour',
+            'id': 'markers',
+            'type': 'symbol',
+            'source': 'markers',
             'layout': {
-                'visibility': 'visible',
-                'line-join': 'round',
-                'line-cap': 'round'
-            },
-            'paint': {
-                'line-color': '#877b59',
-                'line-width': 1
+                'icon-image': '{marker-symbol}-15',
+                'icon-allow-overlap': true
             }
         });
-
-        source = DataAPI.Source('https://wanderdrone.appspot.com/');
-        this.Map.addSource('drone', source);
-        this.Map.addLayer({
-          "id": "drone",
-          "type": "symbol",
-          "source": "drone",
-          "layout": {
-            "icon-image": "rocket-15",
-          }
-        });
       });
-      
-      setInterval(() => {
-        source.setData('https://wanderdrone.appspot.com/');
-      }, 1000);
+
+      var popup = new DataAPI.MapBox.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+
+      this.Map.on('mousemove', (e) => {
+        var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+        this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+        if (!features.length) {
+          popup.remove();
+          return;
+        }
+        var feature = features[0];
+        popup.setLngLat(feature.geometry.coordinates)
+          .setHTML(feature.properties.description)
+          .addTo(this.Map);
+      });
     },
     destroyed () {},
-    methods: {
-      ContoursShow () {
-        this.Contours = !this.Contours;
-        if (this.Contours)
-          this.Map.setLayoutProperty('contours', 'visibility', 'visible');
-        else
-          this.Map.setLayoutProperty('contours', 'visibility', 'none');
-      },
-      MuseumsShow () {
-        this.Museums = !this.Museums;
-        if (this.Museums)
-          this.Map.setLayoutProperty('museums', 'visibility', 'visible');
-        else
-          this.Map.setLayoutProperty('museums', 'visibility', 'none');
-      }
-    },
+    methods: {},
     filters: {}
   }
 </script>
 
-<style type="text/css">
+<style type='text/css'>
   #map { position:fixed; top:0px; bottom:0px; width:100%;  }
 
   #menu {

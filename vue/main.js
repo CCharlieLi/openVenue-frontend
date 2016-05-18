@@ -1,34 +1,42 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Resource from 'vue-resource'
 import App from './app.vue';
+import Auth from './auth'
 import MapView from './components/map.vue';
-import IndexView from './components/index.vue';
-import AddVenueView from './components/addVenue.vue';
+import AboutView from './components/about.vue';
+import SignUpView from './components/signUp.vue';
 
-// install router
-Vue.use(Router)
+// install plugin
+Vue.use(Router);
+Vue.use(Resource);
+
+Vue.http.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
+Auth.checkAuth();
 
 // routing
-var router = new Router()
+let router = new Router();
 
 router.map({
   '/map': {
     component: MapView
   },
-  '/index': {
-    component: IndexView
+  '/about': {
+    component: AboutView
   },
-  '/addVenue': {
-  	component: AddVenueView
+  '/signUp': {
+  	component: SignUpView
   }
 });
 
 router.beforeEach(function () {
   window.scrollTo(0, 0)
-})
+});
 
 router.redirect({
-  '*': '/index'
-})
+  '*': '/map'
+});
 
-router.start(App, '#app')
+router.start(App, '#app');
+
+export default router;

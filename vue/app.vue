@@ -18,8 +18,8 @@
                 <!-- Navigation -->
                 <div class="index-navigation-container">
                     <nav class="index-navigation mdl-navigation">
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/index' }">Index</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/addVenue' }">Add a Venue</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/about' }">About</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/signUp' }">Sign Up</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/listVenue' }">List Venues</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/map' }">Find on Map</a>
                         <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/weather' }">Weather</a> -->
@@ -40,11 +40,11 @@
         </div>
         <div class="index-drawer mdl-layout__drawer">
             <span class="mdl-layout-title">
-              <img class="index-logo-image" src="assets/index-logo-white.png">
+              <!-- <img class="index-logo-image" src="assets/index-logo-white.png"> -->
             </span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" v-link="{ path: '/index' }">Index</a>
-                <a class="mdl-navigation__link" v-link="{ path: '/addVenue' }">Add a Venue</a>
+                <a class="mdl-navigation__link" v-link="{ path: '/about' }">About</a>
+                <a class="mdl-navigation__link" v-link="{ path: '/signUp' }">Sign Up</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/listVenue' }">List Venues</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/map' }">Find on Map</a>
                 <!-- <a class="mdl-navigation__link" v-link="{ path: '/weather' }">Weather</a> -->
@@ -62,7 +62,7 @@
             <router-view
               class="view"
               keep-alive
-              transition="expand">
+              >
             </router-view>
         </main>
     </div>

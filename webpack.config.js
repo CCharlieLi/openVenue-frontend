@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './vue/main.js',
+  entry: ['./vue/main.js', './vue/auth/index.js'],
   output: {
     path: './public/build/',
     filename: 'index.js'
@@ -42,7 +42,7 @@ module.exports = {
         loader: 'url?limit=10000!img?progressive=true'
       },
       { 
-        test: /\.json/, 
+        test: /\.json$/, 
         loader: "json" 
       }
     ]
