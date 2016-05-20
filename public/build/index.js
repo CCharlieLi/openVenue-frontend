@@ -82,13 +82,13 @@
 	
 	var _map2 = _interopRequireDefault(_map);
 	
-	var _about = __webpack_require__(261);
+	var _about = __webpack_require__(262);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _signUp = __webpack_require__(267);
+	var _addVenue = __webpack_require__(268);
 	
-	var _signUp2 = _interopRequireDefault(_signUp);
+	var _addVenue2 = _interopRequireDefault(_addVenue);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -109,8 +109,8 @@
 	  '/about': {
 	    component: _about2.default
 	  },
-	  '/signUp': {
-	    component: _signUp2.default
+	  '/addVenue': {
+	    component: _addVenue2.default
 	  }
 	});
 	
@@ -14666,7 +14666,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.index-search-box .mdl-textfield__input {\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.index-header .mdl-menu__container {\n    z-index: 50;\n    margin: 0 !important;\n}\n\n.mdl-textfield--expandable {\n    width: auto;\n}\n\n\n.index-mobile-title {\n    display: none !important;\n}\n\n.index-logo-image {\n    height: 28px;\n    width: 140px;\n}\n\n.index-header {\n    overflow: visible;\n    background-color: rgba(255, 255, 255, 0.52);\n}\n\n.index-header .material-icons {\n    color: #767777 !important;\n}\n\n.index-header .mdl-layout__drawer-button {\n    background: transparent;\n    color: #767777;\n}\n\n.index-header .mdl-navigation__link {\n    color: #757575;\n    font-weight: 700;\n    font-size: 14px;\n}\n\n.index-navigation-container {\n    /* Simple hack to make the overflow happen to the left instead... */\n    direction: rtl;\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n    -ms-flex-order: 1;\n    order: 1;\n    width: 500px;\n    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.index-navigation {\n    /* ... and now make sure the content is actually LTR */\n    direction: ltr;\n    -webkit-box-pack: end;\n    -webkit-justify-content: flex-end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    width: 800px;\n}\n\n.index-search-box.is-focused + .index-navigation-container {\n    opacity: 0;\n    width: 100px;\n}\n\n.index-navigation .mdl-navigation__link {\n    display: inline-block;\n    height: 60px;\n    line-height: 68px;\n    background-color: transparent !important;\n    border-bottom: 4px solid transparent;\n}\n\n.index-navigation .mdl-navigation__link:hover {\n    border-bottom: 4px solid #8bc34a;\n}\n\n.index-search-box {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    -ms-flex-order: 2;\n    order: 2;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n.index-more-button {\n    -webkit-box-ordinal-group: 4;\n    -webkit-order: 3;\n    -ms-flex-order: 3;\n    order: 3;\n}\n\n.index-drawer {\n    border-right: none;\n}\n\n.index-drawer-separator {\n    height: 1px;\n    background-color: #dcdcdc;\n    margin: 8px 0;\n}\n\n.index-drawer .mdl-navigation__link.mdl-navigation__link {\n    font-size: 14px;\n    color: #757575;\n}\n\n.index-drawer span.mdl-navigation__link.mdl-navigation__link {\n    color: #8bc34a;\n}\n\n.index-drawer .mdl-layout-title {\n    position: relative;\n    background: #6ab344;\n    height: 160px;\n}\n\n.index-drawer .index-logo-image {\n    position: absolute;\n    bottom: 16px;\n}\n\n.view {\n  /*position: absolute;*/\n  /*background-color: #f6f6ef;*/\n  width: 100%;\n  -webkit-transition: opacity .2s ease;\n  transition: opacity .2s ease;\n  box-sizing: border-box;\n}\n\n.expand-transition {\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n  /*background-color: #eee;*/\n  /*overflow: hidden;*/\n}\n\n.expand-enter, .expand-leave {\n  height: 0;\n  opacity: 0;\n}\n  \n", "", {"version":3,"sources":["/./vue/app.vue?71721da8"],"names":[],"mappings":";AAuEA;IACA,2BAAA;CACA;;AAEA;IACA,YAAA;IACA,qBAAA;CACA;;AAEA;IACA,YAAA;CACA;;;AAGA;IACA,yBAAA;CACA;;AAEA;IACA,aAAA;IACA,aAAA;CACA;;AAEA;IACA,kBAAA;IACA,4CAAA;CACA;;AAEA;IACA,0BAAA;CACA;;AAEA;IACA,wBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;IACA,iBAAA;IACA,gBAAA;CACA;;AAEA;IACA,oEAAA;IACA,eAAA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,aAAA;IACA,uGAAA;IACA,+FAAA;CACA;;AAEA;IACA,uDAAA;IACA,eAAA;IACA,sBAAA;IACA,kCAAA;IACA,mBAAA;IACA,0BAAA;IACA,aAAA;CACA;;AAEA;IACA,WAAA;IACA,aAAA;CACA;;AAEA;IACA,sBAAA;IACA,aAAA;IACA,kBAAA;IACA,yCAAA;IACA,qCAAA;CACA;;AAEA;IACA,iCAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,kBAAA;IACA,mBAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;CACA;;AAEA;IACA,mBAAA;CACA;;AAEA;IACA,YAAA;IACA,0BAAA;IACA,cAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;CACA;;AAEA;IACA,mBAAA;IACA,oBAAA;IACA,cAAA;CACA;;AAEA;IACA,mBAAA;IACA,aAAA;CACA;;AAEA;EACA,uBAAA;EACA,8BAAA;EACA,YAAA;EACA,qCAAA;EAAA,6BAAA;EACA,uBAAA;CACA;;AAEA;EACA,iCAAA;EAAA,yBAAA;EACA,2BAAA;EACA,qBAAA;CACA;;AAEA;EACA,UAAA;EACA,WAAA;CACA","file":"app.vue","sourcesContent":["<template>\n    <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n        <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n            <div class=\"mdl-layout__header-row\">\n                <span class=\"index-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <!-- Add spacer, to align navigation to the right in desktop -->\n                <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n                <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                    <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                        <i class=\"material-icons\">search</i>\n                    </label>\n                    <div class=\"mdl-textfield__expandable-holder\">\n                        <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                    </div>\n                </div>\n                <!-- Navigation -->\n                <div class=\"index-navigation-container\">\n                    <nav class=\"index-navigation mdl-navigation\">\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/signUp' }\">Sign Up</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                        <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                    </nav>\n                </div>\n                <span class=\"index-mobile-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                    <i class=\"material-icons\">more_vert</i>\n                </button>\n                <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                    <li class=\"mdl-menu__item\">Account Information</li>\n                    <li class=\"mdl-menu__item\">Notification</li>\n                    <li class=\"mdl-menu__item\">Sign Out</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"index-drawer mdl-layout__drawer\">\n            <span class=\"mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n            </span>\n            <nav class=\"mdl-navigation\">\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/signUp' }\">Sign Up</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                <div class=\"index-drawer-separator\"></div>\n                <span class=\"mdl-navigation__link\" href=\"\">User</span>\n                <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n                <div class=\"index-drawer-separator\"></div>\n            </nav>\n        </div>\n        <main class=\"index-content mdl-layout__content\">\n            <a name=\"top\"></a>\n            <!-- main view -->\n            <router-view\n              class=\"view\"\n              keep-alive\n              >\n            </router-view>\n        </main>\n    </div>\n</template>\n\n<style type=\"text/css\">\n  .index-search-box .mdl-textfield__input {\n      color: rgba(0, 0, 0, 0.87);\n  }\n\n  .index-header .mdl-menu__container {\n      z-index: 50;\n      margin: 0 !important;\n  }\n\n  .mdl-textfield--expandable {\n      width: auto;\n  }\n\n\n  .index-mobile-title {\n      display: none !important;\n  }\n\n  .index-logo-image {\n      height: 28px;\n      width: 140px;\n  }\n\n  .index-header {\n      overflow: visible;\n      background-color: rgba(255, 255, 255, 0.52);\n  }\n\n  .index-header .material-icons {\n      color: #767777 !important;\n  }\n\n  .index-header .mdl-layout__drawer-button {\n      background: transparent;\n      color: #767777;\n  }\n\n  .index-header .mdl-navigation__link {\n      color: #757575;\n      font-weight: 700;\n      font-size: 14px;\n  }\n\n  .index-navigation-container {\n      /* Simple hack to make the overflow happen to the left instead... */\n      direction: rtl;\n      -webkit-box-ordinal-group: 2;\n      -webkit-order: 1;\n      -ms-flex-order: 1;\n      order: 1;\n      width: 500px;\n      -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  }\n\n  .index-navigation {\n      /* ... and now make sure the content is actually LTR */\n      direction: ltr;\n      -webkit-box-pack: end;\n      -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n      justify-content: flex-end;\n      width: 800px;\n  }\n\n  .index-search-box.is-focused + .index-navigation-container {\n      opacity: 0;\n      width: 100px;\n  }\n\n  .index-navigation .mdl-navigation__link {\n      display: inline-block;\n      height: 60px;\n      line-height: 68px;\n      background-color: transparent !important;\n      border-bottom: 4px solid transparent;\n  }\n\n  .index-navigation .mdl-navigation__link:hover {\n      border-bottom: 4px solid #8bc34a;\n  }\n\n  .index-search-box {\n      -webkit-box-ordinal-group: 3;\n      -webkit-order: 2;\n      -ms-flex-order: 2;\n      order: 2;\n      margin-left: 16px;\n      margin-right: 16px;\n  }\n\n  .index-more-button {\n      -webkit-box-ordinal-group: 4;\n      -webkit-order: 3;\n      -ms-flex-order: 3;\n      order: 3;\n  }\n\n  .index-drawer {\n      border-right: none;\n  }\n\n  .index-drawer-separator {\n      height: 1px;\n      background-color: #dcdcdc;\n      margin: 8px 0;\n  }\n\n  .index-drawer .mdl-navigation__link.mdl-navigation__link {\n      font-size: 14px;\n      color: #757575;\n  }\n\n  .index-drawer span.mdl-navigation__link.mdl-navigation__link {\n      color: #8bc34a;\n  }\n\n  .index-drawer .mdl-layout-title {\n      position: relative;\n      background: #6ab344;\n      height: 160px;\n  }\n\n  .index-drawer .index-logo-image {\n      position: absolute;\n      bottom: 16px;\n  }\n\n  .view {\n    /*position: absolute;*/\n    /*background-color: #f6f6ef;*/\n    width: 100%;\n    transition: opacity .2s ease;\n    box-sizing: border-box;\n  }\n\n  .expand-transition {\n    transition: all .2s ease;\n    /*background-color: #eee;*/\n    /*overflow: hidden;*/\n  }\n\n  .expand-enter, .expand-leave {\n    height: 0;\n    opacity: 0;\n  }\n    \n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.index-search-box .mdl-textfield__input {\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.index-header .mdl-menu__container {\n    z-index: 50;\n    margin: 0 !important;\n}\n\n.mdl-textfield--expandable {\n    width: auto;\n}\n\n\n.index-mobile-title {\n    display: none !important;\n}\n\n.index-logo-image {\n    height: 28px;\n    width: 140px;\n}\n\n.index-header {\n    overflow: visible;\n    background-color: rgba(255, 255, 255, 0.52);\n}\n\n.index-header .material-icons {\n    color: #767777 !important;\n}\n\n.index-header .mdl-layout__drawer-button {\n    background: transparent;\n    color: #767777;\n}\n\n.index-header .mdl-navigation__link {\n    color: #757575;\n    font-weight: 700;\n    font-size: 14px;\n}\n\n.index-navigation-container {\n    /* Simple hack to make the overflow happen to the left instead... */\n    direction: rtl;\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n    -ms-flex-order: 1;\n    order: 1;\n    width: 500px;\n    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.index-navigation {\n    /* ... and now make sure the content is actually LTR */\n    direction: ltr;\n    -webkit-box-pack: end;\n    -webkit-justify-content: flex-end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    width: 800px;\n}\n\n.index-search-box.is-focused + .index-navigation-container {\n    opacity: 0;\n    width: 100px;\n}\n\n.index-navigation .mdl-navigation__link {\n    display: inline-block;\n    height: 60px;\n    line-height: 68px;\n    background-color: transparent !important;\n    border-bottom: 4px solid transparent;\n}\n\n.index-navigation .mdl-navigation__link:hover {\n    border-bottom: 4px solid #8bc34a;\n}\n\n.index-search-box {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    -ms-flex-order: 2;\n    order: 2;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n.index-more-button {\n    -webkit-box-ordinal-group: 4;\n    -webkit-order: 3;\n    -ms-flex-order: 3;\n    order: 3;\n}\n\n.index-drawer {\n    border-right: none;\n}\n\n.index-drawer-separator {\n    height: 1px;\n    background-color: #dcdcdc;\n    margin: 8px 0;\n}\n\n.index-drawer .mdl-navigation__link.mdl-navigation__link {\n    font-size: 14px;\n    color: #757575;\n}\n\n.index-drawer span.mdl-navigation__link.mdl-navigation__link {\n    color: #8bc34a;\n}\n\n.index-drawer .mdl-layout-title {\n    position: relative;\n    background: #6ab344;\n    height: 160px;\n}\n\n.index-drawer .index-logo-image {\n    position: absolute;\n    bottom: 16px;\n}\n\n.view {\n  /*position: absolute;*/\n  /*background-color: #f6f6ef;*/\n  width: 100%;\n  -webkit-transition: opacity .2s ease;\n  transition: opacity .2s ease;\n  box-sizing: border-box;\n}\n\n.expand-transition {\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n  /*background-color: #eee;*/\n  /*overflow: hidden;*/\n}\n\n.expand-enter, .expand-leave {\n  height: 0;\n  opacity: 0;\n}\n  \n", "", {"version":3,"sources":["/./vue/app.vue?f4830b10"],"names":[],"mappings":";AAuEA;IACA,2BAAA;CACA;;AAEA;IACA,YAAA;IACA,qBAAA;CACA;;AAEA;IACA,YAAA;CACA;;;AAGA;IACA,yBAAA;CACA;;AAEA;IACA,aAAA;IACA,aAAA;CACA;;AAEA;IACA,kBAAA;IACA,4CAAA;CACA;;AAEA;IACA,0BAAA;CACA;;AAEA;IACA,wBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;IACA,iBAAA;IACA,gBAAA;CACA;;AAEA;IACA,oEAAA;IACA,eAAA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,aAAA;IACA,uGAAA;IACA,+FAAA;CACA;;AAEA;IACA,uDAAA;IACA,eAAA;IACA,sBAAA;IACA,kCAAA;IACA,mBAAA;IACA,0BAAA;IACA,aAAA;CACA;;AAEA;IACA,WAAA;IACA,aAAA;CACA;;AAEA;IACA,sBAAA;IACA,aAAA;IACA,kBAAA;IACA,yCAAA;IACA,qCAAA;CACA;;AAEA;IACA,iCAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,kBAAA;IACA,mBAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;CACA;;AAEA;IACA,mBAAA;CACA;;AAEA;IACA,YAAA;IACA,0BAAA;IACA,cAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;CACA;;AAEA;IACA,mBAAA;IACA,oBAAA;IACA,cAAA;CACA;;AAEA;IACA,mBAAA;IACA,aAAA;CACA;;AAEA;EACA,uBAAA;EACA,8BAAA;EACA,YAAA;EACA,qCAAA;EAAA,6BAAA;EACA,uBAAA;CACA;;AAEA;EACA,iCAAA;EAAA,yBAAA;EACA,2BAAA;EACA,qBAAA;CACA;;AAEA;EACA,UAAA;EACA,WAAA;CACA","file":"app.vue","sourcesContent":["<template>\n    <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n        <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n            <div class=\"mdl-layout__header-row\">\n                <span class=\"index-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <!-- Add spacer, to align navigation to the right in desktop -->\n                <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n                <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                    <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                        <i class=\"material-icons\">search</i>\n                    </label>\n                    <div class=\"mdl-textfield__expandable-holder\">\n                        <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                    </div>\n                </div>\n                <!-- Navigation -->\n                <div class=\"index-navigation-container\">\n                    <nav class=\"index-navigation mdl-navigation\">\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                        <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                    </nav>\n                </div>\n                <span class=\"index-mobile-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                    <i class=\"material-icons\">more_vert</i>\n                </button>\n                <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                    <li class=\"mdl-menu__item\">Account Information</li>\n                    <li class=\"mdl-menu__item\">Notification</li>\n                    <li class=\"mdl-menu__item\">Sign Out</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"index-drawer mdl-layout__drawer\">\n            <span class=\"mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n            </span>\n            <nav class=\"mdl-navigation\">\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                <div class=\"index-drawer-separator\"></div>\n                <span class=\"mdl-navigation__link\" href=\"\">User</span>\n                <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n                <div class=\"index-drawer-separator\"></div>\n            </nav>\n        </div>\n        <main class=\"index-content mdl-layout__content\">\n            <a name=\"top\"></a>\n            <!-- main view -->\n            <router-view\n              class=\"view\"\n              keep-alive\n              >\n            </router-view>\n        </main>\n    </div>\n</template>\n\n<style type=\"text/css\">\n  .index-search-box .mdl-textfield__input {\n      color: rgba(0, 0, 0, 0.87);\n  }\n\n  .index-header .mdl-menu__container {\n      z-index: 50;\n      margin: 0 !important;\n  }\n\n  .mdl-textfield--expandable {\n      width: auto;\n  }\n\n\n  .index-mobile-title {\n      display: none !important;\n  }\n\n  .index-logo-image {\n      height: 28px;\n      width: 140px;\n  }\n\n  .index-header {\n      overflow: visible;\n      background-color: rgba(255, 255, 255, 0.52);\n  }\n\n  .index-header .material-icons {\n      color: #767777 !important;\n  }\n\n  .index-header .mdl-layout__drawer-button {\n      background: transparent;\n      color: #767777;\n  }\n\n  .index-header .mdl-navigation__link {\n      color: #757575;\n      font-weight: 700;\n      font-size: 14px;\n  }\n\n  .index-navigation-container {\n      /* Simple hack to make the overflow happen to the left instead... */\n      direction: rtl;\n      -webkit-box-ordinal-group: 2;\n      -webkit-order: 1;\n      -ms-flex-order: 1;\n      order: 1;\n      width: 500px;\n      -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  }\n\n  .index-navigation {\n      /* ... and now make sure the content is actually LTR */\n      direction: ltr;\n      -webkit-box-pack: end;\n      -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n      justify-content: flex-end;\n      width: 800px;\n  }\n\n  .index-search-box.is-focused + .index-navigation-container {\n      opacity: 0;\n      width: 100px;\n  }\n\n  .index-navigation .mdl-navigation__link {\n      display: inline-block;\n      height: 60px;\n      line-height: 68px;\n      background-color: transparent !important;\n      border-bottom: 4px solid transparent;\n  }\n\n  .index-navigation .mdl-navigation__link:hover {\n      border-bottom: 4px solid #8bc34a;\n  }\n\n  .index-search-box {\n      -webkit-box-ordinal-group: 3;\n      -webkit-order: 2;\n      -ms-flex-order: 2;\n      order: 2;\n      margin-left: 16px;\n      margin-right: 16px;\n  }\n\n  .index-more-button {\n      -webkit-box-ordinal-group: 4;\n      -webkit-order: 3;\n      -ms-flex-order: 3;\n      order: 3;\n  }\n\n  .index-drawer {\n      border-right: none;\n  }\n\n  .index-drawer-separator {\n      height: 1px;\n      background-color: #dcdcdc;\n      margin: 8px 0;\n  }\n\n  .index-drawer .mdl-navigation__link.mdl-navigation__link {\n      font-size: 14px;\n      color: #757575;\n  }\n\n  .index-drawer span.mdl-navigation__link.mdl-navigation__link {\n      color: #8bc34a;\n  }\n\n  .index-drawer .mdl-layout-title {\n      position: relative;\n      background: #6ab344;\n      height: 160px;\n  }\n\n  .index-drawer .index-logo-image {\n      position: absolute;\n      bottom: 16px;\n  }\n\n  .view {\n    /*position: absolute;*/\n    /*background-color: #f6f6ef;*/\n    width: 100%;\n    transition: opacity .2s ease;\n    box-sizing: border-box;\n  }\n\n  .expand-transition {\n    transition: all .2s ease;\n    /*background-color: #eee;*/\n    /*overflow: hidden;*/\n  }\n\n  .expand-enter, .expand-leave {\n    height: 0;\n    opacity: 0;\n  }\n    \n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14953,7 +14953,7 @@
 /* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n    <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n        <div class=\"mdl-layout__header-row\">\n            <span class=\"index-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <!-- Add spacer, to align navigation to the right in desktop -->\n            <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n            <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                    <i class=\"material-icons\">search</i>\n                </label>\n                <div class=\"mdl-textfield__expandable-holder\">\n                    <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                </div>\n            </div>\n            <!-- Navigation -->\n            <div class=\"index-navigation-container\">\n                <nav class=\"index-navigation mdl-navigation\">\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/signUp' }\">Sign Up</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                    <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                </nav>\n            </div>\n            <span class=\"index-mobile-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                <i class=\"material-icons\">more_vert</i>\n            </button>\n            <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                <li class=\"mdl-menu__item\">Account Information</li>\n                <li class=\"mdl-menu__item\">Notification</li>\n                <li class=\"mdl-menu__item\">Sign Out</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"index-drawer mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">\n          <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n        </span>\n        <nav class=\"mdl-navigation\">\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/signUp' }\">Sign Up</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n            <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n            <div class=\"index-drawer-separator\"></div>\n            <span class=\"mdl-navigation__link\" href=\"\">User</span>\n            <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n            <div class=\"index-drawer-separator\"></div>\n        </nav>\n    </div>\n    <main class=\"index-content mdl-layout__content\">\n        <a name=\"top\"></a>\n        <!-- main view -->\n        <router-view\n          class=\"view\"\n          keep-alive\n          >\n        </router-view>\n    </main>\n</div>\n";
+	module.exports = "\n<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n    <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n        <div class=\"mdl-layout__header-row\">\n            <span class=\"index-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <!-- Add spacer, to align navigation to the right in desktop -->\n            <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n            <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                    <i class=\"material-icons\">search</i>\n                </label>\n                <div class=\"mdl-textfield__expandable-holder\">\n                    <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                </div>\n            </div>\n            <!-- Navigation -->\n            <div class=\"index-navigation-container\">\n                <nav class=\"index-navigation mdl-navigation\">\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                    <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                </nav>\n            </div>\n            <span class=\"index-mobile-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                <i class=\"material-icons\">more_vert</i>\n            </button>\n            <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                <li class=\"mdl-menu__item\">Account Information</li>\n                <li class=\"mdl-menu__item\">Notification</li>\n                <li class=\"mdl-menu__item\">Sign Out</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"index-drawer mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">\n          <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n        </span>\n        <nav class=\"mdl-navigation\">\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n            <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n            <div class=\"index-drawer-separator\"></div>\n            <span class=\"mdl-navigation__link\" href=\"\">User</span>\n            <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n            <div class=\"index-drawer-separator\"></div>\n        </nav>\n    </div>\n    <main class=\"index-content mdl-layout__content\">\n        <a name=\"top\"></a>\n        <!-- main view -->\n        <router-view\n          class=\"view\"\n          keep-alive\n          >\n        </router-view>\n    </main>\n</div>\n";
 
 /***/ },
 /* 36 */
@@ -14971,9 +14971,9 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var API_URL = 'http://0.0.0.0:3000/api/';
+	var API_URL = 'http://0.0.0.0:3000/';
 	var LOGIN_URL = API_URL + 'sessions/create/';
-	var SIGNUP_URL = API_URL + 'people/signup/';
+	var ADD_VENUE = API_URL + 'venues/addvenue/';
 	
 	exports.default = {
 	
@@ -14996,14 +14996,22 @@
 	      context.error = err;
 	    });
 	  },
-	  signup: function signup(context, creds, redirect) {
+	  addVenue: function addVenue(context, creds, redirect) {
 	    var _this2 = this;
 	
-	    return context.$http.post(SIGNUP_URL, creds).then(function (data) {
-	      localStorage.setItem('id_token', data.id_token);
+	    return context.$http.post(ADD_VENUE, creds).then(function (data) {
+	      if (data.status !== 200) {
+	        return data.status;
+	      }
 	      _this2.user.authenticated = true;
 	      if (redirect) {
 	        _main2.default.go(redirect);
+	      }
+	    }).catch(function (err) {
+	      if (err.status === 409) {
+	        return 'Venue name already occupied.';
+	      } else {
+	        return 'Sign up error.';
 	      }
 	    });
 	  },
@@ -15032,12 +15040,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(console) {var __vue_script__, __vue_template__
 	__webpack_require__(38)
-	__vue_script__ = __webpack_require__(40)
+	__vue_script__ = __webpack_require__(41)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] vue/components/map.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(260)
+	__vue_template__ = __webpack_require__(261)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15091,7 +15099,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n#map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n#menu {\n    background: #fff;\n    position: absolute;\n    z-index: 10;\n    top: 80px;\n    right: 10px;\n    border-radius: 3px;\n    width: 120px;\n    border: 1px solid rgba(0,0,0,0.4);\n    font-family: 'Open Sans', sans-serif;\n}\n\n#menu a,#menu select{\n    font-size: 13px;\n    color: #404040;\n    display: block;\n    margin: 0;\n    padding: 0;\n    padding: 10px;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(0,0,0,0.25);\n    text-align: center;\n}\n\n#menu a:last-child {\n    border: none;\n}\n\n#menu a:hover {\n    background-color: #f8f8f8;\n    color: #404040;\n}\n\n#menu a.active {\n    background-color: #3887be;\n    color: #ffffff;\n}\n\n#menu a.active:hover {\n    background: #3074a4;\n}\n", "", {"version":3,"sources":["/./vue/components/map.vue?09cc3dc0"],"names":[],"mappings":";AA6FA,OAAA,eAAA,CAAA,QAAA,CAAA,WAAA,CAAA,WAAA,GAAA;;AAEA;IACA,iBAAA;IACA,mBAAA;IACA,YAAA;IACA,UAAA;IACA,YAAA;IACA,mBAAA;IACA,aAAA;IACA,kCAAA;IACA,qCAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;IACA,eAAA;IACA,UAAA;IACA,WAAA;IACA,cAAA;IACA,sBAAA;IACA,0CAAA;IACA,mBAAA;CACA;;AAEA;IACA,aAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,oBAAA;CACA","file":"map.vue","sourcesContent":["<template>\n  <div>\n   <!--  <nav id='menu'>\n      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n    </nav> -->\n    <div id='map'></div>\n  </div>\n</template>\n\n<script>\n  import DataAPI from '../data/data';\n\n  export default {\n    name: 'MapView',\n    data () {\n      return {\n        Map : Object.create(null),\n        Markers: {\n          'type': 'FeatureCollection',\n          'features': [{\n            'type': 'Feature',\n            'properties': {\n              'description': '<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',\n              'marker-symbol': 'theatre'\n            },\n            'geometry': {\n              'type': 'Point',\n              'coordinates': [121.4691603379, 31.2223104171]\n            }\n          }]\n        }\n      };\n    },\n    watch: {\n\n    },\n    route: { },\n    created () {},\n    ready () {\n      let source;\n      this.Map = new DataAPI.MapBox.Map({\n        container: 'map',\n        style: 'mapbox://styles/ccharlieli/cio8phh7x001sadnmu988hd91',\n        center: [121.4691603379, 31.2223104171],\n        zoom: 13\n      });\n\n      this.Map.on('load', () => {\n        // Add marker data as a new GeoJSON source.\n        this.Map.addSource('markers', {\n            'type': 'geojson',\n            'data': this.Markers,\n            'cluster': true,\n            'clusterRadius': 50\n        });\n        // Add a layer showing the markers.\n        this.Map.addLayer({\n            'id': 'markers',\n            'type': 'symbol',\n            'source': 'markers',\n            'layout': {\n                'icon-image': '{marker-symbol}-15',\n                'icon-allow-overlap': true\n            }\n        });\n      });\n\n      var popup = new DataAPI.MapBox.Popup({\n        closeButton: false,\n        closeOnClick: false\n      });\n\n      this.Map.on('mousemove', (e) => {\n        var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });\n        this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';\n        if (!features.length) {\n          popup.remove();\n          return;\n        }\n        var feature = features[0];\n        popup.setLngLat(feature.geometry.coordinates)\n          .setHTML(feature.properties.description)\n          .addTo(this.Map);\n      });\n    },\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type='text/css'>\n  #map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n  #menu {\n      background: #fff;\n      position: absolute;\n      z-index: 10;\n      top: 80px;\n      right: 10px;\n      border-radius: 3px;\n      width: 120px;\n      border: 1px solid rgba(0,0,0,0.4);\n      font-family: 'Open Sans', sans-serif;\n  }\n\n  #menu a,#menu select{\n      font-size: 13px;\n      color: #404040;\n      display: block;\n      margin: 0;\n      padding: 0;\n      padding: 10px;\n      text-decoration: none;\n      border-bottom: 1px solid rgba(0,0,0,0.25);\n      text-align: center;\n  }\n\n  #menu a:last-child {\n      border: none;\n  }\n\n  #menu a:hover {\n      background-color: #f8f8f8;\n      color: #404040;\n  }\n\n  #menu a.active {\n      background-color: #3887be;\n      color: #ffffff;\n  }\n\n  #menu a.active:hover {\n      background: #3074a4;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n#map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n#menu {\n    background: #fff;\n    position: absolute;\n    z-index: 10;\n    top: 80px;\n    right: 10px;\n    border-radius: 3px;\n    width: 120px;\n    border: 1px solid rgba(0,0,0,0.4);\n    font-family: 'Open Sans', sans-serif;\n}\n\n#menu a,#menu select{\n    font-size: 13px;\n    color: #404040;\n    display: block;\n    margin: 0;\n    padding: 0;\n    padding: 10px;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(0,0,0,0.25);\n    text-align: center;\n}\n\n#menu a:last-child {\n    border: none;\n}\n\n#menu a:hover {\n    background-color: #f8f8f8;\n    color: #404040;\n}\n\n#menu a.active {\n    background-color: #3887be;\n    color: #ffffff;\n}\n\n#menu a.active:hover {\n    background: #3074a4;\n}\n\n.demo-card-wide.mdl-card {\n  width: 512px;\n}\n.demo-card-wide > .mdl-card__title {\n  color: #fff;\n  height: 176px;\n  background: url(" + __webpack_require__(40) + ") center / cover;\n}\n.demo-card-wide > .mdl-card__menu {\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./vue/components/map.vue?5a586515"],"names":[],"mappings":";AAgJA,OAAA,eAAA,CAAA,QAAA,CAAA,WAAA,CAAA,WAAA,GAAA;;AAEA;IACA,iBAAA;IACA,mBAAA;IACA,YAAA;IACA,UAAA;IACA,YAAA;IACA,mBAAA;IACA,aAAA;IACA,kCAAA;IACA,qCAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;IACA,eAAA;IACA,UAAA;IACA,WAAA;IACA,cAAA;IACA,sBAAA;IACA,0CAAA;IACA,mBAAA;CACA;;AAEA;IACA,aAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,oBAAA;CACA;;AAEA;EACA,aAAA;CACA;AACA;EACA,YAAA;EACA,cAAA;EACA,yDAAA;CACA;AACA;EACA,YAAA;CACA","file":"map.vue","sourcesContent":["<template>\n  <div>\n   <!--  <nav id='menu'>\n      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n    </nav> -->\n    <div id='map'></div>\n  </div>\n</template>\n\n<script>\n  import DataAPI from '../data/data';\n\n  export default {\n    name: 'MapView',\n    data () {\n      return {\n        Map : Object.create(null),\n        Markers: {\n          type: 'FeatureCollection',\n          features: []\n        },\n        Source: Object.create(null)\n      };\n    },\n    watch: {\n      'Markers.features' () {\n        this.Source.setData(this.Markers);\n      }\n    },\n    route: { },\n    created () {},\n    ready () {\n      let source;\n      this.Map = new DataAPI.MapBox.Map({\n        container: 'map',\n        style: 'mapbox://styles/ccharlieli/cio8phh7x001sadnmu988hd91',\n        center: [121.4691603379, 31.2223104171],\n        zoom: 13\n      });\n\n      this.Map.on('load', () => {\n        this.Source = new DataAPI.MapBox.GeoJSONSource({\n          data: this.Markers,\n          cluster: true,\n          clusterMaxZoom: 14, // Max zoom to cluster points on\n          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)\n        });\n        this.Map.addSource('markers', this.Source);\n        this.Map.addLayer({\n          'id': 'markers',\n          'type': 'symbol',\n          'source': 'markers',\n          'layout': {\n            'icon-image': '{marker-symbol}-15',\n            'icon-allow-overlap': true\n          }\n        });\n\n        let layers = [\n          [150, '#f28cb1'],\n          [20, '#f1f075'],\n          [0, '#6ab344']\n        ];\n        layers.forEach((layer, i) => {\n          this.Map.addLayer({\n            \"id\": \"cluster-\" + i,\n            \"type\": \"circle\",\n            \"source\": \"markers\",\n            \"paint\": {\n              \"circle-color\": layer[1],\n              \"circle-radius\": 18\n            },\n            \"filter\": i == 0 ?\n              [\">=\", \"point_count\", layer[0]] :\n              [\"all\",\n                [\">=\", \"point_count\", layer[0]],\n                [\"<\", \"point_count\", layers[i - 1][0]]]\n          });\n        });\n        // Add a layer for the clusters' count labels\n        this.Map.addLayer({\n          \"id\": \"cluster-count\",\n          \"type\": \"symbol\",\n          \"source\": \"markers\",\n          \"layout\": {\n            \"text-field\": \"{point_count}\",\n            \"text-font\": [\n              \"DIN Offc Pro Medium\",\n              \"Arial Unicode MS Bold\"\n            ],\n            \"text-size\": 12\n          }\n        });\n      });\n\n      let clickFlag = false;\n      this.Map.on('click', (e) => {\n        if (clickFlag){\n          this.Markers.features.pop();\n        }\n        this.Markers.features.push({\n          'type': 'Feature',\n          'properties': {\n            'description': '<div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__title\"><h2 class=\"mdl-card__title-text\">静安寺合租</h2></div><div class=\"mdl-card__supporting-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class=\"mdl-card__actions mdl-card--border\"><a @click.prevent.stop=\"onDetail\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">详细信息</a></div><div class=\"mdl-card__menu\"><button class=\"mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect\"><i class=\"material-icons\">share</i></button></div></div>',\n            'marker-symbol': 'star'\n          },\n          'geometry': {\n            'type': 'Point',\n            'coordinates': [e.lngLat.lng, e.lngLat.lat]\n          }\n        });\n        clickFlag = true;\n      });\n\n      // Pop up\n      var popup = new DataAPI.MapBox.Popup({\n        closeButton: false,\n        closeOnClick: false\n      });\n      this.Map.on('mousemove', (e) => {\n        var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });\n        this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';\n        if (!features.length) {\n          popup.remove();\n          return;\n        }\n        var feature = features[0];\n        popup.setLngLat(feature.geometry.coordinates)\n          .setHTML(feature.properties.description)\n          .addTo(this.Map);\n      });\n    },\n    destroyed () {},\n    methods: {\n      onDetail () {\n        window.console.log(123);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style type='text/css'>\n  #map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n  #menu {\n      background: #fff;\n      position: absolute;\n      z-index: 10;\n      top: 80px;\n      right: 10px;\n      border-radius: 3px;\n      width: 120px;\n      border: 1px solid rgba(0,0,0,0.4);\n      font-family: 'Open Sans', sans-serif;\n  }\n\n  #menu a,#menu select{\n      font-size: 13px;\n      color: #404040;\n      display: block;\n      margin: 0;\n      padding: 0;\n      padding: 10px;\n      text-decoration: none;\n      border-bottom: 1px solid rgba(0,0,0,0.25);\n      text-align: center;\n  }\n\n  #menu a:last-child {\n      border: none;\n  }\n\n  #menu a:hover {\n      background-color: #f8f8f8;\n      color: #404040;\n  }\n\n  #menu a.active {\n      background-color: #3887be;\n      color: #ffffff;\n  }\n\n  #menu a.active:hover {\n      background: #3074a4;\n  }\n\n  .demo-card-wide.mdl-card {\n    width: 512px;\n  }\n  .demo-card-wide > .mdl-card__title {\n    color: #fff;\n    height: 176px;\n    background: url('../assets/welcome_card.jpg') center / cover;\n  }\n  .demo-card-wide > .mdl-card__menu {\n    color: #fff;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -15100,17 +15108,23 @@
 /* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "810f0185586b37951e07c25376663834.jpg";
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
-	var _create = __webpack_require__(41);
+	var _create = __webpack_require__(42);
 	
 	var _create2 = _interopRequireDefault(_create);
 	
-	var _data = __webpack_require__(77);
+	var _data = __webpack_require__(78);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -15122,23 +15136,18 @@
 	    return {
 	      Map: (0, _create2.default)(null),
 	      Markers: {
-	        'type': 'FeatureCollection',
-	        'features': [{
-	          'type': 'Feature',
-	          'properties': {
-	            'description': '<div class="marker-title">Make it Mount Pleasant</div><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
-	            'marker-symbol': 'theatre'
-	          },
-	          'geometry': {
-	            'type': 'Point',
-	            'coordinates': [121.4691603379, 31.2223104171]
-	          }
-	        }]
-	      }
+	        type: 'FeatureCollection',
+	        features: []
+	      },
+	      Source: (0, _create2.default)(null)
 	    };
 	  },
 	
-	  watch: {},
+	  watch: {
+	    'Markers.features': function MarkersFeatures() {
+	      this.Source.setData(this.Markers);
+	    }
+	  },
 	  route: {},
 	  created: function created() {},
 	  ready: function ready() {
@@ -15153,14 +15162,13 @@
 	    });
 	
 	    this.Map.on('load', function () {
-	      // Add marker data as a new GeoJSON source.
-	      _this.Map.addSource('markers', {
-	        'type': 'geojson',
-	        'data': _this.Markers,
-	        'cluster': true,
-	        'clusterRadius': 50
+	      _this.Source = new _data2.default.MapBox.GeoJSONSource({
+	        data: _this.Markers,
+	        cluster: true,
+	        clusterMaxZoom: 14, // Max zoom to cluster points on
+	        clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
 	      });
-	      // Add a layer showing the markers.
+	      _this.Map.addSource('markers', _this.Source);
 	      _this.Map.addLayer({
 	        'id': 'markers',
 	        'type': 'symbol',
@@ -15170,13 +15178,57 @@
 	          'icon-allow-overlap': true
 	        }
 	      });
+	
+	      var layers = [[150, '#f28cb1'], [20, '#f1f075'], [0, '#6ab344']];
+	      layers.forEach(function (layer, i) {
+	        _this.Map.addLayer({
+	          "id": "cluster-" + i,
+	          "type": "circle",
+	          "source": "markers",
+	          "paint": {
+	            "circle-color": layer[1],
+	            "circle-radius": 18
+	          },
+	          "filter": i == 0 ? [">=", "point_count", layer[0]] : ["all", [">=", "point_count", layer[0]], ["<", "point_count", layers[i - 1][0]]]
+	        });
+	      });
+	      // Add a layer for the clusters' count labels
+	      _this.Map.addLayer({
+	        "id": "cluster-count",
+	        "type": "symbol",
+	        "source": "markers",
+	        "layout": {
+	          "text-field": "{point_count}",
+	          "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+	          "text-size": 12
+	        }
+	      });
 	    });
 	
+	    var clickFlag = false;
+	    this.Map.on('click', function (e) {
+	      if (clickFlag) {
+	        _this.Markers.features.pop();
+	      }
+	      _this.Markers.features.push({
+	        'type': 'Feature',
+	        'properties': {
+	          'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a @click.prevent.stop="onDetail" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+	          'marker-symbol': 'star'
+	        },
+	        'geometry': {
+	          'type': 'Point',
+	          'coordinates': [e.lngLat.lng, e.lngLat.lat]
+	        }
+	      });
+	      clickFlag = true;
+	    });
+	
+	    // Pop up
 	    var popup = new _data2.default.MapBox.Popup({
 	      closeButton: false,
 	      closeOnClick: false
 	    });
-	
 	    this.Map.on('mousemove', function (e) {
 	      var features = _this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });
 	      _this.Map.getCanvas().style.cursor = features.length ? 'pointer' : '';
@@ -15190,7 +15242,11 @@
 	  },
 	  destroyed: function destroyed() {},
 	
-	  methods: {},
+	  methods: {
+	    onDetail: function onDetail() {
+	      window.console.log(123);
+	    }
+	  },
 	  filters: {}
 	};
 	// </script>
@@ -15239,6 +15295,18 @@
 	//   #menu a.active:hover {
 	//       background: #3074a4;
 	//   }
+	//
+	//   .demo-card-wide.mdl-card {
+	//     width: 512px;
+	//   }
+	//   .demo-card-wide > .mdl-card__title {
+	//     color: #fff;
+	//     height: 176px;
+	//     background: url('../assets/welcome_card.jpg') center / cover;
+	//   }
+	//   .demo-card-wide > .mdl-card__menu {
+	//     color: #fff;
+	//   }
 	// </style>
 	/* generated by vue-loader */
 	// <template>
@@ -15254,37 +15322,37 @@
 	// <script>
 
 /***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(42), __esModule: true };
-
-/***/ },
 /* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(43);
-	var $Object = __webpack_require__(46).Object;
-	module.exports = function create(P, D){
-	  return $Object.create(P, D);
-	};
+	module.exports = { "default": __webpack_require__(43), __esModule: true };
 
 /***/ },
 /* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $export = __webpack_require__(44)
-	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	$export($export.S, 'Object', {create: __webpack_require__(59)});
+	__webpack_require__(44);
+	var $Object = __webpack_require__(47).Object;
+	module.exports = function create(P, D){
+	  return $Object.create(P, D);
+	};
 
 /***/ },
 /* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global    = __webpack_require__(45)
-	  , core      = __webpack_require__(46)
-	  , ctx       = __webpack_require__(47)
-	  , hide      = __webpack_require__(49)
+	var $export = __webpack_require__(45)
+	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+	$export($export.S, 'Object', {create: __webpack_require__(60)});
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global    = __webpack_require__(46)
+	  , core      = __webpack_require__(47)
+	  , ctx       = __webpack_require__(48)
+	  , hide      = __webpack_require__(50)
 	  , PROTOTYPE = 'prototype';
 	
 	var $export = function(type, name, source){
@@ -15344,7 +15412,7 @@
 	module.exports = $export;
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -15353,18 +15421,18 @@
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	var core = module.exports = {version: '2.4.0'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
-	var aFunction = __webpack_require__(48);
+	var aFunction = __webpack_require__(49);
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -15385,7 +15453,7 @@
 	};
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -15394,12 +15462,12 @@
 	};
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(50)
-	  , createDesc = __webpack_require__(58);
-	module.exports = __webpack_require__(54) ? function(object, key, value){
+	var dP         = __webpack_require__(51)
+	  , createDesc = __webpack_require__(59);
+	module.exports = __webpack_require__(55) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
 	  object[key] = value;
@@ -15407,15 +15475,15 @@
 	};
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var anObject       = __webpack_require__(51)
-	  , IE8_DOM_DEFINE = __webpack_require__(53)
-	  , toPrimitive    = __webpack_require__(57)
+	var anObject       = __webpack_require__(52)
+	  , IE8_DOM_DEFINE = __webpack_require__(54)
+	  , toPrimitive    = __webpack_require__(58)
 	  , dP             = Object.defineProperty;
 	
-	exports.f = __webpack_require__(54) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+	exports.f = __webpack_require__(55) ? Object.defineProperty : function defineProperty(O, P, Attributes){
 	  anObject(O);
 	  P = toPrimitive(P, true);
 	  anObject(Attributes);
@@ -15428,17 +15496,17 @@
 	};
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(52);
+	var isObject = __webpack_require__(53);
 	module.exports = function(it){
 	  if(!isObject(it))throw TypeError(it + ' is not an object!');
 	  return it;
 	};
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -15446,24 +15514,24 @@
 	};
 
 /***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = !__webpack_require__(54) && !__webpack_require__(55)(function(){
-	  return Object.defineProperty(__webpack_require__(56)('div'), 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
 /* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(55)(function(){
-	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
+	module.exports = !__webpack_require__(55) && !__webpack_require__(56)(function(){
+	  return Object.defineProperty(__webpack_require__(57)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
 /* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Thank's IE8 for his funny defineProperty
+	module.exports = !__webpack_require__(56)(function(){
+	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
+	});
+
+/***/ },
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = function(exec){
@@ -15475,11 +15543,11 @@
 	};
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(52)
-	  , document = __webpack_require__(45).document
+	var isObject = __webpack_require__(53)
+	  , document = __webpack_require__(46).document
 	  // in old IE typeof document.createElement is 'object'
 	  , is = isObject(document) && isObject(document.createElement);
 	module.exports = function(it){
@@ -15487,11 +15555,11 @@
 	};
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
-	var isObject = __webpack_require__(52);
+	var isObject = __webpack_require__(53);
 	// instead of the ES6 spec version, we didn't implement @@toPrimitive case
 	// and the second argument - flag - preferred type is a string
 	module.exports = function(it, S){
@@ -15504,7 +15572,7 @@
 	};
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = function(bitmap, value){
@@ -15517,26 +15585,26 @@
 	};
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	var anObject    = __webpack_require__(51)
-	  , dPs         = __webpack_require__(60)
-	  , enumBugKeys = __webpack_require__(75)
-	  , IE_PROTO    = __webpack_require__(72)('IE_PROTO')
+	var anObject    = __webpack_require__(52)
+	  , dPs         = __webpack_require__(61)
+	  , enumBugKeys = __webpack_require__(76)
+	  , IE_PROTO    = __webpack_require__(73)('IE_PROTO')
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 	
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
-	  var iframe = __webpack_require__(56)('iframe')
+	  var iframe = __webpack_require__(57)('iframe')
 	    , i      = enumBugKeys.length
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
-	  __webpack_require__(76).appendChild(iframe);
+	  __webpack_require__(77).appendChild(iframe);
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -15562,14 +15630,14 @@
 	};
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP       = __webpack_require__(50)
-	  , anObject = __webpack_require__(51)
-	  , getKeys  = __webpack_require__(61);
+	var dP       = __webpack_require__(51)
+	  , anObject = __webpack_require__(52)
+	  , getKeys  = __webpack_require__(62);
 	
-	module.exports = __webpack_require__(54) ? Object.defineProperties : function defineProperties(O, Properties){
+	module.exports = __webpack_require__(55) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
 	  var keys   = getKeys(Properties)
 	    , length = keys.length
@@ -15580,25 +15648,25 @@
 	};
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(62)
-	  , enumBugKeys = __webpack_require__(75);
+	var $keys       = __webpack_require__(63)
+	  , enumBugKeys = __webpack_require__(76);
 	
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
 	};
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var has          = __webpack_require__(63)
-	  , toIObject    = __webpack_require__(64)
-	  , arrayIndexOf = __webpack_require__(68)(false)
-	  , IE_PROTO     = __webpack_require__(72)('IE_PROTO');
+	var has          = __webpack_require__(64)
+	  , toIObject    = __webpack_require__(65)
+	  , arrayIndexOf = __webpack_require__(69)(false)
+	  , IE_PROTO     = __webpack_require__(73)('IE_PROTO');
 	
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -15614,7 +15682,7 @@
 	};
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -15623,28 +15691,28 @@
 	};
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
-	var IObject = __webpack_require__(65)
-	  , defined = __webpack_require__(67);
+	var IObject = __webpack_require__(66)
+	  , defined = __webpack_require__(68);
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(66);
+	var cof = __webpack_require__(67);
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -15654,7 +15722,7 @@
 	};
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -15664,14 +15732,14 @@
 	};
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-	var toIObject = __webpack_require__(64)
-	  , toLength  = __webpack_require__(69)
-	  , toIndex   = __webpack_require__(71);
+	var toIObject = __webpack_require__(65)
+	  , toLength  = __webpack_require__(70)
+	  , toIndex   = __webpack_require__(72);
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -15690,18 +15758,18 @@
 	};
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
-	var toInteger = __webpack_require__(70)
+	var toInteger = __webpack_require__(71)
 	  , min       = Math.min;
 	module.exports = function(it){
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
 	};
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -15712,10 +15780,10 @@
 	};
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(70)
+	var toInteger = __webpack_require__(71)
 	  , max       = Math.max
 	  , min       = Math.min;
 	module.exports = function(index, length){
@@ -15724,20 +15792,20 @@
 	};
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var shared = __webpack_require__(73)('keys')
-	  , uid    = __webpack_require__(74);
+	var shared = __webpack_require__(74)('keys')
+	  , uid    = __webpack_require__(75);
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(45)
+	var global = __webpack_require__(46)
 	  , SHARED = '__core-js_shared__'
 	  , store  = global[SHARED] || (global[SHARED] = {});
 	module.exports = function(key){
@@ -15745,7 +15813,7 @@
 	};
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 	var id = 0
@@ -15755,7 +15823,7 @@
 	};
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -15764,13 +15832,13 @@
 	).split(',');
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(45).document && document.documentElement;
+	module.exports = __webpack_require__(46).document && document.documentElement;
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15779,15 +15847,15 @@
 	  value: true
 	});
 	
-	var _create = __webpack_require__(41);
+	var _create = __webpack_require__(42);
 	
 	var _create2 = _interopRequireDefault(_create);
 	
-	var _mapboxGl = __webpack_require__(78);
+	var _mapboxGl = __webpack_require__(79);
 	
 	var _mapboxGl2 = _interopRequireDefault(_mapboxGl);
 	
-	var _bluebird = __webpack_require__(258);
+	var _bluebird = __webpack_require__(259);
 	
 	var _bluebird2 = _interopRequireDefault(_bluebird);
 	
@@ -15807,7 +15875,7 @@
 	exports.default = DataAPI;
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15823,33 +15891,33 @@
 	// jshint -W079
 	var mapboxgl = module.exports = {};
 	
-	mapboxgl.Map = __webpack_require__(79);
-	mapboxgl.Control = __webpack_require__(254);
-	mapboxgl.Navigation = __webpack_require__(255);
-	mapboxgl.Geolocate = __webpack_require__(256);
-	mapboxgl.Attribution = __webpack_require__(253);
-	mapboxgl.Popup = __webpack_require__(257);
+	mapboxgl.Map = __webpack_require__(80);
+	mapboxgl.Control = __webpack_require__(255);
+	mapboxgl.Navigation = __webpack_require__(256);
+	mapboxgl.Geolocate = __webpack_require__(257);
+	mapboxgl.Attribution = __webpack_require__(254);
+	mapboxgl.Popup = __webpack_require__(258);
 	
-	mapboxgl.GeoJSONSource = __webpack_require__(212);
-	mapboxgl.VideoSource = __webpack_require__(214);
-	mapboxgl.ImageSource = __webpack_require__(216);
+	mapboxgl.GeoJSONSource = __webpack_require__(213);
+	mapboxgl.VideoSource = __webpack_require__(215);
+	mapboxgl.ImageSource = __webpack_require__(217);
 	
-	mapboxgl.Style = __webpack_require__(88);
+	mapboxgl.Style = __webpack_require__(89);
 	
-	mapboxgl.LngLat = __webpack_require__(215);
-	mapboxgl.LngLatBounds = __webpack_require__(246);
-	mapboxgl.Point = __webpack_require__(87);
+	mapboxgl.LngLat = __webpack_require__(216);
+	mapboxgl.LngLatBounds = __webpack_require__(247);
+	mapboxgl.Point = __webpack_require__(88);
 	
-	mapboxgl.Evented = __webpack_require__(85);
-	mapboxgl.util = __webpack_require__(81);
+	mapboxgl.Evented = __webpack_require__(86);
+	mapboxgl.util = __webpack_require__(82);
 	
-	mapboxgl.supported = __webpack_require__(84).supported;
+	mapboxgl.supported = __webpack_require__(85).supported;
 	
-	var ajax = __webpack_require__(134);
+	var ajax = __webpack_require__(135);
 	mapboxgl.util.getJSON = ajax.getJSON;
 	mapboxgl.util.getArrayBuffer = ajax.getArrayBuffer;
 	
-	var config = __webpack_require__(136);
+	var config = __webpack_require__(137);
 	mapboxgl.config = config;
 	
 	Object.defineProperty(mapboxgl, 'accessToken', {
@@ -15859,31 +15927,31 @@
 
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var Canvas = __webpack_require__(80);
-	var util = __webpack_require__(81);
-	var browser = __webpack_require__(84);
-	var Evented = __webpack_require__(85);
-	var DOM = __webpack_require__(86);
+	var Canvas = __webpack_require__(81);
+	var util = __webpack_require__(82);
+	var browser = __webpack_require__(85);
+	var Evented = __webpack_require__(86);
+	var DOM = __webpack_require__(87);
 	
-	var Style = __webpack_require__(88);
-	var AnimationLoop = __webpack_require__(204);
-	var Painter = __webpack_require__(217);
+	var Style = __webpack_require__(89);
+	var AnimationLoop = __webpack_require__(205);
+	var Painter = __webpack_require__(218);
 	
-	var Transform = __webpack_require__(241);
-	var Hash = __webpack_require__(242);
+	var Transform = __webpack_require__(242);
+	var Hash = __webpack_require__(243);
 	
-	var Interaction = __webpack_require__(243);
+	var Interaction = __webpack_require__(244);
 	
-	var Camera = __webpack_require__(252);
-	var LngLat = __webpack_require__(215);
-	var LngLatBounds = __webpack_require__(246);
-	var Point = __webpack_require__(87);
-	var Attribution = __webpack_require__(253);
+	var Camera = __webpack_require__(253);
+	var LngLat = __webpack_require__(216);
+	var LngLatBounds = __webpack_require__(247);
+	var Point = __webpack_require__(88);
+	var Attribution = __webpack_require__(254);
 	
 	var defaultMinZoom = 0;
 	var defaultMaxZoom = 20;
@@ -16886,12 +16954,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
+	var util = __webpack_require__(82);
 	
 	module.exports = Canvas;
 	
@@ -16956,13 +17024,13 @@
 
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var UnitBezier = __webpack_require__(82);
-	var Coordinate = __webpack_require__(83);
+	var UnitBezier = __webpack_require__(83);
+	var Coordinate = __webpack_require__(84);
 	
 	/**
 	 * Given a value `t` that varies between 0 and 1, return
@@ -17412,7 +17480,7 @@
 
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports) {
 
 	/*
@@ -17523,7 +17591,7 @@
 
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -17606,12 +17674,12 @@
 
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Canvas = __webpack_require__(80);
+	var Canvas = __webpack_require__(81);
 	
 	/**
 	 * Unlike js/util/browser.js, this code is written with the expectation
@@ -17767,12 +17835,12 @@
 
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
+	var util = __webpack_require__(82);
 	
 	/**
 	 * Methods mixed in to other classes for event capabilities.
@@ -17876,12 +17944,12 @@
 
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
 	exports.create = function (tagName, className, container) {
 	    var el = document.createElement(tagName);
@@ -17955,7 +18023,7 @@
 
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -18092,27 +18160,27 @@
 
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var Evented = __webpack_require__(85);
-	var StyleLayer = __webpack_require__(89);
-	var ImageSprite = __webpack_require__(133);
-	var GlyphSource = __webpack_require__(137);
-	var SpriteAtlas = __webpack_require__(147);
-	var LineAtlas = __webpack_require__(148);
-	var util = __webpack_require__(81);
-	var ajax = __webpack_require__(134);
-	var normalizeURL = __webpack_require__(135).normalizeStyleURL;
-	var browser = __webpack_require__(84);
-	var Dispatcher = __webpack_require__(149);
-	var AnimationLoop = __webpack_require__(204);
-	var validateStyle = __webpack_require__(100);
-	var Source = __webpack_require__(205);
-	var styleSpec = __webpack_require__(97);
-	var StyleFunction = __webpack_require__(93);
+	var Evented = __webpack_require__(86);
+	var StyleLayer = __webpack_require__(90);
+	var ImageSprite = __webpack_require__(134);
+	var GlyphSource = __webpack_require__(138);
+	var SpriteAtlas = __webpack_require__(148);
+	var LineAtlas = __webpack_require__(149);
+	var util = __webpack_require__(82);
+	var ajax = __webpack_require__(135);
+	var normalizeURL = __webpack_require__(136).normalizeStyleURL;
+	var browser = __webpack_require__(85);
+	var Dispatcher = __webpack_require__(150);
+	var AnimationLoop = __webpack_require__(205);
+	var validateStyle = __webpack_require__(101);
+	var Source = __webpack_require__(206);
+	var styleSpec = __webpack_require__(98);
+	var StyleFunction = __webpack_require__(94);
 	
 	module.exports = Style;
 	
@@ -18836,18 +18904,18 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleTransition = __webpack_require__(90);
-	var StyleDeclaration = __webpack_require__(92);
-	var styleSpec = __webpack_require__(97);
-	var validateStyle = __webpack_require__(100);
-	var parseColor = __webpack_require__(95);
-	var Evented = __webpack_require__(85);
+	var util = __webpack_require__(82);
+	var StyleTransition = __webpack_require__(91);
+	var StyleDeclaration = __webpack_require__(93);
+	var styleSpec = __webpack_require__(98);
+	var validateStyle = __webpack_require__(101);
+	var parseColor = __webpack_require__(96);
+	var Evented = __webpack_require__(86);
 	
 	module.exports = StyleLayer;
 	
@@ -18855,12 +18923,12 @@
 	
 	StyleLayer.create = function(layer, refLayer) {
 	    var Classes = {
-	        background: __webpack_require__(127),
-	        circle: __webpack_require__(128),
-	        fill: __webpack_require__(129),
-	        line: __webpack_require__(130),
-	        raster: __webpack_require__(131),
-	        symbol: __webpack_require__(132)
+	        background: __webpack_require__(128),
+	        circle: __webpack_require__(129),
+	        fill: __webpack_require__(130),
+	        line: __webpack_require__(131),
+	        raster: __webpack_require__(132),
+	        symbol: __webpack_require__(133)
 	    };
 	    return new Classes[(refLayer || layer).type](layer, refLayer);
 	};
@@ -19149,13 +19217,13 @@
 
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var interpolate = __webpack_require__(91);
+	var util = __webpack_require__(82);
+	var interpolate = __webpack_require__(92);
 	
 	module.exports = StyleTransition;
 	
@@ -19233,7 +19301,7 @@
 
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19278,13 +19346,13 @@
 
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var MapboxGLFunction = __webpack_require__(93);
-	var parseColor = __webpack_require__(95);
+	var MapboxGLFunction = __webpack_require__(94);
+	var parseColor = __webpack_require__(96);
 	
 	module.exports = StyleDeclaration;
 	
@@ -19343,12 +19411,12 @@
 
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var MapboxGLFunction = __webpack_require__(94);
+	var MapboxGLFunction = __webpack_require__(95);
 	
 	exports.interpolated = function(parameters) {
 	    var inner = MapboxGLFunction.interpolated(parameters);
@@ -19374,7 +19442,7 @@
 
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19509,13 +19577,13 @@
 
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var parseCSSColor = __webpack_require__(96).parseCSSColor;
-	var util = __webpack_require__(81);
+	var parseCSSColor = __webpack_require__(97).parseCSSColor;
+	var util = __webpack_require__(82);
 	
 	var colorCache = {};
 	
@@ -19561,7 +19629,7 @@
 
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports) {
 
 	// (c) Dean McNamee <dean@gmail.com>, 2012.
@@ -19767,23 +19835,23 @@
 
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(98);
-
-
-/***/ },
-/* 98 */
-/***/ function(module, exports, __webpack_require__) {
-
 	module.exports = __webpack_require__(99);
 
 
 /***/ },
 /* 99 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(100);
+
+
+/***/ },
+/* 100 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -21194,12 +21262,12 @@
 	};
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(101);
+	module.exports = __webpack_require__(102);
 	
 	module.exports.emitErrors = function throwErrors(emitter, errors) {
 	    if (errors && errors.length) {
@@ -21222,15 +21290,15 @@
 
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var validateConstants = __webpack_require__(102);
-	var validate = __webpack_require__(108);
-	var latestStyleSpec = __webpack_require__(124);
-	var validateGlyphsURL = __webpack_require__(126);
+	var validateConstants = __webpack_require__(103);
+	var validate = __webpack_require__(109);
+	var latestStyleSpec = __webpack_require__(125);
+	var validateGlyphsURL = __webpack_require__(127);
 	
 	/**
 	 * Validate a Mapbox GL style against the style specification. This entrypoint,
@@ -21274,11 +21342,11 @@
 	    return sortErrors(errors);
 	}
 	
-	validateStyleMin.source = wrapCleanErrors(__webpack_require__(122));
-	validateStyleMin.layer = wrapCleanErrors(__webpack_require__(119));
-	validateStyleMin.filter = wrapCleanErrors(__webpack_require__(118));
-	validateStyleMin.paintProperty = wrapCleanErrors(__webpack_require__(120));
-	validateStyleMin.layoutProperty = wrapCleanErrors(__webpack_require__(121));
+	validateStyleMin.source = wrapCleanErrors(__webpack_require__(123));
+	validateStyleMin.layer = wrapCleanErrors(__webpack_require__(120));
+	validateStyleMin.filter = wrapCleanErrors(__webpack_require__(119));
+	validateStyleMin.paintProperty = wrapCleanErrors(__webpack_require__(121));
+	validateStyleMin.layoutProperty = wrapCleanErrors(__webpack_require__(122));
 	
 	function sortErrors(errors) {
 	    return [].concat(errors).sort(function (a, b) {
@@ -21296,13 +21364,13 @@
 
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var getType = __webpack_require__(107);
+	var ValidationError = __webpack_require__(104);
+	var getType = __webpack_require__(108);
 	
 	module.exports = function validateConstants(options) {
 	    var key = options.key;
@@ -21334,12 +21402,12 @@
 
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var format = __webpack_require__(104).format;
+	var format = __webpack_require__(105).format;
 	
 	function ValidationError(key, value /*, message, ...*/) {
 	    this.message = (
@@ -21356,7 +21424,7 @@
 
 
 /***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process, console) {// Copyright Joyent, Inc. and other Node contributors.
@@ -21884,7 +21952,7 @@
 	}
 	exports.isPrimitive = isPrimitive;
 	
-	exports.isBuffer = __webpack_require__(105);
+	exports.isBuffer = __webpack_require__(106);
 	
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -21928,7 +21996,7 @@
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(106);
+	exports.inherits = __webpack_require__(107);
 	
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -21949,7 +22017,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(3), __webpack_require__(4)))
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
@@ -21960,7 +22028,7 @@
 	}
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -21989,7 +22057,7 @@
 
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22012,14 +22080,14 @@
 
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var getType = __webpack_require__(107);
-	var extend = __webpack_require__(109);
+	var ValidationError = __webpack_require__(104);
+	var getType = __webpack_require__(108);
+	var extend = __webpack_require__(110);
 	
 	// Main recursive validation function. Tracks:
 	//
@@ -22032,24 +22100,24 @@
 	
 	module.exports = function validate(options) {
 	
-	    var validateFunction = __webpack_require__(110);
-	    var validateObject = __webpack_require__(111);
+	    var validateFunction = __webpack_require__(111);
+	    var validateObject = __webpack_require__(112);
 	    var VALIDATORS = {
 	        '*': function() {
 	            return [];
 	        },
-	        'array': __webpack_require__(112),
-	        'boolean': __webpack_require__(113),
-	        'number': __webpack_require__(114),
-	        'color': __webpack_require__(115),
-	        'constants': __webpack_require__(102),
-	        'enum': __webpack_require__(116),
-	        'filter': __webpack_require__(118),
-	        'function': __webpack_require__(110),
-	        'layer': __webpack_require__(119),
-	        'object': __webpack_require__(111),
-	        'source': __webpack_require__(122),
-	        'string': __webpack_require__(123)
+	        'array': __webpack_require__(113),
+	        'boolean': __webpack_require__(114),
+	        'number': __webpack_require__(115),
+	        'color': __webpack_require__(116),
+	        'constants': __webpack_require__(103),
+	        'enum': __webpack_require__(117),
+	        'filter': __webpack_require__(119),
+	        'function': __webpack_require__(111),
+	        'layer': __webpack_require__(120),
+	        'object': __webpack_require__(112),
+	        'source': __webpack_require__(123),
+	        'string': __webpack_require__(124)
 	    };
 	
 	    var value = options.value;
@@ -22083,7 +22151,7 @@
 
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22100,16 +22168,16 @@
 
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var getType = __webpack_require__(107);
-	var validate = __webpack_require__(108);
-	var validateObject = __webpack_require__(111);
-	var validateArray = __webpack_require__(112);
+	var ValidationError = __webpack_require__(104);
+	var getType = __webpack_require__(108);
+	var validate = __webpack_require__(109);
+	var validateObject = __webpack_require__(112);
+	var validateArray = __webpack_require__(113);
 	
 	module.exports = function validateFunction(options) {
 	    var originalValueSpec = options.valueSpec;
@@ -22191,14 +22259,14 @@
 
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var getType = __webpack_require__(107);
-	var validate = __webpack_require__(108);
+	var ValidationError = __webpack_require__(104);
+	var getType = __webpack_require__(108);
+	var validate = __webpack_require__(109);
 	
 	module.exports = function validateObject(options) {
 	    var key = options.key;
@@ -22248,14 +22316,14 @@
 
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getType = __webpack_require__(107);
-	var validate = __webpack_require__(108);
-	var ValidationError = __webpack_require__(103);
+	var getType = __webpack_require__(108);
+	var validate = __webpack_require__(109);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validateArray(options) {
 	    var array = options.value;
@@ -22306,13 +22374,13 @@
 
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getType = __webpack_require__(107);
-	var ValidationError = __webpack_require__(103);
+	var getType = __webpack_require__(108);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validateBoolean(options) {
 	    var value = options.value;
@@ -22328,13 +22396,13 @@
 
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getType = __webpack_require__(107);
-	var ValidationError = __webpack_require__(103);
+	var getType = __webpack_require__(108);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validateNumber(options) {
 	    var key = options.key;
@@ -22359,14 +22427,14 @@
 
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var getType = __webpack_require__(107);
-	var parseCSSColor = __webpack_require__(96).parseCSSColor;
+	var ValidationError = __webpack_require__(104);
+	var getType = __webpack_require__(108);
+	var parseCSSColor = __webpack_require__(97).parseCSSColor;
 	
 	module.exports = function validateColor(options) {
 	    var key = options.key;
@@ -22386,13 +22454,13 @@
 
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var unbundle = __webpack_require__(117);
+	var ValidationError = __webpack_require__(104);
+	var unbundle = __webpack_require__(118);
 	
 	module.exports = function validateEnum(options) {
 	    var key = options.key;
@@ -22408,7 +22476,7 @@
 
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22424,15 +22492,15 @@
 
 
 /***/ },
-/* 118 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var validateEnum = __webpack_require__(116);
-	var getType = __webpack_require__(107);
-	var unbundle = __webpack_require__(117);
+	var ValidationError = __webpack_require__(104);
+	var validateEnum = __webpack_require__(117);
+	var getType = __webpack_require__(108);
+	var unbundle = __webpack_require__(118);
 	
 	module.exports = function validateFilter(options) {
 	    var value = options.value;
@@ -22520,18 +22588,18 @@
 
 
 /***/ },
-/* 119 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var unbundle = __webpack_require__(117);
-	var validateObject = __webpack_require__(111);
-	var validateFilter = __webpack_require__(118);
-	var validatePaintProperty = __webpack_require__(120);
-	var validateLayoutProperty = __webpack_require__(121);
-	var extend = __webpack_require__(109);
+	var ValidationError = __webpack_require__(104);
+	var unbundle = __webpack_require__(118);
+	var validateObject = __webpack_require__(112);
+	var validateFilter = __webpack_require__(119);
+	var validatePaintProperty = __webpack_require__(121);
+	var validateLayoutProperty = __webpack_require__(122);
+	var extend = __webpack_require__(110);
 	
 	module.exports = function validateLayer(options) {
 	    var errors = [];
@@ -22637,13 +22705,13 @@
 
 
 /***/ },
-/* 120 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var validate = __webpack_require__(108);
-	var ValidationError = __webpack_require__(103);
+	var validate = __webpack_require__(109);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validatePaintProperty(options) {
 	    var key = options.key;
@@ -22681,13 +22749,13 @@
 
 
 /***/ },
-/* 121 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var validate = __webpack_require__(108);
-	var ValidationError = __webpack_require__(103);
+	var validate = __webpack_require__(109);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validateLayoutProperty(options) {
 	    var key = options.key;
@@ -22724,15 +22792,15 @@
 
 
 /***/ },
-/* 122 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var unbundle = __webpack_require__(117);
-	var validateObject = __webpack_require__(111);
-	var validateEnum = __webpack_require__(116);
+	var ValidationError = __webpack_require__(104);
+	var unbundle = __webpack_require__(118);
+	var validateObject = __webpack_require__(112);
+	var validateEnum = __webpack_require__(117);
 	
 	module.exports = function validateSource(options) {
 	    var value = options.value;
@@ -22805,13 +22873,13 @@
 
 
 /***/ },
-/* 123 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getType = __webpack_require__(107);
-	var ValidationError = __webpack_require__(103);
+	var getType = __webpack_require__(108);
+	var ValidationError = __webpack_require__(104);
 	
 	module.exports = function validateString(options) {
 	    var value = options.value;
@@ -22827,14 +22895,14 @@
 
 
 /***/ },
-/* 124 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(125);
+	module.exports = __webpack_require__(126);
 
 
 /***/ },
-/* 125 */
+/* 126 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -24065,13 +24133,13 @@
 	};
 
 /***/ },
-/* 126 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ValidationError = __webpack_require__(103);
-	var validateString = __webpack_require__(123);
+	var ValidationError = __webpack_require__(104);
+	var validateString = __webpack_require__(124);
 	
 	module.exports = function(options) {
 	    var value = options.value;
@@ -24093,13 +24161,13 @@
 
 
 /***/ },
-/* 127 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function BackgroundStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24111,13 +24179,13 @@
 
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function CircleStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24129,13 +24197,13 @@
 
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function FillStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24147,13 +24215,13 @@
 
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function LineStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24185,13 +24253,13 @@
 
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function RasterStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24203,13 +24271,13 @@
 
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var StyleLayer = __webpack_require__(89);
+	var util = __webpack_require__(82);
+	var StyleLayer = __webpack_require__(90);
 	
 	function SymbolStyleLayer() {
 	    StyleLayer.apply(this, arguments);
@@ -24247,15 +24315,15 @@
 
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Evented = __webpack_require__(85);
-	var ajax = __webpack_require__(134);
-	var browser = __webpack_require__(84);
-	var normalizeURL = __webpack_require__(135).normalizeSpriteURL;
+	var Evented = __webpack_require__(86);
+	var ajax = __webpack_require__(135);
+	var browser = __webpack_require__(85);
+	var normalizeURL = __webpack_require__(136).normalizeSpriteURL;
 	
 	module.exports = ImageSprite;
 	
@@ -24332,7 +24400,7 @@
 
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24426,13 +24494,13 @@
 
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var config = __webpack_require__(136);
-	var browser = __webpack_require__(84);
+	var config = __webpack_require__(137);
+	var browser = __webpack_require__(85);
 	
 	function normalizeURL(url, pathPrefix, accessToken) {
 	    accessToken = accessToken || config.ACCESS_TOKEN;
@@ -24511,7 +24579,7 @@
 
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24523,16 +24591,16 @@
 
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var normalizeURL = __webpack_require__(135).normalizeGlyphsURL;
-	var getArrayBuffer = __webpack_require__(134).getArrayBuffer;
-	var Glyphs = __webpack_require__(138);
-	var GlyphAtlas = __webpack_require__(139);
-	var Protobuf = __webpack_require__(141);
+	var normalizeURL = __webpack_require__(136).normalizeGlyphsURL;
+	var getArrayBuffer = __webpack_require__(135).getArrayBuffer;
+	var Glyphs = __webpack_require__(139);
+	var GlyphAtlas = __webpack_require__(140);
+	var Protobuf = __webpack_require__(142);
 	
 	module.exports = GlyphSource;
 	
@@ -24669,7 +24737,7 @@
 
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24708,12 +24776,12 @@
 
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var ShelfPack = __webpack_require__(140);
+	var ShelfPack = __webpack_require__(141);
 	
 	module.exports = GlyphAtlas;
 	function GlyphAtlas(width, height) {
@@ -24881,7 +24949,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25128,14 +25196,14 @@
 
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
 	module.exports = Pbf;
 	
-	var Buffer = global.Buffer || __webpack_require__(142);
+	var Buffer = global.Buffer || __webpack_require__(143);
 	
 	function Pbf(buf) {
 	    this.buf = !Buffer.isBuffer(buf) ? new Buffer(buf || 0) : buf;
@@ -25561,7 +25629,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -25571,7 +25639,7 @@
 	
 	module.exports = Buffer;
 	
-	var ieee754 = __webpack_require__(145);
+	var ieee754 = __webpack_require__(146);
 	
 	var BufferMethods;
 	
@@ -25724,10 +25792,10 @@
 	    return bytes;
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(143).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer, global, console) {/*!
@@ -25740,9 +25808,9 @@
 	
 	'use strict'
 	
-	var base64 = __webpack_require__(144)
-	var ieee754 = __webpack_require__(145)
-	var isArray = __webpack_require__(146)
+	var base64 = __webpack_require__(145)
+	var ieee754 = __webpack_require__(146)
+	var isArray = __webpack_require__(147)
 	
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -27279,10 +27347,10 @@
 	  return i
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(143).Buffer, (function() { return this; }()), __webpack_require__(4)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer, (function() { return this; }()), __webpack_require__(4)))
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
@@ -27412,7 +27480,7 @@
 
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports) {
 
 	exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -27502,7 +27570,7 @@
 
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -27513,13 +27581,13 @@
 
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var ShelfPack = __webpack_require__(140);
-	var browser = __webpack_require__(84);
+	var ShelfPack = __webpack_require__(141);
+	var browser = __webpack_require__(85);
 	
 	module.exports = SpriteAtlas;
 	function SpriteAtlas(width, height) {
@@ -27750,7 +27818,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
@@ -27900,13 +27968,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Actor = __webpack_require__(150);
-	var WebWorkify = __webpack_require__(151);
+	var Actor = __webpack_require__(151);
+	var WebWorkify = __webpack_require__(152);
 	
 	module.exports = Dispatcher;
 	
@@ -27914,7 +27982,7 @@
 	    this.actors = [];
 	    this.currentActor = 0;
 	    for (var i = 0; i < length; i++) {
-	        var worker = new WebWorkify(__webpack_require__(152));
+	        var worker = new WebWorkify(__webpack_require__(153));
 	        var actor = new Actor(worker, parent);
 	        actor.name = "Worker " + i;
 	        this.actors.push(actor);
@@ -27948,7 +28016,7 @@
 
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28017,7 +28085,7 @@
 
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports) {
 
 	var __webpack_require__ = arguments[2];
@@ -28086,24 +28154,24 @@
 
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Actor = __webpack_require__(150);
-	var WorkerTile = __webpack_require__(153);
-	var StyleLayer = __webpack_require__(89);
-	var util = __webpack_require__(81);
-	var ajax = __webpack_require__(134);
-	var vt = __webpack_require__(177);
-	var Protobuf = __webpack_require__(141);
-	var supercluster = __webpack_require__(185);
+	var Actor = __webpack_require__(151);
+	var WorkerTile = __webpack_require__(154);
+	var StyleLayer = __webpack_require__(90);
+	var util = __webpack_require__(82);
+	var ajax = __webpack_require__(135);
+	var vt = __webpack_require__(178);
+	var Protobuf = __webpack_require__(142);
+	var supercluster = __webpack_require__(186);
 	
-	var geojsonvt = __webpack_require__(190);
-	var rewind = __webpack_require__(197);
-	var GeoJSONWrapper = __webpack_require__(200);
-	var vtpbf = __webpack_require__(201);
+	var geojsonvt = __webpack_require__(191);
+	var rewind = __webpack_require__(198);
+	var GeoJSONWrapper = __webpack_require__(201);
+	var vtpbf = __webpack_require__(202);
 	
 	module.exports = function(self) {
 	    return new Worker(self);
@@ -28335,16 +28403,16 @@
 
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var FeatureIndex = __webpack_require__(154);
-	var CollisionTile = __webpack_require__(183);
-	var Bucket = __webpack_require__(156);
-	var CollisionBoxArray = __webpack_require__(184);
-	var DictionaryCoder = __webpack_require__(176);
+	var FeatureIndex = __webpack_require__(155);
+	var CollisionTile = __webpack_require__(184);
+	var Bucket = __webpack_require__(157);
+	var CollisionBoxArray = __webpack_require__(185);
+	var DictionaryCoder = __webpack_require__(177);
 	
 	module.exports = WorkerTile;
 	
@@ -28610,24 +28678,24 @@
 
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
-	var loadGeometry = __webpack_require__(155);
-	var EXTENT = __webpack_require__(156).EXTENT;
-	var featureFilter = __webpack_require__(157);
-	var StructArrayType = __webpack_require__(160);
-	var Grid = __webpack_require__(175);
-	var DictionaryCoder = __webpack_require__(176);
-	var vt = __webpack_require__(177);
-	var Protobuf = __webpack_require__(141);
-	var GeoJSONFeature = __webpack_require__(181);
-	var arraysIntersect = __webpack_require__(81).arraysIntersect;
+	var Point = __webpack_require__(88);
+	var loadGeometry = __webpack_require__(156);
+	var EXTENT = __webpack_require__(157).EXTENT;
+	var featureFilter = __webpack_require__(158);
+	var StructArrayType = __webpack_require__(161);
+	var Grid = __webpack_require__(176);
+	var DictionaryCoder = __webpack_require__(177);
+	var vt = __webpack_require__(178);
+	var Protobuf = __webpack_require__(142);
+	var GeoJSONFeature = __webpack_require__(182);
+	var arraysIntersect = __webpack_require__(82).arraysIntersect;
 	
-	var intersection = __webpack_require__(182);
+	var intersection = __webpack_require__(183);
 	var multiPolygonIntersectsBufferedMultiPoint = intersection.multiPolygonIntersectsBufferedMultiPoint;
 	var multiPolygonIntersectsMultiPolygon = intersection.multiPolygonIntersectsMultiPolygon;
 	var multiPolygonIntersectsBufferedMultiLine = intersection.multiPolygonIntersectsBufferedMultiLine;
@@ -28915,12 +28983,12 @@
 
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var EXTENT = __webpack_require__(157).EXTENT;
 	var EXTENT_MIN = EXTENT * -2;
 	var EXTENT_MAX = (EXTENT * 2) - 1;
 	
@@ -28959,15 +29027,15 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var featureFilter = __webpack_require__(157);
-	var Buffer = __webpack_require__(158);
-	var util = __webpack_require__(81);
-	var StructArrayType = __webpack_require__(160);
+	var featureFilter = __webpack_require__(158);
+	var Buffer = __webpack_require__(159);
+	var util = __webpack_require__(82);
+	var StructArrayType = __webpack_require__(161);
 	
 	module.exports = Bucket;
 	
@@ -28979,10 +29047,10 @@
 	 */
 	Bucket.create = function(options) {
 	    var Classes = {
-	        fill: __webpack_require__(161),
-	        line: __webpack_require__(162),
-	        circle: __webpack_require__(163),
-	        symbol: __webpack_require__(164)
+	        fill: __webpack_require__(162),
+	        line: __webpack_require__(163),
+	        circle: __webpack_require__(164),
+	        symbol: __webpack_require__(165)
 	    };
 	    return new Classes[options.layer.type](options);
 	};
@@ -29336,7 +29404,7 @@
 
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29405,12 +29473,12 @@
 
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
 	
-	var assert = __webpack_require__(159);
+	var assert = __webpack_require__(160);
 	
 	module.exports = Buffer;
 	
@@ -29526,10 +29594,10 @@
 	 */
 	Buffer.VERTEX_ATTRIBUTE_ALIGNMENT = 4;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(143).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// http://wiki.commonjs.org/wiki/Unit_Testing/1.0
@@ -29559,7 +29627,7 @@
 	// when used in node, this will actually load the util module we depend on
 	// versus loading the builtin util module as happens otherwise
 	// this is a bug in node module loading as far as I am concerned
-	var util = __webpack_require__(104);
+	var util = __webpack_require__(105);
 	
 	var pSlice = Array.prototype.slice;
 	var hasOwn = Object.prototype.hasOwnProperty;
@@ -29894,14 +29962,14 @@
 
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	// Note: all "sizes" are measured in bytes
 	
-	var assert = __webpack_require__(159);
+	var assert = __webpack_require__(160);
 	
 	module.exports = StructArrayType;
 	
@@ -30221,14 +30289,14 @@
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Bucket = __webpack_require__(156);
-	var util = __webpack_require__(81);
-	var loadGeometry = __webpack_require__(155);
+	var Bucket = __webpack_require__(157);
+	var util = __webpack_require__(82);
+	var loadGeometry = __webpack_require__(156);
 	
 	module.exports = FillBucket;
 	
@@ -30308,14 +30376,14 @@
 
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Bucket = __webpack_require__(156);
-	var util = __webpack_require__(81);
-	var loadGeometry = __webpack_require__(155);
+	var Bucket = __webpack_require__(157);
+	var util = __webpack_require__(82);
+	var loadGeometry = __webpack_require__(156);
 	var EXTENT = Bucket.EXTENT;
 	
 	// NOTE ON EXTRUDE SCALE:
@@ -30746,14 +30814,14 @@
 
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Bucket = __webpack_require__(156);
-	var util = __webpack_require__(81);
-	var loadGeometry = __webpack_require__(155);
+	var Bucket = __webpack_require__(157);
+	var util = __webpack_require__(82);
+	var loadGeometry = __webpack_require__(156);
 	var EXTENT = Bucket.EXTENT;
 	
 	module.exports = CircleBucket;
@@ -30852,25 +30920,25 @@
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
-	var Bucket = __webpack_require__(156);
-	var Anchor = __webpack_require__(165);
-	var getAnchors = __webpack_require__(166);
-	var resolveTokens = __webpack_require__(168);
-	var Quads = __webpack_require__(169);
-	var Shaping = __webpack_require__(170);
-	var resolveText = __webpack_require__(171);
-	var mergeLines = __webpack_require__(172);
-	var clipLine = __webpack_require__(173);
-	var util = __webpack_require__(81);
-	var loadGeometry = __webpack_require__(155);
-	var CollisionFeature = __webpack_require__(174);
+	var Bucket = __webpack_require__(157);
+	var Anchor = __webpack_require__(166);
+	var getAnchors = __webpack_require__(167);
+	var resolveTokens = __webpack_require__(169);
+	var Quads = __webpack_require__(170);
+	var Shaping = __webpack_require__(171);
+	var resolveText = __webpack_require__(172);
+	var mergeLines = __webpack_require__(173);
+	var clipLine = __webpack_require__(174);
+	var util = __webpack_require__(82);
+	var loadGeometry = __webpack_require__(156);
+	var CollisionFeature = __webpack_require__(175);
 	
 	var shapeText = Shaping.shapeText;
 	var shapeIcon = Shaping.shapeIcon;
@@ -31420,12 +31488,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
 	module.exports = Anchor;
 	
@@ -31447,14 +31515,14 @@
 
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var interpolate = __webpack_require__(91);
-	var Anchor = __webpack_require__(165);
-	var checkMaxAngle = __webpack_require__(167);
+	var interpolate = __webpack_require__(92);
+	var Anchor = __webpack_require__(166);
+	var checkMaxAngle = __webpack_require__(168);
 	
 	module.exports = getAnchors;
 	
@@ -31555,7 +31623,7 @@
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31639,7 +31707,7 @@
 
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31662,12 +31730,12 @@
 
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
 	module.exports = {
 	    getIconQuads: getIconQuads,
@@ -31919,7 +31987,7 @@
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32104,12 +32172,12 @@
 
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var resolveTokens = __webpack_require__(168);
+	var resolveTokens = __webpack_require__(169);
 	
 	module.exports = resolveText;
 	
@@ -32151,7 +32219,7 @@
 
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32246,12 +32314,12 @@
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
 	module.exports = clipLine;
 	
@@ -32324,7 +32392,7 @@
 
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32462,7 +32530,7 @@
 
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32625,12 +32693,12 @@
 
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var assert = __webpack_require__(159);
+	var assert = __webpack_require__(160);
 	
 	module.exports = DictionaryCoder;
 	
@@ -32656,21 +32724,21 @@
 
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports.VectorTile = __webpack_require__(178);
-	module.exports.VectorTileFeature = __webpack_require__(180);
-	module.exports.VectorTileLayer = __webpack_require__(179);
+	module.exports.VectorTile = __webpack_require__(179);
+	module.exports.VectorTileFeature = __webpack_require__(181);
+	module.exports.VectorTileLayer = __webpack_require__(180);
 
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var VectorTileLayer = __webpack_require__(179);
+	var VectorTileLayer = __webpack_require__(180);
 	
 	module.exports = VectorTile;
 	
@@ -32688,12 +32756,12 @@
 
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var VectorTileFeature = __webpack_require__(180);
+	var VectorTileFeature = __webpack_require__(181);
 	
 	module.exports = VectorTileLayer;
 	
@@ -32755,12 +32823,12 @@
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
+	var Point = __webpack_require__(88);
 	
 	module.exports = VectorTileFeature;
 	
@@ -32933,12 +33001,12 @@
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var VectorTileFeature = __webpack_require__(177).VectorTileFeature;
+	var VectorTileFeature = __webpack_require__(178).VectorTileFeature;
 	
 	module.exports = Feature;
 	
@@ -33023,7 +33091,7 @@
 
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33193,14 +33261,14 @@
 
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
-	var EXTENT = __webpack_require__(156).EXTENT;
-	var Grid = __webpack_require__(175);
+	var Point = __webpack_require__(88);
+	var EXTENT = __webpack_require__(157).EXTENT;
+	var Grid = __webpack_require__(176);
 	
 	module.exports = CollisionTile;
 	
@@ -33498,14 +33566,14 @@
 
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var StructArrayType = __webpack_require__(160);
-	var util = __webpack_require__(81);
-	var Point = __webpack_require__(87);
+	var StructArrayType = __webpack_require__(161);
+	var util = __webpack_require__(82);
+	var Point = __webpack_require__(88);
 	
 	/**
 	 * A collision box represents an area of the map that that is covered by a
@@ -33583,12 +33651,12 @@
 
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
-	var kdbush = __webpack_require__(186);
+	var kdbush = __webpack_require__(187);
 	
 	module.exports = supercluster;
 	
@@ -33803,14 +33871,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var sort = __webpack_require__(187);
-	var range = __webpack_require__(188);
-	var within = __webpack_require__(189);
+	var sort = __webpack_require__(188);
+	var range = __webpack_require__(189);
+	var within = __webpack_require__(190);
 	
 	module.exports = kdbush;
 	
@@ -33853,7 +33921,7 @@
 
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33925,7 +33993,7 @@
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33977,7 +34045,7 @@
 
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34033,18 +34101,18 @@
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
 	
 	module.exports = geojsonvt;
 	
-	var convert = __webpack_require__(191),     // GeoJSON conversion and preprocessing
-	    transform = __webpack_require__(193), // coordinate transformation
-	    clip = __webpack_require__(194),           // stripe clipping algorithm
-	    wrap = __webpack_require__(195),           // date line processing
-	    createTile = __webpack_require__(196);     // final simplified tile generation
+	var convert = __webpack_require__(192),     // GeoJSON conversion and preprocessing
+	    transform = __webpack_require__(194), // coordinate transformation
+	    clip = __webpack_require__(195),           // stripe clipping algorithm
+	    wrap = __webpack_require__(196),           // date line processing
+	    createTile = __webpack_require__(197);     // final simplified tile generation
 	
 	
 	function geojsonvt(data, options) {
@@ -34280,14 +34348,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = convert;
 	
-	var simplify = __webpack_require__(192);
+	var simplify = __webpack_require__(193);
 	
 	// converts GeoJSON feature into an intermediate projected JSON vector format with simplification data
 	
@@ -34430,7 +34498,7 @@
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34510,7 +34578,7 @@
 
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34557,7 +34625,7 @@
 
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34714,12 +34782,12 @@
 
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var clip = __webpack_require__(194);
+	var clip = __webpack_require__(195);
 	
 	module.exports = wrap;
 	
@@ -34781,7 +34849,7 @@
 
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34872,10 +34940,10 @@
 
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var geojsonArea = __webpack_require__(198);
+	var geojsonArea = __webpack_require__(199);
 	
 	module.exports = rewind;
 	
@@ -34927,10 +34995,10 @@
 
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var wgs84 = __webpack_require__(199);
+	var wgs84 = __webpack_require__(200);
 	
 	module.exports.geometry = geometry;
 	module.exports.ring = ringArea;
@@ -34997,7 +35065,7 @@
 
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports) {
 
 	module.exports.RADIUS = 6378137;
@@ -35006,14 +35074,14 @@
 
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Point = __webpack_require__(87);
-	var VectorTileFeature = __webpack_require__(177).VectorTileFeature;
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var Point = __webpack_require__(88);
+	var VectorTileFeature = __webpack_require__(178).VectorTileFeature;
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = GeoJSONWrapper;
 	
@@ -35079,12 +35147,12 @@
 
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Pbf = __webpack_require__(141)
-	var vtpb = __webpack_require__(202)
-	var GeoJSONWrapper = __webpack_require__(203)
+	var Pbf = __webpack_require__(142)
+	var vtpb = __webpack_require__(203)
+	var GeoJSONWrapper = __webpack_require__(204)
 	
 	module.exports = fromVectorTileJs
 	module.exports.fromVectorTileJs = fromVectorTileJs
@@ -35238,7 +35306,7 @@
 
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35348,13 +35416,13 @@
 
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var Point = __webpack_require__(87)
-	var VectorTileFeature = __webpack_require__(177).VectorTileFeature
+	var Point = __webpack_require__(88)
+	var VectorTileFeature = __webpack_require__(178).VectorTileFeature
 	
 	module.exports = GeoJSONWrapper
 	
@@ -35419,7 +35487,7 @@
 
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35455,17 +35523,17 @@
 
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var ajax = __webpack_require__(134);
-	var browser = __webpack_require__(84);
-	var TilePyramid = __webpack_require__(206);
-	var normalizeURL = __webpack_require__(135).normalizeSourceURL;
-	var TileCoord = __webpack_require__(208);
+	var util = __webpack_require__(82);
+	var ajax = __webpack_require__(135);
+	var browser = __webpack_require__(85);
+	var TilePyramid = __webpack_require__(207);
+	var normalizeURL = __webpack_require__(136).normalizeSourceURL;
+	var TileCoord = __webpack_require__(209);
 	
 	exports._loadTileJSON = function(options) {
 	    var loaded = function(err, tileJSON) {
@@ -35623,11 +35691,11 @@
 	exports.create = function(source) {
 	    // This is not at file scope in order to avoid a circular require.
 	    var sources = {
-	        vector: __webpack_require__(210),
-	        raster: __webpack_require__(211),
-	        geojson: __webpack_require__(212),
-	        video: __webpack_require__(214),
-	        image: __webpack_require__(216)
+	        vector: __webpack_require__(211),
+	        raster: __webpack_require__(212),
+	        geojson: __webpack_require__(213),
+	        video: __webpack_require__(215),
+	        image: __webpack_require__(217)
 	    };
 	
 	    return exports.is(source) ? source : new sources[source.type](source);
@@ -35636,11 +35704,11 @@
 	exports.is = function(source) {
 	    // This is not at file scope in order to avoid a circular require.
 	    var sources = {
-	        vector: __webpack_require__(210),
-	        raster: __webpack_require__(211),
-	        geojson: __webpack_require__(212),
-	        video: __webpack_require__(214),
-	        image: __webpack_require__(216)
+	        vector: __webpack_require__(211),
+	        raster: __webpack_require__(212),
+	        geojson: __webpack_require__(213),
+	        video: __webpack_require__(215),
+	        image: __webpack_require__(217)
 	    };
 	
 	    for (var type in sources) {
@@ -35654,18 +35722,18 @@
 
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Tile = __webpack_require__(207);
-	var TileCoord = __webpack_require__(208);
-	var Point = __webpack_require__(87);
-	var Cache = __webpack_require__(209);
-	var Coordinate = __webpack_require__(83);
-	var util = __webpack_require__(81);
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var Tile = __webpack_require__(208);
+	var TileCoord = __webpack_require__(209);
+	var Point = __webpack_require__(88);
+	var Cache = __webpack_require__(210);
+	var Coordinate = __webpack_require__(84);
+	var util = __webpack_require__(82);
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = TilePyramid;
 	
@@ -36123,20 +36191,20 @@
 
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var Bucket = __webpack_require__(156);
-	var FeatureIndex = __webpack_require__(154);
-	var vt = __webpack_require__(177);
-	var Protobuf = __webpack_require__(141);
-	var GeoJSONFeature = __webpack_require__(181);
-	var featureFilter = __webpack_require__(157);
-	var CollisionTile = __webpack_require__(183);
-	var CollisionBoxArray = __webpack_require__(184);
+	var util = __webpack_require__(82);
+	var Bucket = __webpack_require__(157);
+	var FeatureIndex = __webpack_require__(155);
+	var vt = __webpack_require__(178);
+	var Protobuf = __webpack_require__(142);
+	var GeoJSONFeature = __webpack_require__(182);
+	var featureFilter = __webpack_require__(158);
+	var CollisionTile = __webpack_require__(184);
+	var CollisionBoxArray = __webpack_require__(185);
 	
 	module.exports = Tile;
 	
@@ -36304,13 +36372,13 @@
 
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var assert = __webpack_require__(159);
-	var Coordinate = __webpack_require__(83);
+	var assert = __webpack_require__(160);
+	var Coordinate = __webpack_require__(84);
 	
 	module.exports = TileCoord;
 	
@@ -36487,7 +36555,7 @@
 
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36616,15 +36684,15 @@
 
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var Evented = __webpack_require__(85);
-	var Source = __webpack_require__(205);
-	var normalizeURL = __webpack_require__(135).normalizeTileURL;
+	var util = __webpack_require__(82);
+	var Evented = __webpack_require__(86);
+	var Source = __webpack_require__(206);
+	var normalizeURL = __webpack_require__(136).normalizeTileURL;
 	
 	module.exports = VectorTileSource;
 	
@@ -36748,16 +36816,16 @@
 
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var ajax = __webpack_require__(134);
-	var Evented = __webpack_require__(85);
-	var Source = __webpack_require__(205);
-	var normalizeURL = __webpack_require__(135).normalizeTileURL;
+	var util = __webpack_require__(82);
+	var ajax = __webpack_require__(135);
+	var Evented = __webpack_require__(86);
+	var Source = __webpack_require__(206);
+	var normalizeURL = __webpack_require__(136).normalizeTileURL;
 	
 	module.exports = RasterTileSource;
 	
@@ -36872,17 +36940,17 @@
 
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var Evented = __webpack_require__(85);
-	var TilePyramid = __webpack_require__(206);
-	var Source = __webpack_require__(205);
-	var urlResolve = __webpack_require__(213);
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var util = __webpack_require__(82);
+	var Evented = __webpack_require__(86);
+	var TilePyramid = __webpack_require__(207);
+	var Source = __webpack_require__(206);
+	var urlResolve = __webpack_require__(214);
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = GeoJSONSource;
 	
@@ -37110,7 +37178,7 @@
 
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;// Copyright 2014 Simon Lydell
@@ -37163,19 +37231,19 @@
 
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var Tile = __webpack_require__(207);
-	var TileCoord = __webpack_require__(208);
-	var LngLat = __webpack_require__(215);
-	var Point = __webpack_require__(87);
-	var Evented = __webpack_require__(85);
-	var ajax = __webpack_require__(134);
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var util = __webpack_require__(82);
+	var Tile = __webpack_require__(208);
+	var TileCoord = __webpack_require__(209);
+	var LngLat = __webpack_require__(216);
+	var Point = __webpack_require__(88);
+	var Evented = __webpack_require__(86);
+	var ajax = __webpack_require__(135);
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = VideoSource;
 	
@@ -37358,14 +37426,14 @@
 
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = LngLat;
 	
-	var wrap = __webpack_require__(81).wrap;
+	var wrap = __webpack_require__(82).wrap;
 	
 	/**
 	 * Create a longitude, latitude object from a given longitude and latitude pair in degrees.
@@ -37456,19 +37524,19 @@
 
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var Tile = __webpack_require__(207);
-	var TileCoord = __webpack_require__(208);
-	var LngLat = __webpack_require__(215);
-	var Point = __webpack_require__(87);
-	var Evented = __webpack_require__(85);
-	var ajax = __webpack_require__(134);
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var util = __webpack_require__(82);
+	var Tile = __webpack_require__(208);
+	var TileCoord = __webpack_require__(209);
+	var LngLat = __webpack_require__(216);
+	var Point = __webpack_require__(88);
+	var Evented = __webpack_require__(86);
+	var ajax = __webpack_require__(135);
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = ImageSource;
 	
@@ -37623,18 +37691,18 @@
 
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var browser = __webpack_require__(84);
-	var mat4 = __webpack_require__(218).mat4;
-	var FrameHistory = __webpack_require__(228);
-	var TilePyramid = __webpack_require__(206);
-	var EXTENT = __webpack_require__(156).EXTENT;
-	var pixelsToTileUnits = __webpack_require__(229);
-	var util = __webpack_require__(81);
+	var browser = __webpack_require__(85);
+	var mat4 = __webpack_require__(219).mat4;
+	var FrameHistory = __webpack_require__(229);
+	var TilePyramid = __webpack_require__(207);
+	var EXTENT = __webpack_require__(157).EXTENT;
+	var pixelsToTileUnits = __webpack_require__(230);
+	var util = __webpack_require__(82);
 	
 	module.exports = Painter;
 	
@@ -37677,7 +37745,7 @@
 	    this.lineWidthRange = gl.getParameter(gl.ALIASED_LINE_WIDTH_RANGE);
 	}
 	
-	util.extend(Painter.prototype, __webpack_require__(230));
+	util.extend(Painter.prototype, __webpack_require__(231));
 	
 	/*
 	 * Update the GL viewport, projection matrix, and transforms to compensate
@@ -37827,13 +37895,13 @@
 	};
 	
 	var draw = {
-	    symbol: __webpack_require__(232),
-	    circle: __webpack_require__(234),
-	    line: __webpack_require__(235),
-	    fill: __webpack_require__(236),
-	    raster: __webpack_require__(237),
-	    background: __webpack_require__(238),
-	    debug: __webpack_require__(239)
+	    symbol: __webpack_require__(233),
+	    circle: __webpack_require__(235),
+	    line: __webpack_require__(236),
+	    fill: __webpack_require__(237),
+	    raster: __webpack_require__(238),
+	    background: __webpack_require__(239),
+	    debug: __webpack_require__(240)
 	};
 	
 	Painter.prototype.render = function(style, options) {
@@ -38005,7 +38073,7 @@
 
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38036,18 +38104,18 @@
 	THE SOFTWARE. */
 	// END HEADER
 	
-	exports.glMatrix = __webpack_require__(219);
-	exports.mat2 = __webpack_require__(220);
-	exports.mat2d = __webpack_require__(221);
-	exports.mat3 = __webpack_require__(222);
-	exports.mat4 = __webpack_require__(223);
-	exports.quat = __webpack_require__(224);
-	exports.vec2 = __webpack_require__(227);
-	exports.vec3 = __webpack_require__(225);
-	exports.vec4 = __webpack_require__(226);
+	exports.glMatrix = __webpack_require__(220);
+	exports.mat2 = __webpack_require__(221);
+	exports.mat2d = __webpack_require__(222);
+	exports.mat3 = __webpack_require__(223);
+	exports.mat4 = __webpack_require__(224);
+	exports.quat = __webpack_require__(225);
+	exports.vec2 = __webpack_require__(228);
+	exports.vec3 = __webpack_require__(226);
+	exports.vec4 = __webpack_require__(227);
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -38123,7 +38191,7 @@
 
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -38146,7 +38214,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 2x2 Matrix
@@ -38565,7 +38633,7 @@
 
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -38588,7 +38656,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 2x3 Matrix
@@ -39040,7 +39108,7 @@
 
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -39063,7 +39131,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 3x3 Matrix
@@ -39792,7 +39860,7 @@
 
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -39815,7 +39883,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 4x4 Matrix
@@ -41934,7 +42002,7 @@
 
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -41957,10 +42025,10 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
-	var mat3 = __webpack_require__(222);
-	var vec3 = __webpack_require__(225);
-	var vec4 = __webpack_require__(226);
+	var glMatrix = __webpack_require__(220);
+	var mat3 = __webpack_require__(223);
+	var vec3 = __webpack_require__(226);
+	var vec4 = __webpack_require__(227);
 	
 	/**
 	 * @class Quaternion
@@ -42540,7 +42608,7 @@
 
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -42563,7 +42631,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 3 Dimensional Vector
@@ -43323,7 +43391,7 @@
 
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -43346,7 +43414,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 4 Dimensional Vector
@@ -43938,7 +44006,7 @@
 
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
@@ -43961,7 +44029,7 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	THE SOFTWARE. */
 	
-	var glMatrix = __webpack_require__(219);
+	var glMatrix = __webpack_require__(220);
 	
 	/**
 	 * @class 2 Dimensional Vector
@@ -44531,7 +44599,7 @@
 
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -44607,12 +44675,12 @@
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Bucket = __webpack_require__(156);
+	var Bucket = __webpack_require__(157);
 	
 	/**
 	 * Converts a pixel value at a the given zoom level to tile units.
@@ -44636,15 +44704,15 @@
 
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	
-	var path = __webpack_require__(231);
-	var assert = __webpack_require__(159);
-	var util = __webpack_require__(81);
+	var path = __webpack_require__(232);
+	var assert = __webpack_require__(160);
+	var util = __webpack_require__(82);
 	
 	// readFileSync calls must be written out long-form for brfs.
 	var definitions = {
@@ -44792,7 +44860,7 @@
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -45023,17 +45091,17 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var mat4 = __webpack_require__(218).mat4;
+	var mat4 = __webpack_require__(219).mat4;
 	
-	var browser = __webpack_require__(84);
-	var drawCollisionDebug = __webpack_require__(233);
-	var util = __webpack_require__(81);
-	var pixelsToTileUnits = __webpack_require__(229);
+	var browser = __webpack_require__(85);
+	var drawCollisionDebug = __webpack_require__(234);
+	var util = __webpack_require__(82);
+	var pixelsToTileUnits = __webpack_require__(230);
 	
 	
 	module.exports = drawSymbols;
@@ -45228,7 +45296,7 @@
 
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45274,12 +45342,12 @@
 
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var browser = __webpack_require__(84);
+	var browser = __webpack_require__(85);
 	
 	module.exports = drawCircles;
 	
@@ -45332,15 +45400,15 @@
 
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var browser = __webpack_require__(84);
-	var mat2 = __webpack_require__(218).mat2;
-	var util = __webpack_require__(81);
-	var pixelsToTileUnits = __webpack_require__(229);
+	var browser = __webpack_require__(85);
+	var mat2 = __webpack_require__(219).mat2;
+	var util = __webpack_require__(82);
+	var pixelsToTileUnits = __webpack_require__(230);
 	
 	/**
 	 * Draw a line. Under the hood this will read elements from
@@ -45515,13 +45583,13 @@
 
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var pixelsToTileUnits = __webpack_require__(229);
+	var util = __webpack_require__(82);
+	var pixelsToTileUnits = __webpack_require__(230);
 	
 	module.exports = draw;
 	
@@ -45770,12 +45838,12 @@
 
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
+	var util = __webpack_require__(82);
 	
 	module.exports = drawRaster;
 	
@@ -45911,15 +45979,15 @@
 
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var TilePyramid = __webpack_require__(206);
+	var TilePyramid = __webpack_require__(207);
 	var pyramid = new TilePyramid({ tileSize: 512 });
-	var util = __webpack_require__(81);
-	var pixelsToTileUnits = __webpack_require__(229);
+	var util = __webpack_require__(82);
+	var pixelsToTileUnits = __webpack_require__(230);
 	
 	module.exports = drawBackground;
 	
@@ -46018,15 +46086,15 @@
 
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var textVertices = __webpack_require__(240);
-	var browser = __webpack_require__(84);
-	var mat4 = __webpack_require__(218).mat4;
-	var EXTENT = __webpack_require__(156).EXTENT;
+	var textVertices = __webpack_require__(241);
+	var browser = __webpack_require__(85);
+	var mat4 = __webpack_require__(219).mat4;
+	var EXTENT = __webpack_require__(157).EXTENT;
 	
 	module.exports = drawDebug;
 	
@@ -46079,7 +46147,7 @@
 
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -46216,19 +46284,19 @@
 
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var LngLat = __webpack_require__(215),
-	    Point = __webpack_require__(87),
-	    Coordinate = __webpack_require__(83),
-	    wrap = __webpack_require__(81).wrap,
-	    interp = __webpack_require__(91),
-	    TileCoord = __webpack_require__(208),
-	    EXTENT = __webpack_require__(156).EXTENT,
-	    glmatrix = __webpack_require__(218);
+	var LngLat = __webpack_require__(216),
+	    Point = __webpack_require__(88),
+	    Coordinate = __webpack_require__(84),
+	    wrap = __webpack_require__(82).wrap,
+	    interp = __webpack_require__(92),
+	    TileCoord = __webpack_require__(209),
+	    EXTENT = __webpack_require__(157).EXTENT,
+	    glmatrix = __webpack_require__(219);
 	
 	var vec4 = glmatrix.vec4,
 	    mat4 = glmatrix.mat4,
@@ -46663,7 +46731,7 @@
 
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46676,7 +46744,7 @@
 	 */
 	module.exports = Hash;
 	
-	var util = __webpack_require__(81);
+	var util = __webpack_require__(82);
 	
 	function Hash() {
 	    util.bindAll([
@@ -46739,24 +46807,24 @@
 
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var handlers = {
-	    scrollZoom: __webpack_require__(244),
-	    boxZoom: __webpack_require__(245),
-	    dragRotate: __webpack_require__(247),
-	    dragPan: __webpack_require__(248),
-	    keyboard: __webpack_require__(249),
-	    doubleClickZoom: __webpack_require__(250),
-	    touchZoomRotate: __webpack_require__(251)
+	    scrollZoom: __webpack_require__(245),
+	    boxZoom: __webpack_require__(246),
+	    dragRotate: __webpack_require__(248),
+	    dragPan: __webpack_require__(249),
+	    keyboard: __webpack_require__(250),
+	    doubleClickZoom: __webpack_require__(251),
+	    touchZoomRotate: __webpack_require__(252)
 	};
 	
-	var DOM = __webpack_require__(86),
-	    util = __webpack_require__(81),
-	    Point = __webpack_require__(87);
+	var DOM = __webpack_require__(87),
+	    util = __webpack_require__(82),
+	    Point = __webpack_require__(88);
 	
 	module.exports = Interaction;
 	
@@ -47070,14 +47138,14 @@
 
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var DOM = __webpack_require__(86),
-	    browser = __webpack_require__(84),
-	    util = __webpack_require__(81);
+	var DOM = __webpack_require__(87),
+	    browser = __webpack_require__(85),
+	    util = __webpack_require__(82);
 	
 	module.exports = ScrollZoomHandler;
 	
@@ -47252,14 +47320,14 @@
 
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var DOM = __webpack_require__(86),
-	    LngLatBounds = __webpack_require__(246),
-	    util = __webpack_require__(81);
+	var DOM = __webpack_require__(87),
+	    LngLatBounds = __webpack_require__(247),
+	    util = __webpack_require__(82);
 	
 	module.exports = BoxZoomHandler;
 	
@@ -47432,14 +47500,14 @@
 
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = LngLatBounds;
 	
-	var LngLat = __webpack_require__(215);
+	var LngLat = __webpack_require__(216);
 	
 	/**
 	 * Creates a bounding box from the given pair of points. If parameteres are omitted, a `null` bounding box is created.
@@ -47610,14 +47678,14 @@
 
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var DOM = __webpack_require__(86),
-	    Point = __webpack_require__(87),
-	    util = __webpack_require__(81);
+	var DOM = __webpack_require__(87),
+	    Point = __webpack_require__(88),
+	    util = __webpack_require__(82);
 	
 	module.exports = DragRotateHandler;
 	
@@ -47858,13 +47926,13 @@
 
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var DOM = __webpack_require__(86),
-	    util = __webpack_require__(81);
+	var DOM = __webpack_require__(87),
+	    util = __webpack_require__(82);
 	
 	module.exports = DragPanHandler;
 	
@@ -48092,7 +48160,7 @@
 
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -48220,7 +48288,7 @@
 
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -48279,13 +48347,13 @@
 
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var DOM = __webpack_require__(86),
-	    util = __webpack_require__(81);
+	var DOM = __webpack_require__(87),
+	    util = __webpack_require__(82);
 	
 	module.exports = TouchZoomRotateHandler;
 	
@@ -48492,17 +48560,17 @@
 
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var util = __webpack_require__(81);
-	var interpolate = __webpack_require__(91);
-	var browser = __webpack_require__(84);
-	var LngLat = __webpack_require__(215);
-	var LngLatBounds = __webpack_require__(246);
-	var Point = __webpack_require__(87);
+	var util = __webpack_require__(82);
+	var interpolate = __webpack_require__(92);
+	var browser = __webpack_require__(85);
+	var LngLat = __webpack_require__(216);
+	var LngLatBounds = __webpack_require__(247);
+	var Point = __webpack_require__(88);
 	
 	/**
 	 * Options common to Map#jumpTo, Map#easeTo, and Map#flyTo, controlling the destination
@@ -49265,14 +49333,14 @@
 
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Control = __webpack_require__(254);
-	var DOM = __webpack_require__(86);
-	var util = __webpack_require__(81);
+	var Control = __webpack_require__(255);
+	var DOM = __webpack_require__(87);
+	var util = __webpack_require__(82);
 	
 	module.exports = Attribution;
 	
@@ -49335,7 +49403,7 @@
 
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -49390,14 +49458,14 @@
 
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Control = __webpack_require__(254);
-	var DOM = __webpack_require__(86);
-	var util = __webpack_require__(81);
+	var Control = __webpack_require__(255);
+	var DOM = __webpack_require__(87);
+	var util = __webpack_require__(82);
 	
 	module.exports = Navigation;
 	
@@ -49512,15 +49580,15 @@
 
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Control = __webpack_require__(254);
-	var browser = __webpack_require__(84);
-	var DOM = __webpack_require__(86);
-	var util = __webpack_require__(81);
+	var Control = __webpack_require__(255);
+	var browser = __webpack_require__(85);
+	var DOM = __webpack_require__(87);
+	var util = __webpack_require__(82);
 	
 	module.exports = Geolocate;
 	
@@ -49593,17 +49661,17 @@
 
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = Popup;
 	
-	var util = __webpack_require__(81);
-	var Evented = __webpack_require__(85);
-	var DOM = __webpack_require__(86);
-	var LngLat = __webpack_require__(215);
+	var util = __webpack_require__(82);
+	var Evented = __webpack_require__(86);
+	var DOM = __webpack_require__(87);
+	var LngLat = __webpack_require__(216);
 	
 	/**
 	 * Creates a popup component
@@ -49811,7 +49879,7 @@
 
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process, console, global, setImmediate) {/* @preserve
@@ -55269,10 +55337,10 @@
 	
 	},{"./es5":13}]},{},[4])(4)
 	});                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(4), (function() { return this; }()), __webpack_require__(259).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(4), (function() { return this; }()), __webpack_require__(260).setImmediate))
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(3).nextTick;
@@ -55351,26 +55419,26 @@
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(259).setImmediate, __webpack_require__(259).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(260).setImmediate, __webpack_require__(260).clearImmediate))
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div>\n <!--  <nav id='menu'>\n    <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n    <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n  </nav> -->\n  <div id='map'></div>\n</div>\n";
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {var __vue_script__, __vue_template__
-	__webpack_require__(262)
-	__vue_script__ = __webpack_require__(265)
+	__webpack_require__(263)
+	__vue_script__ = __webpack_require__(266)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] vue/components/about.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(266)
+	__vue_template__ = __webpack_require__(267)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -55390,13 +55458,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(263);
+	var content = __webpack_require__(264);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(34)(content, {});
@@ -55416,7 +55484,7 @@
 	}
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(33)();
@@ -55424,19 +55492,19 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n.index-first-section {\n  position: relative;\n  height: 800px;\n  width: auto;\n  background-color: #f3f3f3;\n  background: url(" + __webpack_require__(264) + ") center 30% no-repeat;\n  background-size: cover;\n}\n\n.logo-font {\n  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n  line-height: 1;\n  color: #767777;\n  font-weight: 500;\n}\n\n.index-slogan {\n  font-size: 60px;\n  padding-top: 160px;\n}\n\n.index-sub-slogan {\n  font-size: 21px;\n  padding-top: 24px;\n}\n", "", {"version":3,"sources":["/./vue/components/about.vue?48cf374b"],"names":[],"mappings":";;AAyBA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,0BAAA;EACA,+DAAA;EACA,uBAAA;CACA;;AAEA;EACA,wDAAA;EACA,eAAA;EACA,eAAA;EACA,iBAAA;CACA;;AAEA;EACA,gBAAA;EACA,mBAAA;CACA;;AAEA;EACA,gBAAA;EACA,kBAAA;CACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: 'Introduction page'\n      };\n    },\n    route: { },\n    created () {},\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 800px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 160px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n.index-first-section {\n  position: relative;\n  height: 800px;\n  width: auto;\n  background-color: #f3f3f3;\n  background: url(" + __webpack_require__(265) + ") center 30% no-repeat;\n  background-size: cover;\n}\n\n.logo-font {\n  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n  line-height: 1;\n  color: #767777;\n  font-weight: 500;\n}\n\n.index-slogan {\n  font-size: 60px;\n  padding-top: 160px;\n}\n\n.index-sub-slogan {\n  font-size: 21px;\n  padding-top: 24px;\n}\n", "", {"version":3,"sources":["/./vue/components/about.vue?48cf374b"],"names":[],"mappings":";;AAyBA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,0BAAA;EACA,+DAAA;EACA,uBAAA;CACA;;AAEA;EACA,wDAAA;EACA,eAAA;EACA,eAAA;EACA,iBAAA;CACA;;AAEA;EACA,gBAAA;EACA,mBAAA;CACA;;AAEA;EACA,gBAAA;EACA,kBAAA;CACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: 'Introduction page'\n      };\n    },\n    route: { },\n    created () {},\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 800px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 160px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cd09afada5c49be5b2e00d95a35c9b6d.jpg";
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55500,23 +55568,23 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"index-first-section mdl-typography--text-center\">\n  <div class=\"logo-font index-slogan\">{{Description}}</div>\n  <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n</div>\n";
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {var __vue_script__, __vue_template__
-	__webpack_require__(268)
-	__vue_script__ = __webpack_require__(270)
+	__webpack_require__(269)
+	__vue_script__ = __webpack_require__(271)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] vue/components/signUp.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(271)
+	  console.warn("[vue-loader] vue/components/addVenue.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(272)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -55526,7 +55594,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/charlie/Charlie/Mywork/side-project/openVenue/openVenue-frontend/vue/components/signUp.vue"
+	  var id = "/Users/charlie/Charlie/Mywork/side-project/openVenue/openVenue-frontend/vue/components/addVenue.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -55536,13 +55604,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(269);
+	var content = __webpack_require__(270);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(34)(content, {});
@@ -55551,8 +55619,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./signUp.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./signUp.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./addVenue.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./addVenue.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -55562,7 +55630,7 @@
 	}
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(33)();
@@ -55570,15 +55638,61 @@
 	
 	
 	// module
-	exports.push([module.id, "\nimg.article-image {\n  width: 100%;\n  height: auto;\n}\n.form-max-width {\n  max-width: 900px;\n  margin: auto;\n  width: 100%;\n}\n.form-max-width form {\n  max-width: 550px;\n  margin: auto;\n}\n.form-max-width h3 {\n  margin-top: 36px;\n  margin-bottom: 16px;\n}\n.form-max-width .mdl-textfield {\n  width: 100%;\n}\n.form-max-width .mdl-checkbox {\n  width: 100%;\n  margin-bottom: 10px;\n}\n.form-max-width .mdl-selectfield {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/./vue/components/signUp.vue?77d31814"],"names":[],"mappings":";AAmGA;EACA,YAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;EACA,YAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA;AACA;EACA,YAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA","file":"signUp.vue","sourcesContent":["<template>\n  <div class=\"mdl-grid form-max-width\">\n    <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n      <div class=\"mdl-card__media\">\n          <img class=\"article-image\" src=\"../assets/contact-image.jpg\" border=\"0\" alt=\"\">\n      </div>\n      <div class=\"mdl-card__supporting-text\">\n          <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n            <h3>Sign up</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n              <label class=\"mdl-textfield__label\" for=\"Name\">User Name</label>\n              <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n              <label class=\"mdl-textfield__label\" for=\"Pwd\">Password</label>\n              <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"password\" id=\"PwdCf\" v-model=\"PasswordConfirm\">\n              <label class=\"mdl-textfield__label\" for=\"PwdCf\">Password Confirm</label>\n              <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n              <label class=\"mdl-textfield__label\" for=\"WeChat\">WeChat</label>\n            </div>\n            <p>\n              <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n                Submit\n              </button>\n            </p>\n          </form>\n          <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n            <div class=\"mdl-snackbar__text\"></div>\n            <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n          </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\n  import auth from '../auth'\n\n  export default {\n    name: 'AddVenueView',\n    data () {\n      return {\n        UserName: '',\n        Password: '',\n        PasswordConfirm: '',\n        Wechat: ''\n      };\n    },\n    watch: {},\n    route: {},\n    created () {},\n    destroyed () {},\n    methods: {\n      onSubmit () {\n        if(!this.UserName) {\n          this.popUp('You must set the username.')\n        }\n        else if(!this.Password) {\n          this.popUp('You must set the password.')\n        }\n        else if(!this.Wechat) {\n          this.popUp('You must set the Wechat.')\n        }\n        else if(this.Password !== this.PasswordConfirm) {\n          this.popUp('The password confirm doesn\\'t match the password.')\n        }\n        else {\n          //sign up\n          let credentials = {\n            data: {\n              username: this.UserName,\n              password: this.Password\n            }\n          };\n          auth.signup(this, credentials, 'map').then().catch((err) => {\n            // TODO: Output error msg \n            this.popUp('Sign up error');\n          });\n        }\n      },\n      popUp (msg) {\n        let snackbarContainer = document.querySelector('#snackbar');\n        let data = {message: msg};\n        snackbarContainer.MaterialSnackbar.showSnackbar(data);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style>\n  img.article-image {\n    width: 100%;\n    height: auto;\n  }\n  .form-max-width {\n    max-width: 900px;\n    margin: auto;\n    width: 100%;\n  }\n  .form-max-width form {\n    max-width: 550px;\n    margin: auto;\n  }\n  .form-max-width h3 {\n    margin-top: 36px;\n    margin-bottom: 16px;\n  }\n  .form-max-width .mdl-textfield {\n    width: 100%;\n  }\n  .form-max-width .mdl-checkbox {\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  .form-max-width .mdl-selectfield {\n    width: 100%;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\nimg.article-image {\n  width: 100%;\n  height: auto;\n}\n.form-max-width {\n  max-width: 900px;\n  margin: auto;\n  width: 100%;\n}\n.form-max-width form {\n  max-width: 550px;\n  margin: auto;\n}\n.form-max-width h3 {\n  margin-top: 36px;\n  margin-bottom: 16px;\n}\n.form-max-width .mdl-textfield {\n  width: 100%;\n}\n.form-max-width .mdl-checkbox {\n  width: 100%;\n  margin-bottom: 10px;\n}\n.form-max-width .mdl-selectfield {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/./vue/components/addVenue.vue?18f42e58"],"names":[],"mappings":";AA8GA;EACA,YAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;EACA,YAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA;AACA;EACA,YAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA","file":"addVenue.vue","sourcesContent":["<template>\n  <div class=\"mdl-grid form-max-width\">\n    <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n      <div class=\"mdl-card__media\">\n          <img class=\"article-image\" src=\"../assets/contact-image.jpg\" border=\"0\" alt=\"\">\n      </div>\n      <div class=\"mdl-card__supporting-text\">\n          <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n            <h3>房源信息</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n              <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n              <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n            </div>\n            <h3>房主/寻合租者</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n              <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n              <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n              <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n            </div>\n            <p>\n              <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n                Submit\n              </button>\n            </p>\n          </form>\n      </div>\n    </div>\n    <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n      <div class=\"mdl-snackbar__text\"></div>\n      <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n    </div>\n  </div>\n</template>\n\n<script>\n  'use strict';\n  import auth from '../auth'\n\n  export default {\n    name: 'AddVenueView',\n    data () {\n      return {\n        VenueName: '',\n        UserName: '',\n        Password: '',\n        Wechat: '',\n        Other: ''\n      };\n    },\n    watch: {},\n    route: {},\n    created () {},\n    destroyed () {},\n    methods: {\n      onSubmit () {\n        if(!this.VenueName) {\n          this.popUp('You must set the fuck venue name.')\n        }\n        else if(!this.Other) {\n          this.popUp('You must set the information.')\n        }\n        else if(!this.UserName) {\n          this.popUp('You must set the fuck username.')\n        }\n        else if(!this.Password) {\n          this.popUp('You must set the fuck password.')\n        }\n        else if(!this.Wechat) {\n          this.popUp('You must set the fuck wechat.')\n        } \n        else {\n          //sign up\n          let credentials = {\n            data: {\n              username: this.UserName,\n              password: this.Password,\n              wechat: this.Wechat,\n              venueName: this.VenueName,\n              other: this.Other\n            }\n          };\n          auth.addVenue(this, credentials, 'map').then((res) => {\n            if(res) {\n              this.popUp(res);\n            }\n          });\n        }\n      },\n      popUp (msg) {\n        let snackbarContainer = document.querySelector('#snackbar');\n        let data = {message: msg};\n        snackbarContainer.MaterialSnackbar.showSnackbar(data);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style>\n  img.article-image {\n    width: 100%;\n    height: auto;\n  }\n  .form-max-width {\n    max-width: 900px;\n    margin: auto;\n    width: 100%;\n  }\n  .form-max-width form {\n    max-width: 550px;\n    margin: auto;\n  }\n  .form-max-width h3 {\n    margin-top: 36px;\n    margin-bottom: 16px;\n  }\n  .form-max-width .mdl-textfield {\n    width: 100%;\n  }\n  .form-max-width .mdl-checkbox {\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  .form-max-width .mdl-selectfield {\n    width: 100%;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// <template>
+	//   <div class="mdl-grid form-max-width">
+	//     <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+	//       <div class="mdl-card__media">
+	//           <img class="article-image" src="../assets/contact-image.jpg" border="0" alt="">
+	//       </div>
+	//       <div class="mdl-card__supporting-text">
+	//           <form id="signIn" @submit.prevent.stop="onSubmit">
+	//             <h3>房源信息</h3>
+	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	//               <input class="mdl-textfield__input" type="text" id="venueName" v-model="VenueName">
+	//               <label class="mdl-textfield__label" for="venueName">房源叫啥</label>
+	//             </div>
+	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	//               <textarea class="mdl-textfield__input" type="text" rows="5" id="Other" v-model="Other"></textarea>
+	//               <label class="mdl-textfield__label" for="Other">还有啥！？(房子的信息，租房条件，基友要求等等)</label>
+	//             </div>
+	//             <h3>房主/寻合租者</h3>
+	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	//               <input class="mdl-textfield__input" type="text" id="Name" v-model="UserName">
+	//               <label class="mdl-textfield__label" for="Name">你叫啥</label>
+	//             </div>
+	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	//               <input class="mdl-textfield__input" type="password" id="Pwd" v-model="Password">
+	//               <label class="mdl-textfield__label" for="Pwd">密码</label>
+	//             </div>
+	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	//               <input class="mdl-textfield__input" type="text" id="WeChat" v-model="Wechat">
+	//               <label class="mdl-textfield__label" for="WeChat">微信</label>
+	//             </div>
+	//             <p>
+	//               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+	//                 Submit
+	//               </button>
+	//             </p>
+	//           </form>
+	//       </div>
+	//     </div>
+	//     <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+	//       <div class="mdl-snackbar__text"></div>
+	//       <button class="mdl-snackbar__action" type="button"></button>
+	//     </div>
+	//   </div>
+	// </template>
+	//
+	// <script>
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -55595,10 +55709,11 @@
 	  name: 'AddVenueView',
 	  data: function data() {
 	    return {
+	      VenueName: '',
 	      UserName: '',
 	      Password: '',
-	      PasswordConfirm: '',
-	      Wechat: ''
+	      Wechat: '',
+	      Other: ''
 	    };
 	  },
 	
@@ -55611,25 +55726,31 @@
 	    onSubmit: function onSubmit() {
 	      var _this = this;
 	
-	      if (!this.UserName) {
-	        this.popUp('You must set the username.');
+	      if (!this.VenueName) {
+	        this.popUp('You must set the fuck venue name.');
+	      } else if (!this.Other) {
+	        this.popUp('You must set the information.');
+	      } else if (!this.UserName) {
+	        this.popUp('You must set the fuck username.');
 	      } else if (!this.Password) {
-	        this.popUp('You must set the password.');
+	        this.popUp('You must set the fuck password.');
 	      } else if (!this.Wechat) {
-	        this.popUp('You must set the Wechat.');
-	      } else if (this.Password !== this.PasswordConfirm) {
-	        this.popUp('The password confirm doesn\'t match the password.');
+	        this.popUp('You must set the fuck wechat.');
 	      } else {
 	        //sign up
 	        var credentials = {
 	          data: {
 	            username: this.UserName,
-	            password: this.Password
+	            password: this.Password,
+	            wechat: this.Wechat,
+	            venueName: this.VenueName,
+	            other: this.Other
 	          }
 	        };
-	        _auth2.default.signup(this, credentials, 'map').then().catch(function (err) {
-	          // TODO: Output error msg
-	          _this.popUp('Sign up error');
+	        _auth2.default.addVenue(this, credentials, 'map').then(function (res) {
+	          if (res) {
+	            _this.popUp(res);
+	          }
 	        });
 	      }
 	    },
@@ -55673,59 +55794,15 @@
 	//   }
 	// </style>
 	/* generated by vue-loader */
-	// <template>
-	//   <div class="mdl-grid form-max-width">
-	//     <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-	//       <div class="mdl-card__media">
-	//           <img class="article-image" src="../assets/contact-image.jpg" border="0" alt="">
-	//       </div>
-	//       <div class="mdl-card__supporting-text">
-	//           <form id="signIn" @submit.prevent.stop="onSubmit">
-	//             <h3>Sign up</h3>
-	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	//               <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="text" id="Name" v-model="UserName">
-	//               <label class="mdl-textfield__label" for="Name">User Name</label>
-	//               <span class="mdl-textfield__error">Letters and numbers only</span>
-	//             </div>
-	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	//               <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="password" id="Pwd" v-model="Password">
-	//               <label class="mdl-textfield__label" for="Pwd">Password</label>
-	//               <span class="mdl-textfield__error">Letters and numbers only</span>
-	//             </div>
-	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	//               <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="password" id="PwdCf" v-model="PasswordConfirm">
-	//               <label class="mdl-textfield__label" for="PwdCf">Password Confirm</label>
-	//               <span class="mdl-textfield__error">Letters and numbers only</span>
-	//             </div>
-	//             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	//               <input class="mdl-textfield__input" type="text" id="WeChat" v-model="Wechat">
-	//               <label class="mdl-textfield__label" for="WeChat">WeChat</label>
-	//             </div>
-	//             <p>
-	//               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-	//                 Submit
-	//               </button>
-	//             </p>
-	//           </form>
-	//           <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-	//             <div class="mdl-snackbar__text"></div>
-	//             <button class="mdl-snackbar__action" type="button"></button>
-	//           </div>
-	//       </div>
-	//     </div>
-	//   </div>
-	// </template>
-	//
-	// <script>
-
-/***/ },
-/* 271 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = "\n<div class=\"mdl-grid form-max-width\">\n  <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n    <div class=\"mdl-card__media\">\n        <img class=\"article-image\" src=\"" + __webpack_require__(272) + "\" border=\"0\" alt=\"\">\n    </div>\n    <div class=\"mdl-card__supporting-text\">\n        <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n          <h3>Sign up</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n            <label class=\"mdl-textfield__label\" for=\"Name\">User Name</label>\n            <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n            <label class=\"mdl-textfield__label\" for=\"Pwd\">Password</label>\n            <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" pattern=\"[A-Z,a-z,0-9]*\" type=\"password\" id=\"PwdCf\" v-model=\"PasswordConfirm\">\n            <label class=\"mdl-textfield__label\" for=\"PwdCf\">Password Confirm</label>\n            <span class=\"mdl-textfield__error\">Letters and numbers only</span>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n            <label class=\"mdl-textfield__label\" for=\"WeChat\">WeChat</label>\n          </div>\n          <p>\n            <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n              Submit\n            </button>\n          </p>\n        </form>\n        <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n          <div class=\"mdl-snackbar__text\"></div>\n          <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n        </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
 /* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = "\n<div class=\"mdl-grid form-max-width\">\n  <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n    <div class=\"mdl-card__media\">\n        <img class=\"article-image\" src=\"" + __webpack_require__(273) + "\" border=\"0\" alt=\"\">\n    </div>\n    <div class=\"mdl-card__supporting-text\">\n        <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n          <h3>房源信息</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n            <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n            <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n          </div>\n          <h3>房主/寻合租者</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n            <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n            <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n            <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n          </div>\n          <p>\n            <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n              Submit\n            </button>\n          </p>\n        </form>\n    </div>\n  </div>\n  <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n    <div class=\"mdl-snackbar__text\"></div>\n    <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n  </div>\n</div>\n";
+
+/***/ },
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8416519ae2b5a1cf9a15b750afaf3994.jpg";

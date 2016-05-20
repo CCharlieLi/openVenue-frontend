@@ -5,7 +5,7 @@ import App from './app.vue';
 import Auth from './auth'
 import MapView from './components/map.vue';
 import AboutView from './components/about.vue';
-import SignUpView from './components/signUp.vue';
+import AddVenueView from './components/addVenue.vue';
 
 // install plugin
 Vue.use(Router);
@@ -24,8 +24,8 @@ router.map({
   '/about': {
     component: AboutView
   },
-  '/signUp': {
-  	component: SignUpView
+  '/addVenue': {
+  	component: AddVenueView
   }
 });
 

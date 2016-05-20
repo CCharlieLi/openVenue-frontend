@@ -1,7 +1,7 @@
 import router from '../main'
-const API_URL = 'http://0.0.0.0:3000/api/'
+const API_URL = 'http://0.0.0.0:3000/'
 const LOGIN_URL = API_URL + 'sessions/create/'
-const SIGNUP_URL = API_URL + 'people/signup/'
+const ADD_VENUE = API_URL + 'venues/addvenue/'
 
 export default {
 
@@ -24,12 +24,21 @@ export default {
     })
   },
 
-  signup(context, creds, redirect) {
-    return context.$http.post(SIGNUP_URL, creds).then( (data) => {
-      localStorage.setItem('id_token', data.id_token);
+  addVenue(context, creds, redirect) {
+    return context.$http.post(ADD_VENUE, creds).then((data) => {
+      if(data.status !== 200) {
+        return data.status;
+      }
       this.user.authenticated = true;
       if(redirect) {
         router.go(redirect);    
+      }
+    }).catch((err) => {
+      if(err.status === 409) {
+        return 'Venue name already occupied.'
+      }
+      else {
+        return 'Sign up error.'
       }
     });
   },

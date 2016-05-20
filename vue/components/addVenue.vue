@@ -6,25 +6,27 @@
       </div>
       <div class="mdl-card__supporting-text">
           <form id="signIn" @submit.prevent.stop="onSubmit">
-            <h3>Sign up</h3>
+            <h3>房源信息</h3>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="text" id="Name" v-model="UserName">
-              <label class="mdl-textfield__label" for="Name">User Name</label>
-              <span class="mdl-textfield__error">Letters and numbers only</span>
+              <input class="mdl-textfield__input" type="text" id="venueName" v-model="VenueName">
+              <label class="mdl-textfield__label" for="venueName">房源叫啥</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="password" id="Pwd" v-model="Password">
-              <label class="mdl-textfield__label" for="Pwd">Password</label>
-              <span class="mdl-textfield__error">Letters and numbers only</span>
+              <textarea class="mdl-textfield__input" type="text" rows="5" id="Other" v-model="Other"></textarea>
+              <label class="mdl-textfield__label" for="Other">还有啥！？(房子的信息，租房条件，基友要求等等)</label>
+            </div>
+            <h3>房主/寻合租者</h3>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="Name" v-model="UserName">
+              <label class="mdl-textfield__label" for="Name">你叫啥</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" pattern="[A-Z,a-z,0-9]*" type="password" id="PwdCf" v-model="PasswordConfirm">
-              <label class="mdl-textfield__label" for="PwdCf">Password Confirm</label>
-              <span class="mdl-textfield__error">Letters and numbers only</span>
+              <input class="mdl-textfield__input" type="password" id="Pwd" v-model="Password">
+              <label class="mdl-textfield__label" for="Pwd">密码</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="WeChat" v-model="Wechat">
-              <label class="mdl-textfield__label" for="WeChat">WeChat</label>
+              <label class="mdl-textfield__label" for="WeChat">微信</label>
             </div>
             <p>
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
@@ -32,26 +34,28 @@
               </button>
             </p>
           </form>
-          <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-            <div class="mdl-snackbar__text"></div>
-            <button class="mdl-snackbar__action" type="button"></button>
-          </div>
       </div>
+    </div>
+    <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
     </div>
   </div>
 </template>
 
 <script>
+  'use strict';
   import auth from '../auth'
 
   export default {
     name: 'AddVenueView',
     data () {
       return {
+        VenueName: '',
         UserName: '',
         Password: '',
-        PasswordConfirm: '',
-        Wechat: ''
+        Wechat: '',
+        Other: ''
       };
     },
     watch: {},
@@ -60,30 +64,36 @@
     destroyed () {},
     methods: {
       onSubmit () {
-        if(!this.UserName) {
-          this.popUp('You must set the username.')
+        if(!this.VenueName) {
+          this.popUp('You must set the fuck venue name.')
+        }
+        else if(!this.Other) {
+          this.popUp('You must set the information.')
+        }
+        else if(!this.UserName) {
+          this.popUp('You must set the fuck username.')
         }
         else if(!this.Password) {
-          this.popUp('You must set the password.')
+          this.popUp('You must set the fuck password.')
         }
         else if(!this.Wechat) {
-          this.popUp('You must set the Wechat.')
-        }
-        else if(this.Password !== this.PasswordConfirm) {
-          this.popUp('The password confirm doesn\'t match the password.')
-        }
+          this.popUp('You must set the fuck wechat.')
+        } 
         else {
           //sign up
           let credentials = {
             data: {
               username: this.UserName,
               password: this.Password,
-              wechat: this.Wechat
+              wechat: this.Wechat,
+              venueName: this.VenueName,
+              other: this.Other
             }
           };
-          auth.signup(this, credentials, 'map').then().catch((err) => {
-            // TODO: Output error msg 
-            this.popUp('Sign up error');
+          auth.addVenue(this, credentials, 'map').then((res) => {
+            if(res) {
+              this.popUp(res);
+            }
           });
         }
       },

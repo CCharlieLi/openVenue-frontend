@@ -17,23 +17,16 @@
       return {
         Map : Object.create(null),
         Markers: {
-          'type': 'FeatureCollection',
-          'features': [{
-            'type': 'Feature',
-            'properties': {
-              'description': '<div class="marker-title">Make it Mount Pleasant</div><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
-              'marker-symbol': 'theatre'
-            },
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [121.4691603379, 31.2223104171]
-            }
-          }]
-        }
+          type: 'FeatureCollection',
+          features: []
+        },
+        Source: Object.create(null)
       };
     },
     watch: {
-
+      'Markers.features' () {
+        this.Source.setData(this.Markers);
+      }
     },
     route: { },
     created () {},
@@ -47,30 +40,84 @@
       });
 
       this.Map.on('load', () => {
-        // Add marker data as a new GeoJSON source.
-        this.Map.addSource('markers', {
-            'type': 'geojson',
-            'data': this.Markers,
-            'cluster': true,
-            'clusterRadius': 50
+        this.Source = new DataAPI.MapBox.GeoJSONSource({
+          data: this.Markers,
+          cluster: true,
+          clusterMaxZoom: 14, // Max zoom to cluster points on
+          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
         });
-        // Add a layer showing the markers.
+        this.Map.addSource('markers', this.Source);
         this.Map.addLayer({
-            'id': 'markers',
-            'type': 'symbol',
-            'source': 'markers',
-            'layout': {
-                'icon-image': '{marker-symbol}-15',
-                'icon-allow-overlap': true
-            }
+          'id': 'markers',
+          'type': 'symbol',
+          'source': 'markers',
+          'layout': {
+            'icon-image': '{marker-symbol}-15',
+            'icon-allow-overlap': true
+          }
+        });
+
+        let layers = [
+          [150, '#f28cb1'],
+          [20, '#f1f075'],
+          [0, '#6ab344']
+        ];
+        layers.forEach((layer, i) => {
+          this.Map.addLayer({
+            "id": "cluster-" + i,
+            "type": "circle",
+            "source": "markers",
+            "paint": {
+              "circle-color": layer[1],
+              "circle-radius": 18
+            },
+            "filter": i == 0 ?
+              [">=", "point_count", layer[0]] :
+              ["all",
+                [">=", "point_count", layer[0]],
+                ["<", "point_count", layers[i - 1][0]]]
+          });
+        });
+        // Add a layer for the clusters' count labels
+        this.Map.addLayer({
+          "id": "cluster-count",
+          "type": "symbol",
+          "source": "markers",
+          "layout": {
+            "text-field": "{point_count}",
+            "text-font": [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Bold"
+            ],
+            "text-size": 12
+          }
         });
       });
 
+      let clickFlag = false;
+      this.Map.on('click', (e) => {
+        if (clickFlag){
+          this.Markers.features.pop();
+        }
+        this.Markers.features.push({
+          'type': 'Feature',
+          'properties': {
+            'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a @click.prevent.stop="onDetail" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+            'marker-symbol': 'star'
+          },
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [e.lngLat.lng, e.lngLat.lat]
+          }
+        });
+        clickFlag = true;
+      });
+
+      // Pop up
       var popup = new DataAPI.MapBox.Popup({
         closeButton: false,
         closeOnClick: false
       });
-
       this.Map.on('mousemove', (e) => {
         var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });
         this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
@@ -85,7 +132,11 @@
       });
     },
     destroyed () {},
-    methods: {},
+    methods: {
+      onDetail () {
+        window.console.log(123);
+      }
+    },
     filters: {}
   }
 </script>
@@ -133,5 +184,17 @@
 
   #menu a.active:hover {
       background: #3074a4;
+  }
+
+  .demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../assets/welcome_card.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
   }
 </style>
