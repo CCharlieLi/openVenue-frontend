@@ -7,26 +7,26 @@
       <div class="mdl-card__supporting-text">
           <form id="signIn" @submit.prevent.stop="onSubmit">
             <h3>房源信息</h3>
+            <h5>房源叫啥</h5>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="venueName" v-model="VenueName">
-              <label class="mdl-textfield__label" for="venueName">房源叫啥</label>
             </div>
+            <h5>房源的信息（租房条件，租金，人数等等)</h5>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <textarea class="mdl-textfield__input" type="text" rows="5" id="Other" v-model="Other"></textarea>
-              <label class="mdl-textfield__label" for="Other">还有啥！？(房子的信息，租房条件，基友要求等等)</label>
             </div>
             <h3>房主/寻合租者</h3>
+            <h5>你叫啥</h5>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="Name" v-model="UserName">
-              <label class="mdl-textfield__label" for="Name">你叫啥</label>
             </div>
+            <h5>密码</h5>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="password" id="Pwd" v-model="Password">
-              <label class="mdl-textfield__label" for="Pwd">密码</label>
             </div>
+            <h5>微信</h5>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="WeChat" v-model="Wechat">
-              <label class="mdl-textfield__label" for="WeChat">微信</label>
             </div>
             <p>
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">
@@ -101,14 +101,12 @@
     ready () {
       this.$nextTick(function(){
         componentHandler.upgradeAllRegistered();
-      });
 
-      
-      var d = document, s = d.createElement('script');
-      s.src = '//openvenue.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      
+        var d = document, s = d.createElement('script');
+        s.src = '//openvenue.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      });
     },
     destroyed () {},
     methods: {

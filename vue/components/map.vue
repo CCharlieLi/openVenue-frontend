@@ -1,10 +1,9 @@
 <template>
   <div>
-   <!--  <nav id='menu'>
-      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>
-      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>
-    </nav> -->
-    <div id='map'></div>
+    <nav id="menu">
+      <a :class="{'active' : addFlag}" @click.prevent.stop="onFlag">添加地点</a>
+    </nav>
+    <div id="map"></div>
     <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
       <div class="mdl-snackbar__text"></div>
       <button class="mdl-snackbar__action" type="button"></button>
@@ -31,7 +30,8 @@
         Source: {
           setData () {}
         },
-        geoHash: ''
+        geoHash: '',
+        addFlag: false
       };
     },
     watch: {
@@ -117,22 +117,24 @@
       });
 
       this.Map.on('click', (e) => {
-        if (clickFlag){
-          this.Markers.features.pop();
-        }
-        this.geoHash = geo.geohashEncode(e.lngLat.lat, e.lngLat.lng, 7);
-        this.Markers.features.push({
-          'type': 'Feature',
-          'properties': {
-            'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">[待完善]</h2></div><div class="mdl-card__supporting-text">[待完善]</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + this.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
-            'marker-symbol': 'star'
-          },
-          'geometry': {
-            'type': 'Point',
-            'coordinates': [e.lngLat.lng, e.lngLat.lat]
+        if(this.addFlag) {
+          if (clickFlag){
+            this.Markers.features.pop();
           }
-        });
-        clickFlag = true;
+          this.geoHash = geo.geohashEncode(e.lngLat.lat, e.lngLat.lng, 7);
+          this.Markers.features.push({
+            'type': 'Feature',
+            'properties': {
+              'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">[待完善]</h2></div><div class="mdl-card__supporting-text">[待完善]</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + this.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"></div></div>',
+              'marker-symbol': 'star'
+            },
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [e.lngLat.lng, e.lngLat.lat]
+            }
+          });
+          clickFlag = true;
+        }
       });
 
       // Pop up
@@ -171,7 +173,7 @@
             this.Markers.features.push({
               'type': 'Feature',
               'properties': {
-                'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">'+ re.venueName +'</h2></div><div class="mdl-card__supporting-text">'+ re.other +'</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + re.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+                'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">'+ re.venueName +'</h2></div><div class="mdl-card__supporting-text">'+ re.other +'</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + re.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"></div></div>',
                 'marker-symbol': 'star'
               },
               'geometry': {
@@ -181,6 +183,12 @@
             });
           });
         });
+      },
+      onFlag () {
+        this.addFlag = !this.addFlag;
+        if(!this.addFlag){
+          clickFlag = false;
+        }
       }
     },
     filters: {}
@@ -194,7 +202,7 @@
       background: #fff;
       position: absolute;
       z-index: 10;
-      top: 80px;
+      top: 10px;
       right: 10px;
       border-radius: 3px;
       width: 120px;
