@@ -3,6 +3,7 @@ const API_URL = 'http://0.0.0.0:3000/';
 const ADD_VENUE = API_URL + 'venues/addvenue/';
 const FIND_ONE = API_URL + 'venues/findvenue/';
 const FIND_ALL = API_URL + 'venues/findallvenues/';
+const DEL_ONE = API_URL + 'venues/deletevenue/';
 
 export default {
 
@@ -50,35 +51,19 @@ export default {
     });
   },
 
-  login(context, creds, redirect) {
-    context.$http.post(LOGIN_URL, creds, (data) => {
-      localStorage.setItem('id_token', data.id_token)
-
-      this.user.authenticated = true
-
-      if(redirect) {
-        router.go(redirect)        
+  deleteVenue(context, creds, redirect) {
+    return context.$http.post(DEL_ONE, creds).then((data) => {
+      if(data.status !== 200) {
+        return data.status;
       }
-
-    }).error((err) => {
-      context.error = err
-    })
+      if(redirect) {
+        router.go(redirect);    
+      }
+    }).catch((err) => {
+      return err;
+    });
   },
 
-  logout() {
-    localStorage.removeItem('id_token')
-    this.user.authenticated = false
-  },
-
-  checkAuth() {
-    var jwt = localStorage.getItem('id_token')
-    if(jwt) {
-      this.user.authenticated = true
-    }
-    else {
-      this.user.authenticated = false      
-    }
-  },
 
 
   getAuthHeader() {

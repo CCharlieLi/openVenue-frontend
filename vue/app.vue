@@ -3,23 +3,24 @@
         <div class="index-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <span class="index-title mdl-layout-title">
+                OpenVenues
                   <!-- <img class="index-logo-image" src="assets/index-logo.png"> -->
                 </span>
                 <!-- Add spacer, to align navigation to the right in desktop -->
                 <div class="index-header-spacer mdl-layout-spacer"></div>
-                <div class="index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                <!-- <div class="index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
                         <i class="material-icons">search</i>
                     </label>
                     <div class="mdl-textfield__expandable-holder">
                         <input class="mdl-textfield__input" type="text" id="search-field">
                     </div>
-                </div>
+                </div> -->
                 <!-- Navigation -->
                 <div class="index-navigation-container">
                     <nav class="index-navigation mdl-navigation">
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/about' }">About</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/listVenue' }">List Venues</a>
+                        <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/listVenue' }">List Venues</a> -->
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/map' }">Find on Map</a>
                         <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/weather' }">Weather</a> -->
                     </nav>
@@ -27,30 +28,18 @@
                 <span class="index-mobile-title mdl-layout-title">
                   <!-- <img class="index-logo-image" src="assets/index-logo.png"> -->
                 </span>
-                <button class="index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-                    <i class="material-icons">more_vert</i>
-                </button>
-                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-                    <li class="mdl-menu__item">Account Information</li>
-                    <li class="mdl-menu__item">Notification</li>
-                    <li class="mdl-menu__item">Sign Out</li>
-                </ul>
             </div>
         </div>
         <div class="index-drawer mdl-layout__drawer">
             <span class="mdl-layout-title">
+            OpenVenues
               <!-- <img class="index-logo-image" src="assets/index-logo-white.png"> -->
             </span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" v-link="{ path: '/about' }">About</a>
-                <a class="mdl-navigation__link" v-link="{ path: '/listVenue' }">List Venues</a>
+            <!--     <a class="mdl-navigation__link" v-link="{ path: '/listVenue' }">List Venues</a> -->
                 <a class="mdl-navigation__link" v-link="{ path: '/map' }">Find on Map</a>
                 <!-- <a class="mdl-navigation__link" v-link="{ path: '/weather' }">Weather</a> -->
-                <div class="index-drawer-separator"></div>
-                <span class="mdl-navigation__link" href="">User</span>
-                <a class="mdl-navigation__link" href="">Account Information</a>
-                <a class="mdl-navigation__link" href="">Notification</a>
-                <a class="mdl-navigation__link" href="">Sign Out</a>
                 <div class="index-drawer-separator"></div>
             </nav>
         </div>

@@ -12,7 +12,6 @@ Vue.use(Router);
 Vue.use(Resource);
 
 Vue.http.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
-Auth.checkAuth();
 
 // routing
 let router = new Router();

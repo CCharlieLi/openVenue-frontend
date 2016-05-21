@@ -38,6 +38,7 @@
             </p>
           </form>
       </div>
+      <div class="mdl-cell mdl-cell--12-col" id="disqus_thread"></div>
     </div>
     <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
       <div class="mdl-snackbar__text"></div>
@@ -77,10 +78,20 @@
             geoHash: this.geoHash,
           }
         }).then((res) => {
-          this.VenueName = res.venueName;
-          this.UserName = res.username;
-          this.Wechat = res.wechat;
-          this.Other = res.other;
+          if(res){
+            this.VenueName = res.venueName;
+            this.UserName = res.username;
+            this.Wechat = res.wechat;
+            this.Other = res.other;
+            this.Password = '';
+          }
+          else {
+            this.VenueName = '';
+            this.UserName = '';
+            this.Wechat = '';
+            this.Other = '';
+            this.Password = '';
+          }
         });
       }
     },
@@ -90,7 +101,14 @@
     ready () {
       this.$nextTick(function(){
         componentHandler.upgradeAllRegistered();
-      })
+      });
+
+      
+      var d = document, s = d.createElement('script');
+      s.src = '//openvenue.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      
     },
     destroyed () {},
     methods: {
@@ -141,8 +159,17 @@
           this.popUp('You must set the fuck password.')
         }
         else {
-          //TODO
-          this.popUp('delete.');
+          let credentials = {
+            data: {
+              geoHash: this.geoHash,
+              password: this.Password
+            }
+          };
+          auth.deleteVenue(this, credentials, '/map').then((res) => {
+            if(res) {
+              this.popUp('Password is not right.');
+            }
+          });
         }
       },
       popUp (msg) {
