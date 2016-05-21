@@ -10,7 +10,8 @@ module.exports = {
     console: 'empty',
     fs: 'empty',
     net: 'empty',
-    tls: 'empty'
+    tls: 'empty',
+    child_process: 'empty'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],

@@ -5,7 +5,7 @@ import App from './app.vue';
 import Auth from './auth'
 import MapView from './components/map.vue';
 import AboutView from './components/about.vue';
-import AddVenueView from './components/addVenue.vue';
+import VenueView from './components/venue.vue';
 
 // install plugin
 Vue.use(Router);
@@ -24,8 +24,8 @@ router.map({
   '/about': {
     component: AboutView
   },
-  '/addVenue': {
-  	component: AddVenueView
+  '/venue/:geohash': {
+  	component: VenueView
   }
 });
 

@@ -29,8 +29,11 @@
               <label class="mdl-textfield__label" for="WeChat">微信</label>
             </div>
             <p>
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-                Submit
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">
+                提交/更新
+              </button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" @click.prevent.stop="onDelete">
+                删除
               </button>
             </p>
           </form>
@@ -45,26 +48,57 @@
 
 <script>
   'use strict';
-  import auth from '../auth'
+  import auth from '../auth';
+  import mdl from 'material-design-lite/material';
+  import geo from 'gps-util';
 
   export default {
-    name: 'AddVenueView',
+    name: 'VenueView',
     data () {
       return {
         VenueName: '',
         UserName: '',
         Password: '',
         Wechat: '',
-        Other: ''
+        Other: '',
+        Coordinate: {},
+        geoHash: ''
       };
     },
     watch: {},
-    route: {},
-    created () {},
+    route: {
+      data ({ to }) {
+        document.title = 'OpenVenue - Venue';
+        this.geoHash = to.params.geohash;
+        this.Coordinate.lng = geo.geohashDecode(this.geoHash).longitude;
+        this.Coordinate.lat = geo.geohashDecode(this.geoHash).latitude;
+        auth.findVenue(this, {
+          data: {
+            geoHash: this.geoHash,
+          }
+        }).then((res) => {
+          this.VenueName = res.venueName;
+          this.UserName = res.username;
+          this.Wechat = res.wechat;
+          this.Other = res.other;
+        });
+      }
+    },
+    created () {
+      mdl;
+    },
+    ready () {
+      this.$nextTick(function(){
+        componentHandler.upgradeAllRegistered();
+      })
+    },
     destroyed () {},
     methods: {
       onSubmit () {
-        if(!this.VenueName) {
+        if(!this.Coordinate.lng || !this.Coordinate.lat) {
+          this.popUp('You must set the fuck coordinate in map first.')
+        }
+        else if(!this.VenueName) {
           this.popUp('You must set the fuck venue name.')
         }
         else if(!this.Other) {
@@ -83,18 +117,32 @@
           //sign up
           let credentials = {
             data: {
+              geoHash: this.geoHash,
               username: this.UserName,
               password: this.Password,
               wechat: this.Wechat,
               venueName: this.VenueName,
-              other: this.Other
+              other: this.Other,
+              coordinate: this.Coordinate
             }
           };
-          auth.addVenue(this, credentials, 'map').then((res) => {
+          auth.addVenue(this, credentials, '/map').then((res) => {
             if(res) {
               this.popUp(res);
             }
           });
+        }
+      },
+      onDelete () {
+        if(!this.geoHash) {
+          this.popUp('You must set the fuck venue name.')
+        }
+        else if(!this.Password) {
+          this.popUp('You must set the fuck password.')
+        }
+        else {
+          //TODO
+          this.popUp('delete.');
         }
       },
       popUp (msg) {

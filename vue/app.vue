@@ -19,7 +19,6 @@
                 <div class="index-navigation-container">
                     <nav class="index-navigation mdl-navigation">
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/about' }">About</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/addVenue' }">Add Venue</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/listVenue' }">List Venues</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/map' }">Find on Map</a>
                         <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" v-link="{ path: '/weather' }">Weather</a> -->
@@ -44,7 +43,6 @@
             </span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" v-link="{ path: '/about' }">About</a>
-                <a class="mdl-navigation__link" v-link="{ path: '/addVenue' }">Add Venue</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/listVenue' }">List Venues</a>
                 <a class="mdl-navigation__link" v-link="{ path: '/map' }">Find on Map</a>
                 <!-- <a class="mdl-navigation__link" v-link="{ path: '/weather' }">Weather</a> -->

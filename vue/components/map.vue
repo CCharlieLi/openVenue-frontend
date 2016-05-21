@@ -10,6 +10,9 @@
 
 <script>
   import DataAPI from '../data/data';
+  import mdl from 'material-design-lite/material.js';
+  import geo from 'gps-util';
+  import auth from '../auth';
 
   export default {
     name: 'MapView',
@@ -20,7 +23,10 @@
           type: 'FeatureCollection',
           features: []
         },
-        Source: Object.create(null)
+        Source: {
+          setData () {}
+        },
+        geoHash: ''
       };
     },
     watch: {
@@ -31,6 +37,29 @@
     route: { },
     created () {},
     ready () {
+      // MDL
+      this.$nextTick(function(){
+        componentHandler.upgradeAllRegistered();
+      })
+
+      // Venue Source
+      auth.findAllVenues(this).then((res) => {
+        res.forEach((re) => {
+          this.Markers.features.push({
+            'type': 'Feature',
+            'properties': {
+              'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">'+ re.venueName +'</h2></div><div class="mdl-card__supporting-text">'+ re.other +'</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + re.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+              'marker-symbol': 'star'
+            },
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [re.coordinate.lng, re.coordinate.lat]
+            }
+          });
+        });
+      });
+
+      // Map Source
       let source;
       this.Map = new DataAPI.MapBox.Map({
         container: 'map',
@@ -99,10 +128,11 @@
         if (clickFlag){
           this.Markers.features.pop();
         }
+        this.geoHash = geo.geohashEncode(e.lngLat.lat, e.lngLat.lng, 7);
         this.Markers.features.push({
           'type': 'Feature',
           'properties': {
-            'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a @click.prevent.stop="onDetail" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+            'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + this.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
             'marker-symbol': 'star'
           },
           'geometry': {
@@ -187,11 +217,11 @@
   }
 
   .demo-card-wide.mdl-card {
-    width: 512px;
+    width: 312px;
   }
   .demo-card-wide > .mdl-card__title {
     color: #fff;
-    height: 176px;
+    height: 156px;
     background: url('../assets/welcome_card.jpg') center / cover;
   }
   .demo-card-wide > .mdl-card__menu {

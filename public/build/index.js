@@ -82,13 +82,13 @@
 	
 	var _map2 = _interopRequireDefault(_map);
 	
-	var _about = __webpack_require__(262);
+	var _about = __webpack_require__(333);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _addVenue = __webpack_require__(268);
+	var _venue = __webpack_require__(339);
 	
-	var _addVenue2 = _interopRequireDefault(_addVenue);
+	var _venue2 = _interopRequireDefault(_venue);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -109,8 +109,8 @@
 	  '/about': {
 	    component: _about2.default
 	  },
-	  '/addVenue': {
-	    component: _addVenue2.default
+	  '/venue/:geohash': {
+	    component: _venue2.default
 	  }
 	});
 	
@@ -14666,7 +14666,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.index-search-box .mdl-textfield__input {\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.index-header .mdl-menu__container {\n    z-index: 50;\n    margin: 0 !important;\n}\n\n.mdl-textfield--expandable {\n    width: auto;\n}\n\n\n.index-mobile-title {\n    display: none !important;\n}\n\n.index-logo-image {\n    height: 28px;\n    width: 140px;\n}\n\n.index-header {\n    overflow: visible;\n    background-color: rgba(255, 255, 255, 0.52);\n}\n\n.index-header .material-icons {\n    color: #767777 !important;\n}\n\n.index-header .mdl-layout__drawer-button {\n    background: transparent;\n    color: #767777;\n}\n\n.index-header .mdl-navigation__link {\n    color: #757575;\n    font-weight: 700;\n    font-size: 14px;\n}\n\n.index-navigation-container {\n    /* Simple hack to make the overflow happen to the left instead... */\n    direction: rtl;\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n    -ms-flex-order: 1;\n    order: 1;\n    width: 500px;\n    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.index-navigation {\n    /* ... and now make sure the content is actually LTR */\n    direction: ltr;\n    -webkit-box-pack: end;\n    -webkit-justify-content: flex-end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    width: 800px;\n}\n\n.index-search-box.is-focused + .index-navigation-container {\n    opacity: 0;\n    width: 100px;\n}\n\n.index-navigation .mdl-navigation__link {\n    display: inline-block;\n    height: 60px;\n    line-height: 68px;\n    background-color: transparent !important;\n    border-bottom: 4px solid transparent;\n}\n\n.index-navigation .mdl-navigation__link:hover {\n    border-bottom: 4px solid #8bc34a;\n}\n\n.index-search-box {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    -ms-flex-order: 2;\n    order: 2;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n.index-more-button {\n    -webkit-box-ordinal-group: 4;\n    -webkit-order: 3;\n    -ms-flex-order: 3;\n    order: 3;\n}\n\n.index-drawer {\n    border-right: none;\n}\n\n.index-drawer-separator {\n    height: 1px;\n    background-color: #dcdcdc;\n    margin: 8px 0;\n}\n\n.index-drawer .mdl-navigation__link.mdl-navigation__link {\n    font-size: 14px;\n    color: #757575;\n}\n\n.index-drawer span.mdl-navigation__link.mdl-navigation__link {\n    color: #8bc34a;\n}\n\n.index-drawer .mdl-layout-title {\n    position: relative;\n    background: #6ab344;\n    height: 160px;\n}\n\n.index-drawer .index-logo-image {\n    position: absolute;\n    bottom: 16px;\n}\n\n.view {\n  /*position: absolute;*/\n  /*background-color: #f6f6ef;*/\n  width: 100%;\n  -webkit-transition: opacity .2s ease;\n  transition: opacity .2s ease;\n  box-sizing: border-box;\n}\n\n.expand-transition {\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n  /*background-color: #eee;*/\n  /*overflow: hidden;*/\n}\n\n.expand-enter, .expand-leave {\n  height: 0;\n  opacity: 0;\n}\n  \n", "", {"version":3,"sources":["/./vue/app.vue?f4830b10"],"names":[],"mappings":";AAuEA;IACA,2BAAA;CACA;;AAEA;IACA,YAAA;IACA,qBAAA;CACA;;AAEA;IACA,YAAA;CACA;;;AAGA;IACA,yBAAA;CACA;;AAEA;IACA,aAAA;IACA,aAAA;CACA;;AAEA;IACA,kBAAA;IACA,4CAAA;CACA;;AAEA;IACA,0BAAA;CACA;;AAEA;IACA,wBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;IACA,iBAAA;IACA,gBAAA;CACA;;AAEA;IACA,oEAAA;IACA,eAAA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,aAAA;IACA,uGAAA;IACA,+FAAA;CACA;;AAEA;IACA,uDAAA;IACA,eAAA;IACA,sBAAA;IACA,kCAAA;IACA,mBAAA;IACA,0BAAA;IACA,aAAA;CACA;;AAEA;IACA,WAAA;IACA,aAAA;CACA;;AAEA;IACA,sBAAA;IACA,aAAA;IACA,kBAAA;IACA,yCAAA;IACA,qCAAA;CACA;;AAEA;IACA,iCAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,kBAAA;IACA,mBAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;CACA;;AAEA;IACA,mBAAA;CACA;;AAEA;IACA,YAAA;IACA,0BAAA;IACA,cAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;CACA;;AAEA;IACA,mBAAA;IACA,oBAAA;IACA,cAAA;CACA;;AAEA;IACA,mBAAA;IACA,aAAA;CACA;;AAEA;EACA,uBAAA;EACA,8BAAA;EACA,YAAA;EACA,qCAAA;EAAA,6BAAA;EACA,uBAAA;CACA;;AAEA;EACA,iCAAA;EAAA,yBAAA;EACA,2BAAA;EACA,qBAAA;CACA;;AAEA;EACA,UAAA;EACA,WAAA;CACA","file":"app.vue","sourcesContent":["<template>\n    <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n        <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n            <div class=\"mdl-layout__header-row\">\n                <span class=\"index-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <!-- Add spacer, to align navigation to the right in desktop -->\n                <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n                <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                    <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                        <i class=\"material-icons\">search</i>\n                    </label>\n                    <div class=\"mdl-textfield__expandable-holder\">\n                        <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                    </div>\n                </div>\n                <!-- Navigation -->\n                <div class=\"index-navigation-container\">\n                    <nav class=\"index-navigation mdl-navigation\">\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                        <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                    </nav>\n                </div>\n                <span class=\"index-mobile-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                    <i class=\"material-icons\">more_vert</i>\n                </button>\n                <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                    <li class=\"mdl-menu__item\">Account Information</li>\n                    <li class=\"mdl-menu__item\">Notification</li>\n                    <li class=\"mdl-menu__item\">Sign Out</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"index-drawer mdl-layout__drawer\">\n            <span class=\"mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n            </span>\n            <nav class=\"mdl-navigation\">\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                <div class=\"index-drawer-separator\"></div>\n                <span class=\"mdl-navigation__link\" href=\"\">User</span>\n                <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n                <div class=\"index-drawer-separator\"></div>\n            </nav>\n        </div>\n        <main class=\"index-content mdl-layout__content\">\n            <a name=\"top\"></a>\n            <!-- main view -->\n            <router-view\n              class=\"view\"\n              keep-alive\n              >\n            </router-view>\n        </main>\n    </div>\n</template>\n\n<style type=\"text/css\">\n  .index-search-box .mdl-textfield__input {\n      color: rgba(0, 0, 0, 0.87);\n  }\n\n  .index-header .mdl-menu__container {\n      z-index: 50;\n      margin: 0 !important;\n  }\n\n  .mdl-textfield--expandable {\n      width: auto;\n  }\n\n\n  .index-mobile-title {\n      display: none !important;\n  }\n\n  .index-logo-image {\n      height: 28px;\n      width: 140px;\n  }\n\n  .index-header {\n      overflow: visible;\n      background-color: rgba(255, 255, 255, 0.52);\n  }\n\n  .index-header .material-icons {\n      color: #767777 !important;\n  }\n\n  .index-header .mdl-layout__drawer-button {\n      background: transparent;\n      color: #767777;\n  }\n\n  .index-header .mdl-navigation__link {\n      color: #757575;\n      font-weight: 700;\n      font-size: 14px;\n  }\n\n  .index-navigation-container {\n      /* Simple hack to make the overflow happen to the left instead... */\n      direction: rtl;\n      -webkit-box-ordinal-group: 2;\n      -webkit-order: 1;\n      -ms-flex-order: 1;\n      order: 1;\n      width: 500px;\n      -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  }\n\n  .index-navigation {\n      /* ... and now make sure the content is actually LTR */\n      direction: ltr;\n      -webkit-box-pack: end;\n      -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n      justify-content: flex-end;\n      width: 800px;\n  }\n\n  .index-search-box.is-focused + .index-navigation-container {\n      opacity: 0;\n      width: 100px;\n  }\n\n  .index-navigation .mdl-navigation__link {\n      display: inline-block;\n      height: 60px;\n      line-height: 68px;\n      background-color: transparent !important;\n      border-bottom: 4px solid transparent;\n  }\n\n  .index-navigation .mdl-navigation__link:hover {\n      border-bottom: 4px solid #8bc34a;\n  }\n\n  .index-search-box {\n      -webkit-box-ordinal-group: 3;\n      -webkit-order: 2;\n      -ms-flex-order: 2;\n      order: 2;\n      margin-left: 16px;\n      margin-right: 16px;\n  }\n\n  .index-more-button {\n      -webkit-box-ordinal-group: 4;\n      -webkit-order: 3;\n      -ms-flex-order: 3;\n      order: 3;\n  }\n\n  .index-drawer {\n      border-right: none;\n  }\n\n  .index-drawer-separator {\n      height: 1px;\n      background-color: #dcdcdc;\n      margin: 8px 0;\n  }\n\n  .index-drawer .mdl-navigation__link.mdl-navigation__link {\n      font-size: 14px;\n      color: #757575;\n  }\n\n  .index-drawer span.mdl-navigation__link.mdl-navigation__link {\n      color: #8bc34a;\n  }\n\n  .index-drawer .mdl-layout-title {\n      position: relative;\n      background: #6ab344;\n      height: 160px;\n  }\n\n  .index-drawer .index-logo-image {\n      position: absolute;\n      bottom: 16px;\n  }\n\n  .view {\n    /*position: absolute;*/\n    /*background-color: #f6f6ef;*/\n    width: 100%;\n    transition: opacity .2s ease;\n    box-sizing: border-box;\n  }\n\n  .expand-transition {\n    transition: all .2s ease;\n    /*background-color: #eee;*/\n    /*overflow: hidden;*/\n  }\n\n  .expand-enter, .expand-leave {\n    height: 0;\n    opacity: 0;\n  }\n    \n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.index-search-box .mdl-textfield__input {\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.index-header .mdl-menu__container {\n    z-index: 50;\n    margin: 0 !important;\n}\n\n.mdl-textfield--expandable {\n    width: auto;\n}\n\n\n.index-mobile-title {\n    display: none !important;\n}\n\n.index-logo-image {\n    height: 28px;\n    width: 140px;\n}\n\n.index-header {\n    overflow: visible;\n    background-color: rgba(255, 255, 255, 0.52);\n}\n\n.index-header .material-icons {\n    color: #767777 !important;\n}\n\n.index-header .mdl-layout__drawer-button {\n    background: transparent;\n    color: #767777;\n}\n\n.index-header .mdl-navigation__link {\n    color: #757575;\n    font-weight: 700;\n    font-size: 14px;\n}\n\n.index-navigation-container {\n    /* Simple hack to make the overflow happen to the left instead... */\n    direction: rtl;\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n    -ms-flex-order: 1;\n    order: 1;\n    width: 500px;\n    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.index-navigation {\n    /* ... and now make sure the content is actually LTR */\n    direction: ltr;\n    -webkit-box-pack: end;\n    -webkit-justify-content: flex-end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    width: 800px;\n}\n\n.index-search-box.is-focused + .index-navigation-container {\n    opacity: 0;\n    width: 100px;\n}\n\n.index-navigation .mdl-navigation__link {\n    display: inline-block;\n    height: 60px;\n    line-height: 68px;\n    background-color: transparent !important;\n    border-bottom: 4px solid transparent;\n}\n\n.index-navigation .mdl-navigation__link:hover {\n    border-bottom: 4px solid #8bc34a;\n}\n\n.index-search-box {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    -ms-flex-order: 2;\n    order: 2;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n.index-more-button {\n    -webkit-box-ordinal-group: 4;\n    -webkit-order: 3;\n    -ms-flex-order: 3;\n    order: 3;\n}\n\n.index-drawer {\n    border-right: none;\n}\n\n.index-drawer-separator {\n    height: 1px;\n    background-color: #dcdcdc;\n    margin: 8px 0;\n}\n\n.index-drawer .mdl-navigation__link.mdl-navigation__link {\n    font-size: 14px;\n    color: #757575;\n}\n\n.index-drawer span.mdl-navigation__link.mdl-navigation__link {\n    color: #8bc34a;\n}\n\n.index-drawer .mdl-layout-title {\n    position: relative;\n    background: #6ab344;\n    height: 160px;\n}\n\n.index-drawer .index-logo-image {\n    position: absolute;\n    bottom: 16px;\n}\n\n.view {\n  /*position: absolute;*/\n  /*background-color: #f6f6ef;*/\n  width: 100%;\n  -webkit-transition: opacity .2s ease;\n  transition: opacity .2s ease;\n  box-sizing: border-box;\n}\n\n.expand-transition {\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n  /*background-color: #eee;*/\n  /*overflow: hidden;*/\n}\n\n.expand-enter, .expand-leave {\n  height: 0;\n  opacity: 0;\n}\n  \n", "", {"version":3,"sources":["/./vue/app.vue?24edd23d"],"names":[],"mappings":";AAqEA;IACA,2BAAA;CACA;;AAEA;IACA,YAAA;IACA,qBAAA;CACA;;AAEA;IACA,YAAA;CACA;;;AAGA;IACA,yBAAA;CACA;;AAEA;IACA,aAAA;IACA,aAAA;CACA;;AAEA;IACA,kBAAA;IACA,4CAAA;CACA;;AAEA;IACA,0BAAA;CACA;;AAEA;IACA,wBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;IACA,iBAAA;IACA,gBAAA;CACA;;AAEA;IACA,oEAAA;IACA,eAAA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,aAAA;IACA,uGAAA;IACA,+FAAA;CACA;;AAEA;IACA,uDAAA;IACA,eAAA;IACA,sBAAA;IACA,kCAAA;IACA,mBAAA;IACA,0BAAA;IACA,aAAA;CACA;;AAEA;IACA,WAAA;IACA,aAAA;CACA;;AAEA;IACA,sBAAA;IACA,aAAA;IACA,kBAAA;IACA,yCAAA;IACA,qCAAA;CACA;;AAEA;IACA,iCAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;IACA,kBAAA;IACA,mBAAA;CACA;;AAEA;IACA,6BAAA;IACA,iBAAA;IACA,kBAAA;IACA,SAAA;CACA;;AAEA;IACA,mBAAA;CACA;;AAEA;IACA,YAAA;IACA,0BAAA;IACA,cAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;CACA;;AAEA;IACA,eAAA;CACA;;AAEA;IACA,mBAAA;IACA,oBAAA;IACA,cAAA;CACA;;AAEA;IACA,mBAAA;IACA,aAAA;CACA;;AAEA;EACA,uBAAA;EACA,8BAAA;EACA,YAAA;EACA,qCAAA;EAAA,6BAAA;EACA,uBAAA;CACA;;AAEA;EACA,iCAAA;EAAA,yBAAA;EACA,2BAAA;EACA,qBAAA;CACA;;AAEA;EACA,UAAA;EACA,WAAA;CACA","file":"app.vue","sourcesContent":["<template>\n    <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n        <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n            <div class=\"mdl-layout__header-row\">\n                <span class=\"index-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <!-- Add spacer, to align navigation to the right in desktop -->\n                <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n                <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                    <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                        <i class=\"material-icons\">search</i>\n                    </label>\n                    <div class=\"mdl-textfield__expandable-holder\">\n                        <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                    </div>\n                </div>\n                <!-- Navigation -->\n                <div class=\"index-navigation-container\">\n                    <nav class=\"index-navigation mdl-navigation\">\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                        <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                        <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                    </nav>\n                </div>\n                <span class=\"index-mobile-title mdl-layout-title\">\n                  <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n                </span>\n                <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                    <i class=\"material-icons\">more_vert</i>\n                </button>\n                <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                    <li class=\"mdl-menu__item\">Account Information</li>\n                    <li class=\"mdl-menu__item\">Notification</li>\n                    <li class=\"mdl-menu__item\">Sign Out</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"index-drawer mdl-layout__drawer\">\n            <span class=\"mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n            </span>\n            <nav class=\"mdl-navigation\">\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                <div class=\"index-drawer-separator\"></div>\n                <span class=\"mdl-navigation__link\" href=\"\">User</span>\n                <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n                <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n                <div class=\"index-drawer-separator\"></div>\n            </nav>\n        </div>\n        <main class=\"index-content mdl-layout__content\">\n            <a name=\"top\"></a>\n            <!-- main view -->\n            <router-view\n              class=\"view\"\n              keep-alive\n              >\n            </router-view>\n        </main>\n    </div>\n</template>\n\n<style type=\"text/css\">\n  .index-search-box .mdl-textfield__input {\n      color: rgba(0, 0, 0, 0.87);\n  }\n\n  .index-header .mdl-menu__container {\n      z-index: 50;\n      margin: 0 !important;\n  }\n\n  .mdl-textfield--expandable {\n      width: auto;\n  }\n\n\n  .index-mobile-title {\n      display: none !important;\n  }\n\n  .index-logo-image {\n      height: 28px;\n      width: 140px;\n  }\n\n  .index-header {\n      overflow: visible;\n      background-color: rgba(255, 255, 255, 0.52);\n  }\n\n  .index-header .material-icons {\n      color: #767777 !important;\n  }\n\n  .index-header .mdl-layout__drawer-button {\n      background: transparent;\n      color: #767777;\n  }\n\n  .index-header .mdl-navigation__link {\n      color: #757575;\n      font-weight: 700;\n      font-size: 14px;\n  }\n\n  .index-navigation-container {\n      /* Simple hack to make the overflow happen to the left instead... */\n      direction: rtl;\n      -webkit-box-ordinal-group: 2;\n      -webkit-order: 1;\n      -ms-flex-order: 1;\n      order: 1;\n      width: 500px;\n      -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  }\n\n  .index-navigation {\n      /* ... and now make sure the content is actually LTR */\n      direction: ltr;\n      -webkit-box-pack: end;\n      -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n      justify-content: flex-end;\n      width: 800px;\n  }\n\n  .index-search-box.is-focused + .index-navigation-container {\n      opacity: 0;\n      width: 100px;\n  }\n\n  .index-navigation .mdl-navigation__link {\n      display: inline-block;\n      height: 60px;\n      line-height: 68px;\n      background-color: transparent !important;\n      border-bottom: 4px solid transparent;\n  }\n\n  .index-navigation .mdl-navigation__link:hover {\n      border-bottom: 4px solid #8bc34a;\n  }\n\n  .index-search-box {\n      -webkit-box-ordinal-group: 3;\n      -webkit-order: 2;\n      -ms-flex-order: 2;\n      order: 2;\n      margin-left: 16px;\n      margin-right: 16px;\n  }\n\n  .index-more-button {\n      -webkit-box-ordinal-group: 4;\n      -webkit-order: 3;\n      -ms-flex-order: 3;\n      order: 3;\n  }\n\n  .index-drawer {\n      border-right: none;\n  }\n\n  .index-drawer-separator {\n      height: 1px;\n      background-color: #dcdcdc;\n      margin: 8px 0;\n  }\n\n  .index-drawer .mdl-navigation__link.mdl-navigation__link {\n      font-size: 14px;\n      color: #757575;\n  }\n\n  .index-drawer span.mdl-navigation__link.mdl-navigation__link {\n      color: #8bc34a;\n  }\n\n  .index-drawer .mdl-layout-title {\n      position: relative;\n      background: #6ab344;\n      height: 160px;\n  }\n\n  .index-drawer .index-logo-image {\n      position: absolute;\n      bottom: 16px;\n  }\n\n  .view {\n    /*position: absolute;*/\n    /*background-color: #f6f6ef;*/\n    width: 100%;\n    transition: opacity .2s ease;\n    box-sizing: border-box;\n  }\n\n  .expand-transition {\n    transition: all .2s ease;\n    /*background-color: #eee;*/\n    /*overflow: hidden;*/\n  }\n\n  .expand-enter, .expand-leave {\n    height: 0;\n    opacity: 0;\n  }\n    \n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14953,7 +14953,7 @@
 /* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n    <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n        <div class=\"mdl-layout__header-row\">\n            <span class=\"index-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <!-- Add spacer, to align navigation to the right in desktop -->\n            <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n            <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                    <i class=\"material-icons\">search</i>\n                </label>\n                <div class=\"mdl-textfield__expandable-holder\">\n                    <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                </div>\n            </div>\n            <!-- Navigation -->\n            <div class=\"index-navigation-container\">\n                <nav class=\"index-navigation mdl-navigation\">\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                    <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                </nav>\n            </div>\n            <span class=\"index-mobile-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                <i class=\"material-icons\">more_vert</i>\n            </button>\n            <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                <li class=\"mdl-menu__item\">Account Information</li>\n                <li class=\"mdl-menu__item\">Notification</li>\n                <li class=\"mdl-menu__item\">Sign Out</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"index-drawer mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">\n          <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n        </span>\n        <nav class=\"mdl-navigation\">\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/addVenue' }\">Add Venue</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n            <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n            <div class=\"index-drawer-separator\"></div>\n            <span class=\"mdl-navigation__link\" href=\"\">User</span>\n            <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n            <div class=\"index-drawer-separator\"></div>\n        </nav>\n    </div>\n    <main class=\"index-content mdl-layout__content\">\n        <a name=\"top\"></a>\n        <!-- main view -->\n        <router-view\n          class=\"view\"\n          keep-alive\n          >\n        </router-view>\n    </main>\n</div>\n";
+	module.exports = "\n<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n    <div class=\"index-header mdl-layout__header mdl-layout__header--waterfall\">\n        <div class=\"mdl-layout__header-row\">\n            <span class=\"index-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <!-- Add spacer, to align navigation to the right in desktop -->\n            <div class=\"index-header-spacer mdl-layout-spacer\"></div>\n            <div class=\"index-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\n                <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\n                    <i class=\"material-icons\">search</i>\n                </label>\n                <div class=\"mdl-textfield__expandable-holder\">\n                    <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\n                </div>\n            </div>\n            <!-- Navigation -->\n            <div class=\"index-navigation-container\">\n                <nav class=\"index-navigation mdl-navigation\">\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/about' }\">About</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n                    <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/map' }\">Find on Map</a>\n                    <!-- <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n                </nav>\n            </div>\n            <span class=\"index-mobile-title mdl-layout-title\">\n              <!-- <img class=\"index-logo-image\" src=\"assets/index-logo.png\"> -->\n            </span>\n            <button class=\"index-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\n                <i class=\"material-icons\">more_vert</i>\n            </button>\n            <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\n                <li class=\"mdl-menu__item\">Account Information</li>\n                <li class=\"mdl-menu__item\">Notification</li>\n                <li class=\"mdl-menu__item\">Sign Out</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"index-drawer mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">\n          <!-- <img class=\"index-logo-image\" src=\"assets/index-logo-white.png\"> -->\n        </span>\n        <nav class=\"mdl-navigation\">\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/about' }\">About</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/listVenue' }\">List Venues</a>\n            <a class=\"mdl-navigation__link\" v-link=\"{ path: '/map' }\">Find on Map</a>\n            <!-- <a class=\"mdl-navigation__link\" v-link=\"{ path: '/weather' }\">Weather</a> -->\n            <div class=\"index-drawer-separator\"></div>\n            <span class=\"mdl-navigation__link\" href=\"\">User</span>\n            <a class=\"mdl-navigation__link\" href=\"\">Account Information</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Notification</a>\n            <a class=\"mdl-navigation__link\" href=\"\">Sign Out</a>\n            <div class=\"index-drawer-separator\"></div>\n        </nav>\n    </div>\n    <main class=\"index-content mdl-layout__content\">\n        <a name=\"top\"></a>\n        <!-- main view -->\n        <router-view\n          class=\"view\"\n          keep-alive\n          >\n        </router-view>\n    </main>\n</div>\n";
 
 /***/ },
 /* 36 */
@@ -14972,8 +14972,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var API_URL = 'http://0.0.0.0:3000/';
-	var LOGIN_URL = API_URL + 'sessions/create/';
 	var ADD_VENUE = API_URL + 'venues/addvenue/';
+	var FIND_ONE = API_URL + 'venues/findvenue/';
+	var FIND_ALL = API_URL + 'venues/findallvenues/';
 	
 	exports.default = {
 	
@@ -14981,6 +14982,42 @@
 	    authenticated: false
 	  },
 	
+	  addVenue: function addVenue(context, creds, redirect) {
+	    return context.$http.post(ADD_VENUE, creds).then(function (data) {
+	      if (data.status !== 200) {
+	        return data.status;
+	      }
+	      if (redirect) {
+	        _main2.default.go(redirect);
+	      }
+	    }).catch(function (err) {
+	      if (err.status === 409) {
+	        return 'Venue name already occupied.';
+	      } else {
+	        return 'Submit error.';
+	      }
+	    });
+	  },
+	  findVenue: function findVenue(context, creds, redirect) {
+	    return context.$http.post(FIND_ONE, creds).then(function (data) {
+	      if (data.status !== 200) {
+	        return data.status;
+	      }
+	      return data.data.data;
+	    }).catch(function (err) {
+	      window.console.log(err);
+	    });
+	  },
+	  findAllVenues: function findAllVenues(context) {
+	    return context.$http.get(FIND_ALL).then(function (data) {
+	      if (data.status !== 200) {
+	        return data.status;
+	      }
+	      return data.data.data;
+	    }).catch(function (err) {
+	      window.console.log(err);
+	    });
+	  },
 	  login: function login(context, creds, redirect) {
 	    var _this = this;
 	
@@ -14994,25 +15031,6 @@
 	      }
 	    }).error(function (err) {
 	      context.error = err;
-	    });
-	  },
-	  addVenue: function addVenue(context, creds, redirect) {
-	    var _this2 = this;
-	
-	    return context.$http.post(ADD_VENUE, creds).then(function (data) {
-	      if (data.status !== 200) {
-	        return data.status;
-	      }
-	      _this2.user.authenticated = true;
-	      if (redirect) {
-	        _main2.default.go(redirect);
-	      }
-	    }).catch(function (err) {
-	      if (err.status === 409) {
-	        return 'Venue name already occupied.';
-	      } else {
-	        return 'Sign up error.';
-	      }
 	    });
 	  },
 	  logout: function logout() {
@@ -15045,7 +15063,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] vue/components/map.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(261)
+	__vue_template__ = __webpack_require__(332)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15099,7 +15117,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n#map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n#menu {\n    background: #fff;\n    position: absolute;\n    z-index: 10;\n    top: 80px;\n    right: 10px;\n    border-radius: 3px;\n    width: 120px;\n    border: 1px solid rgba(0,0,0,0.4);\n    font-family: 'Open Sans', sans-serif;\n}\n\n#menu a,#menu select{\n    font-size: 13px;\n    color: #404040;\n    display: block;\n    margin: 0;\n    padding: 0;\n    padding: 10px;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(0,0,0,0.25);\n    text-align: center;\n}\n\n#menu a:last-child {\n    border: none;\n}\n\n#menu a:hover {\n    background-color: #f8f8f8;\n    color: #404040;\n}\n\n#menu a.active {\n    background-color: #3887be;\n    color: #ffffff;\n}\n\n#menu a.active:hover {\n    background: #3074a4;\n}\n\n.demo-card-wide.mdl-card {\n  width: 512px;\n}\n.demo-card-wide > .mdl-card__title {\n  color: #fff;\n  height: 176px;\n  background: url(" + __webpack_require__(40) + ") center / cover;\n}\n.demo-card-wide > .mdl-card__menu {\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./vue/components/map.vue?5a586515"],"names":[],"mappings":";AAgJA,OAAA,eAAA,CAAA,QAAA,CAAA,WAAA,CAAA,WAAA,GAAA;;AAEA;IACA,iBAAA;IACA,mBAAA;IACA,YAAA;IACA,UAAA;IACA,YAAA;IACA,mBAAA;IACA,aAAA;IACA,kCAAA;IACA,qCAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;IACA,eAAA;IACA,UAAA;IACA,WAAA;IACA,cAAA;IACA,sBAAA;IACA,0CAAA;IACA,mBAAA;CACA;;AAEA;IACA,aAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,oBAAA;CACA;;AAEA;EACA,aAAA;CACA;AACA;EACA,YAAA;EACA,cAAA;EACA,yDAAA;CACA;AACA;EACA,YAAA;CACA","file":"map.vue","sourcesContent":["<template>\n  <div>\n   <!--  <nav id='menu'>\n      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n    </nav> -->\n    <div id='map'></div>\n  </div>\n</template>\n\n<script>\n  import DataAPI from '../data/data';\n\n  export default {\n    name: 'MapView',\n    data () {\n      return {\n        Map : Object.create(null),\n        Markers: {\n          type: 'FeatureCollection',\n          features: []\n        },\n        Source: Object.create(null)\n      };\n    },\n    watch: {\n      'Markers.features' () {\n        this.Source.setData(this.Markers);\n      }\n    },\n    route: { },\n    created () {},\n    ready () {\n      let source;\n      this.Map = new DataAPI.MapBox.Map({\n        container: 'map',\n        style: 'mapbox://styles/ccharlieli/cio8phh7x001sadnmu988hd91',\n        center: [121.4691603379, 31.2223104171],\n        zoom: 13\n      });\n\n      this.Map.on('load', () => {\n        this.Source = new DataAPI.MapBox.GeoJSONSource({\n          data: this.Markers,\n          cluster: true,\n          clusterMaxZoom: 14, // Max zoom to cluster points on\n          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)\n        });\n        this.Map.addSource('markers', this.Source);\n        this.Map.addLayer({\n          'id': 'markers',\n          'type': 'symbol',\n          'source': 'markers',\n          'layout': {\n            'icon-image': '{marker-symbol}-15',\n            'icon-allow-overlap': true\n          }\n        });\n\n        let layers = [\n          [150, '#f28cb1'],\n          [20, '#f1f075'],\n          [0, '#6ab344']\n        ];\n        layers.forEach((layer, i) => {\n          this.Map.addLayer({\n            \"id\": \"cluster-\" + i,\n            \"type\": \"circle\",\n            \"source\": \"markers\",\n            \"paint\": {\n              \"circle-color\": layer[1],\n              \"circle-radius\": 18\n            },\n            \"filter\": i == 0 ?\n              [\">=\", \"point_count\", layer[0]] :\n              [\"all\",\n                [\">=\", \"point_count\", layer[0]],\n                [\"<\", \"point_count\", layers[i - 1][0]]]\n          });\n        });\n        // Add a layer for the clusters' count labels\n        this.Map.addLayer({\n          \"id\": \"cluster-count\",\n          \"type\": \"symbol\",\n          \"source\": \"markers\",\n          \"layout\": {\n            \"text-field\": \"{point_count}\",\n            \"text-font\": [\n              \"DIN Offc Pro Medium\",\n              \"Arial Unicode MS Bold\"\n            ],\n            \"text-size\": 12\n          }\n        });\n      });\n\n      let clickFlag = false;\n      this.Map.on('click', (e) => {\n        if (clickFlag){\n          this.Markers.features.pop();\n        }\n        this.Markers.features.push({\n          'type': 'Feature',\n          'properties': {\n            'description': '<div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__title\"><h2 class=\"mdl-card__title-text\">静安寺合租</h2></div><div class=\"mdl-card__supporting-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class=\"mdl-card__actions mdl-card--border\"><a @click.prevent.stop=\"onDetail\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">详细信息</a></div><div class=\"mdl-card__menu\"><button class=\"mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect\"><i class=\"material-icons\">share</i></button></div></div>',\n            'marker-symbol': 'star'\n          },\n          'geometry': {\n            'type': 'Point',\n            'coordinates': [e.lngLat.lng, e.lngLat.lat]\n          }\n        });\n        clickFlag = true;\n      });\n\n      // Pop up\n      var popup = new DataAPI.MapBox.Popup({\n        closeButton: false,\n        closeOnClick: false\n      });\n      this.Map.on('mousemove', (e) => {\n        var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });\n        this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';\n        if (!features.length) {\n          popup.remove();\n          return;\n        }\n        var feature = features[0];\n        popup.setLngLat(feature.geometry.coordinates)\n          .setHTML(feature.properties.description)\n          .addTo(this.Map);\n      });\n    },\n    destroyed () {},\n    methods: {\n      onDetail () {\n        window.console.log(123);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style type='text/css'>\n  #map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n  #menu {\n      background: #fff;\n      position: absolute;\n      z-index: 10;\n      top: 80px;\n      right: 10px;\n      border-radius: 3px;\n      width: 120px;\n      border: 1px solid rgba(0,0,0,0.4);\n      font-family: 'Open Sans', sans-serif;\n  }\n\n  #menu a,#menu select{\n      font-size: 13px;\n      color: #404040;\n      display: block;\n      margin: 0;\n      padding: 0;\n      padding: 10px;\n      text-decoration: none;\n      border-bottom: 1px solid rgba(0,0,0,0.25);\n      text-align: center;\n  }\n\n  #menu a:last-child {\n      border: none;\n  }\n\n  #menu a:hover {\n      background-color: #f8f8f8;\n      color: #404040;\n  }\n\n  #menu a.active {\n      background-color: #3887be;\n      color: #ffffff;\n  }\n\n  #menu a.active:hover {\n      background: #3074a4;\n  }\n\n  .demo-card-wide.mdl-card {\n    width: 512px;\n  }\n  .demo-card-wide > .mdl-card__title {\n    color: #fff;\n    height: 176px;\n    background: url('../assets/welcome_card.jpg') center / cover;\n  }\n  .demo-card-wide > .mdl-card__menu {\n    color: #fff;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n#map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n#menu {\n    background: #fff;\n    position: absolute;\n    z-index: 10;\n    top: 80px;\n    right: 10px;\n    border-radius: 3px;\n    width: 120px;\n    border: 1px solid rgba(0,0,0,0.4);\n    font-family: 'Open Sans', sans-serif;\n}\n\n#menu a,#menu select{\n    font-size: 13px;\n    color: #404040;\n    display: block;\n    margin: 0;\n    padding: 0;\n    padding: 10px;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(0,0,0,0.25);\n    text-align: center;\n}\n\n#menu a:last-child {\n    border: none;\n}\n\n#menu a:hover {\n    background-color: #f8f8f8;\n    color: #404040;\n}\n\n#menu a.active {\n    background-color: #3887be;\n    color: #ffffff;\n}\n\n#menu a.active:hover {\n    background: #3074a4;\n}\n\n.demo-card-wide.mdl-card {\n  width: 312px;\n}\n.demo-card-wide > .mdl-card__title {\n  color: #fff;\n  height: 156px;\n  background: url(" + __webpack_require__(40) + ") center / cover;\n}\n.demo-card-wide > .mdl-card__menu {\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./vue/components/map.vue?5dd46f48"],"names":[],"mappings":";AA8KA,OAAA,eAAA,CAAA,QAAA,CAAA,WAAA,CAAA,WAAA,GAAA;;AAEA;IACA,iBAAA;IACA,mBAAA;IACA,YAAA;IACA,UAAA;IACA,YAAA;IACA,mBAAA;IACA,aAAA;IACA,kCAAA;IACA,qCAAA;CACA;;AAEA;IACA,gBAAA;IACA,eAAA;IACA,eAAA;IACA,UAAA;IACA,WAAA;IACA,cAAA;IACA,sBAAA;IACA,0CAAA;IACA,mBAAA;CACA;;AAEA;IACA,aAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,0BAAA;IACA,eAAA;CACA;;AAEA;IACA,oBAAA;CACA;;AAEA;EACA,aAAA;CACA;AACA;EACA,YAAA;EACA,cAAA;EACA,yDAAA;CACA;AACA;EACA,YAAA;CACA","file":"map.vue","sourcesContent":["<template>\n  <div>\n   <!--  <nav id='menu'>\n      <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n      <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n    </nav> -->\n    <div id='map'></div>\n  </div>\n</template>\n\n<script>\n  import DataAPI from '../data/data';\n  import mdl from 'material-design-lite/material.js';\n  import geo from 'gps-util';\n  import auth from '../auth';\n\n  export default {\n    name: 'MapView',\n    data () {\n      return {\n        Map : Object.create(null),\n        Markers: {\n          type: 'FeatureCollection',\n          features: []\n        },\n        Source: {\n          setData () {}\n        },\n        geoHash: ''\n      };\n    },\n    watch: {\n      'Markers.features' () {\n        this.Source.setData(this.Markers);\n      }\n    },\n    route: { },\n    created () {},\n    ready () {\n      // MDL\n      this.$nextTick(function(){\n        componentHandler.upgradeAllRegistered();\n      })\n\n      // Venue Source\n      auth.findAllVenues(this).then((res) => {\n        res.forEach((re) => {\n          this.Markers.features.push({\n            'type': 'Feature',\n            'properties': {\n              'description': '<div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__title\"><h2 class=\"mdl-card__title-text\">'+ re.venueName +'</h2></div><div class=\"mdl-card__supporting-text\">'+ re.other +'</div><div class=\"mdl-card__actions mdl-card--border\"><a href=\"#!/venue/' + re.geoHash + '\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">详细信息</a></div><div class=\"mdl-card__menu\"><button class=\"mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect\"><i class=\"material-icons\">share</i></button></div></div>',\n              'marker-symbol': 'star'\n            },\n            'geometry': {\n              'type': 'Point',\n              'coordinates': [re.coordinate.lng, re.coordinate.lat]\n            }\n          });\n        });\n      });\n\n      // Map Source\n      let source;\n      this.Map = new DataAPI.MapBox.Map({\n        container: 'map',\n        style: 'mapbox://styles/ccharlieli/cio8phh7x001sadnmu988hd91',\n        center: [121.4691603379, 31.2223104171],\n        zoom: 13\n      });\n\n      this.Map.on('load', () => {\n        this.Source = new DataAPI.MapBox.GeoJSONSource({\n          data: this.Markers,\n          cluster: true,\n          clusterMaxZoom: 14, // Max zoom to cluster points on\n          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)\n        });\n        this.Map.addSource('markers', this.Source);\n        this.Map.addLayer({\n          'id': 'markers',\n          'type': 'symbol',\n          'source': 'markers',\n          'layout': {\n            'icon-image': '{marker-symbol}-15',\n            'icon-allow-overlap': true\n          }\n        });\n\n        let layers = [\n          [150, '#f28cb1'],\n          [20, '#f1f075'],\n          [0, '#6ab344']\n        ];\n        layers.forEach((layer, i) => {\n          this.Map.addLayer({\n            \"id\": \"cluster-\" + i,\n            \"type\": \"circle\",\n            \"source\": \"markers\",\n            \"paint\": {\n              \"circle-color\": layer[1],\n              \"circle-radius\": 18\n            },\n            \"filter\": i == 0 ?\n              [\">=\", \"point_count\", layer[0]] :\n              [\"all\",\n                [\">=\", \"point_count\", layer[0]],\n                [\"<\", \"point_count\", layers[i - 1][0]]]\n          });\n        });\n        // Add a layer for the clusters' count labels\n        this.Map.addLayer({\n          \"id\": \"cluster-count\",\n          \"type\": \"symbol\",\n          \"source\": \"markers\",\n          \"layout\": {\n            \"text-field\": \"{point_count}\",\n            \"text-font\": [\n              \"DIN Offc Pro Medium\",\n              \"Arial Unicode MS Bold\"\n            ],\n            \"text-size\": 12\n          }\n        });\n      });\n\n      let clickFlag = false;\n      this.Map.on('click', (e) => {\n        if (clickFlag){\n          this.Markers.features.pop();\n        }\n        this.geoHash = geo.geohashEncode(e.lngLat.lat, e.lngLat.lng, 7);\n        this.Markers.features.push({\n          'type': 'Feature',\n          'properties': {\n            'description': '<div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__title\"><h2 class=\"mdl-card__title-text\">静安寺合租</h2></div><div class=\"mdl-card__supporting-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class=\"mdl-card__actions mdl-card--border\"><a href=\"#!/venue/' + this.geoHash + '\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">详细信息</a></div><div class=\"mdl-card__menu\"><button class=\"mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect\"><i class=\"material-icons\">share</i></button></div></div>',\n            'marker-symbol': 'star'\n          },\n          'geometry': {\n            'type': 'Point',\n            'coordinates': [e.lngLat.lng, e.lngLat.lat]\n          }\n        });\n        clickFlag = true;\n      });\n\n      // Pop up\n      var popup = new DataAPI.MapBox.Popup({\n        closeButton: false,\n        closeOnClick: false\n      });\n      this.Map.on('mousemove', (e) => {\n        var features = this.Map.queryRenderedFeatures(e.point, { layers: ['markers'] });\n        this.Map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';\n        if (!features.length) {\n          popup.remove();\n          return;\n        }\n        var feature = features[0];\n        popup.setLngLat(feature.geometry.coordinates)\n          .setHTML(feature.properties.description)\n          .addTo(this.Map);\n      });\n    },\n    destroyed () {},\n    methods: {\n      onDetail () {\n        window.console.log(123);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style type='text/css'>\n  #map { position:fixed; top:0px; bottom:0px; width:100%;  }\n\n  #menu {\n      background: #fff;\n      position: absolute;\n      z-index: 10;\n      top: 80px;\n      right: 10px;\n      border-radius: 3px;\n      width: 120px;\n      border: 1px solid rgba(0,0,0,0.4);\n      font-family: 'Open Sans', sans-serif;\n  }\n\n  #menu a,#menu select{\n      font-size: 13px;\n      color: #404040;\n      display: block;\n      margin: 0;\n      padding: 0;\n      padding: 10px;\n      text-decoration: none;\n      border-bottom: 1px solid rgba(0,0,0,0.25);\n      text-align: center;\n  }\n\n  #menu a:last-child {\n      border: none;\n  }\n\n  #menu a:hover {\n      background-color: #f8f8f8;\n      color: #404040;\n  }\n\n  #menu a.active {\n      background-color: #3887be;\n      color: #ffffff;\n  }\n\n  #menu a.active:hover {\n      background: #3074a4;\n  }\n\n  .demo-card-wide.mdl-card {\n    width: 312px;\n  }\n  .demo-card-wide > .mdl-card__title {\n    color: #fff;\n    height: 156px;\n    background: url('../assets/welcome_card.jpg') center / cover;\n  }\n  .demo-card-wide > .mdl-card__menu {\n    color: #fff;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -15128,8 +15146,31 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
+	var _material = __webpack_require__(261);
+	
+	var _material2 = _interopRequireDefault(_material);
+	
+	var _gpsUtil = __webpack_require__(262);
+	
+	var _gpsUtil2 = _interopRequireDefault(_gpsUtil);
+	
+	var _auth = __webpack_require__(36);
+	
+	var _auth2 = _interopRequireDefault(_auth);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	//   <div>
+	//    <!--  <nav id='menu'>
+	//       <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>
+	//       <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>
+	//     </nav> -->
+	//     <div id='map'></div>
+	//   </div>
+	// </template>
+	//
+	// <script>
 	exports.default = {
 	  name: 'MapView',
 	  data: function data() {
@@ -15139,7 +15180,10 @@
 	        type: 'FeatureCollection',
 	        features: []
 	      },
-	      Source: (0, _create2.default)(null)
+	      Source: {
+	        setData: function setData() {}
+	      },
+	      geoHash: ''
 	    };
 	  },
 	
@@ -15153,6 +15197,29 @@
 	  ready: function ready() {
 	    var _this = this;
 	
+	    // MDL
+	    this.$nextTick(function () {
+	      componentHandler.upgradeAllRegistered();
+	    });
+	
+	    // Venue Source
+	    _auth2.default.findAllVenues(this).then(function (res) {
+	      res.forEach(function (re) {
+	        _this.Markers.features.push({
+	          'type': 'Feature',
+	          'properties': {
+	            'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">' + re.venueName + '</h2></div><div class="mdl-card__supporting-text">' + re.other + '</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + re.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+	            'marker-symbol': 'star'
+	          },
+	          'geometry': {
+	            'type': 'Point',
+	            'coordinates': [re.coordinate.lng, re.coordinate.lat]
+	          }
+	        });
+	      });
+	    });
+	
+	    // Map Source
 	    var source = void 0;
 	    this.Map = new _data2.default.MapBox.Map({
 	      container: 'map',
@@ -15210,10 +15277,11 @@
 	      if (clickFlag) {
 	        _this.Markers.features.pop();
 	      }
+	      _this.geoHash = _gpsUtil2.default.geohashEncode(e.lngLat.lat, e.lngLat.lng, 7);
 	      _this.Markers.features.push({
 	        'type': 'Feature',
 	        'properties': {
-	          'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a @click.prevent.stop="onDetail" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
+	          'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">静安寺合租</h2></div><div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + _this.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div>',
 	          'marker-symbol': 'star'
 	        },
 	        'geometry': {
@@ -15297,11 +15365,11 @@
 	//   }
 	//
 	//   .demo-card-wide.mdl-card {
-	//     width: 512px;
+	//     width: 312px;
 	//   }
 	//   .demo-card-wide > .mdl-card__title {
 	//     color: #fff;
-	//     height: 176px;
+	//     height: 156px;
 	//     background: url('../assets/welcome_card.jpg') center / cover;
 	//   }
 	//   .demo-card-wide > .mdl-card__menu {
@@ -15309,17 +15377,6 @@
 	//   }
 	// </style>
 	/* generated by vue-loader */
-	// <template>
-	//   <div>
-	//    <!--  <nav id='menu'>
-	//       <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>
-	//       <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>
-	//     </nav> -->
-	//     <div id='map'></div>
-	//   </div>
-	// </template>
-	//
-	// <script>
 
 /***/ },
 /* 42 */
@@ -55425,20 +55482,14379 @@
 /* 261 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div>\n <!--  <nav id='menu'>\n    <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n    <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n  </nav> -->\n  <div id='map'></div>\n</div>\n";
+	;(function() {
+	"use strict";
+	
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	
+	/**
+	 * A component handler interface using the revealing module design pattern.
+	 * More details on this design pattern here:
+	 * https://github.com/jasonmayes/mdl-component-design-pattern
+	 *
+	 * @author Jason Mayes.
+	 */
+	/* exported componentHandler */
+	
+	// Pre-defining the componentHandler interface, for closure documentation and
+	// static verification.
+	var componentHandler = {
+	  /**
+	   * Searches existing DOM for elements of our component type and upgrades them
+	   * if they have not already been upgraded.
+	   *
+	   * @param {string=} optJsClass the programatic name of the element class we
+	   * need to create a new instance of.
+	   * @param {string=} optCssClass the name of the CSS class elements of this
+	   * type will have.
+	   */
+	  upgradeDom: function(optJsClass, optCssClass) {},
+	  /**
+	   * Upgrades a specific element rather than all in the DOM.
+	   *
+	   * @param {!Element} element The element we wish to upgrade.
+	   * @param {string=} optJsClass Optional name of the class we want to upgrade
+	   * the element to.
+	   */
+	  upgradeElement: function(element, optJsClass) {},
+	  /**
+	   * Upgrades a specific list of elements rather than all in the DOM.
+	   *
+	   * @param {!Element|!Array<!Element>|!NodeList|!HTMLCollection} elements
+	   * The elements we wish to upgrade.
+	   */
+	  upgradeElements: function(elements) {},
+	  /**
+	   * Upgrades all registered components found in the current DOM. This is
+	   * automatically called on window load.
+	   */
+	  upgradeAllRegistered: function() {},
+	  /**
+	   * Allows user to be alerted to any upgrades that are performed for a given
+	   * component type
+	   *
+	   * @param {string} jsClass The class name of the MDL component we wish
+	   * to hook into for any upgrades performed.
+	   * @param {function(!HTMLElement)} callback The function to call upon an
+	   * upgrade. This function should expect 1 parameter - the HTMLElement which
+	   * got upgraded.
+	   */
+	  registerUpgradedCallback: function(jsClass, callback) {},
+	  /**
+	   * Registers a class for future use and attempts to upgrade existing DOM.
+	   *
+	   * @param {componentHandler.ComponentConfigPublic} config the registration configuration
+	   */
+	  register: function(config) {},
+	  /**
+	   * Downgrade either a given node, an array of nodes, or a NodeList.
+	   *
+	   * @param {!Node|!Array<!Node>|!NodeList} nodes
+	   */
+	  downgradeElements: function(nodes) {}
+	};
+	
+	componentHandler = (function() {
+	  'use strict';
+	
+	  /** @type {!Array<componentHandler.ComponentConfig>} */
+	  var registeredComponents_ = [];
+	
+	  /** @type {!Array<componentHandler.Component>} */
+	  var createdComponents_ = [];
+	
+	  var componentConfigProperty_ = 'mdlComponentConfigInternal_';
+	
+	  /**
+	   * Searches registered components for a class we are interested in using.
+	   * Optionally replaces a match with passed object if specified.
+	   *
+	   * @param {string} name The name of a class we want to use.
+	   * @param {componentHandler.ComponentConfig=} optReplace Optional object to replace match with.
+	   * @return {!Object|boolean}
+	   * @private
+	   */
+	  function findRegisteredClass_(name, optReplace) {
+	    for (var i = 0; i < registeredComponents_.length; i++) {
+	      if (registeredComponents_[i].className === name) {
+	        if (typeof optReplace !== 'undefined') {
+	          registeredComponents_[i] = optReplace;
+	        }
+	        return registeredComponents_[i];
+	      }
+	    }
+	    return false;
+	  }
+	
+	  /**
+	   * Returns an array of the classNames of the upgraded classes on the element.
+	   *
+	   * @param {!Element} element The element to fetch data from.
+	   * @return {!Array<string>}
+	   * @private
+	   */
+	  function getUpgradedListOfElement_(element) {
+	    var dataUpgraded = element.getAttribute('data-upgraded');
+	    // Use `['']` as default value to conform the `,name,name...` style.
+	    return dataUpgraded === null ? [''] : dataUpgraded.split(',');
+	  }
+	
+	  /**
+	   * Returns true if the given element has already been upgraded for the given
+	   * class.
+	   *
+	   * @param {!Element} element The element we want to check.
+	   * @param {string} jsClass The class to check for.
+	   * @returns {boolean}
+	   * @private
+	   */
+	  function isElementUpgraded_(element, jsClass) {
+	    var upgradedList = getUpgradedListOfElement_(element);
+	    return upgradedList.indexOf(jsClass) !== -1;
+	  }
+	
+	  /**
+	   * Searches existing DOM for elements of our component type and upgrades them
+	   * if they have not already been upgraded.
+	   *
+	   * @param {string=} optJsClass the programatic name of the element class we
+	   * need to create a new instance of.
+	   * @param {string=} optCssClass the name of the CSS class elements of this
+	   * type will have.
+	   */
+	  function upgradeDomInternal(optJsClass, optCssClass) {
+	    if (typeof optJsClass === 'undefined' &&
+	        typeof optCssClass === 'undefined') {
+	      for (var i = 0; i < registeredComponents_.length; i++) {
+	        upgradeDomInternal(registeredComponents_[i].className,
+	            registeredComponents_[i].cssClass);
+	      }
+	    } else {
+	      var jsClass = /** @type {string} */ (optJsClass);
+	      if (typeof optCssClass === 'undefined') {
+	        var registeredClass = findRegisteredClass_(jsClass);
+	        if (registeredClass) {
+	          optCssClass = registeredClass.cssClass;
+	        }
+	      }
+	
+	      var elements = document.querySelectorAll('.' + optCssClass);
+	      for (var n = 0; n < elements.length; n++) {
+	        upgradeElementInternal(elements[n], jsClass);
+	      }
+	    }
+	  }
+	
+	  /**
+	   * Upgrades a specific element rather than all in the DOM.
+	   *
+	   * @param {!Element} element The element we wish to upgrade.
+	   * @param {string=} optJsClass Optional name of the class we want to upgrade
+	   * the element to.
+	   */
+	  function upgradeElementInternal(element, optJsClass) {
+	    // Verify argument type.
+	    if (!(typeof element === 'object' && element instanceof Element)) {
+	      throw new Error('Invalid argument provided to upgrade MDL element.');
+	    }
+	    var upgradedList = getUpgradedListOfElement_(element);
+	    var classesToUpgrade = [];
+	    // If jsClass is not provided scan the registered components to find the
+	    // ones matching the element's CSS classList.
+	    if (!optJsClass) {
+	      var classList = element.classList;
+	      registeredComponents_.forEach(function(component) {
+	        // Match CSS & Not to be upgraded & Not upgraded.
+	        if (classList.contains(component.cssClass) &&
+	            classesToUpgrade.indexOf(component) === -1 &&
+	            !isElementUpgraded_(element, component.className)) {
+	          classesToUpgrade.push(component);
+	        }
+	      });
+	    } else if (!isElementUpgraded_(element, optJsClass)) {
+	      classesToUpgrade.push(findRegisteredClass_(optJsClass));
+	    }
+	
+	    // Upgrade the element for each classes.
+	    for (var i = 0, n = classesToUpgrade.length, registeredClass; i < n; i++) {
+	      registeredClass = classesToUpgrade[i];
+	      if (registeredClass) {
+	        // Mark element as upgraded.
+	        upgradedList.push(registeredClass.className);
+	        element.setAttribute('data-upgraded', upgradedList.join(','));
+	        var instance = new registeredClass.classConstructor(element);
+	        instance[componentConfigProperty_] = registeredClass;
+	        createdComponents_.push(instance);
+	        // Call any callbacks the user has registered with this component type.
+	        for (var j = 0, m = registeredClass.callbacks.length; j < m; j++) {
+	          registeredClass.callbacks[j](element);
+	        }
+	
+	        if (registeredClass.widget) {
+	          // Assign per element instance for control over API
+	          element[registeredClass.className] = instance;
+	        }
+	      } else {
+	        throw new Error(
+	          'Unable to find a registered component for the given class.');
+	      }
+	
+	      var ev;
+	      if ('CustomEvent' in window && typeof window.CustomEvent === 'function') {
+	        ev = new Event('mdl-componentupgraded', {
+	          'bubbles': true, 'cancelable': false
+	        });
+	      } else {
+	        ev = document.createEvent('Events');
+	        ev.initEvent('mdl-componentupgraded', true, true);
+	      }
+	      element.dispatchEvent(ev);
+	    }
+	  }
+	
+	  /**
+	   * Upgrades a specific list of elements rather than all in the DOM.
+	   *
+	   * @param {!Element|!Array<!Element>|!NodeList|!HTMLCollection} elements
+	   * The elements we wish to upgrade.
+	   */
+	  function upgradeElementsInternal(elements) {
+	    if (!Array.isArray(elements)) {
+	      if (typeof elements.item === 'function') {
+	        elements = Array.prototype.slice.call(/** @type {Array} */ (elements));
+	      } else {
+	        elements = [elements];
+	      }
+	    }
+	    for (var i = 0, n = elements.length, element; i < n; i++) {
+	      element = elements[i];
+	      if (element instanceof HTMLElement) {
+	        upgradeElementInternal(element);
+	        if (element.children.length > 0) {
+	          upgradeElementsInternal(element.children);
+	        }
+	      }
+	    }
+	  }
+	
+	  /**
+	   * Registers a class for future use and attempts to upgrade existing DOM.
+	   *
+	   * @param {componentHandler.ComponentConfigPublic} config
+	   */
+	  function registerInternal(config) {
+	    // In order to support both Closure-compiled and uncompiled code accessing
+	    // this method, we need to allow for both the dot and array syntax for
+	    // property access. You'll therefore see the `foo.bar || foo['bar']`
+	    // pattern repeated across this method.
+	    var widgetMissing = (typeof config.widget === 'undefined' &&
+	        typeof config['widget'] === 'undefined');
+	    var widget = true;
+	
+	    if (!widgetMissing) {
+	      widget = config.widget || config['widget'];
+	    }
+	
+	    var newConfig = /** @type {componentHandler.ComponentConfig} */ ({
+	      classConstructor: config.constructor || config['constructor'],
+	      className: config.classAsString || config['classAsString'],
+	      cssClass: config.cssClass || config['cssClass'],
+	      widget: widget,
+	      callbacks: []
+	    });
+	
+	    registeredComponents_.forEach(function(item) {
+	      if (item.cssClass === newConfig.cssClass) {
+	        throw new Error('The provided cssClass has already been registered: ' + item.cssClass);
+	      }
+	      if (item.className === newConfig.className) {
+	        throw new Error('The provided className has already been registered');
+	      }
+	    });
+	
+	    if (config.constructor.prototype
+	        .hasOwnProperty(componentConfigProperty_)) {
+	      throw new Error(
+	          'MDL component classes must not have ' + componentConfigProperty_ +
+	          ' defined as a property.');
+	    }
+	
+	    var found = findRegisteredClass_(config.classAsString, newConfig);
+	
+	    if (!found) {
+	      registeredComponents_.push(newConfig);
+	    }
+	  }
+	
+	  /**
+	   * Allows user to be alerted to any upgrades that are performed for a given
+	   * component type
+	   *
+	   * @param {string} jsClass The class name of the MDL component we wish
+	   * to hook into for any upgrades performed.
+	   * @param {function(!HTMLElement)} callback The function to call upon an
+	   * upgrade. This function should expect 1 parameter - the HTMLElement which
+	   * got upgraded.
+	   */
+	  function registerUpgradedCallbackInternal(jsClass, callback) {
+	    var regClass = findRegisteredClass_(jsClass);
+	    if (regClass) {
+	      regClass.callbacks.push(callback);
+	    }
+	  }
+	
+	  /**
+	   * Upgrades all registered components found in the current DOM. This is
+	   * automatically called on window load.
+	   */
+	  function upgradeAllRegisteredInternal() {
+	    for (var n = 0; n < registeredComponents_.length; n++) {
+	      upgradeDomInternal(registeredComponents_[n].className);
+	    }
+	  }
+	
+	  /**
+	   * Check the component for the downgrade method.
+	   * Execute if found.
+	   * Remove component from createdComponents list.
+	   *
+	   * @param {?componentHandler.Component} component
+	   */
+	  function deconstructComponentInternal(component) {
+	    if (component) {
+	      var componentIndex = createdComponents_.indexOf(component);
+	      createdComponents_.splice(componentIndex, 1);
+	
+	      var upgrades = component.element_.getAttribute('data-upgraded').split(',');
+	      var componentPlace = upgrades.indexOf(component[componentConfigProperty_].classAsString);
+	      upgrades.splice(componentPlace, 1);
+	      component.element_.setAttribute('data-upgraded', upgrades.join(','));
+	
+	      var ev;
+	      if ('CustomEvent' in window && typeof window.CustomEvent === 'function') {
+	        ev = new Event('mdl-componentdowngraded', {
+	          'bubbles': true, 'cancelable': false
+	        });
+	      } else {
+	        ev = document.createEvent('Events');
+	        ev.initEvent('mdl-componentdowngraded', true, true);
+	      }
+	    }
+	  }
+	
+	  /**
+	   * Downgrade either a given node, an array of nodes, or a NodeList.
+	   *
+	   * @param {!Node|!Array<!Node>|!NodeList} nodes
+	   */
+	  function downgradeNodesInternal(nodes) {
+	    /**
+	     * Auxiliary function to downgrade a single node.
+	     * @param  {!Node} node the node to be downgraded
+	     */
+	    var downgradeNode = function(node) {
+	      createdComponents_.filter(function(item) {
+	        return item.element_ === node;
+	      }).forEach(deconstructComponentInternal);
+	    };
+	    if (nodes instanceof Array || nodes instanceof NodeList) {
+	      for (var n = 0; n < nodes.length; n++) {
+	        downgradeNode(nodes[n]);
+	      }
+	    } else if (nodes instanceof Node) {
+	      downgradeNode(nodes);
+	    } else {
+	      throw new Error('Invalid argument provided to downgrade MDL nodes.');
+	    }
+	  }
+	
+	  // Now return the functions that should be made public with their publicly
+	  // facing names...
+	  return {
+	    upgradeDom: upgradeDomInternal,
+	    upgradeElement: upgradeElementInternal,
+	    upgradeElements: upgradeElementsInternal,
+	    upgradeAllRegistered: upgradeAllRegisteredInternal,
+	    registerUpgradedCallback: registerUpgradedCallbackInternal,
+	    register: registerInternal,
+	    downgradeElements: downgradeNodesInternal
+	  };
+	})();
+	
+	/**
+	 * Describes the type of a registered component type managed by
+	 * componentHandler. Provided for benefit of the Closure compiler.
+	 *
+	 * @typedef {{
+	 *   constructor: Function,
+	 *   classAsString: string,
+	 *   cssClass: string,
+	 *   widget: (string|boolean|undefined)
+	 * }}
+	 */
+	componentHandler.ComponentConfigPublic;  // jshint ignore:line
+	
+	/**
+	 * Describes the type of a registered component type managed by
+	 * componentHandler. Provided for benefit of the Closure compiler.
+	 *
+	 * @typedef {{
+	 *   constructor: !Function,
+	 *   className: string,
+	 *   cssClass: string,
+	 *   widget: (string|boolean),
+	 *   callbacks: !Array<function(!HTMLElement)>
+	 * }}
+	 */
+	componentHandler.ComponentConfig;  // jshint ignore:line
+	
+	/**
+	 * Created component (i.e., upgraded element) type as managed by
+	 * componentHandler. Provided for benefit of the Closure compiler.
+	 *
+	 * @typedef {{
+	 *   element_: !HTMLElement,
+	 *   className: string,
+	 *   classAsString: string,
+	 *   cssClass: string,
+	 *   widget: string
+	 * }}
+	 */
+	componentHandler.Component;  // jshint ignore:line
+	
+	// Export all symbols, for the benefit of Closure compiler.
+	// No effect on uncompiled code.
+	componentHandler['upgradeDom'] = componentHandler.upgradeDom;
+	componentHandler['upgradeElement'] = componentHandler.upgradeElement;
+	componentHandler['upgradeElements'] = componentHandler.upgradeElements;
+	componentHandler['upgradeAllRegistered'] =
+	    componentHandler.upgradeAllRegistered;
+	componentHandler['registerUpgradedCallback'] =
+	    componentHandler.registerUpgradedCallback;
+	componentHandler['register'] = componentHandler.register;
+	componentHandler['downgradeElements'] = componentHandler.downgradeElements;
+	window.componentHandler = componentHandler;
+	window['componentHandler'] = componentHandler;
+	
+	window.addEventListener('load', function() {
+	  'use strict';
+	
+	  /**
+	   * Performs a "Cutting the mustard" test. If the browser supports the features
+	   * tested, adds a mdl-js class to the <html> element. It then upgrades all MDL
+	   * components requiring JavaScript.
+	   */
+	  if ('classList' in document.createElement('div') &&
+	      'querySelector' in document &&
+	      'addEventListener' in window && Array.prototype.forEach) {
+	    document.documentElement.classList.add('mdl-js');
+	    componentHandler.upgradeAllRegistered();
+	  } else {
+	    /**
+	     * Dummy function to avoid JS errors.
+	     */
+	    componentHandler.upgradeElement = function() {};
+	    /**
+	     * Dummy function to avoid JS errors.
+	     */
+	    componentHandler.register = function() {};
+	  }
+	});
+	
+	// Source: https://github.com/darius/requestAnimationFrame/blob/master/requestAnimationFrame.js
+	// Adapted from https://gist.github.com/paulirish/1579671 which derived from
+	// http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+	// http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+	// requestAnimationFrame polyfill by Erik Möller.
+	// Fixes from Paul Irish, Tino Zijdel, Andrew Mao, Klemen Slavič, Darius Bacon
+	// MIT license
+	if (!Date.now) {
+	    /**
+	   * Date.now polyfill.
+	   * @return {number} the current Date
+	   */
+	    Date.now = function () {
+	        return new Date().getTime();
+	    };
+	    Date['now'] = Date.now;
+	}
+	var vendors = [
+	    'webkit',
+	    'moz'
+	];
+	for (var i = 0; i < vendors.length && !window.requestAnimationFrame; ++i) {
+	    var vp = vendors[i];
+	    window.requestAnimationFrame = window[vp + 'RequestAnimationFrame'];
+	    window.cancelAnimationFrame = window[vp + 'CancelAnimationFrame'] || window[vp + 'CancelRequestAnimationFrame'];
+	    window['requestAnimationFrame'] = window.requestAnimationFrame;
+	    window['cancelAnimationFrame'] = window.cancelAnimationFrame;
+	}
+	if (/iP(ad|hone|od).*OS 6/.test(window.navigator.userAgent) || !window.requestAnimationFrame || !window.cancelAnimationFrame) {
+	    var lastTime = 0;
+	    /**
+	   * requestAnimationFrame polyfill.
+	   * @param  {!Function} callback the callback function.
+	   */
+	    window.requestAnimationFrame = function (callback) {
+	        var now = Date.now();
+	        var nextTime = Math.max(lastTime + 16, now);
+	        return setTimeout(function () {
+	            callback(lastTime = nextTime);
+	        }, nextTime - now);
+	    };
+	    window.cancelAnimationFrame = clearTimeout;
+	    window['requestAnimationFrame'] = window.requestAnimationFrame;
+	    window['cancelAnimationFrame'] = window.cancelAnimationFrame;
+	}
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Button MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialButton = function MaterialButton(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialButton'] = MaterialButton;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialButton.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialButton.prototype.CssClasses_ = {
+	    RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_CONTAINER: 'mdl-button__ripple-container',
+	    RIPPLE: 'mdl-ripple'
+	};
+	/**
+	   * Handle blur of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialButton.prototype.blurHandler_ = function (event) {
+	    if (event) {
+	        this.element_.blur();
+	    }
+	};
+	// Public methods.
+	/**
+	   * Disable button.
+	   *
+	   * @public
+	   */
+	MaterialButton.prototype.disable = function () {
+	    this.element_.disabled = true;
+	};
+	MaterialButton.prototype['disable'] = MaterialButton.prototype.disable;
+	/**
+	   * Enable button.
+	   *
+	   * @public
+	   */
+	MaterialButton.prototype.enable = function () {
+	    this.element_.disabled = false;
+	};
+	MaterialButton.prototype['enable'] = MaterialButton.prototype.enable;
+	/**
+	   * Initialize element.
+	   */
+	MaterialButton.prototype.init = function () {
+	    if (this.element_) {
+	        if (this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT)) {
+	            var rippleContainer = document.createElement('span');
+	            rippleContainer.classList.add(this.CssClasses_.RIPPLE_CONTAINER);
+	            this.rippleElement_ = document.createElement('span');
+	            this.rippleElement_.classList.add(this.CssClasses_.RIPPLE);
+	            rippleContainer.appendChild(this.rippleElement_);
+	            this.boundRippleBlurHandler = this.blurHandler_.bind(this);
+	            this.rippleElement_.addEventListener('mouseup', this.boundRippleBlurHandler);
+	            this.element_.appendChild(rippleContainer);
+	        }
+	        this.boundButtonBlurHandler = this.blurHandler_.bind(this);
+	        this.element_.addEventListener('mouseup', this.boundButtonBlurHandler);
+	        this.element_.addEventListener('mouseleave', this.boundButtonBlurHandler);
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialButton,
+	    classAsString: 'MaterialButton',
+	    cssClass: 'mdl-js-button',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Checkbox MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialCheckbox = function MaterialCheckbox(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialCheckbox'] = MaterialCheckbox;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialCheckbox.prototype.Constant_ = { TINY_TIMEOUT: 0.001 };
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialCheckbox.prototype.CssClasses_ = {
+	    INPUT: 'mdl-checkbox__input',
+	    BOX_OUTLINE: 'mdl-checkbox__box-outline',
+	    FOCUS_HELPER: 'mdl-checkbox__focus-helper',
+	    TICK_OUTLINE: 'mdl-checkbox__tick-outline',
+	    RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE_CONTAINER: 'mdl-checkbox__ripple-container',
+	    RIPPLE_CENTER: 'mdl-ripple--center',
+	    RIPPLE: 'mdl-ripple',
+	    IS_FOCUSED: 'is-focused',
+	    IS_DISABLED: 'is-disabled',
+	    IS_CHECKED: 'is-checked',
+	    IS_UPGRADED: 'is-upgraded'
+	};
+	/**
+	   * Handle change of state.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialCheckbox.prototype.onChange_ = function (event) {
+	    this.updateClasses_();
+	};
+	/**
+	   * Handle focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialCheckbox.prototype.onFocus_ = function (event) {
+	    this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle lost focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialCheckbox.prototype.onBlur_ = function (event) {
+	    this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle mouseup.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialCheckbox.prototype.onMouseUp_ = function (event) {
+	    this.blur_();
+	};
+	/**
+	   * Handle class updates.
+	   *
+	   * @private
+	   */
+	MaterialCheckbox.prototype.updateClasses_ = function () {
+	    this.checkDisabled();
+	    this.checkToggleState();
+	};
+	/**
+	   * Add blur.
+	   *
+	   * @private
+	   */
+	MaterialCheckbox.prototype.blur_ = function () {
+	    // TODO: figure out why there's a focus event being fired after our blur,
+	    // so that we can avoid this hack.
+	    window.setTimeout(function () {
+	        this.inputElement_.blur();
+	    }.bind(this), this.Constant_.TINY_TIMEOUT);
+	};
+	// Public methods.
+	/**
+	   * Check the inputs toggle state and update display.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.checkToggleState = function () {
+	    if (this.inputElement_.checked) {
+	        this.element_.classList.add(this.CssClasses_.IS_CHECKED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
+	    }
+	};
+	MaterialCheckbox.prototype['checkToggleState'] = MaterialCheckbox.prototype.checkToggleState;
+	/**
+	   * Check the inputs disabled state and update display.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.checkDisabled = function () {
+	    if (this.inputElement_.disabled) {
+	        this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+	    }
+	};
+	MaterialCheckbox.prototype['checkDisabled'] = MaterialCheckbox.prototype.checkDisabled;
+	/**
+	   * Disable checkbox.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.disable = function () {
+	    this.inputElement_.disabled = true;
+	    this.updateClasses_();
+	};
+	MaterialCheckbox.prototype['disable'] = MaterialCheckbox.prototype.disable;
+	/**
+	   * Enable checkbox.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.enable = function () {
+	    this.inputElement_.disabled = false;
+	    this.updateClasses_();
+	};
+	MaterialCheckbox.prototype['enable'] = MaterialCheckbox.prototype.enable;
+	/**
+	   * Check checkbox.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.check = function () {
+	    this.inputElement_.checked = true;
+	    this.updateClasses_();
+	};
+	MaterialCheckbox.prototype['check'] = MaterialCheckbox.prototype.check;
+	/**
+	   * Uncheck checkbox.
+	   *
+	   * @public
+	   */
+	MaterialCheckbox.prototype.uncheck = function () {
+	    this.inputElement_.checked = false;
+	    this.updateClasses_();
+	};
+	MaterialCheckbox.prototype['uncheck'] = MaterialCheckbox.prototype.uncheck;
+	/**
+	   * Initialize element.
+	   */
+	MaterialCheckbox.prototype.init = function () {
+	    if (this.element_) {
+	        this.inputElement_ = this.element_.querySelector('.' + this.CssClasses_.INPUT);
+	        var boxOutline = document.createElement('span');
+	        boxOutline.classList.add(this.CssClasses_.BOX_OUTLINE);
+	        var tickContainer = document.createElement('span');
+	        tickContainer.classList.add(this.CssClasses_.FOCUS_HELPER);
+	        var tickOutline = document.createElement('span');
+	        tickOutline.classList.add(this.CssClasses_.TICK_OUTLINE);
+	        boxOutline.appendChild(tickOutline);
+	        this.element_.appendChild(tickContainer);
+	        this.element_.appendChild(boxOutline);
+	        if (this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT)) {
+	            this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            this.rippleContainerElement_ = document.createElement('span');
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CONTAINER);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_EFFECT);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CENTER);
+	            this.boundRippleMouseUp = this.onMouseUp_.bind(this);
+	            this.rippleContainerElement_.addEventListener('mouseup', this.boundRippleMouseUp);
+	            var ripple = document.createElement('span');
+	            ripple.classList.add(this.CssClasses_.RIPPLE);
+	            this.rippleContainerElement_.appendChild(ripple);
+	            this.element_.appendChild(this.rippleContainerElement_);
+	        }
+	        this.boundInputOnChange = this.onChange_.bind(this);
+	        this.boundInputOnFocus = this.onFocus_.bind(this);
+	        this.boundInputOnBlur = this.onBlur_.bind(this);
+	        this.boundElementMouseUp = this.onMouseUp_.bind(this);
+	        this.inputElement_.addEventListener('change', this.boundInputOnChange);
+	        this.inputElement_.addEventListener('focus', this.boundInputOnFocus);
+	        this.inputElement_.addEventListener('blur', this.boundInputOnBlur);
+	        this.element_.addEventListener('mouseup', this.boundElementMouseUp);
+	        this.updateClasses_();
+	        this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialCheckbox,
+	    classAsString: 'MaterialCheckbox',
+	    cssClass: 'mdl-js-checkbox',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for icon toggle MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialIconToggle = function MaterialIconToggle(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialIconToggle'] = MaterialIconToggle;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialIconToggle.prototype.Constant_ = { TINY_TIMEOUT: 0.001 };
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialIconToggle.prototype.CssClasses_ = {
+	    INPUT: 'mdl-icon-toggle__input',
+	    JS_RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE_CONTAINER: 'mdl-icon-toggle__ripple-container',
+	    RIPPLE_CENTER: 'mdl-ripple--center',
+	    RIPPLE: 'mdl-ripple',
+	    IS_FOCUSED: 'is-focused',
+	    IS_DISABLED: 'is-disabled',
+	    IS_CHECKED: 'is-checked'
+	};
+	/**
+	   * Handle change of state.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialIconToggle.prototype.onChange_ = function (event) {
+	    this.updateClasses_();
+	};
+	/**
+	   * Handle focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialIconToggle.prototype.onFocus_ = function (event) {
+	    this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle lost focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialIconToggle.prototype.onBlur_ = function (event) {
+	    this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle mouseup.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialIconToggle.prototype.onMouseUp_ = function (event) {
+	    this.blur_();
+	};
+	/**
+	   * Handle class updates.
+	   *
+	   * @private
+	   */
+	MaterialIconToggle.prototype.updateClasses_ = function () {
+	    this.checkDisabled();
+	    this.checkToggleState();
+	};
+	/**
+	   * Add blur.
+	   *
+	   * @private
+	   */
+	MaterialIconToggle.prototype.blur_ = function () {
+	    // TODO: figure out why there's a focus event being fired after our blur,
+	    // so that we can avoid this hack.
+	    window.setTimeout(function () {
+	        this.inputElement_.blur();
+	    }.bind(this), this.Constant_.TINY_TIMEOUT);
+	};
+	// Public methods.
+	/**
+	   * Check the inputs toggle state and update display.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.checkToggleState = function () {
+	    if (this.inputElement_.checked) {
+	        this.element_.classList.add(this.CssClasses_.IS_CHECKED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
+	    }
+	};
+	MaterialIconToggle.prototype['checkToggleState'] = MaterialIconToggle.prototype.checkToggleState;
+	/**
+	   * Check the inputs disabled state and update display.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.checkDisabled = function () {
+	    if (this.inputElement_.disabled) {
+	        this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+	    }
+	};
+	MaterialIconToggle.prototype['checkDisabled'] = MaterialIconToggle.prototype.checkDisabled;
+	/**
+	   * Disable icon toggle.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.disable = function () {
+	    this.inputElement_.disabled = true;
+	    this.updateClasses_();
+	};
+	MaterialIconToggle.prototype['disable'] = MaterialIconToggle.prototype.disable;
+	/**
+	   * Enable icon toggle.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.enable = function () {
+	    this.inputElement_.disabled = false;
+	    this.updateClasses_();
+	};
+	MaterialIconToggle.prototype['enable'] = MaterialIconToggle.prototype.enable;
+	/**
+	   * Check icon toggle.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.check = function () {
+	    this.inputElement_.checked = true;
+	    this.updateClasses_();
+	};
+	MaterialIconToggle.prototype['check'] = MaterialIconToggle.prototype.check;
+	/**
+	   * Uncheck icon toggle.
+	   *
+	   * @public
+	   */
+	MaterialIconToggle.prototype.uncheck = function () {
+	    this.inputElement_.checked = false;
+	    this.updateClasses_();
+	};
+	MaterialIconToggle.prototype['uncheck'] = MaterialIconToggle.prototype.uncheck;
+	/**
+	   * Initialize element.
+	   */
+	MaterialIconToggle.prototype.init = function () {
+	    if (this.element_) {
+	        this.inputElement_ = this.element_.querySelector('.' + this.CssClasses_.INPUT);
+	        if (this.element_.classList.contains(this.CssClasses_.JS_RIPPLE_EFFECT)) {
+	            this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            this.rippleContainerElement_ = document.createElement('span');
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CONTAINER);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.JS_RIPPLE_EFFECT);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CENTER);
+	            this.boundRippleMouseUp = this.onMouseUp_.bind(this);
+	            this.rippleContainerElement_.addEventListener('mouseup', this.boundRippleMouseUp);
+	            var ripple = document.createElement('span');
+	            ripple.classList.add(this.CssClasses_.RIPPLE);
+	            this.rippleContainerElement_.appendChild(ripple);
+	            this.element_.appendChild(this.rippleContainerElement_);
+	        }
+	        this.boundInputOnChange = this.onChange_.bind(this);
+	        this.boundInputOnFocus = this.onFocus_.bind(this);
+	        this.boundInputOnBlur = this.onBlur_.bind(this);
+	        this.boundElementOnMouseUp = this.onMouseUp_.bind(this);
+	        this.inputElement_.addEventListener('change', this.boundInputOnChange);
+	        this.inputElement_.addEventListener('focus', this.boundInputOnFocus);
+	        this.inputElement_.addEventListener('blur', this.boundInputOnBlur);
+	        this.element_.addEventListener('mouseup', this.boundElementOnMouseUp);
+	        this.updateClasses_();
+	        this.element_.classList.add('is-upgraded');
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialIconToggle,
+	    classAsString: 'MaterialIconToggle',
+	    cssClass: 'mdl-js-icon-toggle',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for dropdown MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialMenu = function MaterialMenu(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialMenu'] = MaterialMenu;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialMenu.prototype.Constant_ = {
+	    // Total duration of the menu animation.
+	    TRANSITION_DURATION_SECONDS: 0.3,
+	    // The fraction of the total duration we want to use for menu item animations.
+	    TRANSITION_DURATION_FRACTION: 0.8,
+	    // How long the menu stays open after choosing an option (so the user can see
+	    // the ripple).
+	    CLOSE_TIMEOUT: 150
+	};
+	/**
+	   * Keycodes, for code readability.
+	   *
+	   * @enum {number}
+	   * @private
+	   */
+	MaterialMenu.prototype.Keycodes_ = {
+	    ENTER: 13,
+	    ESCAPE: 27,
+	    SPACE: 32,
+	    UP_ARROW: 38,
+	    DOWN_ARROW: 40
+	};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialMenu.prototype.CssClasses_ = {
+	    CONTAINER: 'mdl-menu__container',
+	    OUTLINE: 'mdl-menu__outline',
+	    ITEM: 'mdl-menu__item',
+	    ITEM_RIPPLE_CONTAINER: 'mdl-menu__item-ripple-container',
+	    RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE: 'mdl-ripple',
+	    // Statuses
+	    IS_UPGRADED: 'is-upgraded',
+	    IS_VISIBLE: 'is-visible',
+	    IS_ANIMATING: 'is-animating',
+	    // Alignment options
+	    BOTTOM_LEFT: 'mdl-menu--bottom-left',
+	    // This is the default.
+	    BOTTOM_RIGHT: 'mdl-menu--bottom-right',
+	    TOP_LEFT: 'mdl-menu--top-left',
+	    TOP_RIGHT: 'mdl-menu--top-right',
+	    UNALIGNED: 'mdl-menu--unaligned'
+	};
+	/**
+	   * Initialize element.
+	   */
+	MaterialMenu.prototype.init = function () {
+	    if (this.element_) {
+	        // Create container for the menu.
+	        var container = document.createElement('div');
+	        container.classList.add(this.CssClasses_.CONTAINER);
+	        this.element_.parentElement.insertBefore(container, this.element_);
+	        this.element_.parentElement.removeChild(this.element_);
+	        container.appendChild(this.element_);
+	        this.container_ = container;
+	        // Create outline for the menu (shadow and background).
+	        var outline = document.createElement('div');
+	        outline.classList.add(this.CssClasses_.OUTLINE);
+	        this.outline_ = outline;
+	        container.insertBefore(outline, this.element_);
+	        // Find the "for" element and bind events to it.
+	        var forElId = this.element_.getAttribute('for') || this.element_.getAttribute('data-mdl-for');
+	        var forEl = null;
+	        if (forElId) {
+	            forEl = document.getElementById(forElId);
+	            if (forEl) {
+	                this.forElement_ = forEl;
+	                forEl.addEventListener('click', this.handleForClick_.bind(this));
+	                forEl.addEventListener('keydown', this.handleForKeyboardEvent_.bind(this));
+	            }
+	        }
+	        var items = this.element_.querySelectorAll('.' + this.CssClasses_.ITEM);
+	        this.boundItemKeydown_ = this.handleItemKeyboardEvent_.bind(this);
+	        this.boundItemClick_ = this.handleItemClick_.bind(this);
+	        for (var i = 0; i < items.length; i++) {
+	            // Add a listener to each menu item.
+	            items[i].addEventListener('click', this.boundItemClick_);
+	            // Add a tab index to each menu item.
+	            items[i].tabIndex = '-1';
+	            // Add a keyboard listener to each menu item.
+	            items[i].addEventListener('keydown', this.boundItemKeydown_);
+	        }
+	        // Add ripple classes to each item, if the user has enabled ripples.
+	        if (this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT)) {
+	            this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            for (i = 0; i < items.length; i++) {
+	                var item = items[i];
+	                var rippleContainer = document.createElement('span');
+	                rippleContainer.classList.add(this.CssClasses_.ITEM_RIPPLE_CONTAINER);
+	                var ripple = document.createElement('span');
+	                ripple.classList.add(this.CssClasses_.RIPPLE);
+	                rippleContainer.appendChild(ripple);
+	                item.appendChild(rippleContainer);
+	                item.classList.add(this.CssClasses_.RIPPLE_EFFECT);
+	            }
+	        }
+	        // Copy alignment classes to the container, so the outline can use them.
+	        if (this.element_.classList.contains(this.CssClasses_.BOTTOM_LEFT)) {
+	            this.outline_.classList.add(this.CssClasses_.BOTTOM_LEFT);
+	        }
+	        if (this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT)) {
+	            this.outline_.classList.add(this.CssClasses_.BOTTOM_RIGHT);
+	        }
+	        if (this.element_.classList.contains(this.CssClasses_.TOP_LEFT)) {
+	            this.outline_.classList.add(this.CssClasses_.TOP_LEFT);
+	        }
+	        if (this.element_.classList.contains(this.CssClasses_.TOP_RIGHT)) {
+	            this.outline_.classList.add(this.CssClasses_.TOP_RIGHT);
+	        }
+	        if (this.element_.classList.contains(this.CssClasses_.UNALIGNED)) {
+	            this.outline_.classList.add(this.CssClasses_.UNALIGNED);
+	        }
+	        container.classList.add(this.CssClasses_.IS_UPGRADED);
+	    }
+	};
+	/**
+	   * Handles a click on the "for" element, by positioning the menu and then
+	   * toggling it.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialMenu.prototype.handleForClick_ = function (evt) {
+	    if (this.element_ && this.forElement_) {
+	        var rect = this.forElement_.getBoundingClientRect();
+	        var forRect = this.forElement_.parentElement.getBoundingClientRect();
+	        if (this.element_.classList.contains(this.CssClasses_.UNALIGNED)) {
+	        } else if (this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT)) {
+	            // Position below the "for" element, aligned to its right.
+	            this.container_.style.right = forRect.right - rect.right + 'px';
+	            this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + 'px';
+	        } else if (this.element_.classList.contains(this.CssClasses_.TOP_LEFT)) {
+	            // Position above the "for" element, aligned to its left.
+	            this.container_.style.left = this.forElement_.offsetLeft + 'px';
+	            this.container_.style.bottom = forRect.bottom - rect.top + 'px';
+	        } else if (this.element_.classList.contains(this.CssClasses_.TOP_RIGHT)) {
+	            // Position above the "for" element, aligned to its right.
+	            this.container_.style.right = forRect.right - rect.right + 'px';
+	            this.container_.style.bottom = forRect.bottom - rect.top + 'px';
+	        } else {
+	            // Default: position below the "for" element, aligned to its left.
+	            this.container_.style.left = this.forElement_.offsetLeft + 'px';
+	            this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + 'px';
+	        }
+	    }
+	    this.toggle(evt);
+	};
+	/**
+	   * Handles a keyboard event on the "for" element.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialMenu.prototype.handleForKeyboardEvent_ = function (evt) {
+	    if (this.element_ && this.container_ && this.forElement_) {
+	        var items = this.element_.querySelectorAll('.' + this.CssClasses_.ITEM + ':not([disabled])');
+	        if (items && items.length > 0 && this.container_.classList.contains(this.CssClasses_.IS_VISIBLE)) {
+	            if (evt.keyCode === this.Keycodes_.UP_ARROW) {
+	                evt.preventDefault();
+	                items[items.length - 1].focus();
+	            } else if (evt.keyCode === this.Keycodes_.DOWN_ARROW) {
+	                evt.preventDefault();
+	                items[0].focus();
+	            }
+	        }
+	    }
+	};
+	/**
+	   * Handles a keyboard event on an item.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialMenu.prototype.handleItemKeyboardEvent_ = function (evt) {
+	    if (this.element_ && this.container_) {
+	        var items = this.element_.querySelectorAll('.' + this.CssClasses_.ITEM + ':not([disabled])');
+	        if (items && items.length > 0 && this.container_.classList.contains(this.CssClasses_.IS_VISIBLE)) {
+	            var currentIndex = Array.prototype.slice.call(items).indexOf(evt.target);
+	            if (evt.keyCode === this.Keycodes_.UP_ARROW) {
+	                evt.preventDefault();
+	                if (currentIndex > 0) {
+	                    items[currentIndex - 1].focus();
+	                } else {
+	                    items[items.length - 1].focus();
+	                }
+	            } else if (evt.keyCode === this.Keycodes_.DOWN_ARROW) {
+	                evt.preventDefault();
+	                if (items.length > currentIndex + 1) {
+	                    items[currentIndex + 1].focus();
+	                } else {
+	                    items[0].focus();
+	                }
+	            } else if (evt.keyCode === this.Keycodes_.SPACE || evt.keyCode === this.Keycodes_.ENTER) {
+	                evt.preventDefault();
+	                // Send mousedown and mouseup to trigger ripple.
+	                var e = new MouseEvent('mousedown');
+	                evt.target.dispatchEvent(e);
+	                e = new MouseEvent('mouseup');
+	                evt.target.dispatchEvent(e);
+	                // Send click.
+	                evt.target.click();
+	            } else if (evt.keyCode === this.Keycodes_.ESCAPE) {
+	                evt.preventDefault();
+	                this.hide();
+	            }
+	        }
+	    }
+	};
+	/**
+	   * Handles a click event on an item.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialMenu.prototype.handleItemClick_ = function (evt) {
+	    if (evt.target.hasAttribute('disabled')) {
+	        evt.stopPropagation();
+	    } else {
+	        // Wait some time before closing menu, so the user can see the ripple.
+	        this.closing_ = true;
+	        window.setTimeout(function (evt) {
+	            this.hide();
+	            this.closing_ = false;
+	        }.bind(this), this.Constant_.CLOSE_TIMEOUT);
+	    }
+	};
+	/**
+	   * Calculates the initial clip (for opening the menu) or final clip (for closing
+	   * it), and applies it. This allows us to animate from or to the correct point,
+	   * that is, the point it's aligned to in the "for" element.
+	   *
+	   * @param {number} height Height of the clip rectangle
+	   * @param {number} width Width of the clip rectangle
+	   * @private
+	   */
+	MaterialMenu.prototype.applyClip_ = function (height, width) {
+	    if (this.element_.classList.contains(this.CssClasses_.UNALIGNED)) {
+	        // Do not clip.
+	        this.element_.style.clip = '';
+	    } else if (this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT)) {
+	        // Clip to the top right corner of the menu.
+	        this.element_.style.clip = 'rect(0 ' + width + 'px ' + '0 ' + width + 'px)';
+	    } else if (this.element_.classList.contains(this.CssClasses_.TOP_LEFT)) {
+	        // Clip to the bottom left corner of the menu.
+	        this.element_.style.clip = 'rect(' + height + 'px 0 ' + height + 'px 0)';
+	    } else if (this.element_.classList.contains(this.CssClasses_.TOP_RIGHT)) {
+	        // Clip to the bottom right corner of the menu.
+	        this.element_.style.clip = 'rect(' + height + 'px ' + width + 'px ' + height + 'px ' + width + 'px)';
+	    } else {
+	        // Default: do not clip (same as clipping to the top left corner).
+	        this.element_.style.clip = '';
+	    }
+	};
+	/**
+	   * Cleanup function to remove animation listeners.
+	   *
+	   * @param {Event} evt
+	   * @private
+	   */
+	MaterialMenu.prototype.removeAnimationEndListener_ = function (evt) {
+	    evt.target.classList.remove(MaterialMenu.prototype.CssClasses_.IS_ANIMATING);
+	};
+	/**
+	   * Adds an event listener to clean up after the animation ends.
+	   *
+	   * @private
+	   */
+	MaterialMenu.prototype.addAnimationEndListener_ = function () {
+	    this.element_.addEventListener('transitionend', this.removeAnimationEndListener_);
+	    this.element_.addEventListener('webkitTransitionEnd', this.removeAnimationEndListener_);
+	};
+	/**
+	   * Displays the menu.
+	   *
+	   * @public
+	   */
+	MaterialMenu.prototype.show = function (evt) {
+	    if (this.element_ && this.container_ && this.outline_) {
+	        // Measure the inner element.
+	        var height = this.element_.getBoundingClientRect().height;
+	        var width = this.element_.getBoundingClientRect().width;
+	        // Apply the inner element's size to the container and outline.
+	        this.container_.style.width = width + 'px';
+	        this.container_.style.height = height + 'px';
+	        this.outline_.style.width = width + 'px';
+	        this.outline_.style.height = height + 'px';
+	        var transitionDuration = this.Constant_.TRANSITION_DURATION_SECONDS * this.Constant_.TRANSITION_DURATION_FRACTION;
+	        // Calculate transition delays for individual menu items, so that they fade
+	        // in one at a time.
+	        var items = this.element_.querySelectorAll('.' + this.CssClasses_.ITEM);
+	        for (var i = 0; i < items.length; i++) {
+	            var itemDelay = null;
+	            if (this.element_.classList.contains(this.CssClasses_.TOP_LEFT) || this.element_.classList.contains(this.CssClasses_.TOP_RIGHT)) {
+	                itemDelay = (height - items[i].offsetTop - items[i].offsetHeight) / height * transitionDuration + 's';
+	            } else {
+	                itemDelay = items[i].offsetTop / height * transitionDuration + 's';
+	            }
+	            items[i].style.transitionDelay = itemDelay;
+	        }
+	        // Apply the initial clip to the text before we start animating.
+	        this.applyClip_(height, width);
+	        // Wait for the next frame, turn on animation, and apply the final clip.
+	        // Also make it visible. This triggers the transitions.
+	        window.requestAnimationFrame(function () {
+	            this.element_.classList.add(this.CssClasses_.IS_ANIMATING);
+	            this.element_.style.clip = 'rect(0 ' + width + 'px ' + height + 'px 0)';
+	            this.container_.classList.add(this.CssClasses_.IS_VISIBLE);
+	        }.bind(this));
+	        // Clean up after the animation is complete.
+	        this.addAnimationEndListener_();
+	        // Add a click listener to the document, to close the menu.
+	        var callback = function (e) {
+	            // Check to see if the document is processing the same event that
+	            // displayed the menu in the first place. If so, do nothing.
+	            // Also check to see if the menu is in the process of closing itself, and
+	            // do nothing in that case.
+	            // Also check if the clicked element is a menu item
+	            // if so, do nothing.
+	            if (e !== evt && !this.closing_ && e.target.parentNode !== this.element_) {
+	                document.removeEventListener('click', callback);
+	                this.hide();
+	            }
+	        }.bind(this);
+	        document.addEventListener('click', callback);
+	    }
+	};
+	MaterialMenu.prototype['show'] = MaterialMenu.prototype.show;
+	/**
+	   * Hides the menu.
+	   *
+	   * @public
+	   */
+	MaterialMenu.prototype.hide = function () {
+	    if (this.element_ && this.container_ && this.outline_) {
+	        var items = this.element_.querySelectorAll('.' + this.CssClasses_.ITEM);
+	        // Remove all transition delays; menu items fade out concurrently.
+	        for (var i = 0; i < items.length; i++) {
+	            items[i].style.removeProperty('transition-delay');
+	        }
+	        // Measure the inner element.
+	        var rect = this.element_.getBoundingClientRect();
+	        var height = rect.height;
+	        var width = rect.width;
+	        // Turn on animation, and apply the final clip. Also make invisible.
+	        // This triggers the transitions.
+	        this.element_.classList.add(this.CssClasses_.IS_ANIMATING);
+	        this.applyClip_(height, width);
+	        this.container_.classList.remove(this.CssClasses_.IS_VISIBLE);
+	        // Clean up after the animation is complete.
+	        this.addAnimationEndListener_();
+	    }
+	};
+	MaterialMenu.prototype['hide'] = MaterialMenu.prototype.hide;
+	/**
+	   * Displays or hides the menu, depending on current state.
+	   *
+	   * @public
+	   */
+	MaterialMenu.prototype.toggle = function (evt) {
+	    if (this.container_.classList.contains(this.CssClasses_.IS_VISIBLE)) {
+	        this.hide();
+	    } else {
+	        this.show(evt);
+	    }
+	};
+	MaterialMenu.prototype['toggle'] = MaterialMenu.prototype.toggle;
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialMenu,
+	    classAsString: 'MaterialMenu',
+	    cssClass: 'mdl-js-menu',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Progress MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialProgress = function MaterialProgress(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialProgress'] = MaterialProgress;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialProgress.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialProgress.prototype.CssClasses_ = { INDETERMINATE_CLASS: 'mdl-progress__indeterminate' };
+	/**
+	   * Set the current progress of the progressbar.
+	   *
+	   * @param {number} p Percentage of the progress (0-100)
+	   * @public
+	   */
+	MaterialProgress.prototype.setProgress = function (p) {
+	    if (this.element_.classList.contains(this.CssClasses_.INDETERMINATE_CLASS)) {
+	        return;
+	    }
+	    this.progressbar_.style.width = p + '%';
+	};
+	MaterialProgress.prototype['setProgress'] = MaterialProgress.prototype.setProgress;
+	/**
+	   * Set the current progress of the buffer.
+	   *
+	   * @param {number} p Percentage of the buffer (0-100)
+	   * @public
+	   */
+	MaterialProgress.prototype.setBuffer = function (p) {
+	    this.bufferbar_.style.width = p + '%';
+	    this.auxbar_.style.width = 100 - p + '%';
+	};
+	MaterialProgress.prototype['setBuffer'] = MaterialProgress.prototype.setBuffer;
+	/**
+	   * Initialize element.
+	   */
+	MaterialProgress.prototype.init = function () {
+	    if (this.element_) {
+	        var el = document.createElement('div');
+	        el.className = 'progressbar bar bar1';
+	        this.element_.appendChild(el);
+	        this.progressbar_ = el;
+	        el = document.createElement('div');
+	        el.className = 'bufferbar bar bar2';
+	        this.element_.appendChild(el);
+	        this.bufferbar_ = el;
+	        el = document.createElement('div');
+	        el.className = 'auxbar bar bar3';
+	        this.element_.appendChild(el);
+	        this.auxbar_ = el;
+	        this.progressbar_.style.width = '0%';
+	        this.bufferbar_.style.width = '100%';
+	        this.auxbar_.style.width = '0%';
+	        this.element_.classList.add('is-upgraded');
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialProgress,
+	    classAsString: 'MaterialProgress',
+	    cssClass: 'mdl-js-progress',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Radio MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialRadio = function MaterialRadio(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialRadio'] = MaterialRadio;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialRadio.prototype.Constant_ = { TINY_TIMEOUT: 0.001 };
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialRadio.prototype.CssClasses_ = {
+	    IS_FOCUSED: 'is-focused',
+	    IS_DISABLED: 'is-disabled',
+	    IS_CHECKED: 'is-checked',
+	    IS_UPGRADED: 'is-upgraded',
+	    JS_RADIO: 'mdl-js-radio',
+	    RADIO_BTN: 'mdl-radio__button',
+	    RADIO_OUTER_CIRCLE: 'mdl-radio__outer-circle',
+	    RADIO_INNER_CIRCLE: 'mdl-radio__inner-circle',
+	    RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE_CONTAINER: 'mdl-radio__ripple-container',
+	    RIPPLE_CENTER: 'mdl-ripple--center',
+	    RIPPLE: 'mdl-ripple'
+	};
+	/**
+	   * Handle change of state.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRadio.prototype.onChange_ = function (event) {
+	    // Since other radio buttons don't get change events, we need to look for
+	    // them to update their classes.
+	    var radios = document.getElementsByClassName(this.CssClasses_.JS_RADIO);
+	    for (var i = 0; i < radios.length; i++) {
+	        var button = radios[i].querySelector('.' + this.CssClasses_.RADIO_BTN);
+	        // Different name == different group, so no point updating those.
+	        if (button.getAttribute('name') === this.btnElement_.getAttribute('name')) {
+	            radios[i]['MaterialRadio'].updateClasses_();
+	        }
+	    }
+	};
+	/**
+	   * Handle focus.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRadio.prototype.onFocus_ = function (event) {
+	    this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle lost focus.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRadio.prototype.onBlur_ = function (event) {
+	    this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle mouseup.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRadio.prototype.onMouseup_ = function (event) {
+	    this.blur_();
+	};
+	/**
+	   * Update classes.
+	   *
+	   * @private
+	   */
+	MaterialRadio.prototype.updateClasses_ = function () {
+	    this.checkDisabled();
+	    this.checkToggleState();
+	};
+	/**
+	   * Add blur.
+	   *
+	   * @private
+	   */
+	MaterialRadio.prototype.blur_ = function () {
+	    // TODO: figure out why there's a focus event being fired after our blur,
+	    // so that we can avoid this hack.
+	    window.setTimeout(function () {
+	        this.btnElement_.blur();
+	    }.bind(this), this.Constant_.TINY_TIMEOUT);
+	};
+	// Public methods.
+	/**
+	   * Check the components disabled state.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.checkDisabled = function () {
+	    if (this.btnElement_.disabled) {
+	        this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+	    }
+	};
+	MaterialRadio.prototype['checkDisabled'] = MaterialRadio.prototype.checkDisabled;
+	/**
+	   * Check the components toggled state.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.checkToggleState = function () {
+	    if (this.btnElement_.checked) {
+	        this.element_.classList.add(this.CssClasses_.IS_CHECKED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
+	    }
+	};
+	MaterialRadio.prototype['checkToggleState'] = MaterialRadio.prototype.checkToggleState;
+	/**
+	   * Disable radio.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.disable = function () {
+	    this.btnElement_.disabled = true;
+	    this.updateClasses_();
+	};
+	MaterialRadio.prototype['disable'] = MaterialRadio.prototype.disable;
+	/**
+	   * Enable radio.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.enable = function () {
+	    this.btnElement_.disabled = false;
+	    this.updateClasses_();
+	};
+	MaterialRadio.prototype['enable'] = MaterialRadio.prototype.enable;
+	/**
+	   * Check radio.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.check = function () {
+	    this.btnElement_.checked = true;
+	    this.updateClasses_();
+	};
+	MaterialRadio.prototype['check'] = MaterialRadio.prototype.check;
+	/**
+	   * Uncheck radio.
+	   *
+	   * @public
+	   */
+	MaterialRadio.prototype.uncheck = function () {
+	    this.btnElement_.checked = false;
+	    this.updateClasses_();
+	};
+	MaterialRadio.prototype['uncheck'] = MaterialRadio.prototype.uncheck;
+	/**
+	   * Initialize element.
+	   */
+	MaterialRadio.prototype.init = function () {
+	    if (this.element_) {
+	        this.btnElement_ = this.element_.querySelector('.' + this.CssClasses_.RADIO_BTN);
+	        this.boundChangeHandler_ = this.onChange_.bind(this);
+	        this.boundFocusHandler_ = this.onChange_.bind(this);
+	        this.boundBlurHandler_ = this.onBlur_.bind(this);
+	        this.boundMouseUpHandler_ = this.onMouseup_.bind(this);
+	        var outerCircle = document.createElement('span');
+	        outerCircle.classList.add(this.CssClasses_.RADIO_OUTER_CIRCLE);
+	        var innerCircle = document.createElement('span');
+	        innerCircle.classList.add(this.CssClasses_.RADIO_INNER_CIRCLE);
+	        this.element_.appendChild(outerCircle);
+	        this.element_.appendChild(innerCircle);
+	        var rippleContainer;
+	        if (this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT)) {
+	            this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            rippleContainer = document.createElement('span');
+	            rippleContainer.classList.add(this.CssClasses_.RIPPLE_CONTAINER);
+	            rippleContainer.classList.add(this.CssClasses_.RIPPLE_EFFECT);
+	            rippleContainer.classList.add(this.CssClasses_.RIPPLE_CENTER);
+	            rippleContainer.addEventListener('mouseup', this.boundMouseUpHandler_);
+	            var ripple = document.createElement('span');
+	            ripple.classList.add(this.CssClasses_.RIPPLE);
+	            rippleContainer.appendChild(ripple);
+	            this.element_.appendChild(rippleContainer);
+	        }
+	        this.btnElement_.addEventListener('change', this.boundChangeHandler_);
+	        this.btnElement_.addEventListener('focus', this.boundFocusHandler_);
+	        this.btnElement_.addEventListener('blur', this.boundBlurHandler_);
+	        this.element_.addEventListener('mouseup', this.boundMouseUpHandler_);
+	        this.updateClasses_();
+	        this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialRadio,
+	    classAsString: 'MaterialRadio',
+	    cssClass: 'mdl-js-radio',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Slider MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialSlider = function MaterialSlider(element) {
+	    this.element_ = element;
+	    // Browser feature detection.
+	    this.isIE_ = window.navigator.msPointerEnabled;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialSlider'] = MaterialSlider;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialSlider.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialSlider.prototype.CssClasses_ = {
+	    IE_CONTAINER: 'mdl-slider__ie-container',
+	    SLIDER_CONTAINER: 'mdl-slider__container',
+	    BACKGROUND_FLEX: 'mdl-slider__background-flex',
+	    BACKGROUND_LOWER: 'mdl-slider__background-lower',
+	    BACKGROUND_UPPER: 'mdl-slider__background-upper',
+	    IS_LOWEST_VALUE: 'is-lowest-value',
+	    IS_UPGRADED: 'is-upgraded'
+	};
+	/**
+	   * Handle input on element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSlider.prototype.onInput_ = function (event) {
+	    this.updateValueStyles_();
+	};
+	/**
+	   * Handle change on element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSlider.prototype.onChange_ = function (event) {
+	    this.updateValueStyles_();
+	};
+	/**
+	   * Handle mouseup on element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSlider.prototype.onMouseUp_ = function (event) {
+	    event.target.blur();
+	};
+	/**
+	   * Handle mousedown on container element.
+	   * This handler is purpose is to not require the use to click
+	   * exactly on the 2px slider element, as FireFox seems to be very
+	   * strict about this.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   * @suppress {missingProperties}
+	   */
+	MaterialSlider.prototype.onContainerMouseDown_ = function (event) {
+	    // If this click is not on the parent element (but rather some child)
+	    // ignore. It may still bubble up.
+	    if (event.target !== this.element_.parentElement) {
+	        return;
+	    }
+	    // Discard the original event and create a new event that
+	    // is on the slider element.
+	    event.preventDefault();
+	    var newEvent = new MouseEvent('mousedown', {
+	        target: event.target,
+	        buttons: event.buttons,
+	        clientX: event.clientX,
+	        clientY: this.element_.getBoundingClientRect().y
+	    });
+	    this.element_.dispatchEvent(newEvent);
+	};
+	/**
+	   * Handle updating of values.
+	   *
+	   * @private
+	   */
+	MaterialSlider.prototype.updateValueStyles_ = function () {
+	    // Calculate and apply percentages to div structure behind slider.
+	    var fraction = (this.element_.value - this.element_.min) / (this.element_.max - this.element_.min);
+	    if (fraction === 0) {
+	        this.element_.classList.add(this.CssClasses_.IS_LOWEST_VALUE);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_LOWEST_VALUE);
+	    }
+	    if (!this.isIE_) {
+	        this.backgroundLower_.style.flex = fraction;
+	        this.backgroundLower_.style.webkitFlex = fraction;
+	        this.backgroundUpper_.style.flex = 1 - fraction;
+	        this.backgroundUpper_.style.webkitFlex = 1 - fraction;
+	    }
+	};
+	// Public methods.
+	/**
+	   * Disable slider.
+	   *
+	   * @public
+	   */
+	MaterialSlider.prototype.disable = function () {
+	    this.element_.disabled = true;
+	};
+	MaterialSlider.prototype['disable'] = MaterialSlider.prototype.disable;
+	/**
+	   * Enable slider.
+	   *
+	   * @public
+	   */
+	MaterialSlider.prototype.enable = function () {
+	    this.element_.disabled = false;
+	};
+	MaterialSlider.prototype['enable'] = MaterialSlider.prototype.enable;
+	/**
+	   * Update slider value.
+	   *
+	   * @param {number} value The value to which to set the control (optional).
+	   * @public
+	   */
+	MaterialSlider.prototype.change = function (value) {
+	    if (typeof value !== 'undefined') {
+	        this.element_.value = value;
+	    }
+	    this.updateValueStyles_();
+	};
+	MaterialSlider.prototype['change'] = MaterialSlider.prototype.change;
+	/**
+	   * Initialize element.
+	   */
+	MaterialSlider.prototype.init = function () {
+	    if (this.element_) {
+	        if (this.isIE_) {
+	            // Since we need to specify a very large height in IE due to
+	            // implementation limitations, we add a parent here that trims it down to
+	            // a reasonable size.
+	            var containerIE = document.createElement('div');
+	            containerIE.classList.add(this.CssClasses_.IE_CONTAINER);
+	            this.element_.parentElement.insertBefore(containerIE, this.element_);
+	            this.element_.parentElement.removeChild(this.element_);
+	            containerIE.appendChild(this.element_);
+	        } else {
+	            // For non-IE browsers, we need a div structure that sits behind the
+	            // slider and allows us to style the left and right sides of it with
+	            // different colors.
+	            var container = document.createElement('div');
+	            container.classList.add(this.CssClasses_.SLIDER_CONTAINER);
+	            this.element_.parentElement.insertBefore(container, this.element_);
+	            this.element_.parentElement.removeChild(this.element_);
+	            container.appendChild(this.element_);
+	            var backgroundFlex = document.createElement('div');
+	            backgroundFlex.classList.add(this.CssClasses_.BACKGROUND_FLEX);
+	            container.appendChild(backgroundFlex);
+	            this.backgroundLower_ = document.createElement('div');
+	            this.backgroundLower_.classList.add(this.CssClasses_.BACKGROUND_LOWER);
+	            backgroundFlex.appendChild(this.backgroundLower_);
+	            this.backgroundUpper_ = document.createElement('div');
+	            this.backgroundUpper_.classList.add(this.CssClasses_.BACKGROUND_UPPER);
+	            backgroundFlex.appendChild(this.backgroundUpper_);
+	        }
+	        this.boundInputHandler = this.onInput_.bind(this);
+	        this.boundChangeHandler = this.onChange_.bind(this);
+	        this.boundMouseUpHandler = this.onMouseUp_.bind(this);
+	        this.boundContainerMouseDownHandler = this.onContainerMouseDown_.bind(this);
+	        this.element_.addEventListener('input', this.boundInputHandler);
+	        this.element_.addEventListener('change', this.boundChangeHandler);
+	        this.element_.addEventListener('mouseup', this.boundMouseUpHandler);
+	        this.element_.parentElement.addEventListener('mousedown', this.boundContainerMouseDownHandler);
+	        this.updateValueStyles_();
+	        this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialSlider,
+	    classAsString: 'MaterialSlider',
+	    cssClass: 'mdl-js-slider',
+	    widget: true
+	});
+	/**
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Snackbar MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialSnackbar = function MaterialSnackbar(element) {
+	    this.element_ = element;
+	    this.textElement_ = this.element_.querySelector('.' + this.cssClasses_.MESSAGE);
+	    this.actionElement_ = this.element_.querySelector('.' + this.cssClasses_.ACTION);
+	    if (!this.textElement_) {
+	        throw new Error('There must be a message element for a snackbar.');
+	    }
+	    if (!this.actionElement_) {
+	        throw new Error('There must be an action element for a snackbar.');
+	    }
+	    this.active = false;
+	    this.actionHandler_ = undefined;
+	    this.message_ = undefined;
+	    this.actionText_ = undefined;
+	    this.queuedNotifications_ = [];
+	    this.setActionHidden_(true);
+	};
+	window['MaterialSnackbar'] = MaterialSnackbar;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialSnackbar.prototype.Constant_ = {
+	    // The duration of the snackbar show/hide animation, in ms.
+	    ANIMATION_LENGTH: 250
+	};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialSnackbar.prototype.cssClasses_ = {
+	    SNACKBAR: 'mdl-snackbar',
+	    MESSAGE: 'mdl-snackbar__text',
+	    ACTION: 'mdl-snackbar__action',
+	    ACTIVE: 'mdl-snackbar--active'
+	};
+	/**
+	   * Display the snackbar.
+	   *
+	   * @private
+	   */
+	MaterialSnackbar.prototype.displaySnackbar_ = function () {
+	    this.element_.setAttribute('aria-hidden', 'true');
+	    if (this.actionHandler_) {
+	        this.actionElement_.textContent = this.actionText_;
+	        this.actionElement_.addEventListener('click', this.actionHandler_);
+	        this.setActionHidden_(false);
+	    }
+	    this.textElement_.textContent = this.message_;
+	    this.element_.classList.add(this.cssClasses_.ACTIVE);
+	    this.element_.setAttribute('aria-hidden', 'false');
+	    setTimeout(this.cleanup_.bind(this), this.timeout_);
+	};
+	/**
+	   * Show the snackbar.
+	   *
+	   * @param {Object} data The data for the notification.
+	   * @public
+	   */
+	MaterialSnackbar.prototype.showSnackbar = function (data) {
+	    if (data === undefined) {
+	        throw new Error('Please provide a data object with at least a message to display.');
+	    }
+	    if (data['message'] === undefined) {
+	        throw new Error('Please provide a message to be displayed.');
+	    }
+	    if (data['actionHandler'] && !data['actionText']) {
+	        throw new Error('Please provide action text with the handler.');
+	    }
+	    if (this.active) {
+	        this.queuedNotifications_.push(data);
+	    } else {
+	        this.active = true;
+	        this.message_ = data['message'];
+	        if (data['timeout']) {
+	            this.timeout_ = data['timeout'];
+	        } else {
+	            this.timeout_ = 2750;
+	        }
+	        if (data['actionHandler']) {
+	            this.actionHandler_ = data['actionHandler'];
+	        }
+	        if (data['actionText']) {
+	            this.actionText_ = data['actionText'];
+	        }
+	        this.displaySnackbar_();
+	    }
+	};
+	MaterialSnackbar.prototype['showSnackbar'] = MaterialSnackbar.prototype.showSnackbar;
+	/**
+	   * Check if the queue has items within it.
+	   * If it does, display the next entry.
+	   *
+	   * @private
+	   */
+	MaterialSnackbar.prototype.checkQueue_ = function () {
+	    if (this.queuedNotifications_.length > 0) {
+	        this.showSnackbar(this.queuedNotifications_.shift());
+	    }
+	};
+	/**
+	   * Cleanup the snackbar event listeners and accessiblity attributes.
+	   *
+	   * @private
+	   */
+	MaterialSnackbar.prototype.cleanup_ = function () {
+	    this.element_.classList.remove(this.cssClasses_.ACTIVE);
+	    setTimeout(function () {
+	        this.element_.setAttribute('aria-hidden', 'true');
+	        this.textElement_.textContent = '';
+	        if (!Boolean(this.actionElement_.getAttribute('aria-hidden'))) {
+	            this.setActionHidden_(true);
+	            this.actionElement_.textContent = '';
+	            this.actionElement_.removeEventListener('click', this.actionHandler_);
+	        }
+	        this.actionHandler_ = undefined;
+	        this.message_ = undefined;
+	        this.actionText_ = undefined;
+	        this.active = false;
+	        this.checkQueue_();
+	    }.bind(this), this.Constant_.ANIMATION_LENGTH);
+	};
+	/**
+	   * Set the action handler hidden state.
+	   *
+	   * @param {boolean} value
+	   * @private
+	   */
+	MaterialSnackbar.prototype.setActionHidden_ = function (value) {
+	    if (value) {
+	        this.actionElement_.setAttribute('aria-hidden', 'true');
+	    } else {
+	        this.actionElement_.removeAttribute('aria-hidden');
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialSnackbar,
+	    classAsString: 'MaterialSnackbar',
+	    cssClass: 'mdl-js-snackbar',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Spinner MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   * @constructor
+	   */
+	var MaterialSpinner = function MaterialSpinner(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialSpinner'] = MaterialSpinner;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialSpinner.prototype.Constant_ = { MDL_SPINNER_LAYER_COUNT: 4 };
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialSpinner.prototype.CssClasses_ = {
+	    MDL_SPINNER_LAYER: 'mdl-spinner__layer',
+	    MDL_SPINNER_CIRCLE_CLIPPER: 'mdl-spinner__circle-clipper',
+	    MDL_SPINNER_CIRCLE: 'mdl-spinner__circle',
+	    MDL_SPINNER_GAP_PATCH: 'mdl-spinner__gap-patch',
+	    MDL_SPINNER_LEFT: 'mdl-spinner__left',
+	    MDL_SPINNER_RIGHT: 'mdl-spinner__right'
+	};
+	/**
+	   * Auxiliary method to create a spinner layer.
+	   *
+	   * @param {number} index Index of the layer to be created.
+	   * @public
+	   */
+	MaterialSpinner.prototype.createLayer = function (index) {
+	    var layer = document.createElement('div');
+	    layer.classList.add(this.CssClasses_.MDL_SPINNER_LAYER);
+	    layer.classList.add(this.CssClasses_.MDL_SPINNER_LAYER + '-' + index);
+	    var leftClipper = document.createElement('div');
+	    leftClipper.classList.add(this.CssClasses_.MDL_SPINNER_CIRCLE_CLIPPER);
+	    leftClipper.classList.add(this.CssClasses_.MDL_SPINNER_LEFT);
+	    var gapPatch = document.createElement('div');
+	    gapPatch.classList.add(this.CssClasses_.MDL_SPINNER_GAP_PATCH);
+	    var rightClipper = document.createElement('div');
+	    rightClipper.classList.add(this.CssClasses_.MDL_SPINNER_CIRCLE_CLIPPER);
+	    rightClipper.classList.add(this.CssClasses_.MDL_SPINNER_RIGHT);
+	    var circleOwners = [
+	        leftClipper,
+	        gapPatch,
+	        rightClipper
+	    ];
+	    for (var i = 0; i < circleOwners.length; i++) {
+	        var circle = document.createElement('div');
+	        circle.classList.add(this.CssClasses_.MDL_SPINNER_CIRCLE);
+	        circleOwners[i].appendChild(circle);
+	    }
+	    layer.appendChild(leftClipper);
+	    layer.appendChild(gapPatch);
+	    layer.appendChild(rightClipper);
+	    this.element_.appendChild(layer);
+	};
+	MaterialSpinner.prototype['createLayer'] = MaterialSpinner.prototype.createLayer;
+	/**
+	   * Stops the spinner animation.
+	   * Public method for users who need to stop the spinner for any reason.
+	   *
+	   * @public
+	   */
+	MaterialSpinner.prototype.stop = function () {
+	    this.element_.classList.remove('is-active');
+	};
+	MaterialSpinner.prototype['stop'] = MaterialSpinner.prototype.stop;
+	/**
+	   * Starts the spinner animation.
+	   * Public method for users who need to manually start the spinner for any reason
+	   * (instead of just adding the 'is-active' class to their markup).
+	   *
+	   * @public
+	   */
+	MaterialSpinner.prototype.start = function () {
+	    this.element_.classList.add('is-active');
+	};
+	MaterialSpinner.prototype['start'] = MaterialSpinner.prototype.start;
+	/**
+	   * Initialize element.
+	   */
+	MaterialSpinner.prototype.init = function () {
+	    if (this.element_) {
+	        for (var i = 1; i <= this.Constant_.MDL_SPINNER_LAYER_COUNT; i++) {
+	            this.createLayer(i);
+	        }
+	        this.element_.classList.add('is-upgraded');
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialSpinner,
+	    classAsString: 'MaterialSpinner',
+	    cssClass: 'mdl-js-spinner',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Checkbox MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialSwitch = function MaterialSwitch(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialSwitch'] = MaterialSwitch;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialSwitch.prototype.Constant_ = { TINY_TIMEOUT: 0.001 };
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialSwitch.prototype.CssClasses_ = {
+	    INPUT: 'mdl-switch__input',
+	    TRACK: 'mdl-switch__track',
+	    THUMB: 'mdl-switch__thumb',
+	    FOCUS_HELPER: 'mdl-switch__focus-helper',
+	    RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE_CONTAINER: 'mdl-switch__ripple-container',
+	    RIPPLE_CENTER: 'mdl-ripple--center',
+	    RIPPLE: 'mdl-ripple',
+	    IS_FOCUSED: 'is-focused',
+	    IS_DISABLED: 'is-disabled',
+	    IS_CHECKED: 'is-checked'
+	};
+	/**
+	   * Handle change of state.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSwitch.prototype.onChange_ = function (event) {
+	    this.updateClasses_();
+	};
+	/**
+	   * Handle focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSwitch.prototype.onFocus_ = function (event) {
+	    this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle lost focus of element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSwitch.prototype.onBlur_ = function (event) {
+	    this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle mouseup.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialSwitch.prototype.onMouseUp_ = function (event) {
+	    this.blur_();
+	};
+	/**
+	   * Handle class updates.
+	   *
+	   * @private
+	   */
+	MaterialSwitch.prototype.updateClasses_ = function () {
+	    this.checkDisabled();
+	    this.checkToggleState();
+	};
+	/**
+	   * Add blur.
+	   *
+	   * @private
+	   */
+	MaterialSwitch.prototype.blur_ = function () {
+	    // TODO: figure out why there's a focus event being fired after our blur,
+	    // so that we can avoid this hack.
+	    window.setTimeout(function () {
+	        this.inputElement_.blur();
+	    }.bind(this), this.Constant_.TINY_TIMEOUT);
+	};
+	// Public methods.
+	/**
+	   * Check the components disabled state.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.checkDisabled = function () {
+	    if (this.inputElement_.disabled) {
+	        this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+	    }
+	};
+	MaterialSwitch.prototype['checkDisabled'] = MaterialSwitch.prototype.checkDisabled;
+	/**
+	   * Check the components toggled state.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.checkToggleState = function () {
+	    if (this.inputElement_.checked) {
+	        this.element_.classList.add(this.CssClasses_.IS_CHECKED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
+	    }
+	};
+	MaterialSwitch.prototype['checkToggleState'] = MaterialSwitch.prototype.checkToggleState;
+	/**
+	   * Disable switch.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.disable = function () {
+	    this.inputElement_.disabled = true;
+	    this.updateClasses_();
+	};
+	MaterialSwitch.prototype['disable'] = MaterialSwitch.prototype.disable;
+	/**
+	   * Enable switch.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.enable = function () {
+	    this.inputElement_.disabled = false;
+	    this.updateClasses_();
+	};
+	MaterialSwitch.prototype['enable'] = MaterialSwitch.prototype.enable;
+	/**
+	   * Activate switch.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.on = function () {
+	    this.inputElement_.checked = true;
+	    this.updateClasses_();
+	};
+	MaterialSwitch.prototype['on'] = MaterialSwitch.prototype.on;
+	/**
+	   * Deactivate switch.
+	   *
+	   * @public
+	   */
+	MaterialSwitch.prototype.off = function () {
+	    this.inputElement_.checked = false;
+	    this.updateClasses_();
+	};
+	MaterialSwitch.prototype['off'] = MaterialSwitch.prototype.off;
+	/**
+	   * Initialize element.
+	   */
+	MaterialSwitch.prototype.init = function () {
+	    if (this.element_) {
+	        this.inputElement_ = this.element_.querySelector('.' + this.CssClasses_.INPUT);
+	        var track = document.createElement('div');
+	        track.classList.add(this.CssClasses_.TRACK);
+	        var thumb = document.createElement('div');
+	        thumb.classList.add(this.CssClasses_.THUMB);
+	        var focusHelper = document.createElement('span');
+	        focusHelper.classList.add(this.CssClasses_.FOCUS_HELPER);
+	        thumb.appendChild(focusHelper);
+	        this.element_.appendChild(track);
+	        this.element_.appendChild(thumb);
+	        this.boundMouseUpHandler = this.onMouseUp_.bind(this);
+	        if (this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT)) {
+	            this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            this.rippleContainerElement_ = document.createElement('span');
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CONTAINER);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_EFFECT);
+	            this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CENTER);
+	            this.rippleContainerElement_.addEventListener('mouseup', this.boundMouseUpHandler);
+	            var ripple = document.createElement('span');
+	            ripple.classList.add(this.CssClasses_.RIPPLE);
+	            this.rippleContainerElement_.appendChild(ripple);
+	            this.element_.appendChild(this.rippleContainerElement_);
+	        }
+	        this.boundChangeHandler = this.onChange_.bind(this);
+	        this.boundFocusHandler = this.onFocus_.bind(this);
+	        this.boundBlurHandler = this.onBlur_.bind(this);
+	        this.inputElement_.addEventListener('change', this.boundChangeHandler);
+	        this.inputElement_.addEventListener('focus', this.boundFocusHandler);
+	        this.inputElement_.addEventListener('blur', this.boundBlurHandler);
+	        this.element_.addEventListener('mouseup', this.boundMouseUpHandler);
+	        this.updateClasses_();
+	        this.element_.classList.add('is-upgraded');
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialSwitch,
+	    classAsString: 'MaterialSwitch',
+	    cssClass: 'mdl-js-switch',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Tabs MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {Element} element The element that will be upgraded.
+	   */
+	var MaterialTabs = function MaterialTabs(element) {
+	    // Stores the HTML element.
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialTabs'] = MaterialTabs;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialTabs.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialTabs.prototype.CssClasses_ = {
+	    TAB_CLASS: 'mdl-tabs__tab',
+	    PANEL_CLASS: 'mdl-tabs__panel',
+	    ACTIVE_CLASS: 'is-active',
+	    UPGRADED_CLASS: 'is-upgraded',
+	    MDL_JS_RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    MDL_RIPPLE_CONTAINER: 'mdl-tabs__ripple-container',
+	    MDL_RIPPLE: 'mdl-ripple',
+	    MDL_JS_RIPPLE_EFFECT_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events'
+	};
+	/**
+	   * Handle clicks to a tabs component
+	   *
+	   * @private
+	   */
+	MaterialTabs.prototype.initTabs_ = function () {
+	    if (this.element_.classList.contains(this.CssClasses_.MDL_JS_RIPPLE_EFFECT)) {
+	        this.element_.classList.add(this.CssClasses_.MDL_JS_RIPPLE_EFFECT_IGNORE_EVENTS);
+	    }
+	    // Select element tabs, document panels
+	    this.tabs_ = this.element_.querySelectorAll('.' + this.CssClasses_.TAB_CLASS);
+	    this.panels_ = this.element_.querySelectorAll('.' + this.CssClasses_.PANEL_CLASS);
+	    // Create new tabs for each tab element
+	    for (var i = 0; i < this.tabs_.length; i++) {
+	        new MaterialTab(this.tabs_[i], this);
+	    }
+	    this.element_.classList.add(this.CssClasses_.UPGRADED_CLASS);
+	};
+	/**
+	   * Reset tab state, dropping active classes
+	   *
+	   * @private
+	   */
+	MaterialTabs.prototype.resetTabState_ = function () {
+	    for (var k = 0; k < this.tabs_.length; k++) {
+	        this.tabs_[k].classList.remove(this.CssClasses_.ACTIVE_CLASS);
+	    }
+	};
+	/**
+	   * Reset panel state, droping active classes
+	   *
+	   * @private
+	   */
+	MaterialTabs.prototype.resetPanelState_ = function () {
+	    for (var j = 0; j < this.panels_.length; j++) {
+	        this.panels_[j].classList.remove(this.CssClasses_.ACTIVE_CLASS);
+	    }
+	};
+	/**
+	   * Initialize element.
+	   */
+	MaterialTabs.prototype.init = function () {
+	    if (this.element_) {
+	        this.initTabs_();
+	    }
+	};
+	/**
+	   * Constructor for an individual tab.
+	   *
+	   * @constructor
+	   * @param {Element} tab The HTML element for the tab.
+	   * @param {MaterialTabs} ctx The MaterialTabs object that owns the tab.
+	   */
+	function MaterialTab(tab, ctx) {
+	    if (tab) {
+	        if (ctx.element_.classList.contains(ctx.CssClasses_.MDL_JS_RIPPLE_EFFECT)) {
+	            var rippleContainer = document.createElement('span');
+	            rippleContainer.classList.add(ctx.CssClasses_.MDL_RIPPLE_CONTAINER);
+	            rippleContainer.classList.add(ctx.CssClasses_.MDL_JS_RIPPLE_EFFECT);
+	            var ripple = document.createElement('span');
+	            ripple.classList.add(ctx.CssClasses_.MDL_RIPPLE);
+	            rippleContainer.appendChild(ripple);
+	            tab.appendChild(rippleContainer);
+	        }
+	        tab.addEventListener('click', function (e) {
+	            e.preventDefault();
+	            var href = tab.href.split('#')[1];
+	            var panel = ctx.element_.querySelector('#' + href);
+	            ctx.resetTabState_();
+	            ctx.resetPanelState_();
+	            tab.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
+	            panel.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
+	        });
+	    }
+	}
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialTabs,
+	    classAsString: 'MaterialTabs',
+	    cssClass: 'mdl-js-tabs'
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Textfield MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialTextfield = function MaterialTextfield(element) {
+	    this.element_ = element;
+	    this.maxRows = this.Constant_.NO_MAX_ROWS;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialTextfield'] = MaterialTextfield;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialTextfield.prototype.Constant_ = {
+	    NO_MAX_ROWS: -1,
+	    MAX_ROWS_ATTRIBUTE: 'maxrows'
+	};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialTextfield.prototype.CssClasses_ = {
+	    LABEL: 'mdl-textfield__label',
+	    INPUT: 'mdl-textfield__input',
+	    IS_DIRTY: 'is-dirty',
+	    IS_FOCUSED: 'is-focused',
+	    IS_DISABLED: 'is-disabled',
+	    IS_INVALID: 'is-invalid',
+	    IS_UPGRADED: 'is-upgraded',
+	    HAS_PLACEHOLDER: 'has-placeholder'
+	};
+	/**
+	   * Handle input being entered.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialTextfield.prototype.onKeyDown_ = function (event) {
+	    var currentRowCount = event.target.value.split('\n').length;
+	    if (event.keyCode === 13) {
+	        if (currentRowCount >= this.maxRows) {
+	            event.preventDefault();
+	        }
+	    }
+	};
+	/**
+	   * Handle focus.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialTextfield.prototype.onFocus_ = function (event) {
+	    this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle lost focus.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialTextfield.prototype.onBlur_ = function (event) {
+	    this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	};
+	/**
+	   * Handle reset event from out side.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialTextfield.prototype.onReset_ = function (event) {
+	    this.updateClasses_();
+	};
+	/**
+	   * Handle class updates.
+	   *
+	   * @private
+	   */
+	MaterialTextfield.prototype.updateClasses_ = function () {
+	    this.checkDisabled();
+	    this.checkValidity();
+	    this.checkDirty();
+	    this.checkFocus();
+	};
+	// Public methods.
+	/**
+	   * Check the disabled state and update field accordingly.
+	   *
+	   * @public
+	   */
+	MaterialTextfield.prototype.checkDisabled = function () {
+	    if (this.input_.disabled) {
+	        this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+	    }
+	};
+	MaterialTextfield.prototype['checkDisabled'] = MaterialTextfield.prototype.checkDisabled;
+	/**
+	  * Check the focus state and update field accordingly.
+	  *
+	  * @public
+	  */
+	MaterialTextfield.prototype.checkFocus = function () {
+	    if (Boolean(this.element_.querySelector(':focus'))) {
+	        this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+	    }
+	};
+	MaterialTextfield.prototype['checkFocus'] = MaterialTextfield.prototype.checkFocus;
+	/**
+	   * Check the validity state and update field accordingly.
+	   *
+	   * @public
+	   */
+	MaterialTextfield.prototype.checkValidity = function () {
+	    if (this.input_.validity) {
+	        if (this.input_.validity.valid) {
+	            this.element_.classList.remove(this.CssClasses_.IS_INVALID);
+	        } else {
+	            this.element_.classList.add(this.CssClasses_.IS_INVALID);
+	        }
+	    }
+	};
+	MaterialTextfield.prototype['checkValidity'] = MaterialTextfield.prototype.checkValidity;
+	/**
+	   * Check the dirty state and update field accordingly.
+	   *
+	   * @public
+	   */
+	MaterialTextfield.prototype.checkDirty = function () {
+	    if (this.input_.value && this.input_.value.length > 0) {
+	        this.element_.classList.add(this.CssClasses_.IS_DIRTY);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_DIRTY);
+	    }
+	};
+	MaterialTextfield.prototype['checkDirty'] = MaterialTextfield.prototype.checkDirty;
+	/**
+	   * Disable text field.
+	   *
+	   * @public
+	   */
+	MaterialTextfield.prototype.disable = function () {
+	    this.input_.disabled = true;
+	    this.updateClasses_();
+	};
+	MaterialTextfield.prototype['disable'] = MaterialTextfield.prototype.disable;
+	/**
+	   * Enable text field.
+	   *
+	   * @public
+	   */
+	MaterialTextfield.prototype.enable = function () {
+	    this.input_.disabled = false;
+	    this.updateClasses_();
+	};
+	MaterialTextfield.prototype['enable'] = MaterialTextfield.prototype.enable;
+	/**
+	   * Update text field value.
+	   *
+	   * @param {string} value The value to which to set the control (optional).
+	   * @public
+	   */
+	MaterialTextfield.prototype.change = function (value) {
+	    this.input_.value = value || '';
+	    this.updateClasses_();
+	};
+	MaterialTextfield.prototype['change'] = MaterialTextfield.prototype.change;
+	/**
+	   * Initialize element.
+	   */
+	MaterialTextfield.prototype.init = function () {
+	    if (this.element_) {
+	        this.label_ = this.element_.querySelector('.' + this.CssClasses_.LABEL);
+	        this.input_ = this.element_.querySelector('.' + this.CssClasses_.INPUT);
+	        if (this.input_) {
+	            if (this.input_.hasAttribute(this.Constant_.MAX_ROWS_ATTRIBUTE)) {
+	                this.maxRows = parseInt(this.input_.getAttribute(this.Constant_.MAX_ROWS_ATTRIBUTE), 10);
+	                if (isNaN(this.maxRows)) {
+	                    this.maxRows = this.Constant_.NO_MAX_ROWS;
+	                }
+	            }
+	            if (this.input_.hasAttribute('placeholder')) {
+	                this.element_.classList.add(this.CssClasses_.HAS_PLACEHOLDER);
+	            }
+	            this.boundUpdateClassesHandler = this.updateClasses_.bind(this);
+	            this.boundFocusHandler = this.onFocus_.bind(this);
+	            this.boundBlurHandler = this.onBlur_.bind(this);
+	            this.boundResetHandler = this.onReset_.bind(this);
+	            this.input_.addEventListener('input', this.boundUpdateClassesHandler);
+	            this.input_.addEventListener('focus', this.boundFocusHandler);
+	            this.input_.addEventListener('blur', this.boundBlurHandler);
+	            this.input_.addEventListener('reset', this.boundResetHandler);
+	            if (this.maxRows !== this.Constant_.NO_MAX_ROWS) {
+	                // TODO: This should handle pasting multi line text.
+	                // Currently doesn't.
+	                this.boundKeyDownHandler = this.onKeyDown_.bind(this);
+	                this.input_.addEventListener('keydown', this.boundKeyDownHandler);
+	            }
+	            var invalid = this.element_.classList.contains(this.CssClasses_.IS_INVALID);
+	            this.updateClasses_();
+	            this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	            if (invalid) {
+	                this.element_.classList.add(this.CssClasses_.IS_INVALID);
+	            }
+	            if (this.input_.hasAttribute('autofocus')) {
+	                this.element_.focus();
+	                this.checkFocus();
+	            }
+	        }
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialTextfield,
+	    classAsString: 'MaterialTextfield',
+	    cssClass: 'mdl-js-textfield',
+	    widget: true
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Tooltip MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialTooltip = function MaterialTooltip(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialTooltip'] = MaterialTooltip;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialTooltip.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialTooltip.prototype.CssClasses_ = {
+	    IS_ACTIVE: 'is-active',
+	    BOTTOM: 'mdl-tooltip--bottom',
+	    LEFT: 'mdl-tooltip--left',
+	    RIGHT: 'mdl-tooltip--right',
+	    TOP: 'mdl-tooltip--top'
+	};
+	/**
+	   * Handle mouseenter for tooltip.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialTooltip.prototype.handleMouseEnter_ = function (event) {
+	    var props = event.target.getBoundingClientRect();
+	    var left = props.left + props.width / 2;
+	    var top = props.top + props.height / 2;
+	    var marginLeft = -1 * (this.element_.offsetWidth / 2);
+	    var marginTop = -1 * (this.element_.offsetHeight / 2);
+	    if (this.element_.classList.contains(this.CssClasses_.LEFT) || this.element_.classList.contains(this.CssClasses_.RIGHT)) {
+	        left = props.width / 2;
+	        if (top + marginTop < 0) {
+	            this.element_.style.top = 0;
+	            this.element_.style.marginTop = 0;
+	        } else {
+	            this.element_.style.top = top + 'px';
+	            this.element_.style.marginTop = marginTop + 'px';
+	        }
+	    } else {
+	        if (left + marginLeft < 0) {
+	            this.element_.style.left = 0;
+	            this.element_.style.marginLeft = 0;
+	        } else {
+	            this.element_.style.left = left + 'px';
+	            this.element_.style.marginLeft = marginLeft + 'px';
+	        }
+	    }
+	    if (this.element_.classList.contains(this.CssClasses_.TOP)) {
+	        this.element_.style.top = props.top - this.element_.offsetHeight - 10 + 'px';
+	    } else if (this.element_.classList.contains(this.CssClasses_.RIGHT)) {
+	        this.element_.style.left = props.left + props.width + 10 + 'px';
+	    } else if (this.element_.classList.contains(this.CssClasses_.LEFT)) {
+	        this.element_.style.left = props.left - this.element_.offsetWidth - 10 + 'px';
+	    } else {
+	        this.element_.style.top = props.top + props.height + 10 + 'px';
+	    }
+	    this.element_.classList.add(this.CssClasses_.IS_ACTIVE);
+	};
+	/**
+	   * Handle mouseleave for tooltip.
+	   *
+	   * @private
+	   */
+	MaterialTooltip.prototype.handleMouseLeave_ = function () {
+	    this.element_.classList.remove(this.CssClasses_.IS_ACTIVE);
+	};
+	/**
+	   * Initialize element.
+	   */
+	MaterialTooltip.prototype.init = function () {
+	    if (this.element_) {
+	        var forElId = this.element_.getAttribute('for');
+	        if (forElId) {
+	            this.forElement_ = document.getElementById(forElId);
+	        }
+	        if (this.forElement_) {
+	            // It's left here because it prevents accidental text selection on Android
+	            if (!this.forElement_.hasAttribute('tabindex')) {
+	                this.forElement_.setAttribute('tabindex', '0');
+	            }
+	            this.boundMouseEnterHandler = this.handleMouseEnter_.bind(this);
+	            this.boundMouseLeaveHandler = this.handleMouseLeave_.bind(this);
+	            this.forElement_.addEventListener('mouseenter', this.boundMouseEnterHandler, false);
+	            this.forElement_.addEventListener('touchend', this.boundMouseEnterHandler, false);
+	            this.forElement_.addEventListener('mouseleave', this.boundMouseLeaveHandler, false);
+	            window.addEventListener('touchstart', this.boundMouseLeaveHandler);
+	        }
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialTooltip,
+	    classAsString: 'MaterialTooltip',
+	    cssClass: 'mdl-tooltip'
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Layout MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialLayout = function MaterialLayout(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialLayout'] = MaterialLayout;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialLayout.prototype.Constant_ = {
+	    MAX_WIDTH: '(max-width: 1024px)',
+	    TAB_SCROLL_PIXELS: 100,
+	    RESIZE_TIMEOUT: 100,
+	    MENU_ICON: '&#xE5D2;',
+	    CHEVRON_LEFT: 'chevron_left',
+	    CHEVRON_RIGHT: 'chevron_right'
+	};
+	/**
+	   * Keycodes, for code readability.
+	   *
+	   * @enum {number}
+	   * @private
+	   */
+	MaterialLayout.prototype.Keycodes_ = {
+	    ENTER: 13,
+	    ESCAPE: 27,
+	    SPACE: 32
+	};
+	/**
+	   * Modes.
+	   *
+	   * @enum {number}
+	   * @private
+	   */
+	MaterialLayout.prototype.Mode_ = {
+	    STANDARD: 0,
+	    SEAMED: 1,
+	    WATERFALL: 2,
+	    SCROLL: 3
+	};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialLayout.prototype.CssClasses_ = {
+	    CONTAINER: 'mdl-layout__container',
+	    HEADER: 'mdl-layout__header',
+	    DRAWER: 'mdl-layout__drawer',
+	    CONTENT: 'mdl-layout__content',
+	    DRAWER_BTN: 'mdl-layout__drawer-button',
+	    ICON: 'material-icons',
+	    JS_RIPPLE_EFFECT: 'mdl-js-ripple-effect',
+	    RIPPLE_CONTAINER: 'mdl-layout__tab-ripple-container',
+	    RIPPLE: 'mdl-ripple',
+	    RIPPLE_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    HEADER_SEAMED: 'mdl-layout__header--seamed',
+	    HEADER_WATERFALL: 'mdl-layout__header--waterfall',
+	    HEADER_SCROLL: 'mdl-layout__header--scroll',
+	    FIXED_HEADER: 'mdl-layout--fixed-header',
+	    OBFUSCATOR: 'mdl-layout__obfuscator',
+	    TAB_BAR: 'mdl-layout__tab-bar',
+	    TAB_CONTAINER: 'mdl-layout__tab-bar-container',
+	    TAB: 'mdl-layout__tab',
+	    TAB_BAR_BUTTON: 'mdl-layout__tab-bar-button',
+	    TAB_BAR_LEFT_BUTTON: 'mdl-layout__tab-bar-left-button',
+	    TAB_BAR_RIGHT_BUTTON: 'mdl-layout__tab-bar-right-button',
+	    PANEL: 'mdl-layout__tab-panel',
+	    HAS_DRAWER: 'has-drawer',
+	    HAS_TABS: 'has-tabs',
+	    HAS_SCROLLING_HEADER: 'has-scrolling-header',
+	    CASTING_SHADOW: 'is-casting-shadow',
+	    IS_COMPACT: 'is-compact',
+	    IS_SMALL_SCREEN: 'is-small-screen',
+	    IS_DRAWER_OPEN: 'is-visible',
+	    IS_ACTIVE: 'is-active',
+	    IS_UPGRADED: 'is-upgraded',
+	    IS_ANIMATING: 'is-animating',
+	    ON_LARGE_SCREEN: 'mdl-layout--large-screen-only',
+	    ON_SMALL_SCREEN: 'mdl-layout--small-screen-only'
+	};
+	/**
+	   * Handles scrolling on the content.
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.contentScrollHandler_ = function () {
+	    if (this.header_.classList.contains(this.CssClasses_.IS_ANIMATING)) {
+	        return;
+	    }
+	    var headerVisible = !this.element_.classList.contains(this.CssClasses_.IS_SMALL_SCREEN) || this.element_.classList.contains(this.CssClasses_.FIXED_HEADER);
+	    if (this.content_.scrollTop > 0 && !this.header_.classList.contains(this.CssClasses_.IS_COMPACT)) {
+	        this.header_.classList.add(this.CssClasses_.CASTING_SHADOW);
+	        this.header_.classList.add(this.CssClasses_.IS_COMPACT);
+	        if (headerVisible) {
+	            this.header_.classList.add(this.CssClasses_.IS_ANIMATING);
+	        }
+	    } else if (this.content_.scrollTop <= 0 && this.header_.classList.contains(this.CssClasses_.IS_COMPACT)) {
+	        this.header_.classList.remove(this.CssClasses_.CASTING_SHADOW);
+	        this.header_.classList.remove(this.CssClasses_.IS_COMPACT);
+	        if (headerVisible) {
+	            this.header_.classList.add(this.CssClasses_.IS_ANIMATING);
+	        }
+	    }
+	};
+	/**
+	   * Handles a keyboard event on the drawer.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialLayout.prototype.keyboardEventHandler_ = function (evt) {
+	    // Only react when the drawer is open.
+	    if (evt.keyCode === this.Keycodes_.ESCAPE && this.drawer_.classList.contains(this.CssClasses_.IS_DRAWER_OPEN)) {
+	        this.toggleDrawer();
+	    }
+	};
+	/**
+	   * Handles changes in screen size.
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.screenSizeHandler_ = function () {
+	    if (this.screenSizeMediaQuery_.matches) {
+	        this.element_.classList.add(this.CssClasses_.IS_SMALL_SCREEN);
+	    } else {
+	        this.element_.classList.remove(this.CssClasses_.IS_SMALL_SCREEN);
+	        // Collapse drawer (if any) when moving to a large screen size.
+	        if (this.drawer_) {
+	            this.drawer_.classList.remove(this.CssClasses_.IS_DRAWER_OPEN);
+	            this.obfuscator_.classList.remove(this.CssClasses_.IS_DRAWER_OPEN);
+	        }
+	    }
+	};
+	/**
+	   * Handles events of drawer button.
+	   *
+	   * @param {Event} evt The event that fired.
+	   * @private
+	   */
+	MaterialLayout.prototype.drawerToggleHandler_ = function (evt) {
+	    if (evt && evt.type === 'keydown') {
+	        if (evt.keyCode === this.Keycodes_.SPACE || evt.keyCode === this.Keycodes_.ENTER) {
+	            // prevent scrolling in drawer nav
+	            evt.preventDefault();
+	        } else {
+	            // prevent other keys
+	            return;
+	        }
+	    }
+	    this.toggleDrawer();
+	};
+	/**
+	   * Handles (un)setting the `is-animating` class
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.headerTransitionEndHandler_ = function () {
+	    this.header_.classList.remove(this.CssClasses_.IS_ANIMATING);
+	};
+	/**
+	   * Handles expanding the header on click
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.headerClickHandler_ = function () {
+	    if (this.header_.classList.contains(this.CssClasses_.IS_COMPACT)) {
+	        this.header_.classList.remove(this.CssClasses_.IS_COMPACT);
+	        this.header_.classList.add(this.CssClasses_.IS_ANIMATING);
+	    }
+	};
+	/**
+	   * Reset tab state, dropping active classes
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.resetTabState_ = function (tabBar) {
+	    for (var k = 0; k < tabBar.length; k++) {
+	        tabBar[k].classList.remove(this.CssClasses_.IS_ACTIVE);
+	    }
+	};
+	/**
+	   * Reset panel state, droping active classes
+	   *
+	   * @private
+	   */
+	MaterialLayout.prototype.resetPanelState_ = function (panels) {
+	    for (var j = 0; j < panels.length; j++) {
+	        panels[j].classList.remove(this.CssClasses_.IS_ACTIVE);
+	    }
+	};
+	/**
+	  * Toggle drawer state
+	  *
+	  * @public
+	  */
+	MaterialLayout.prototype.toggleDrawer = function () {
+	    var drawerButton = this.element_.querySelector('.' + this.CssClasses_.DRAWER_BTN);
+	    this.drawer_.classList.toggle(this.CssClasses_.IS_DRAWER_OPEN);
+	    this.obfuscator_.classList.toggle(this.CssClasses_.IS_DRAWER_OPEN);
+	    // Set accessibility properties.
+	    if (this.drawer_.classList.contains(this.CssClasses_.IS_DRAWER_OPEN)) {
+	        this.drawer_.setAttribute('aria-hidden', 'false');
+	        drawerButton.setAttribute('aria-expanded', 'true');
+	    } else {
+	        this.drawer_.setAttribute('aria-hidden', 'true');
+	        drawerButton.setAttribute('aria-expanded', 'false');
+	    }
+	};
+	MaterialLayout.prototype['toggleDrawer'] = MaterialLayout.prototype.toggleDrawer;
+	/**
+	   * Initialize element.
+	   */
+	MaterialLayout.prototype.init = function () {
+	    if (this.element_) {
+	        var container = document.createElement('div');
+	        container.classList.add(this.CssClasses_.CONTAINER);
+	        var focusedElement = this.element_.querySelector(':focus');
+	        this.element_.parentElement.insertBefore(container, this.element_);
+	        this.element_.parentElement.removeChild(this.element_);
+	        container.appendChild(this.element_);
+	        if (focusedElement) {
+	            focusedElement.focus();
+	        }
+	        var directChildren = this.element_.childNodes;
+	        var numChildren = directChildren.length;
+	        for (var c = 0; c < numChildren; c++) {
+	            var child = directChildren[c];
+	            if (child.classList && child.classList.contains(this.CssClasses_.HEADER)) {
+	                this.header_ = child;
+	            }
+	            if (child.classList && child.classList.contains(this.CssClasses_.DRAWER)) {
+	                this.drawer_ = child;
+	            }
+	            if (child.classList && child.classList.contains(this.CssClasses_.CONTENT)) {
+	                this.content_ = child;
+	            }
+	        }
+	        window.addEventListener('pageshow', function (e) {
+	            if (e.persisted) {
+	                // when page is loaded from back/forward cache
+	                // trigger repaint to let layout scroll in safari
+	                this.element_.style.overflowY = 'hidden';
+	                requestAnimationFrame(function () {
+	                    this.element_.style.overflowY = '';
+	                }.bind(this));
+	            }
+	        }.bind(this), false);
+	        if (this.header_) {
+	            this.tabBar_ = this.header_.querySelector('.' + this.CssClasses_.TAB_BAR);
+	        }
+	        var mode = this.Mode_.STANDARD;
+	        if (this.header_) {
+	            if (this.header_.classList.contains(this.CssClasses_.HEADER_SEAMED)) {
+	                mode = this.Mode_.SEAMED;
+	            } else if (this.header_.classList.contains(this.CssClasses_.HEADER_WATERFALL)) {
+	                mode = this.Mode_.WATERFALL;
+	                this.header_.addEventListener('transitionend', this.headerTransitionEndHandler_.bind(this));
+	                this.header_.addEventListener('click', this.headerClickHandler_.bind(this));
+	            } else if (this.header_.classList.contains(this.CssClasses_.HEADER_SCROLL)) {
+	                mode = this.Mode_.SCROLL;
+	                container.classList.add(this.CssClasses_.HAS_SCROLLING_HEADER);
+	            }
+	            if (mode === this.Mode_.STANDARD) {
+	                this.header_.classList.add(this.CssClasses_.CASTING_SHADOW);
+	                if (this.tabBar_) {
+	                    this.tabBar_.classList.add(this.CssClasses_.CASTING_SHADOW);
+	                }
+	            } else if (mode === this.Mode_.SEAMED || mode === this.Mode_.SCROLL) {
+	                this.header_.classList.remove(this.CssClasses_.CASTING_SHADOW);
+	                if (this.tabBar_) {
+	                    this.tabBar_.classList.remove(this.CssClasses_.CASTING_SHADOW);
+	                }
+	            } else if (mode === this.Mode_.WATERFALL) {
+	                // Add and remove shadows depending on scroll position.
+	                // Also add/remove auxiliary class for styling of the compact version of
+	                // the header.
+	                this.content_.addEventListener('scroll', this.contentScrollHandler_.bind(this));
+	                this.contentScrollHandler_();
+	            }
+	        }
+	        // Add drawer toggling button to our layout, if we have an openable drawer.
+	        if (this.drawer_) {
+	            var drawerButton = this.element_.querySelector('.' + this.CssClasses_.DRAWER_BTN);
+	            if (!drawerButton) {
+	                drawerButton = document.createElement('div');
+	                drawerButton.setAttribute('aria-expanded', 'false');
+	                drawerButton.setAttribute('role', 'button');
+	                drawerButton.setAttribute('tabindex', '0');
+	                drawerButton.classList.add(this.CssClasses_.DRAWER_BTN);
+	                var drawerButtonIcon = document.createElement('i');
+	                drawerButtonIcon.classList.add(this.CssClasses_.ICON);
+	                drawerButtonIcon.innerHTML = this.Constant_.MENU_ICON;
+	                drawerButton.appendChild(drawerButtonIcon);
+	            }
+	            if (this.drawer_.classList.contains(this.CssClasses_.ON_LARGE_SCREEN)) {
+	                //If drawer has ON_LARGE_SCREEN class then add it to the drawer toggle button as well.
+	                drawerButton.classList.add(this.CssClasses_.ON_LARGE_SCREEN);
+	            } else if (this.drawer_.classList.contains(this.CssClasses_.ON_SMALL_SCREEN)) {
+	                //If drawer has ON_SMALL_SCREEN class then add it to the drawer toggle button as well.
+	                drawerButton.classList.add(this.CssClasses_.ON_SMALL_SCREEN);
+	            }
+	            drawerButton.addEventListener('click', this.drawerToggleHandler_.bind(this));
+	            drawerButton.addEventListener('keydown', this.drawerToggleHandler_.bind(this));
+	            // Add a class if the layout has a drawer, for altering the left padding.
+	            // Adds the HAS_DRAWER to the elements since this.header_ may or may
+	            // not be present.
+	            this.element_.classList.add(this.CssClasses_.HAS_DRAWER);
+	            // If we have a fixed header, add the button to the header rather than
+	            // the layout.
+	            if (this.element_.classList.contains(this.CssClasses_.FIXED_HEADER)) {
+	                this.header_.insertBefore(drawerButton, this.header_.firstChild);
+	            } else {
+	                this.element_.insertBefore(drawerButton, this.content_);
+	            }
+	            var obfuscator = document.createElement('div');
+	            obfuscator.classList.add(this.CssClasses_.OBFUSCATOR);
+	            this.element_.appendChild(obfuscator);
+	            obfuscator.addEventListener('click', this.drawerToggleHandler_.bind(this));
+	            this.obfuscator_ = obfuscator;
+	            this.drawer_.addEventListener('keydown', this.keyboardEventHandler_.bind(this));
+	            this.drawer_.setAttribute('aria-hidden', 'true');
+	        }
+	        // Keep an eye on screen size, and add/remove auxiliary class for styling
+	        // of small screens.
+	        this.screenSizeMediaQuery_ = window.matchMedia(this.Constant_.MAX_WIDTH);
+	        this.screenSizeMediaQuery_.addListener(this.screenSizeHandler_.bind(this));
+	        this.screenSizeHandler_();
+	        // Initialize tabs, if any.
+	        if (this.header_ && this.tabBar_) {
+	            this.element_.classList.add(this.CssClasses_.HAS_TABS);
+	            var tabContainer = document.createElement('div');
+	            tabContainer.classList.add(this.CssClasses_.TAB_CONTAINER);
+	            this.header_.insertBefore(tabContainer, this.tabBar_);
+	            this.header_.removeChild(this.tabBar_);
+	            var leftButton = document.createElement('div');
+	            leftButton.classList.add(this.CssClasses_.TAB_BAR_BUTTON);
+	            leftButton.classList.add(this.CssClasses_.TAB_BAR_LEFT_BUTTON);
+	            var leftButtonIcon = document.createElement('i');
+	            leftButtonIcon.classList.add(this.CssClasses_.ICON);
+	            leftButtonIcon.textContent = this.Constant_.CHEVRON_LEFT;
+	            leftButton.appendChild(leftButtonIcon);
+	            leftButton.addEventListener('click', function () {
+	                this.tabBar_.scrollLeft -= this.Constant_.TAB_SCROLL_PIXELS;
+	            }.bind(this));
+	            var rightButton = document.createElement('div');
+	            rightButton.classList.add(this.CssClasses_.TAB_BAR_BUTTON);
+	            rightButton.classList.add(this.CssClasses_.TAB_BAR_RIGHT_BUTTON);
+	            var rightButtonIcon = document.createElement('i');
+	            rightButtonIcon.classList.add(this.CssClasses_.ICON);
+	            rightButtonIcon.textContent = this.Constant_.CHEVRON_RIGHT;
+	            rightButton.appendChild(rightButtonIcon);
+	            rightButton.addEventListener('click', function () {
+	                this.tabBar_.scrollLeft += this.Constant_.TAB_SCROLL_PIXELS;
+	            }.bind(this));
+	            tabContainer.appendChild(leftButton);
+	            tabContainer.appendChild(this.tabBar_);
+	            tabContainer.appendChild(rightButton);
+	            // Add and remove tab buttons depending on scroll position and total
+	            // window size.
+	            var tabUpdateHandler = function () {
+	                if (this.tabBar_.scrollLeft > 0) {
+	                    leftButton.classList.add(this.CssClasses_.IS_ACTIVE);
+	                } else {
+	                    leftButton.classList.remove(this.CssClasses_.IS_ACTIVE);
+	                }
+	                if (this.tabBar_.scrollLeft < this.tabBar_.scrollWidth - this.tabBar_.offsetWidth) {
+	                    rightButton.classList.add(this.CssClasses_.IS_ACTIVE);
+	                } else {
+	                    rightButton.classList.remove(this.CssClasses_.IS_ACTIVE);
+	                }
+	            }.bind(this);
+	            this.tabBar_.addEventListener('scroll', tabUpdateHandler);
+	            tabUpdateHandler();
+	            // Update tabs when the window resizes.
+	            var windowResizeHandler = function () {
+	                // Use timeouts to make sure it doesn't happen too often.
+	                if (this.resizeTimeoutId_) {
+	                    clearTimeout(this.resizeTimeoutId_);
+	                }
+	                this.resizeTimeoutId_ = setTimeout(function () {
+	                    tabUpdateHandler();
+	                    this.resizeTimeoutId_ = null;
+	                }.bind(this), this.Constant_.RESIZE_TIMEOUT);
+	            }.bind(this);
+	            window.addEventListener('resize', windowResizeHandler);
+	            if (this.tabBar_.classList.contains(this.CssClasses_.JS_RIPPLE_EFFECT)) {
+	                this.tabBar_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS);
+	            }
+	            // Select element tabs, document panels
+	            var tabs = this.tabBar_.querySelectorAll('.' + this.CssClasses_.TAB);
+	            var panels = this.content_.querySelectorAll('.' + this.CssClasses_.PANEL);
+	            // Create new tabs for each tab element
+	            for (var i = 0; i < tabs.length; i++) {
+	                new MaterialLayoutTab(tabs[i], tabs, panels, this);
+	            }
+	        }
+	        this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	    }
+	};
+	/**
+	   * Constructor for an individual tab.
+	   *
+	   * @constructor
+	   * @param {HTMLElement} tab The HTML element for the tab.
+	   * @param {!Array<HTMLElement>} tabs Array with HTML elements for all tabs.
+	   * @param {!Array<HTMLElement>} panels Array with HTML elements for all panels.
+	   * @param {MaterialLayout} layout The MaterialLayout object that owns the tab.
+	   */
+	function MaterialLayoutTab(tab, tabs, panels, layout) {
+	    /**
+	     * Auxiliary method to programmatically select a tab in the UI.
+	     */
+	    function selectTab() {
+	        var href = tab.href.split('#')[1];
+	        var panel = layout.content_.querySelector('#' + href);
+	        layout.resetTabState_(tabs);
+	        layout.resetPanelState_(panels);
+	        tab.classList.add(layout.CssClasses_.IS_ACTIVE);
+	        panel.classList.add(layout.CssClasses_.IS_ACTIVE);
+	    }
+	    if (layout.tabBar_.classList.contains(layout.CssClasses_.JS_RIPPLE_EFFECT)) {
+	        var rippleContainer = document.createElement('span');
+	        rippleContainer.classList.add(layout.CssClasses_.RIPPLE_CONTAINER);
+	        rippleContainer.classList.add(layout.CssClasses_.JS_RIPPLE_EFFECT);
+	        var ripple = document.createElement('span');
+	        ripple.classList.add(layout.CssClasses_.RIPPLE);
+	        rippleContainer.appendChild(ripple);
+	        tab.appendChild(rippleContainer);
+	    }
+	    tab.addEventListener('click', function (e) {
+	        if (tab.getAttribute('href').charAt(0) === '#') {
+	            e.preventDefault();
+	            selectTab();
+	        }
+	    });
+	    tab.show = selectTab;
+	}
+	window['MaterialLayoutTab'] = MaterialLayoutTab;
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialLayout,
+	    classAsString: 'MaterialLayout',
+	    cssClass: 'mdl-js-layout'
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Data Table Card MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {Element} element The element that will be upgraded.
+	   */
+	var MaterialDataTable = function MaterialDataTable(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialDataTable'] = MaterialDataTable;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialDataTable.prototype.Constant_ = {};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialDataTable.prototype.CssClasses_ = {
+	    DATA_TABLE: 'mdl-data-table',
+	    SELECTABLE: 'mdl-data-table--selectable',
+	    SELECT_ELEMENT: 'mdl-data-table__select',
+	    IS_SELECTED: 'is-selected',
+	    IS_UPGRADED: 'is-upgraded'
+	};
+	/**
+	   * Generates and returns a function that toggles the selection state of a
+	   * single row (or multiple rows).
+	   *
+	   * @param {Element} checkbox Checkbox that toggles the selection state.
+	   * @param {Element} row Row to toggle when checkbox changes.
+	   * @param {(Array<Object>|NodeList)=} opt_rows Rows to toggle when checkbox changes.
+	   * @private
+	   */
+	MaterialDataTable.prototype.selectRow_ = function (checkbox, row, opt_rows) {
+	    if (row) {
+	        return function () {
+	            if (checkbox.checked) {
+	                row.classList.add(this.CssClasses_.IS_SELECTED);
+	            } else {
+	                row.classList.remove(this.CssClasses_.IS_SELECTED);
+	            }
+	        }.bind(this);
+	    }
+	    if (opt_rows) {
+	        return function () {
+	            var i;
+	            var el;
+	            if (checkbox.checked) {
+	                for (i = 0; i < opt_rows.length; i++) {
+	                    el = opt_rows[i].querySelector('td').querySelector('.mdl-checkbox');
+	                    el['MaterialCheckbox'].check();
+	                    opt_rows[i].classList.add(this.CssClasses_.IS_SELECTED);
+	                }
+	            } else {
+	                for (i = 0; i < opt_rows.length; i++) {
+	                    el = opt_rows[i].querySelector('td').querySelector('.mdl-checkbox');
+	                    el['MaterialCheckbox'].uncheck();
+	                    opt_rows[i].classList.remove(this.CssClasses_.IS_SELECTED);
+	                }
+	            }
+	        }.bind(this);
+	    }
+	};
+	/**
+	   * Creates a checkbox for a single or or multiple rows and hooks up the
+	   * event handling.
+	   *
+	   * @param {Element} row Row to toggle when checkbox changes.
+	   * @param {(Array<Object>|NodeList)=} opt_rows Rows to toggle when checkbox changes.
+	   * @private
+	   */
+	MaterialDataTable.prototype.createCheckbox_ = function (row, opt_rows) {
+	    var label = document.createElement('label');
+	    var labelClasses = [
+	        'mdl-checkbox',
+	        'mdl-js-checkbox',
+	        'mdl-js-ripple-effect',
+	        this.CssClasses_.SELECT_ELEMENT
+	    ];
+	    label.className = labelClasses.join(' ');
+	    var checkbox = document.createElement('input');
+	    checkbox.type = 'checkbox';
+	    checkbox.classList.add('mdl-checkbox__input');
+	    if (row) {
+	        checkbox.checked = row.classList.contains(this.CssClasses_.IS_SELECTED);
+	        checkbox.addEventListener('change', this.selectRow_(checkbox, row));
+	    } else if (opt_rows) {
+	        checkbox.addEventListener('change', this.selectRow_(checkbox, null, opt_rows));
+	    }
+	    label.appendChild(checkbox);
+	    componentHandler.upgradeElement(label, 'MaterialCheckbox');
+	    return label;
+	};
+	/**
+	   * Initialize element.
+	   */
+	MaterialDataTable.prototype.init = function () {
+	    if (this.element_) {
+	        var firstHeader = this.element_.querySelector('th');
+	        var bodyRows = Array.prototype.slice.call(this.element_.querySelectorAll('tbody tr'));
+	        var footRows = Array.prototype.slice.call(this.element_.querySelectorAll('tfoot tr'));
+	        var rows = bodyRows.concat(footRows);
+	        if (this.element_.classList.contains(this.CssClasses_.SELECTABLE)) {
+	            var th = document.createElement('th');
+	            var headerCheckbox = this.createCheckbox_(null, rows);
+	            th.appendChild(headerCheckbox);
+	            firstHeader.parentElement.insertBefore(th, firstHeader);
+	            for (var i = 0; i < rows.length; i++) {
+	                var firstCell = rows[i].querySelector('td');
+	                if (firstCell) {
+	                    var td = document.createElement('td');
+	                    if (rows[i].parentNode.nodeName.toUpperCase() === 'TBODY') {
+	                        var rowCheckbox = this.createCheckbox_(rows[i]);
+	                        td.appendChild(rowCheckbox);
+	                    }
+	                    rows[i].insertBefore(td, firstCell);
+	                }
+	            }
+	            this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	        }
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialDataTable,
+	    classAsString: 'MaterialDataTable',
+	    cssClass: 'mdl-js-data-table'
+	});
+	/**
+	 * @license
+	 * Copyright 2015 Google Inc. All Rights Reserved.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *      http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+	/**
+	   * Class constructor for Ripple MDL component.
+	   * Implements MDL component design pattern defined at:
+	   * https://github.com/jasonmayes/mdl-component-design-pattern
+	   *
+	   * @constructor
+	   * @param {HTMLElement} element The element that will be upgraded.
+	   */
+	var MaterialRipple = function MaterialRipple(element) {
+	    this.element_ = element;
+	    // Initialize instance.
+	    this.init();
+	};
+	window['MaterialRipple'] = MaterialRipple;
+	/**
+	   * Store constants in one place so they can be updated easily.
+	   *
+	   * @enum {string | number}
+	   * @private
+	   */
+	MaterialRipple.prototype.Constant_ = {
+	    INITIAL_SCALE: 'scale(0.0001, 0.0001)',
+	    INITIAL_SIZE: '1px',
+	    INITIAL_OPACITY: '0.4',
+	    FINAL_OPACITY: '0',
+	    FINAL_SCALE: ''
+	};
+	/**
+	   * Store strings for class names defined by this component that are used in
+	   * JavaScript. This allows us to simply change it in one place should we
+	   * decide to modify at a later date.
+	   *
+	   * @enum {string}
+	   * @private
+	   */
+	MaterialRipple.prototype.CssClasses_ = {
+	    RIPPLE_CENTER: 'mdl-ripple--center',
+	    RIPPLE_EFFECT_IGNORE_EVENTS: 'mdl-js-ripple-effect--ignore-events',
+	    RIPPLE: 'mdl-ripple',
+	    IS_ANIMATING: 'is-animating',
+	    IS_VISIBLE: 'is-visible'
+	};
+	/**
+	   * Handle mouse / finger down on element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRipple.prototype.downHandler_ = function (event) {
+	    if (!this.rippleElement_.style.width && !this.rippleElement_.style.height) {
+	        var rect = this.element_.getBoundingClientRect();
+	        this.boundHeight = rect.height;
+	        this.boundWidth = rect.width;
+	        this.rippleSize_ = Math.sqrt(rect.width * rect.width + rect.height * rect.height) * 2 + 2;
+	        this.rippleElement_.style.width = this.rippleSize_ + 'px';
+	        this.rippleElement_.style.height = this.rippleSize_ + 'px';
+	    }
+	    this.rippleElement_.classList.add(this.CssClasses_.IS_VISIBLE);
+	    if (event.type === 'mousedown' && this.ignoringMouseDown_) {
+	        this.ignoringMouseDown_ = false;
+	    } else {
+	        if (event.type === 'touchstart') {
+	            this.ignoringMouseDown_ = true;
+	        }
+	        var frameCount = this.getFrameCount();
+	        if (frameCount > 0) {
+	            return;
+	        }
+	        this.setFrameCount(1);
+	        var bound = event.currentTarget.getBoundingClientRect();
+	        var x;
+	        var y;
+	        // Check if we are handling a keyboard click.
+	        if (event.clientX === 0 && event.clientY === 0) {
+	            x = Math.round(bound.width / 2);
+	            y = Math.round(bound.height / 2);
+	        } else {
+	            var clientX = event.clientX ? event.clientX : event.touches[0].clientX;
+	            var clientY = event.clientY ? event.clientY : event.touches[0].clientY;
+	            x = Math.round(clientX - bound.left);
+	            y = Math.round(clientY - bound.top);
+	        }
+	        this.setRippleXY(x, y);
+	        this.setRippleStyles(true);
+	        window.requestAnimationFrame(this.animFrameHandler.bind(this));
+	    }
+	};
+	/**
+	   * Handle mouse / finger up on element.
+	   *
+	   * @param {Event} event The event that fired.
+	   * @private
+	   */
+	MaterialRipple.prototype.upHandler_ = function (event) {
+	    // Don't fire for the artificial "mouseup" generated by a double-click.
+	    if (event && event.detail !== 2) {
+	        // Allow a repaint to occur before removing this class, so the animation
+	        // shows for tap events, which seem to trigger a mouseup too soon after
+	        // mousedown.
+	        window.setTimeout(function () {
+	            this.rippleElement_.classList.remove(this.CssClasses_.IS_VISIBLE);
+	        }.bind(this), 0);
+	    }
+	};
+	/**
+	   * Initialize element.
+	   */
+	MaterialRipple.prototype.init = function () {
+	    if (this.element_) {
+	        var recentering = this.element_.classList.contains(this.CssClasses_.RIPPLE_CENTER);
+	        if (!this.element_.classList.contains(this.CssClasses_.RIPPLE_EFFECT_IGNORE_EVENTS)) {
+	            this.rippleElement_ = this.element_.querySelector('.' + this.CssClasses_.RIPPLE);
+	            this.frameCount_ = 0;
+	            this.rippleSize_ = 0;
+	            this.x_ = 0;
+	            this.y_ = 0;
+	            // Touch start produces a compat mouse down event, which would cause a
+	            // second ripples. To avoid that, we use this property to ignore the first
+	            // mouse down after a touch start.
+	            this.ignoringMouseDown_ = false;
+	            this.boundDownHandler = this.downHandler_.bind(this);
+	            this.element_.addEventListener('mousedown', this.boundDownHandler);
+	            this.element_.addEventListener('touchstart', this.boundDownHandler);
+	            this.boundUpHandler = this.upHandler_.bind(this);
+	            this.element_.addEventListener('mouseup', this.boundUpHandler);
+	            this.element_.addEventListener('mouseleave', this.boundUpHandler);
+	            this.element_.addEventListener('touchend', this.boundUpHandler);
+	            this.element_.addEventListener('blur', this.boundUpHandler);
+	            /**
+	         * Getter for frameCount_.
+	         * @return {number} the frame count.
+	         */
+	            this.getFrameCount = function () {
+	                return this.frameCount_;
+	            };
+	            /**
+	         * Setter for frameCount_.
+	         * @param {number} fC the frame count.
+	         */
+	            this.setFrameCount = function (fC) {
+	                this.frameCount_ = fC;
+	            };
+	            /**
+	         * Getter for rippleElement_.
+	         * @return {Element} the ripple element.
+	         */
+	            this.getRippleElement = function () {
+	                return this.rippleElement_;
+	            };
+	            /**
+	         * Sets the ripple X and Y coordinates.
+	         * @param  {number} newX the new X coordinate
+	         * @param  {number} newY the new Y coordinate
+	         */
+	            this.setRippleXY = function (newX, newY) {
+	                this.x_ = newX;
+	                this.y_ = newY;
+	            };
+	            /**
+	         * Sets the ripple styles.
+	         * @param  {boolean} start whether or not this is the start frame.
+	         */
+	            this.setRippleStyles = function (start) {
+	                if (this.rippleElement_ !== null) {
+	                    var transformString;
+	                    var scale;
+	                    var size;
+	                    var offset = 'translate(' + this.x_ + 'px, ' + this.y_ + 'px)';
+	                    if (start) {
+	                        scale = this.Constant_.INITIAL_SCALE;
+	                        size = this.Constant_.INITIAL_SIZE;
+	                    } else {
+	                        scale = this.Constant_.FINAL_SCALE;
+	                        size = this.rippleSize_ + 'px';
+	                        if (recentering) {
+	                            offset = 'translate(' + this.boundWidth / 2 + 'px, ' + this.boundHeight / 2 + 'px)';
+	                        }
+	                    }
+	                    transformString = 'translate(-50%, -50%) ' + offset + scale;
+	                    this.rippleElement_.style.webkitTransform = transformString;
+	                    this.rippleElement_.style.msTransform = transformString;
+	                    this.rippleElement_.style.transform = transformString;
+	                    if (start) {
+	                        this.rippleElement_.classList.remove(this.CssClasses_.IS_ANIMATING);
+	                    } else {
+	                        this.rippleElement_.classList.add(this.CssClasses_.IS_ANIMATING);
+	                    }
+	                }
+	            };
+	            /**
+	         * Handles an animation frame.
+	         */
+	            this.animFrameHandler = function () {
+	                if (this.frameCount_-- > 0) {
+	                    window.requestAnimationFrame(this.animFrameHandler.bind(this));
+	                } else {
+	                    this.setRippleStyles(false);
+	                }
+	            };
+	        }
+	    }
+	};
+	// The component registers itself. It can assume componentHandler is available
+	// in the global scope.
+	componentHandler.register({
+	    constructor: MaterialRipple,
+	    classAsString: 'MaterialRipple',
+	    cssClass: 'mdl-js-ripple-effect',
+	    widget: false
+	});
+	}());
+
 
 /***/ },
 /* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
+	
+	var exportLibs = function(exports /*libs to include */) {
+		var feature, i, len, libfeatures, libname, obj;
+		
+		for(i = 1, len = arguments.length; i < len; i++) {
+			libname = arguments[i];
+			libfeatures = __webpack_require__(263)("./" + libname + '.js');
+			obj = exports;
+			if (libfeatures.__namespace__ && libfeatures.__namespace__ != "") {
+				if (!obj.hasOwnProperty(libfeatures.__namespace__)) {
+					obj[libfeatures.__namespace__] = {};
+				}
+				obj = obj[libfeatures.__namespace__];
+			}
+			for(feature in libfeatures) {
+				if (feature == '__namespace__') {
+					continue;
+				}
+				if (obj.hasOwnProperty(feature)) {
+					throw new Error('Feature exists: ' + feature);
+				}
+				obj[feature] = libfeatures[feature];
+			}
+		}
+		return exports;
+	};
+	
+	exportLibs(module.exports, 'distance', 'formatter', 'gpx-parser', 'tcx-parser', 'time', 'calc', 'creator', 'image', 'geohash');
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./calc.js": 264,
+		"./constants.js": 267,
+		"./creator.js": 269,
+		"./distance.js": 268,
+		"./exiftool.js": 324,
+		"./formatter.js": 328,
+		"./geohash.js": 329,
+		"./gpx-parser.js": 271,
+		"./image.js": 330,
+		"./speed.js": 266,
+		"./tcx-parser.js": 331,
+		"./time.js": 265
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 263;
+
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var time = __webpack_require__(265);
+	var speed = __webpack_require__(266);
+	var distance = __webpack_require__(268);
+	
+	var Trackpoint = function() {
+		this.lat = null;
+		this.lng = null;
+		this.ele = null;
+		this.time = null;
+		this.speed = undefined;
+		this.distance = undefined;
+	};
+	
+	Trackpoint.copy = function(tp) {
+		var ctp = new Trackpoint();
+		ctp.lat = tp.lat;
+		ctp.lng = tp.lng;
+		ctp.time = tp.time;
+		ctp.speed = tp.speed;
+		ctp.distance = tp.distance;
+		if(tp.altitude) {
+			/* TODO this is not true */
+			ctp.ele = tp.altitude;
+		} else if(tp.ele) {
+			ctp.ele = tp.ele;
+		}
+	
+		return ctp;
+	};
+	var TrackingResult = function() {
+		this.points = [];
+		this.averageSpeed = undefined;
+		this.fastestSpeed = undefined;
+		this.slowestSpeed = undefined;
+		/* Pace can be converted from speed */
+		this.totalDistance = 0;
+		this.totalTime = 0;
+	};
+	/**
+	 * Calculate speed and distance
+	 * 
+	 * First point assumed same speed as the second point
+	 *
+	 * TODO: calculate based on more than 2 points for better values
+	 *
+	 */
+	var calculateFromGPX = function(points, callback, fromIndex, toIndex) {
+		var i, len, index, currentDistance, currentSpeed, fastestSpeed = 0, slowestSpeed = 100000000;
+		var result;
+		len = points.length - 1;
+		i = 0;
+		if(fromIndex && fromIndex > 0 && fromIndex < len) {
+			i = fromIndex;
+		}
+		if(toIndex && toIndex < len) {
+			len = toIndex;
+		}
+		if(points.length < 2 || len - i < 2) {
+			return callback(new Error('Result can not be calculated properly with data points less than 2'), null);
+		}
+	
+		try {
+			result = new TrackingResult();
+			index = 0;
+			result.points[index] = Trackpoint.copy(points[i]);
+			result.points[index].distance = 0;
+			for(; i < len; i++, index++) {
+				result.points[index + 1] = Trackpoint.copy(points[i + 1]);
+				currentDistance = distance.getDistance(result.points[index].lng, result.points[index].lat, result.points[index + 1].lng, result.points[index + 1].lat);
+				currentSpeed = speed.calculateSpeed(currentDistance, result.points[index].time, result.points[index + 1].time);
+				result.totalDistance += currentDistance;
+				result.points[index + 1].distance = result.points[index].distance + currentDistance;
+				result.points[index + 1].speed = currentSpeed;
+				if(currentSpeed > fastestSpeed) {
+					fastestSpeed = currentSpeed;
+				}
+				if(currentSpeed < slowestSpeed) {
+					slowestSpeed = currentSpeed;
+				}
+			}
+			result.points[0].speed = result.points[1].speed;
+			result.averageSpeed = speed.calculateSpeed(result.totalDistance, result.points[0].time, result.points[index].time);
+			result.fastestSpeed = fastestSpeed;
+			result.slowestSpeed = slowestSpeed;
+			result.totalTime = time.getDiffInSecs(result.points[0].time, result.points[index].time);
+			callback(null, result);
+		} catch(e) {
+			callback(e, null);
+		}
+	};
+	
+	/**
+	 * Calculate speed and distance
+	 * 
+	 * Same way as GPX
+	 *
+	 */
+	var calculateFromTCX = function(points, callback, fromIndex, toIndex) {
+		var newPoints = [], i, len;
+		try {
+			for (i = 0, len = points.length; i < len; i++) {
+				if (!points[i].lat || !points[i].lng) {
+					continue;
+				}
+				newPoints.push(points[i]);
+			}
+			calculateFromGPX(newPoints, callback, fromIndex, toIndex);
+		} catch(e) {
+			callback(e, null);
+		}
+	};
+	
+	
+	module.exports = {
+		calculateFromGPX : calculateFromGPX,
+		calculateFromTCX : calculateFromTCX
+	};
+
+
+/***/ },
+/* 265 */
+/***/ function(module, exports) {
+
+	var getDiffInSecs = function(d1, d2) {
+		return Math.round((d2.getTime() - d1.getTime())/1000);
+	};
+	
+	var RelativeTime = function(secs) {
+		this.hours = Math.floor(secs / 3600);
+		this.minutes = Math.floor((secs % 3600) / 60);
+		this.seconds = Math.round(secs % 60);
+	};
+	
+	RelativeTime.prototype.toString = function() {
+		var str = '';
+		if(this.hours) {
+			str += this.padDigitsString(this.hours) + ':';
+		}
+		str += this.padDigitsString(this.minutes) + ':';
+		str += this.padDigitsString(this.seconds);
+		return str;
+	};
+	
+	RelativeTime.prototype.padDigitsString = function(digits) {
+		if(digits < 10) {
+			return '0' + digits;
+		}
+		return String(digits);
+	};
+	
+	module.exports = {
+		getDiffInSecs: getDiffInSecs,
+		RelativeTime: RelativeTime
+	};
+
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var constants = __webpack_require__(267);
+	var time = __webpack_require__(265);
+	
+	/**
+	 *
+	 *
+	 * @param distance Float meters
+	 * @param time1 Date
+	 * @param time2 Date
+	 *
+	 * @return float speed in meter per second
+	 */
+	var calculateSpeed = function(distance, time1, time2) {
+		if( typeof distance == 'undefined' || distance < 0) {
+			return undefined;
+		}
+		if(!time1 || !time2 || time2 <= time1) {
+			return undefined;
+		}
+		return (1000 * distance) / (time2.getTime() - time1.getTime());
+	};
+	var convertTypes = {
+		MPSec2KmPH : 'MPSec2KmPH',
+		KmPH2MPSec : 'KmPH2MPSec',
+		MPSec2MPH : 'MPSec2MPH',
+		MPH2MPSec : 'MPH2MPSec'
+	};
+	
+	/* Those may make the tests fail if they are run in diff precision :-D */
+	var convertFactors = {
+		MPSec2KmPH : 3.6,
+		KmPH2MPSec : 1 / 3.6,
+		MPSec2MPH : 3600 / constants.MILE_IN_METERS,
+		MPH2MPSec : constants.MILE_IN_METERS / 3600
+	};
+	
+	var convertSpeed = function(speed, fromto) {
+		var scaleFactor;
+	
+		if(convertFactors.hasOwnProperty(fromto)) {
+			scaleFactor = convertFactors[fromto];
+		} else {
+			throw new Error('Not supported conversion: ' + fromto);
+		}
+	
+		return speed * scaleFactor;
+	};
+	var calculatePaceTypes = {
+		PER_KM : 'PER_KM',
+		PER_MILE : 'PER_MILE'
+	};
+	
+	var PaceResult = function(hours, minutes, seconds, type) {
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+		this.type = type;
+	};
+	
+	PaceResult.prototype.padDigitsString = function(digits) {
+		if(digits < 10) {
+			return '0' + digits;
+		}
+		return String(digits);
+	};
+	
+	PaceResult.prototype.toString = function() {
+		var str = '';
+		if(this.hours) {
+			str += this.padDigitsString(this.hours) + ':';
+		}
+		str += this.padDigitsString(this.minutes) + ':';
+		str += this.padDigitsString(this.seconds);
+		switch(this.type) {
+			case calculatePaceTypes.PER_KM:
+				str += ' / km';
+				break;
+			case calculatePaceTypes.PER_MILE:
+				str += ' / mile';
+				break;
+		}
+		return str;
+	};
+	
+	/**
+	 *
+	 * @param speed m/s
+	 * @param type /km or /mile
+	 */
+	var calculatePace = function(speed, type) {
+		var result = new PaceResult(), secs, dd;
+		result.type = type;
+	
+		if(speed > 0) {
+			switch(type) {
+				case calculatePaceTypes.PER_KM:
+					secs = 1000 / speed;
+					break;
+				case calculatePaceTypes.PER_MILE:
+					secs = constants.MILE_IN_METERS / speed;
+	
+					break;
+				default:
+					throw new Error('Not supported type: ' + type);
+			}
+			dd = new time.RelativeTime(secs);
+			result.hours = dd.hours;
+			result.minutes = dd.minutes;
+			result.seconds = dd.seconds;
+		}
+		return result;
+	};
+	
+	module.exports = {
+		calculateSpeed : calculateSpeed,
+		calculatePace : calculatePace,
+		calculatePaceTypes : calculatePaceTypes,
+		convertSpeed : convertSpeed,
+		convertTypes : convertTypes
+	};
+
+
+/***/ },
+/* 267 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		MILE_IN_METERS: 1609.344
+	};
+
+
+/***/ },
+/* 268 */
+/***/ function(module, exports) {
+
+	var EARTH_RADIUS = 6371000;
+	var MIN_LNG = - Math.PI, MAX_LNG = Math.PI, MIN_LAT = - Math.PI / 2, MAX_LAT = Math.PI / 2;
+	
+	var toRad = function(decDegrees) {
+		return decDegrees * Math.PI / 180;
+	};
+	var toDegrees = function(radians) {
+		return (180 * radians) / Math.PI
+	};
+	
+	var getDistance = function(lng1, lat1, lng2, lat2) {
+		var a, c, dLat = toRad(lat2 - lat1), dLng = toRad(lng2 - lng1);
+		a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLng / 2) * Math.sin(dLng / 2) * Math.cos(toRad(lat1)) * Math.cos(toRad(lat2));
+		c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+		return c * EARTH_RADIUS;
+	};
+	var getTotalDistance = function(points) {
+		var i, len, total = 0;
+		for( i = 0, len = points.length - 1; i < len; i++) {
+			total += getDistance(points[i].lng, points[i].lat, points[i + 1].lng, points[i + 1].lat);
+		}
+	
+		return total;
+	};
+	/**
+	 * http://JanMatuschek.de/LatitudeLongitudeBoundingCoordinates
+	 */
+	var getBoundingBox = function(lat, lng, distance) {
+		var minLat, maxLat, minLng, maxLng;
+		var deltaLng;
+		var radDist = distance / EARTH_RADIUS;
+		var radLat = toRad(lat), radLng = toRad(lng);
+		
+		minLat = radLat - radDist;
+		maxLat = radLat + radDist;
+	
+		if(minLat > MIN_LAT && maxLat < MAX_LAT) {
+			deltaLng = Math.asin(Math.sin(radDist) / Math.cos(radLat));
+			minLng = radLng - deltaLng;
+			if(minLng < MIN_LNG) {
+				minLng += 2 * Math.PI;
+			}
+			maxLng = radLng + deltaLng;
+			if(maxLng > MAX_LNG) {
+				maxLng -= 2 * Math.PI;
+			}
+		} else {
+			minLat = Math.max(minLat, MIN_LAT);
+			maxLat = Math.min(maxLat, MAX_LAT);
+			minLng = MIN_LNG;
+			maxLng = MAX_LNG;
+		}
+		return [
+			{lat: toDegrees(minLat), lng: toDegrees(minLng)}, // Southwest
+			{lat: toDegrees(maxLat), lng: toDegrees(maxLng)} // Northeast
+		];
+	};
+	
+	var getMidPoint = function(points) {
+		var len = points.length, x = 0, y = 0, z = 0;
+		var i, lat, lng;
+		if (len < 1) {
+			throw new Error('Points must not be empty');
+		} else if (len == 1) {
+			return points[0];
+		}
+		
+		for (i = 0; i < len; i++) {
+			lat = toRad(points[i].lat);
+			lng = toRad(points[i].lng);
+			x += Math.cos(lat) * Math.cos(lng);
+			y += Math.cos(lat) * Math.sin(lng);
+			z += Math.sin(lat);
+		}
+		x = x / len;
+		y = y / len;
+		z = z / len;
+		lng = Math.atan2(y, x);
+		lat = Math.atan2(z, Math.sqrt(x * x + y * y));
+		
+		return {lat: toDegrees(lat), lng: toDegrees(lng) };
+	};
+	
+	module.exports = {
+		getDistance : getDistance,
+		getTotalDistance : getTotalDistance,
+		getBoundingBox : getBoundingBox,
+		getMidPoint : getMidPoint
+	};
+
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var data2xml = __webpack_require__(270);
+	var data2xmlConvert = data2xml();
+	var gpx = __webpack_require__(271);
+	
+	var toGPX = function(trackingResult, callback, name) {
+		var i, len, trkpts = [], started;
+		var name = name || 'Untitled';
+		len = trackingResult.points.length
+	
+		if(len > 0) {
+			started = trackingResult.points[0].time.toISOString();
+		} else {
+			started = new Date().toISOString()
+		}
+	
+		for( i = 0; i < len; i++) {
+			trkpts.push({
+				ele : trackingResult.points[i].ele,
+				time : trackingResult.points[i].time.toISOString(),
+				_attr : {
+					lat : trackingResult.points[i].lat,
+					lon : trackingResult.points[i].lng
+				}
+			});
+		}
+	
+		var obj = {
+			trk : {
+				name : name,
+				time : started,
+				trkseg : {
+					trkpt : trkpts
+				}
+			},
+			_attr : {
+				'version' : '1.1',
+				'creator' : 'gps-util - https://github.com/vanng822/gps-util',
+				'xmlns:xsi' : 'http://www.w3.org/2001/XMLSchema-instance',
+				'xmlns' : 'http://www.topografix.com/GPX/1/1',
+				'xsi:schemaLocation' : 'http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd',
+				'xmlns:gpxtpx' : 'http://www.garmin.com/xmlschemas/TrackPointExtension/v1'
+			}
+		};
+		try {
+			result = data2xmlConvert('gpx', obj);
+		} catch(e) {
+			return callback(e, null);
+		}
+		callback(null, result);
+	};
+	var toTCX = function(trackingResult, callback, name) {
+		var name = name || 'Untitled';
+		throw new Error('Implement!');
+	};
+	
+	var generateKml = function(coordinates, altitudeMode, lookAt) {
+		var obj = {
+			'Document' : {
+				Style : {
+					'LineStyle' : {
+						'color' : 'C81400FF',
+						'width' : 4
+					},
+					_attr : {
+						'id' : 'red'
+					}
+				},
+				'Folder' : {
+					'Placemark' : {
+						'styleUrl' : '#red',
+						'LineString' : {
+							'altitudeMode' : altitudeMode,
+							'coordinates' : coordinates.join("\n")
+						}
+					}
+				},
+				'LookAt' : lookAt
+			},
+			_attr : {
+				'xmlns' : 'http://www.opengis.net/kml/2.2',
+				'xmlns:gx' : 'http://www.google.com/kml/ext/2.2',
+				'xmlns:kml' : 'http://www.opengis.net/kml/2.2',
+				'xmlns:atom' : 'http://www.w3.org/2005/Atom'
+			}
+		}
+		return data2xmlConvert('kml', obj);
+	};
+	
+	var toKml = function(points, callback) {
+		var altitudeMode = 'clampToGround';
+		var coordinates = [];
+		var i, len, lookAt = {};
+		len = points.length
+		for( i = 0; i < len; i++) {
+			coordinates.push(points[i].lng +',' + points[i].lat + ','+ points[i].ele);
+		}
+		if(len) {
+			lookAt.longitude = points[0].lng;
+			lookAt.latitude = points[0].lat;
+			lookAt.altitude = 0;
+			lookAt.heading = 0;
+		}
+		
+	
+		try {
+			result = generateKml(coordinates, altitudeMode, lookAt);
+		} catch(e) {
+			return callback(e, null);
+		}
+		callback(null, result);
+	};
+	
+	
+	module.exports = {
+		toGPX : toGPX,
+		toKml : toKml
+	};
+
+
+/***/ },
+/* 270 */
+/***/ function(module, exports) {
+
+	// --------------------------------------------------------------------------------------------------------------------
+	//
+	// data2xml.js - A data to XML converter with a nice interface (for NodeJS).
+	//
+	// Copyright (c) 2011 Andrew Chilton - http://chilts.org/
+	// Written by Andrew Chilton <andychilton@gmail.com>
+	//
+	// License: http://opensource.org/licenses/MIT
+	//
+	// --------------------------------------------------------------------------------------------------------------------
+	
+	var valid = {
+	    'omit'   : true, // no element is output       : ''
+	    'empty'  : true, // an empty element is output : '<element></element>'
+	    'closed' : true  // a closed element is output : '<element/>'
+	};
+	
+	var defaults = {
+	    'attrProp'  : '_attr',
+	    'valProp'   : '_value',
+	    'undefined' : 'omit',
+	    'null'      : 'omit',
+	    'xmlDecl'   : true
+	};
+	
+	var xmlHeader = '<?xml version="1.0" encoding="utf-8"?>\n';
+	
+	module.exports = function(opts) {
+	    opts = opts || {};
+	
+	    opts.attrProp = opts.attrProp || defaults.attrProp;
+	    opts.valProp  = opts.valProp  || defaults.valProp;
+	
+	    if (typeof opts.xmlDecl === 'undefined') {
+	        opts.xmlDecl = defaults.xmlDecl;
+	    }
+	
+	    if ( opts['undefined'] && valid[opts['undefined']] ) {
+	        // nothing, this is fine
+	    }
+	    else {
+	        opts['undefined'] = defaults['undefined'];
+	    }
+	    if ( opts['null'] && valid[opts['null']] ) {
+	        // nothing, this is fine
+	    }
+	    else {
+	        opts['null'] = defaults['null'];
+	    }
+	
+	    return function(name, data) {
+	        var xml = opts.xmlDecl ? xmlHeader : '';
+	        xml += makeElement(name, data, opts);
+	        return xml;
+	    };
+	};
+	
+	function entitify(str) {
+	    str = '' + str;
+	    str = str
+	        .replace(/&/g, '&amp;')
+	        .replace(/</g,'&lt;')
+	        .replace(/>/g,'&gt;')
+	        .replace(/'/g, '&apos;')
+	        .replace(/"/g, '&quot;');
+	    return str;
+	}
+	
+	function makeStartTag(name, attr) {
+	    attr = attr || {};
+	    var tag = '<' + name;
+	    for(var a in attr) {
+	        tag += ' ' + a + '="' + entitify(attr[a]) + '"';
+	    }
+	    tag += '>';
+	    return tag;
+	}
+	
+	function makeEndTag(name) {
+	    return '</' + name + '>';
+	}
+	
+	function makeElement(name, data, opts) {
+	    var element = '';
+	    if ( Array.isArray(data) ) {
+	        data.forEach(function(v) {
+	            element += makeElement(name, v, opts);
+	        });
+	        return element;
+	    }
+	    else if ( typeof data === 'undefined' ) {
+	        if ( opts['undefined'] === 'omit' ) {
+	            return '';
+	        }
+	        if ( opts['undefined'] === 'empty' ) {
+	            return makeStartTag(name) + makeEndTag(name);
+	        }
+	        else if ( opts['undefined'] === 'closed' ) {
+	            return '<' + name + '/>';
+	        }
+	    }
+	    else if ( data === null ) {
+	        if ( opts['null'] === 'omit' ) {
+	            return '';
+	        }
+	        if ( opts['null'] === 'empty' ) {
+	            return makeStartTag(name) + makeEndTag(name);
+	        }
+	        else if ( opts['null'] === 'closed' ) {
+	            return '<' + name + '/>';
+	        }
+	    }
+	    else if ( typeof data === 'object' ) {
+	        element += makeStartTag(name, data[opts.attrProp]);
+	        if ( data[opts.valProp] ) {
+	            element += entitify(data[opts.valProp]);
+	        }
+	        for (var el in data) {
+	            if ( el === opts.attrProp || el === opts.valProp ) {
+	                continue;
+	            }
+	            element += makeElement(el, data[el], opts);
+	        }
+	        element += makeEndTag(name);
+	        return element;
+	    }
+	    else {
+	        // a piece of data on it's own can't have attributes
+	        return makeStartTag(name) + entitify(data) + makeEndTag(name);
+	    }
+	    throw 'Unknown data ' + data;
+	}
+	
+	// --------------------------------------------------------------------------------------------------------------------
+	
+	module.exports.makeStartTag = makeStartTag;
+	module.exports.makeEndTag   = makeEndTag;
+	module.exports.makeElement  = makeElement;
+	module.exports.entitify     = entitify;
+	
+	// --------------------------------------------------------------------------------------------------------------------
+
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Buffer) {var xml2js = __webpack_require__(272), parser = new xml2js.Parser();
+	
+	var http = __webpack_require__(313);
+	var https = __webpack_require__(323);
+	
+	var ATTRIBUTE_NAME = '$';
+	
+	var Trackpoint = function() {
+		this.lat = null;
+		this.lng = null;
+		this.ele = null;
+		this.time = null;
+		this.speed = undefined;
+		this.distance = undefined;
+	};
+	var getTrk = function(trks) {
+		var returnTrks = [], trkpts, trkpt, trk;
+		var i, len, j, jlen;
+		if(!( trks instanceof Array)) {
+			trks = [trks];
+		}
+		for( i = 0, len = trks.length; i < len; i++) {
+			trkpts = trks[i].trkseg[0].trkpt;
+			for( j = 0, jlen = trkpts.length; j < jlen; j++) {
+				trkpt = trkpts[j];
+				if(trkpt.hasOwnProperty(ATTRIBUTE_NAME) && trkpt[ATTRIBUTE_NAME].hasOwnProperty('lat') && trkpt.hasOwnProperty('time')) {
+					trk = new Trackpoint();
+					trk.lat = parseFloat(trkpt[ATTRIBUTE_NAME].lat);
+					trk.lng = parseFloat(trkpt[ATTRIBUTE_NAME].lon);
+					trk.time = new Date(trkpt.time);
+	
+					if(trkpt.hasOwnProperty('ele')) {
+						trk.ele = parseFloat(trkpt.ele);
+					}
+	
+					returnTrks.push(trk);
+				}
+			}
+		}
+	
+		return returnTrks;
+	};
+	var gpxParse = function(data, callback) {
+		parser.parseString(data, function(err, result) {
+			if(err) {
+				return callback(err, null);
+			}
+			if(result.gpx && result.gpx.trk) {
+				return callback(null, getTrk(result.gpx.trk));
+			} else {
+				return callback(new Error('Unexpected data'), null);
+			}
+		});
+	};
+	var gpxParseFile = function(filename, callback) {
+	    fs.readFile(filename, function(err, result) {
+			if(err) {
+				return callback(err, null);
+			}
+			return gpxParse(result, callback);
+		});
+	};
+	var gpxParseURL = function(url, callback, secure) {
+		var h = secure? https : http;
+		h.get(url, function(res) {
+			var data = '';
+			res.on('data', function(chunk) {
+				data += chunk;
+			});
+			res.on('end', function() {
+				if(res.statusCode == 200) {
+					return gpxParse(new Buffer(data), callback);
+				} else {
+					return callback(new Error('Got unexpected response code'), null);
+				}
+			});
+		}).on('error', function(err) {
+			return callback(err, null);
+		});
+	};
+	
+	module.exports = {
+		gpxParse : gpxParse,
+		gpxParseFile : gpxParseFile,
+		gpxParseURL : gpxParseURL
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
+
+/***/ },
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.6.3
+	(function() {
+	  var bom, builder, events, isEmpty, sax,
+	    __hasProp = {}.hasOwnProperty,
+	    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+	
+	  sax = __webpack_require__(273);
+	
+	  events = __webpack_require__(275);
+	
+	  builder = __webpack_require__(290);
+	
+	  bom = __webpack_require__(312);
+	
+	  isEmpty = function(thing) {
+	    return typeof thing === "object" && (thing != null) && Object.keys(thing).length === 0;
+	  };
+	
+	  exports.defaults = {
+	    "0.1": {
+	      explicitCharkey: false,
+	      trim: true,
+	      normalize: true,
+	      normalizeTags: false,
+	      attrkey: "@",
+	      charkey: "#",
+	      explicitArray: false,
+	      ignoreAttrs: false,
+	      mergeAttrs: false,
+	      explicitRoot: false,
+	      validator: null,
+	      xmlns: false,
+	      explicitChildren: false,
+	      childkey: '@@',
+	      charsAsChildren: false,
+	      async: false,
+	      strict: true
+	    },
+	    "0.2": {
+	      explicitCharkey: false,
+	      trim: false,
+	      normalize: false,
+	      normalizeTags: false,
+	      attrkey: "$",
+	      charkey: "_",
+	      explicitArray: true,
+	      ignoreAttrs: false,
+	      mergeAttrs: false,
+	      explicitRoot: true,
+	      validator: null,
+	      xmlns: false,
+	      explicitChildren: false,
+	      childkey: '$$',
+	      charsAsChildren: false,
+	      async: false,
+	      strict: true,
+	      rootName: 'root',
+	      xmldec: {
+	        'version': '1.0',
+	        'encoding': 'UTF-8',
+	        'standalone': true
+	      },
+	      doctype: null,
+	      renderOpts: {
+	        'pretty': true,
+	        'indent': '  ',
+	        'newline': '\n'
+	      }
+	    }
+	  };
+	
+	  exports.ValidationError = (function(_super) {
+	    __extends(ValidationError, _super);
+	
+	    function ValidationError(message) {
+	      this.message = message;
+	    }
+	
+	    return ValidationError;
+	
+	  })(Error);
+	
+	  exports.Builder = (function() {
+	    function Builder(opts) {
+	      var key, value, _ref;
+	      this.options = {};
+	      _ref = exports.defaults["0.2"];
+	      for (key in _ref) {
+	        if (!__hasProp.call(_ref, key)) continue;
+	        value = _ref[key];
+	        this.options[key] = value;
+	      }
+	      for (key in opts) {
+	        if (!__hasProp.call(opts, key)) continue;
+	        value = opts[key];
+	        this.options[key] = value;
+	      }
+	    }
+	
+	    Builder.prototype.buildObject = function(rootObj) {
+	      var attrkey, charkey, render, rootElement, rootName;
+	      attrkey = this.options.attrkey;
+	      charkey = this.options.charkey;
+	      if ((Object.keys(rootObj).length === 1) && (this.options.rootName === exports.defaults['0.2'].rootName)) {
+	        rootName = Object.keys(rootObj)[0];
+	        rootObj = rootObj[rootName];
+	      } else {
+	        rootName = this.options.rootName;
+	      }
+	      render = function(element, obj) {
+	        var attr, child, entry, index, key, value, _ref, _ref1;
+	        if (typeof obj !== 'object') {
+	          element.txt(obj);
+	        } else {
+	          for (key in obj) {
+	            if (!__hasProp.call(obj, key)) continue;
+	            child = obj[key];
+	            if (key === attrkey) {
+	              if (typeof child === "object") {
+	                for (attr in child) {
+	                  value = child[attr];
+	                  element = element.att(attr, value);
+	                }
+	              }
+	            } else if (key === charkey) {
+	              element = element.txt(child);
+	            } else if (typeof child === 'object' && ((child != null ? child.constructor : void 0) != null) && ((child != null ? (_ref = child.constructor) != null ? _ref.name : void 0 : void 0) != null) && (child != null ? (_ref1 = child.constructor) != null ? _ref1.name : void 0 : void 0) === 'Array') {
+	              for (index in child) {
+	                if (!__hasProp.call(child, index)) continue;
+	                entry = child[index];
+	                if (typeof entry === 'string') {
+	                  element = element.ele(key, entry).up();
+	                } else {
+	                  element = arguments.callee(element.ele(key), entry).up();
+	                }
+	              }
+	            } else if (typeof child === "object") {
+	              element = arguments.callee(element.ele(key), child).up();
+	            } else {
+	              element = element.ele(key, child.toString()).up();
+	            }
+	          }
+	        }
+	        return element;
+	      };
+	      rootElement = builder.create(rootName, this.options.xmldec, this.options.doctype);
+	      return render(rootElement, rootObj).end(this.options.renderOpts);
+	    };
+	
+	    return Builder;
+	
+	  })();
+	
+	  exports.Parser = (function(_super) {
+	    __extends(Parser, _super);
+	
+	    function Parser(opts) {
+	      this.parseString = __bind(this.parseString, this);
+	      this.reset = __bind(this.reset, this);
+	      this.assignOrPush = __bind(this.assignOrPush, this);
+	      var key, value, _ref;
+	      if (!(this instanceof exports.Parser)) {
+	        return new exports.Parser(opts);
+	      }
+	      this.options = {};
+	      _ref = exports.defaults["0.2"];
+	      for (key in _ref) {
+	        if (!__hasProp.call(_ref, key)) continue;
+	        value = _ref[key];
+	        this.options[key] = value;
+	      }
+	      for (key in opts) {
+	        if (!__hasProp.call(opts, key)) continue;
+	        value = opts[key];
+	        this.options[key] = value;
+	      }
+	      if (this.options.xmlns) {
+	        this.options.xmlnskey = this.options.attrkey + "ns";
+	      }
+	      this.reset();
+	    }
+	
+	    Parser.prototype.assignOrPush = function(obj, key, newValue) {
+	      if (!(key in obj)) {
+	        if (!this.options.explicitArray) {
+	          return obj[key] = newValue;
+	        } else {
+	          return obj[key] = [newValue];
+	        }
+	      } else {
+	        if (!(obj[key] instanceof Array)) {
+	          obj[key] = [obj[key]];
+	        }
+	        return obj[key].push(newValue);
+	      }
+	    };
+	
+	    Parser.prototype.reset = function() {
+	      var attrkey, charkey, err, ontext, stack,
+	        _this = this;
+	      this.removeAllListeners();
+	      this.saxParser = sax.parser(this.options.strict, {
+	        trim: false,
+	        normalize: false,
+	        xmlns: this.options.xmlns
+	      });
+	      err = false;
+	      this.saxParser.onerror = function(error) {
+	        if (!err) {
+	          err = true;
+	          return _this.emit("error", error);
+	        }
+	      };
+	      this.EXPLICIT_CHARKEY = this.options.explicitCharkey;
+	      this.resultObject = null;
+	      stack = [];
+	      attrkey = this.options.attrkey;
+	      charkey = this.options.charkey;
+	      this.saxParser.onopentag = function(node) {
+	        var key, newValue, obj, _ref;
+	        obj = {};
+	        obj[charkey] = "";
+	        if (!_this.options.ignoreAttrs) {
+	          _ref = node.attributes;
+	          for (key in _ref) {
+	            if (!__hasProp.call(_ref, key)) continue;
+	            if (!(attrkey in obj) && !_this.options.mergeAttrs) {
+	              obj[attrkey] = {};
+	            }
+	            newValue = node.attributes[key];
+	            if (_this.options.mergeAttrs) {
+	              _this.assignOrPush(obj, key, newValue);
+	            } else {
+	              obj[attrkey][key] = newValue;
+	            }
+	          }
+	        }
+	        obj["#name"] = _this.options.normalizeTags ? node.name.toLowerCase() : node.name;
+	        if (_this.options.xmlns) {
+	          obj[_this.options.xmlnskey] = {
+	            uri: node.uri,
+	            local: node.local
+	          };
+	        }
+	        return stack.push(obj);
+	      };
+	      this.saxParser.onclosetag = function() {
+	        var cdata, emptyStr, node, nodeName, obj, old, s, xpath;
+	        obj = stack.pop();
+	        nodeName = obj["#name"];
+	        delete obj["#name"];
+	        cdata = obj.cdata;
+	        delete obj.cdata;
+	        s = stack[stack.length - 1];
+	        if (obj[charkey].match(/^\s*$/) && !cdata) {
+	          emptyStr = obj[charkey];
+	          delete obj[charkey];
+	        } else {
+	          if (_this.options.trim) {
+	            obj[charkey] = obj[charkey].trim();
+	          }
+	          if (_this.options.normalize) {
+	            obj[charkey] = obj[charkey].replace(/\s{2,}/g, " ").trim();
+	          }
+	          if (Object.keys(obj).length === 1 && charkey in obj && !_this.EXPLICIT_CHARKEY) {
+	            obj = obj[charkey];
+	          }
+	        }
+	        if (isEmpty(obj)) {
+	          obj = _this.options.emptyTag !== void 0 ? _this.options.emptyTag : emptyStr;
+	        }
+	        if (_this.options.validator != null) {
+	          xpath = "/" + ((function() {
+	            var _i, _len, _results;
+	            _results = [];
+	            for (_i = 0, _len = stack.length; _i < _len; _i++) {
+	              node = stack[_i];
+	              _results.push(node["#name"]);
+	            }
+	            return _results;
+	          })()).concat(nodeName).join("/");
+	          try {
+	            obj = _this.options.validator(xpath, s && s[nodeName], obj);
+	          } catch (_error) {
+	            err = _error;
+	            _this.emit("error", err);
+	          }
+	        }
+	        if (_this.options.explicitChildren && !_this.options.mergeAttrs && typeof obj === 'object') {
+	          node = {};
+	          if (_this.options.attrkey in obj) {
+	            node[_this.options.attrkey] = obj[_this.options.attrkey];
+	            delete obj[_this.options.attrkey];
+	          }
+	          if (!_this.options.charsAsChildren && _this.options.charkey in obj) {
+	            node[_this.options.charkey] = obj[_this.options.charkey];
+	            delete obj[_this.options.charkey];
+	          }
+	          if (Object.getOwnPropertyNames(obj).length > 0) {
+	            node[_this.options.childkey] = obj;
+	          }
+	          obj = node;
+	        }
+	        if (stack.length > 0) {
+	          return _this.assignOrPush(s, nodeName, obj);
+	        } else {
+	          if (_this.options.explicitRoot) {
+	            old = obj;
+	            obj = {};
+	            obj[nodeName] = old;
+	          }
+	          _this.resultObject = obj;
+	          return _this.emit("end", _this.resultObject);
+	        }
+	      };
+	      ontext = function(text) {
+	        var s;
+	        s = stack[stack.length - 1];
+	        if (s) {
+	          s[charkey] += text;
+	          return s;
+	        }
+	      };
+	      this.saxParser.ontext = ontext;
+	      return this.saxParser.oncdata = function(text) {
+	        var s;
+	        s = ontext(text);
+	        if (s) {
+	          return s.cdata = true;
+	        }
+	      };
+	    };
+	
+	    Parser.prototype.parseString = function(str, cb) {
+	      if ((cb != null) && typeof cb === "function") {
+	        this.on("end", function(result) {
+	          this.reset();
+	          if (this.options.async) {
+	            return process.nextTick(function() {
+	              return cb(null, result);
+	            });
+	          } else {
+	            return cb(null, result);
+	          }
+	        });
+	        this.on("error", function(err) {
+	          this.reset();
+	          if (this.options.async) {
+	            return process.nextTick(function() {
+	              return cb(err);
+	            });
+	          } else {
+	            return cb(err);
+	          }
+	        });
+	      }
+	      if (str.toString().trim() === '') {
+	        this.emit("end", null);
+	        return true;
+	      }
+	      return this.saxParser.write(bom.stripBOM(str.toString()));
+	    };
+	
+	    return Parser;
+	
+	  })(events.EventEmitter);
+	
+	  exports.parseString = function(str, a, b) {
+	    var cb, options, parser;
+	    if (b != null) {
+	      if (typeof b === 'function') {
+	        cb = b;
+	      }
+	      if (typeof a === 'object') {
+	        options = a;
+	      }
+	    } else {
+	      if (typeof a === 'function') {
+	        cb = a;
+	      }
+	      options = {};
+	    }
+	    parser = new exports.Parser(options);
+	    return parser.parseString(str, cb);
+	  };
+	
+	}).call(this);
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Buffer) {// wrapper for non-node envs
+	;(function (sax) {
+	
+	sax.parser = function (strict, opt) { return new SAXParser(strict, opt) }
+	sax.SAXParser = SAXParser
+	sax.SAXStream = SAXStream
+	sax.createStream = createStream
+	
+	// When we pass the MAX_BUFFER_LENGTH position, start checking for buffer overruns.
+	// When we check, schedule the next check for MAX_BUFFER_LENGTH - (max(buffer lengths)),
+	// since that's the earliest that a buffer overrun could occur.  This way, checks are
+	// as rare as required, but as often as necessary to ensure never crossing this bound.
+	// Furthermore, buffers are only tested at most once per write(), so passing a very
+	// large string into write() might have undesirable effects, but this is manageable by
+	// the caller, so it is assumed to be safe.  Thus, a call to write() may, in the extreme
+	// edge case, result in creating at most one complete copy of the string passed in.
+	// Set to Infinity to have unlimited buffers.
+	sax.MAX_BUFFER_LENGTH = 64 * 1024
+	
+	var buffers = [
+	  "comment", "sgmlDecl", "textNode", "tagName", "doctype",
+	  "procInstName", "procInstBody", "entity", "attribName",
+	  "attribValue", "cdata", "script"
+	]
+	
+	sax.EVENTS = // for discoverability.
+	  [ "text"
+	  , "processinginstruction"
+	  , "sgmldeclaration"
+	  , "doctype"
+	  , "comment"
+	  , "attribute"
+	  , "opentag"
+	  , "closetag"
+	  , "opencdata"
+	  , "cdata"
+	  , "closecdata"
+	  , "error"
+	  , "end"
+	  , "ready"
+	  , "script"
+	  , "opennamespace"
+	  , "closenamespace"
+	  ]
+	
+	function SAXParser (strict, opt) {
+	  if (!(this instanceof SAXParser)) return new SAXParser(strict, opt)
+	
+	  var parser = this
+	  clearBuffers(parser)
+	  parser.q = parser.c = ""
+	  parser.bufferCheckPosition = sax.MAX_BUFFER_LENGTH
+	  parser.opt = opt || {}
+	  parser.opt.lowercase = parser.opt.lowercase || parser.opt.lowercasetags
+	  parser.looseCase = parser.opt.lowercase ? "toLowerCase" : "toUpperCase"
+	  parser.tags = []
+	  parser.closed = parser.closedRoot = parser.sawRoot = false
+	  parser.tag = parser.error = null
+	  parser.strict = !!strict
+	  parser.noscript = !!(strict || parser.opt.noscript)
+	  parser.state = S.BEGIN
+	  parser.ENTITIES = Object.create(sax.ENTITIES)
+	  parser.attribList = []
+	
+	  // namespaces form a prototype chain.
+	  // it always points at the current tag,
+	  // which protos to its parent tag.
+	  if (parser.opt.xmlns) parser.ns = Object.create(rootNS)
+	
+	  // mostly just for error reporting
+	  parser.trackPosition = parser.opt.position !== false
+	  if (parser.trackPosition) {
+	    parser.position = parser.line = parser.column = 0
+	  }
+	  emit(parser, "onready")
+	}
+	
+	if (!Object.create) Object.create = function (o) {
+	  function f () { this.__proto__ = o }
+	  f.prototype = o
+	  return new f
+	}
+	
+	if (!Object.getPrototypeOf) Object.getPrototypeOf = function (o) {
+	  return o.__proto__
+	}
+	
+	if (!Object.keys) Object.keys = function (o) {
+	  var a = []
+	  for (var i in o) if (o.hasOwnProperty(i)) a.push(i)
+	  return a
+	}
+	
+	function checkBufferLength (parser) {
+	  var maxAllowed = Math.max(sax.MAX_BUFFER_LENGTH, 10)
+	    , maxActual = 0
+	  for (var i = 0, l = buffers.length; i < l; i ++) {
+	    var len = parser[buffers[i]].length
+	    if (len > maxAllowed) {
+	      // Text/cdata nodes can get big, and since they're buffered,
+	      // we can get here under normal conditions.
+	      // Avoid issues by emitting the text node now,
+	      // so at least it won't get any bigger.
+	      switch (buffers[i]) {
+	        case "textNode":
+	          closeText(parser)
+	        break
+	
+	        case "cdata":
+	          emitNode(parser, "oncdata", parser.cdata)
+	          parser.cdata = ""
+	        break
+	
+	        case "script":
+	          emitNode(parser, "onscript", parser.script)
+	          parser.script = ""
+	        break
+	
+	        default:
+	          error(parser, "Max buffer length exceeded: "+buffers[i])
+	      }
+	    }
+	    maxActual = Math.max(maxActual, len)
+	  }
+	  // schedule the next check for the earliest possible buffer overrun.
+	  parser.bufferCheckPosition = (sax.MAX_BUFFER_LENGTH - maxActual)
+	                             + parser.position
+	}
+	
+	function clearBuffers (parser) {
+	  for (var i = 0, l = buffers.length; i < l; i ++) {
+	    parser[buffers[i]] = ""
+	  }
+	}
+	
+	function flushBuffers (parser) {
+	  closeText(parser)
+	  if (parser.cdata !== "") {
+	    emitNode(parser, "oncdata", parser.cdata)
+	    parser.cdata = ""
+	  }
+	  if (parser.script !== "") {
+	    emitNode(parser, "onscript", parser.script)
+	    parser.script = ""
+	  }
+	}
+	
+	SAXParser.prototype =
+	  { end: function () { end(this) }
+	  , write: write
+	  , resume: function () { this.error = null; return this }
+	  , close: function () { return this.write(null) }
+	  , flush: function () { flushBuffers(this) }
+	  }
+	
+	try {
+	  var Stream = __webpack_require__(274).Stream
+	} catch (ex) {
+	  var Stream = function () {}
+	}
+	
+	
+	var streamWraps = sax.EVENTS.filter(function (ev) {
+	  return ev !== "error" && ev !== "end"
+	})
+	
+	function createStream (strict, opt) {
+	  return new SAXStream(strict, opt)
+	}
+	
+	function SAXStream (strict, opt) {
+	  if (!(this instanceof SAXStream)) return new SAXStream(strict, opt)
+	
+	  Stream.apply(this)
+	
+	  this._parser = new SAXParser(strict, opt)
+	  this.writable = true
+	  this.readable = true
+	
+	
+	  var me = this
+	
+	  this._parser.onend = function () {
+	    me.emit("end")
+	  }
+	
+	  this._parser.onerror = function (er) {
+	    me.emit("error", er)
+	
+	    // if didn't throw, then means error was handled.
+	    // go ahead and clear error, so we can write again.
+	    me._parser.error = null
+	  }
+	
+	  this._decoder = null;
+	
+	  streamWraps.forEach(function (ev) {
+	    Object.defineProperty(me, "on" + ev, {
+	      get: function () { return me._parser["on" + ev] },
+	      set: function (h) {
+	        if (!h) {
+	          me.removeAllListeners(ev)
+	          return me._parser["on"+ev] = h
+	        }
+	        me.on(ev, h)
+	      },
+	      enumerable: true,
+	      configurable: false
+	    })
+	  })
+	}
+	
+	SAXStream.prototype = Object.create(Stream.prototype,
+	  { constructor: { value: SAXStream } })
+	
+	SAXStream.prototype.write = function (data) {
+	  if (typeof Buffer === 'function' &&
+	      typeof Buffer.isBuffer === 'function' &&
+	      Buffer.isBuffer(data)) {
+	    if (!this._decoder) {
+	      var SD = __webpack_require__(283).StringDecoder
+	      this._decoder = new SD('utf8')
+	    }
+	    data = this._decoder.write(data);
+	  }
+	
+	  this._parser.write(data.toString())
+	  this.emit("data", data)
+	  return true
+	}
+	
+	SAXStream.prototype.end = function (chunk) {
+	  if (chunk && chunk.length) this.write(chunk)
+	  this._parser.end()
+	  return true
+	}
+	
+	SAXStream.prototype.on = function (ev, handler) {
+	  var me = this
+	  if (!me._parser["on"+ev] && streamWraps.indexOf(ev) !== -1) {
+	    me._parser["on"+ev] = function () {
+	      var args = arguments.length === 1 ? [arguments[0]]
+	               : Array.apply(null, arguments)
+	      args.splice(0, 0, ev)
+	      me.emit.apply(me, args)
+	    }
+	  }
+	
+	  return Stream.prototype.on.call(me, ev, handler)
+	}
+	
+	
+	
+	// character classes and tokens
+	var whitespace = "\r\n\t "
+	  // this really needs to be replaced with character classes.
+	  // XML allows all manner of ridiculous numbers and digits.
+	  , number = "0124356789"
+	  , letter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	  // (Letter | "_" | ":")
+	  , quote = "'\""
+	  , entity = number+letter+"#"
+	  , attribEnd = whitespace + ">"
+	  , CDATA = "[CDATA["
+	  , DOCTYPE = "DOCTYPE"
+	  , XML_NAMESPACE = "http://www.w3.org/XML/1998/namespace"
+	  , XMLNS_NAMESPACE = "http://www.w3.org/2000/xmlns/"
+	  , rootNS = { xml: XML_NAMESPACE, xmlns: XMLNS_NAMESPACE }
+	
+	// turn all the string character sets into character class objects.
+	whitespace = charClass(whitespace)
+	number = charClass(number)
+	letter = charClass(letter)
+	
+	// http://www.w3.org/TR/REC-xml/#NT-NameStartChar
+	// This implementation works on strings, a single character at a time
+	// as such, it cannot ever support astral-plane characters (10000-EFFFF)
+	// without a significant breaking change to either this  parser, or the
+	// JavaScript language.  Implementation of an emoji-capable xml parser
+	// is left as an exercise for the reader.
+	var nameStart = /[:_A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]/
+	
+	var nameBody = /[:_A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\u00B7\u0300-\u036F\u203F-\u2040\.\d-]/
+	
+	quote = charClass(quote)
+	entity = charClass(entity)
+	attribEnd = charClass(attribEnd)
+	
+	function charClass (str) {
+	  return str.split("").reduce(function (s, c) {
+	    s[c] = true
+	    return s
+	  }, {})
+	}
+	
+	function isRegExp (c) {
+	  return Object.prototype.toString.call(c) === '[object RegExp]'
+	}
+	
+	function is (charclass, c) {
+	  return isRegExp(charclass) ? !!c.match(charclass) : charclass[c]
+	}
+	
+	function not (charclass, c) {
+	  return !is(charclass, c)
+	}
+	
+	var S = 0
+	sax.STATE =
+	{ BEGIN                     : S++
+	, TEXT                      : S++ // general stuff
+	, TEXT_ENTITY               : S++ // &amp and such.
+	, OPEN_WAKA                 : S++ // <
+	, SGML_DECL                 : S++ // <!BLARG
+	, SGML_DECL_QUOTED          : S++ // <!BLARG foo "bar
+	, DOCTYPE                   : S++ // <!DOCTYPE
+	, DOCTYPE_QUOTED            : S++ // <!DOCTYPE "//blah
+	, DOCTYPE_DTD               : S++ // <!DOCTYPE "//blah" [ ...
+	, DOCTYPE_DTD_QUOTED        : S++ // <!DOCTYPE "//blah" [ "foo
+	, COMMENT_STARTING          : S++ // <!-
+	, COMMENT                   : S++ // <!--
+	, COMMENT_ENDING            : S++ // <!-- blah -
+	, COMMENT_ENDED             : S++ // <!-- blah --
+	, CDATA                     : S++ // <![CDATA[ something
+	, CDATA_ENDING              : S++ // ]
+	, CDATA_ENDING_2            : S++ // ]]
+	, PROC_INST                 : S++ // <?hi
+	, PROC_INST_BODY            : S++ // <?hi there
+	, PROC_INST_ENDING          : S++ // <?hi "there" ?
+	, OPEN_TAG                  : S++ // <strong
+	, OPEN_TAG_SLASH            : S++ // <strong /
+	, ATTRIB                    : S++ // <a
+	, ATTRIB_NAME               : S++ // <a foo
+	, ATTRIB_NAME_SAW_WHITE     : S++ // <a foo _
+	, ATTRIB_VALUE              : S++ // <a foo=
+	, ATTRIB_VALUE_QUOTED       : S++ // <a foo="bar
+	, ATTRIB_VALUE_CLOSED       : S++ // <a foo="bar"
+	, ATTRIB_VALUE_UNQUOTED     : S++ // <a foo=bar
+	, ATTRIB_VALUE_ENTITY_Q     : S++ // <foo bar="&quot;"
+	, ATTRIB_VALUE_ENTITY_U     : S++ // <foo bar=&quot;
+	, CLOSE_TAG                 : S++ // </a
+	, CLOSE_TAG_SAW_WHITE       : S++ // </a   >
+	, SCRIPT                    : S++ // <script> ...
+	, SCRIPT_ENDING             : S++ // <script> ... <
+	}
+	
+	sax.ENTITIES =
+	{ "amp" : "&"
+	, "gt" : ">"
+	, "lt" : "<"
+	, "quot" : "\""
+	, "apos" : "'"
+	, "AElig" : 198
+	, "Aacute" : 193
+	, "Acirc" : 194
+	, "Agrave" : 192
+	, "Aring" : 197
+	, "Atilde" : 195
+	, "Auml" : 196
+	, "Ccedil" : 199
+	, "ETH" : 208
+	, "Eacute" : 201
+	, "Ecirc" : 202
+	, "Egrave" : 200
+	, "Euml" : 203
+	, "Iacute" : 205
+	, "Icirc" : 206
+	, "Igrave" : 204
+	, "Iuml" : 207
+	, "Ntilde" : 209
+	, "Oacute" : 211
+	, "Ocirc" : 212
+	, "Ograve" : 210
+	, "Oslash" : 216
+	, "Otilde" : 213
+	, "Ouml" : 214
+	, "THORN" : 222
+	, "Uacute" : 218
+	, "Ucirc" : 219
+	, "Ugrave" : 217
+	, "Uuml" : 220
+	, "Yacute" : 221
+	, "aacute" : 225
+	, "acirc" : 226
+	, "aelig" : 230
+	, "agrave" : 224
+	, "aring" : 229
+	, "atilde" : 227
+	, "auml" : 228
+	, "ccedil" : 231
+	, "eacute" : 233
+	, "ecirc" : 234
+	, "egrave" : 232
+	, "eth" : 240
+	, "euml" : 235
+	, "iacute" : 237
+	, "icirc" : 238
+	, "igrave" : 236
+	, "iuml" : 239
+	, "ntilde" : 241
+	, "oacute" : 243
+	, "ocirc" : 244
+	, "ograve" : 242
+	, "oslash" : 248
+	, "otilde" : 245
+	, "ouml" : 246
+	, "szlig" : 223
+	, "thorn" : 254
+	, "uacute" : 250
+	, "ucirc" : 251
+	, "ugrave" : 249
+	, "uuml" : 252
+	, "yacute" : 253
+	, "yuml" : 255
+	, "copy" : 169
+	, "reg" : 174
+	, "nbsp" : 160
+	, "iexcl" : 161
+	, "cent" : 162
+	, "pound" : 163
+	, "curren" : 164
+	, "yen" : 165
+	, "brvbar" : 166
+	, "sect" : 167
+	, "uml" : 168
+	, "ordf" : 170
+	, "laquo" : 171
+	, "not" : 172
+	, "shy" : 173
+	, "macr" : 175
+	, "deg" : 176
+	, "plusmn" : 177
+	, "sup1" : 185
+	, "sup2" : 178
+	, "sup3" : 179
+	, "acute" : 180
+	, "micro" : 181
+	, "para" : 182
+	, "middot" : 183
+	, "cedil" : 184
+	, "ordm" : 186
+	, "raquo" : 187
+	, "frac14" : 188
+	, "frac12" : 189
+	, "frac34" : 190
+	, "iquest" : 191
+	, "times" : 215
+	, "divide" : 247
+	, "OElig" : 338
+	, "oelig" : 339
+	, "Scaron" : 352
+	, "scaron" : 353
+	, "Yuml" : 376
+	, "fnof" : 402
+	, "circ" : 710
+	, "tilde" : 732
+	, "Alpha" : 913
+	, "Beta" : 914
+	, "Gamma" : 915
+	, "Delta" : 916
+	, "Epsilon" : 917
+	, "Zeta" : 918
+	, "Eta" : 919
+	, "Theta" : 920
+	, "Iota" : 921
+	, "Kappa" : 922
+	, "Lambda" : 923
+	, "Mu" : 924
+	, "Nu" : 925
+	, "Xi" : 926
+	, "Omicron" : 927
+	, "Pi" : 928
+	, "Rho" : 929
+	, "Sigma" : 931
+	, "Tau" : 932
+	, "Upsilon" : 933
+	, "Phi" : 934
+	, "Chi" : 935
+	, "Psi" : 936
+	, "Omega" : 937
+	, "alpha" : 945
+	, "beta" : 946
+	, "gamma" : 947
+	, "delta" : 948
+	, "epsilon" : 949
+	, "zeta" : 950
+	, "eta" : 951
+	, "theta" : 952
+	, "iota" : 953
+	, "kappa" : 954
+	, "lambda" : 955
+	, "mu" : 956
+	, "nu" : 957
+	, "xi" : 958
+	, "omicron" : 959
+	, "pi" : 960
+	, "rho" : 961
+	, "sigmaf" : 962
+	, "sigma" : 963
+	, "tau" : 964
+	, "upsilon" : 965
+	, "phi" : 966
+	, "chi" : 967
+	, "psi" : 968
+	, "omega" : 969
+	, "thetasym" : 977
+	, "upsih" : 978
+	, "piv" : 982
+	, "ensp" : 8194
+	, "emsp" : 8195
+	, "thinsp" : 8201
+	, "zwnj" : 8204
+	, "zwj" : 8205
+	, "lrm" : 8206
+	, "rlm" : 8207
+	, "ndash" : 8211
+	, "mdash" : 8212
+	, "lsquo" : 8216
+	, "rsquo" : 8217
+	, "sbquo" : 8218
+	, "ldquo" : 8220
+	, "rdquo" : 8221
+	, "bdquo" : 8222
+	, "dagger" : 8224
+	, "Dagger" : 8225
+	, "bull" : 8226
+	, "hellip" : 8230
+	, "permil" : 8240
+	, "prime" : 8242
+	, "Prime" : 8243
+	, "lsaquo" : 8249
+	, "rsaquo" : 8250
+	, "oline" : 8254
+	, "frasl" : 8260
+	, "euro" : 8364
+	, "image" : 8465
+	, "weierp" : 8472
+	, "real" : 8476
+	, "trade" : 8482
+	, "alefsym" : 8501
+	, "larr" : 8592
+	, "uarr" : 8593
+	, "rarr" : 8594
+	, "darr" : 8595
+	, "harr" : 8596
+	, "crarr" : 8629
+	, "lArr" : 8656
+	, "uArr" : 8657
+	, "rArr" : 8658
+	, "dArr" : 8659
+	, "hArr" : 8660
+	, "forall" : 8704
+	, "part" : 8706
+	, "exist" : 8707
+	, "empty" : 8709
+	, "nabla" : 8711
+	, "isin" : 8712
+	, "notin" : 8713
+	, "ni" : 8715
+	, "prod" : 8719
+	, "sum" : 8721
+	, "minus" : 8722
+	, "lowast" : 8727
+	, "radic" : 8730
+	, "prop" : 8733
+	, "infin" : 8734
+	, "ang" : 8736
+	, "and" : 8743
+	, "or" : 8744
+	, "cap" : 8745
+	, "cup" : 8746
+	, "int" : 8747
+	, "there4" : 8756
+	, "sim" : 8764
+	, "cong" : 8773
+	, "asymp" : 8776
+	, "ne" : 8800
+	, "equiv" : 8801
+	, "le" : 8804
+	, "ge" : 8805
+	, "sub" : 8834
+	, "sup" : 8835
+	, "nsub" : 8836
+	, "sube" : 8838
+	, "supe" : 8839
+	, "oplus" : 8853
+	, "otimes" : 8855
+	, "perp" : 8869
+	, "sdot" : 8901
+	, "lceil" : 8968
+	, "rceil" : 8969
+	, "lfloor" : 8970
+	, "rfloor" : 8971
+	, "lang" : 9001
+	, "rang" : 9002
+	, "loz" : 9674
+	, "spades" : 9824
+	, "clubs" : 9827
+	, "hearts" : 9829
+	, "diams" : 9830
+	}
+	
+	Object.keys(sax.ENTITIES).forEach(function (key) {
+	    var e = sax.ENTITIES[key]
+	    var s = typeof e === 'number' ? String.fromCharCode(e) : e
+	    sax.ENTITIES[key] = s
+	})
+	
+	for (var S in sax.STATE) sax.STATE[sax.STATE[S]] = S
+	
+	// shorthand
+	S = sax.STATE
+	
+	function emit (parser, event, data) {
+	  parser[event] && parser[event](data)
+	}
+	
+	function emitNode (parser, nodeType, data) {
+	  if (parser.textNode) closeText(parser)
+	  emit(parser, nodeType, data)
+	}
+	
+	function closeText (parser) {
+	  parser.textNode = textopts(parser.opt, parser.textNode)
+	  if (parser.textNode) emit(parser, "ontext", parser.textNode)
+	  parser.textNode = ""
+	}
+	
+	function textopts (opt, text) {
+	  if (opt.trim) text = text.trim()
+	  if (opt.normalize) text = text.replace(/\s+/g, " ")
+	  return text
+	}
+	
+	function error (parser, er) {
+	  closeText(parser)
+	  if (parser.trackPosition) {
+	    er += "\nLine: "+parser.line+
+	          "\nColumn: "+parser.column+
+	          "\nChar: "+parser.c
+	  }
+	  er = new Error(er)
+	  parser.error = er
+	  emit(parser, "onerror", er)
+	  return parser
+	}
+	
+	function end (parser) {
+	  if (!parser.closedRoot) strictFail(parser, "Unclosed root tag")
+	  if ((parser.state !== S.BEGIN) && (parser.state !== S.TEXT)) error(parser, "Unexpected end")
+	  closeText(parser)
+	  parser.c = ""
+	  parser.closed = true
+	  emit(parser, "onend")
+	  SAXParser.call(parser, parser.strict, parser.opt)
+	  return parser
+	}
+	
+	function strictFail (parser, message) {
+	  if (typeof parser !== 'object' || !(parser instanceof SAXParser))
+	    throw new Error('bad call to strictFail');
+	  if (parser.strict) error(parser, message)
+	}
+	
+	function newTag (parser) {
+	  if (!parser.strict) parser.tagName = parser.tagName[parser.looseCase]()
+	  var parent = parser.tags[parser.tags.length - 1] || parser
+	    , tag = parser.tag = { name : parser.tagName, attributes : {} }
+	
+	  // will be overridden if tag contails an xmlns="foo" or xmlns:foo="bar"
+	  if (parser.opt.xmlns) tag.ns = parent.ns
+	  parser.attribList.length = 0
+	}
+	
+	function qname (name, attribute) {
+	  var i = name.indexOf(":")
+	    , qualName = i < 0 ? [ "", name ] : name.split(":")
+	    , prefix = qualName[0]
+	    , local = qualName[1]
+	
+	  // <x "xmlns"="http://foo">
+	  if (attribute && name === "xmlns") {
+	    prefix = "xmlns"
+	    local = ""
+	  }
+	
+	  return { prefix: prefix, local: local }
+	}
+	
+	function attrib (parser) {
+	  if (!parser.strict) parser.attribName = parser.attribName[parser.looseCase]()
+	
+	  if (parser.attribList.indexOf(parser.attribName) !== -1 ||
+	      parser.tag.attributes.hasOwnProperty(parser.attribName)) {
+	    return parser.attribName = parser.attribValue = ""
+	  }
+	
+	  if (parser.opt.xmlns) {
+	    var qn = qname(parser.attribName, true)
+	      , prefix = qn.prefix
+	      , local = qn.local
+	
+	    if (prefix === "xmlns") {
+	      // namespace binding attribute; push the binding into scope
+	      if (local === "xml" && parser.attribValue !== XML_NAMESPACE) {
+	        strictFail( parser
+	                  , "xml: prefix must be bound to " + XML_NAMESPACE + "\n"
+	                  + "Actual: " + parser.attribValue )
+	      } else if (local === "xmlns" && parser.attribValue !== XMLNS_NAMESPACE) {
+	        strictFail( parser
+	                  , "xmlns: prefix must be bound to " + XMLNS_NAMESPACE + "\n"
+	                  + "Actual: " + parser.attribValue )
+	      } else {
+	        var tag = parser.tag
+	          , parent = parser.tags[parser.tags.length - 1] || parser
+	        if (tag.ns === parent.ns) {
+	          tag.ns = Object.create(parent.ns)
+	        }
+	        tag.ns[local] = parser.attribValue
+	      }
+	    }
+	
+	    // defer onattribute events until all attributes have been seen
+	    // so any new bindings can take effect; preserve attribute order
+	    // so deferred events can be emitted in document order
+	    parser.attribList.push([parser.attribName, parser.attribValue])
+	  } else {
+	    // in non-xmlns mode, we can emit the event right away
+	    parser.tag.attributes[parser.attribName] = parser.attribValue
+	    emitNode( parser
+	            , "onattribute"
+	            , { name: parser.attribName
+	              , value: parser.attribValue } )
+	  }
+	
+	  parser.attribName = parser.attribValue = ""
+	}
+	
+	function openTag (parser, selfClosing) {
+	  if (parser.opt.xmlns) {
+	    // emit namespace binding events
+	    var tag = parser.tag
+	
+	    // add namespace info to tag
+	    var qn = qname(parser.tagName)
+	    tag.prefix = qn.prefix
+	    tag.local = qn.local
+	    tag.uri = tag.ns[qn.prefix] || ""
+	
+	    if (tag.prefix && !tag.uri) {
+	      strictFail(parser, "Unbound namespace prefix: "
+	                       + JSON.stringify(parser.tagName))
+	      tag.uri = qn.prefix
+	    }
+	
+	    var parent = parser.tags[parser.tags.length - 1] || parser
+	    if (tag.ns && parent.ns !== tag.ns) {
+	      Object.keys(tag.ns).forEach(function (p) {
+	        emitNode( parser
+	                , "onopennamespace"
+	                , { prefix: p , uri: tag.ns[p] } )
+	      })
+	    }
+	
+	    // handle deferred onattribute events
+	    // Note: do not apply default ns to attributes:
+	    //   http://www.w3.org/TR/REC-xml-names/#defaulting
+	    for (var i = 0, l = parser.attribList.length; i < l; i ++) {
+	      var nv = parser.attribList[i]
+	      var name = nv[0]
+	        , value = nv[1]
+	        , qualName = qname(name, true)
+	        , prefix = qualName.prefix
+	        , local = qualName.local
+	        , uri = prefix == "" ? "" : (tag.ns[prefix] || "")
+	        , a = { name: name
+	              , value: value
+	              , prefix: prefix
+	              , local: local
+	              , uri: uri
+	              }
+	
+	      // if there's any attributes with an undefined namespace,
+	      // then fail on them now.
+	      if (prefix && prefix != "xmlns" && !uri) {
+	        strictFail(parser, "Unbound namespace prefix: "
+	                         + JSON.stringify(prefix))
+	        a.uri = prefix
+	      }
+	      parser.tag.attributes[name] = a
+	      emitNode(parser, "onattribute", a)
+	    }
+	    parser.attribList.length = 0
+	  }
+	
+	  parser.tag.isSelfClosing = !!selfClosing
+	
+	  // process the tag
+	  parser.sawRoot = true
+	  parser.tags.push(parser.tag)
+	  emitNode(parser, "onopentag", parser.tag)
+	  if (!selfClosing) {
+	    // special case for <script> in non-strict mode.
+	    if (!parser.noscript && parser.tagName.toLowerCase() === "script") {
+	      parser.state = S.SCRIPT
+	    } else {
+	      parser.state = S.TEXT
+	    }
+	    parser.tag = null
+	    parser.tagName = ""
+	  }
+	  parser.attribName = parser.attribValue = ""
+	  parser.attribList.length = 0
+	}
+	
+	function closeTag (parser) {
+	  if (!parser.tagName) {
+	    strictFail(parser, "Weird empty close tag.")
+	    parser.textNode += "</>"
+	    parser.state = S.TEXT
+	    return
+	  }
+	
+	  if (parser.script) {
+	    if (parser.tagName !== "script") {
+	      parser.script += "</" + parser.tagName + ">"
+	      parser.tagName = ""
+	      parser.state = S.SCRIPT
+	      return
+	    }
+	    emitNode(parser, "onscript", parser.script)
+	    parser.script = ""
+	  }
+	
+	  // first make sure that the closing tag actually exists.
+	  // <a><b></c></b></a> will close everything, otherwise.
+	  var t = parser.tags.length
+	  var tagName = parser.tagName
+	  if (!parser.strict) tagName = tagName[parser.looseCase]()
+	  var closeTo = tagName
+	  while (t --) {
+	    var close = parser.tags[t]
+	    if (close.name !== closeTo) {
+	      // fail the first time in strict mode
+	      strictFail(parser, "Unexpected close tag")
+	    } else break
+	  }
+	
+	  // didn't find it.  we already failed for strict, so just abort.
+	  if (t < 0) {
+	    strictFail(parser, "Unmatched closing tag: "+parser.tagName)
+	    parser.textNode += "</" + parser.tagName + ">"
+	    parser.state = S.TEXT
+	    return
+	  }
+	  parser.tagName = tagName
+	  var s = parser.tags.length
+	  while (s --> t) {
+	    var tag = parser.tag = parser.tags.pop()
+	    parser.tagName = parser.tag.name
+	    emitNode(parser, "onclosetag", parser.tagName)
+	
+	    var x = {}
+	    for (var i in tag.ns) x[i] = tag.ns[i]
+	
+	    var parent = parser.tags[parser.tags.length - 1] || parser
+	    if (parser.opt.xmlns && tag.ns !== parent.ns) {
+	      // remove namespace bindings introduced by tag
+	      Object.keys(tag.ns).forEach(function (p) {
+	        var n = tag.ns[p]
+	        emitNode(parser, "onclosenamespace", { prefix: p, uri: n })
+	      })
+	    }
+	  }
+	  if (t === 0) parser.closedRoot = true
+	  parser.tagName = parser.attribValue = parser.attribName = ""
+	  parser.attribList.length = 0
+	  parser.state = S.TEXT
+	}
+	
+	function parseEntity (parser) {
+	  var entity = parser.entity
+	    , entityLC = entity.toLowerCase()
+	    , num
+	    , numStr = ""
+	  if (parser.ENTITIES[entity])
+	    return parser.ENTITIES[entity]
+	  if (parser.ENTITIES[entityLC])
+	    return parser.ENTITIES[entityLC]
+	  entity = entityLC
+	  if (entity.charAt(0) === "#") {
+	    if (entity.charAt(1) === "x") {
+	      entity = entity.slice(2)
+	      num = parseInt(entity, 16)
+	      numStr = num.toString(16)
+	    } else {
+	      entity = entity.slice(1)
+	      num = parseInt(entity, 10)
+	      numStr = num.toString(10)
+	    }
+	  }
+	  entity = entity.replace(/^0+/, "")
+	  if (numStr.toLowerCase() !== entity) {
+	    strictFail(parser, "Invalid character entity")
+	    return "&"+parser.entity + ";"
+	  }
+	  return String.fromCharCode(num)
+	}
+	
+	function write (chunk) {
+	  var parser = this
+	  if (this.error) throw this.error
+	  if (parser.closed) return error(parser,
+	    "Cannot write after close. Assign an onready handler.")
+	  if (chunk === null) return end(parser)
+	  var i = 0, c = ""
+	  while (parser.c = c = chunk.charAt(i++)) {
+	    if (parser.trackPosition) {
+	      parser.position ++
+	      if (c === "\n") {
+	        parser.line ++
+	        parser.column = 0
+	      } else parser.column ++
+	    }
+	    switch (parser.state) {
+	
+	      case S.BEGIN:
+	        if (c === "<") {
+	          parser.state = S.OPEN_WAKA
+	          parser.startTagPosition = parser.position
+	        } else if (not(whitespace,c)) {
+	          // have to process this as a text node.
+	          // weird, but happens.
+	          strictFail(parser, "Non-whitespace before first tag.")
+	          parser.textNode = c
+	          parser.state = S.TEXT
+	        }
+	      continue
+	
+	      case S.TEXT:
+	        if (parser.sawRoot && !parser.closedRoot) {
+	          var starti = i-1
+	          while (c && c!=="<" && c!=="&") {
+	            c = chunk.charAt(i++)
+	            if (c && parser.trackPosition) {
+	              parser.position ++
+	              if (c === "\n") {
+	                parser.line ++
+	                parser.column = 0
+	              } else parser.column ++
+	            }
+	          }
+	          parser.textNode += chunk.substring(starti, i-1)
+	        }
+	        if (c === "<") {
+	          parser.state = S.OPEN_WAKA
+	          parser.startTagPosition = parser.position
+	        } else {
+	          if (not(whitespace, c) && (!parser.sawRoot || parser.closedRoot))
+	            strictFail(parser, "Text data outside of root node.")
+	          if (c === "&") parser.state = S.TEXT_ENTITY
+	          else parser.textNode += c
+	        }
+	      continue
+	
+	      case S.SCRIPT:
+	        // only non-strict
+	        if (c === "<") {
+	          parser.state = S.SCRIPT_ENDING
+	        } else parser.script += c
+	      continue
+	
+	      case S.SCRIPT_ENDING:
+	        if (c === "/") {
+	          parser.state = S.CLOSE_TAG
+	        } else {
+	          parser.script += "<" + c
+	          parser.state = S.SCRIPT
+	        }
+	      continue
+	
+	      case S.OPEN_WAKA:
+	        // either a /, ?, !, or text is coming next.
+	        if (c === "!") {
+	          parser.state = S.SGML_DECL
+	          parser.sgmlDecl = ""
+	        } else if (is(whitespace, c)) {
+	          // wait for it...
+	        } else if (is(nameStart,c)) {
+	          parser.state = S.OPEN_TAG
+	          parser.tagName = c
+	        } else if (c === "/") {
+	          parser.state = S.CLOSE_TAG
+	          parser.tagName = ""
+	        } else if (c === "?") {
+	          parser.state = S.PROC_INST
+	          parser.procInstName = parser.procInstBody = ""
+	        } else {
+	          strictFail(parser, "Unencoded <")
+	          // if there was some whitespace, then add that in.
+	          if (parser.startTagPosition + 1 < parser.position) {
+	            var pad = parser.position - parser.startTagPosition
+	            c = new Array(pad).join(" ") + c
+	          }
+	          parser.textNode += "<" + c
+	          parser.state = S.TEXT
+	        }
+	      continue
+	
+	      case S.SGML_DECL:
+	        if ((parser.sgmlDecl+c).toUpperCase() === CDATA) {
+	          emitNode(parser, "onopencdata")
+	          parser.state = S.CDATA
+	          parser.sgmlDecl = ""
+	          parser.cdata = ""
+	        } else if (parser.sgmlDecl+c === "--") {
+	          parser.state = S.COMMENT
+	          parser.comment = ""
+	          parser.sgmlDecl = ""
+	        } else if ((parser.sgmlDecl+c).toUpperCase() === DOCTYPE) {
+	          parser.state = S.DOCTYPE
+	          if (parser.doctype || parser.sawRoot) strictFail(parser,
+	            "Inappropriately located doctype declaration")
+	          parser.doctype = ""
+	          parser.sgmlDecl = ""
+	        } else if (c === ">") {
+	          emitNode(parser, "onsgmldeclaration", parser.sgmlDecl)
+	          parser.sgmlDecl = ""
+	          parser.state = S.TEXT
+	        } else if (is(quote, c)) {
+	          parser.state = S.SGML_DECL_QUOTED
+	          parser.sgmlDecl += c
+	        } else parser.sgmlDecl += c
+	      continue
+	
+	      case S.SGML_DECL_QUOTED:
+	        if (c === parser.q) {
+	          parser.state = S.SGML_DECL
+	          parser.q = ""
+	        }
+	        parser.sgmlDecl += c
+	      continue
+	
+	      case S.DOCTYPE:
+	        if (c === ">") {
+	          parser.state = S.TEXT
+	          emitNode(parser, "ondoctype", parser.doctype)
+	          parser.doctype = true // just remember that we saw it.
+	        } else {
+	          parser.doctype += c
+	          if (c === "[") parser.state = S.DOCTYPE_DTD
+	          else if (is(quote, c)) {
+	            parser.state = S.DOCTYPE_QUOTED
+	            parser.q = c
+	          }
+	        }
+	      continue
+	
+	      case S.DOCTYPE_QUOTED:
+	        parser.doctype += c
+	        if (c === parser.q) {
+	          parser.q = ""
+	          parser.state = S.DOCTYPE
+	        }
+	      continue
+	
+	      case S.DOCTYPE_DTD:
+	        parser.doctype += c
+	        if (c === "]") parser.state = S.DOCTYPE
+	        else if (is(quote,c)) {
+	          parser.state = S.DOCTYPE_DTD_QUOTED
+	          parser.q = c
+	        }
+	      continue
+	
+	      case S.DOCTYPE_DTD_QUOTED:
+	        parser.doctype += c
+	        if (c === parser.q) {
+	          parser.state = S.DOCTYPE_DTD
+	          parser.q = ""
+	        }
+	      continue
+	
+	      case S.COMMENT:
+	        if (c === "-") parser.state = S.COMMENT_ENDING
+	        else parser.comment += c
+	      continue
+	
+	      case S.COMMENT_ENDING:
+	        if (c === "-") {
+	          parser.state = S.COMMENT_ENDED
+	          parser.comment = textopts(parser.opt, parser.comment)
+	          if (parser.comment) emitNode(parser, "oncomment", parser.comment)
+	          parser.comment = ""
+	        } else {
+	          parser.comment += "-" + c
+	          parser.state = S.COMMENT
+	        }
+	      continue
+	
+	      case S.COMMENT_ENDED:
+	        if (c !== ">") {
+	          strictFail(parser, "Malformed comment")
+	          // allow <!-- blah -- bloo --> in non-strict mode,
+	          // which is a comment of " blah -- bloo "
+	          parser.comment += "--" + c
+	          parser.state = S.COMMENT
+	        } else parser.state = S.TEXT
+	      continue
+	
+	      case S.CDATA:
+	        if (c === "]") parser.state = S.CDATA_ENDING
+	        else parser.cdata += c
+	      continue
+	
+	      case S.CDATA_ENDING:
+	        if (c === "]") parser.state = S.CDATA_ENDING_2
+	        else {
+	          parser.cdata += "]" + c
+	          parser.state = S.CDATA
+	        }
+	      continue
+	
+	      case S.CDATA_ENDING_2:
+	        if (c === ">") {
+	          if (parser.cdata) emitNode(parser, "oncdata", parser.cdata)
+	          emitNode(parser, "onclosecdata")
+	          parser.cdata = ""
+	          parser.state = S.TEXT
+	        } else if (c === "]") {
+	          parser.cdata += "]"
+	        } else {
+	          parser.cdata += "]]" + c
+	          parser.state = S.CDATA
+	        }
+	      continue
+	
+	      case S.PROC_INST:
+	        if (c === "?") parser.state = S.PROC_INST_ENDING
+	        else if (is(whitespace, c)) parser.state = S.PROC_INST_BODY
+	        else parser.procInstName += c
+	      continue
+	
+	      case S.PROC_INST_BODY:
+	        if (!parser.procInstBody && is(whitespace, c)) continue
+	        else if (c === "?") parser.state = S.PROC_INST_ENDING
+	        else parser.procInstBody += c
+	      continue
+	
+	      case S.PROC_INST_ENDING:
+	        if (c === ">") {
+	          emitNode(parser, "onprocessinginstruction", {
+	            name : parser.procInstName,
+	            body : parser.procInstBody
+	          })
+	          parser.procInstName = parser.procInstBody = ""
+	          parser.state = S.TEXT
+	        } else {
+	          parser.procInstBody += "?" + c
+	          parser.state = S.PROC_INST_BODY
+	        }
+	      continue
+	
+	      case S.OPEN_TAG:
+	        if (is(nameBody, c)) parser.tagName += c
+	        else {
+	          newTag(parser)
+	          if (c === ">") openTag(parser)
+	          else if (c === "/") parser.state = S.OPEN_TAG_SLASH
+	          else {
+	            if (not(whitespace, c)) strictFail(
+	              parser, "Invalid character in tag name")
+	            parser.state = S.ATTRIB
+	          }
+	        }
+	      continue
+	
+	      case S.OPEN_TAG_SLASH:
+	        if (c === ">") {
+	          openTag(parser, true)
+	          closeTag(parser)
+	        } else {
+	          strictFail(parser, "Forward-slash in opening tag not followed by >")
+	          parser.state = S.ATTRIB
+	        }
+	      continue
+	
+	      case S.ATTRIB:
+	        // haven't read the attribute name yet.
+	        if (is(whitespace, c)) continue
+	        else if (c === ">") openTag(parser)
+	        else if (c === "/") parser.state = S.OPEN_TAG_SLASH
+	        else if (is(nameStart, c)) {
+	          parser.attribName = c
+	          parser.attribValue = ""
+	          parser.state = S.ATTRIB_NAME
+	        } else strictFail(parser, "Invalid attribute name")
+	      continue
+	
+	      case S.ATTRIB_NAME:
+	        if (c === "=") parser.state = S.ATTRIB_VALUE
+	        else if (c === ">") {
+	          strictFail(parser, "Attribute without value")
+	          parser.attribValue = parser.attribName
+	          attrib(parser)
+	          openTag(parser)
+	        }
+	        else if (is(whitespace, c)) parser.state = S.ATTRIB_NAME_SAW_WHITE
+	        else if (is(nameBody, c)) parser.attribName += c
+	        else strictFail(parser, "Invalid attribute name")
+	      continue
+	
+	      case S.ATTRIB_NAME_SAW_WHITE:
+	        if (c === "=") parser.state = S.ATTRIB_VALUE
+	        else if (is(whitespace, c)) continue
+	        else {
+	          strictFail(parser, "Attribute without value")
+	          parser.tag.attributes[parser.attribName] = ""
+	          parser.attribValue = ""
+	          emitNode(parser, "onattribute",
+	                   { name : parser.attribName, value : "" })
+	          parser.attribName = ""
+	          if (c === ">") openTag(parser)
+	          else if (is(nameStart, c)) {
+	            parser.attribName = c
+	            parser.state = S.ATTRIB_NAME
+	          } else {
+	            strictFail(parser, "Invalid attribute name")
+	            parser.state = S.ATTRIB
+	          }
+	        }
+	      continue
+	
+	      case S.ATTRIB_VALUE:
+	        if (is(whitespace, c)) continue
+	        else if (is(quote, c)) {
+	          parser.q = c
+	          parser.state = S.ATTRIB_VALUE_QUOTED
+	        } else {
+	          strictFail(parser, "Unquoted attribute value")
+	          parser.state = S.ATTRIB_VALUE_UNQUOTED
+	          parser.attribValue = c
+	        }
+	      continue
+	
+	      case S.ATTRIB_VALUE_QUOTED:
+	        if (c !== parser.q) {
+	          if (c === "&") parser.state = S.ATTRIB_VALUE_ENTITY_Q
+	          else parser.attribValue += c
+	          continue
+	        }
+	        attrib(parser)
+	        parser.q = ""
+	        parser.state = S.ATTRIB_VALUE_CLOSED
+	      continue
+	
+	      case S.ATTRIB_VALUE_CLOSED:
+	        if (is(whitespace, c)) {
+	          parser.state = S.ATTRIB
+	        } else if (c === ">") openTag(parser)
+	        else if (c === "/") parser.state = S.OPEN_TAG_SLASH
+	        else if (is(nameStart, c)) {
+	          strictFail(parser, "No whitespace between attributes")
+	          parser.attribName = c
+	          parser.attribValue = ""
+	          parser.state = S.ATTRIB_NAME
+	        } else strictFail(parser, "Invalid attribute name")
+	      continue
+	
+	      case S.ATTRIB_VALUE_UNQUOTED:
+	        if (not(attribEnd,c)) {
+	          if (c === "&") parser.state = S.ATTRIB_VALUE_ENTITY_U
+	          else parser.attribValue += c
+	          continue
+	        }
+	        attrib(parser)
+	        if (c === ">") openTag(parser)
+	        else parser.state = S.ATTRIB
+	      continue
+	
+	      case S.CLOSE_TAG:
+	        if (!parser.tagName) {
+	          if (is(whitespace, c)) continue
+	          else if (not(nameStart, c)) {
+	            if (parser.script) {
+	              parser.script += "</" + c
+	              parser.state = S.SCRIPT
+	            } else {
+	              strictFail(parser, "Invalid tagname in closing tag.")
+	            }
+	          } else parser.tagName = c
+	        }
+	        else if (c === ">") closeTag(parser)
+	        else if (is(nameBody, c)) parser.tagName += c
+	        else if (parser.script) {
+	          parser.script += "</" + parser.tagName
+	          parser.tagName = ""
+	          parser.state = S.SCRIPT
+	        } else {
+	          if (not(whitespace, c)) strictFail(parser,
+	            "Invalid tagname in closing tag")
+	          parser.state = S.CLOSE_TAG_SAW_WHITE
+	        }
+	      continue
+	
+	      case S.CLOSE_TAG_SAW_WHITE:
+	        if (is(whitespace, c)) continue
+	        if (c === ">") closeTag(parser)
+	        else strictFail(parser, "Invalid characters in closing tag")
+	      continue
+	
+	      case S.TEXT_ENTITY:
+	      case S.ATTRIB_VALUE_ENTITY_Q:
+	      case S.ATTRIB_VALUE_ENTITY_U:
+	        switch(parser.state) {
+	          case S.TEXT_ENTITY:
+	            var returnState = S.TEXT, buffer = "textNode"
+	          break
+	
+	          case S.ATTRIB_VALUE_ENTITY_Q:
+	            var returnState = S.ATTRIB_VALUE_QUOTED, buffer = "attribValue"
+	          break
+	
+	          case S.ATTRIB_VALUE_ENTITY_U:
+	            var returnState = S.ATTRIB_VALUE_UNQUOTED, buffer = "attribValue"
+	          break
+	        }
+	        if (c === ";") {
+	          parser[buffer] += parseEntity(parser)
+	          parser.entity = ""
+	          parser.state = returnState
+	        }
+	        else if (is(entity, c)) parser.entity += c
+	        else {
+	          strictFail(parser, "Invalid character entity")
+	          parser[buffer] += "&" + parser.entity + c
+	          parser.entity = ""
+	          parser.state = returnState
+	        }
+	      continue
+	
+	      default:
+	        throw new Error(parser, "Unknown state: " + parser.state)
+	    }
+	  } // while
+	  // cdata blocks can get very big under normal conditions. emit and move on.
+	  // if (parser.state === S.CDATA && parser.cdata) {
+	  //   emitNode(parser, "oncdata", parser.cdata)
+	  //   parser.cdata = ""
+	  // }
+	  if (parser.position >= parser.bufferCheckPosition) checkBufferLength(parser)
+	  return parser
+	}
+	
+	})( false ? sax = {} : exports)
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
+
+/***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	module.exports = Stream;
+	
+	var EE = __webpack_require__(275).EventEmitter;
+	var inherits = __webpack_require__(107);
+	
+	inherits(Stream, EE);
+	Stream.Readable = __webpack_require__(276);
+	Stream.Writable = __webpack_require__(286);
+	Stream.Duplex = __webpack_require__(287);
+	Stream.Transform = __webpack_require__(288);
+	Stream.PassThrough = __webpack_require__(289);
+	
+	// Backwards-compat with node 0.4.x
+	Stream.Stream = Stream;
+	
+	
+	
+	// old-style streams.  Note that the pipe method (the only relevant
+	// part of this class) is overridden in the Readable class.
+	
+	function Stream() {
+	  EE.call(this);
+	}
+	
+	Stream.prototype.pipe = function(dest, options) {
+	  var source = this;
+	
+	  function ondata(chunk) {
+	    if (dest.writable) {
+	      if (false === dest.write(chunk) && source.pause) {
+	        source.pause();
+	      }
+	    }
+	  }
+	
+	  source.on('data', ondata);
+	
+	  function ondrain() {
+	    if (source.readable && source.resume) {
+	      source.resume();
+	    }
+	  }
+	
+	  dest.on('drain', ondrain);
+	
+	  // If the 'end' option is not supplied, dest.end() will be called when
+	  // source gets the 'end' or 'close' events.  Only dest.end() once.
+	  if (!dest._isStdio && (!options || options.end !== false)) {
+	    source.on('end', onend);
+	    source.on('close', onclose);
+	  }
+	
+	  var didOnEnd = false;
+	  function onend() {
+	    if (didOnEnd) return;
+	    didOnEnd = true;
+	
+	    dest.end();
+	  }
+	
+	
+	  function onclose() {
+	    if (didOnEnd) return;
+	    didOnEnd = true;
+	
+	    if (typeof dest.destroy === 'function') dest.destroy();
+	  }
+	
+	  // don't leave dangling pipes when there are errors.
+	  function onerror(er) {
+	    cleanup();
+	    if (EE.listenerCount(this, 'error') === 0) {
+	      throw er; // Unhandled stream error in pipe.
+	    }
+	  }
+	
+	  source.on('error', onerror);
+	  dest.on('error', onerror);
+	
+	  // remove all the event listeners that were added.
+	  function cleanup() {
+	    source.removeListener('data', ondata);
+	    dest.removeListener('drain', ondrain);
+	
+	    source.removeListener('end', onend);
+	    source.removeListener('close', onclose);
+	
+	    source.removeListener('error', onerror);
+	    dest.removeListener('error', onerror);
+	
+	    source.removeListener('end', cleanup);
+	    source.removeListener('close', cleanup);
+	
+	    dest.removeListener('close', cleanup);
+	  }
+	
+	  source.on('end', cleanup);
+	  source.on('close', cleanup);
+	
+	  dest.on('close', cleanup);
+	
+	  dest.emit('pipe', source);
+	
+	  // Allow for unix-like usage: A.pipe(B).pipe(C)
+	  return dest;
+	};
+
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(console) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	function EventEmitter() {
+	  this._events = this._events || {};
+	  this._maxListeners = this._maxListeners || undefined;
+	}
+	module.exports = EventEmitter;
+	
+	// Backwards-compat with node 0.10.x
+	EventEmitter.EventEmitter = EventEmitter;
+	
+	EventEmitter.prototype._events = undefined;
+	EventEmitter.prototype._maxListeners = undefined;
+	
+	// By default EventEmitters will print a warning if more than 10 listeners are
+	// added to it. This is a useful default which helps finding memory leaks.
+	EventEmitter.defaultMaxListeners = 10;
+	
+	// Obviously not all Emitters should be limited to 10. This function allows
+	// that to be increased. Set to zero for unlimited.
+	EventEmitter.prototype.setMaxListeners = function(n) {
+	  if (!isNumber(n) || n < 0 || isNaN(n))
+	    throw TypeError('n must be a positive number');
+	  this._maxListeners = n;
+	  return this;
+	};
+	
+	EventEmitter.prototype.emit = function(type) {
+	  var er, handler, len, args, i, listeners;
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // If there is no 'error' event listener then throw.
+	  if (type === 'error') {
+	    if (!this._events.error ||
+	        (isObject(this._events.error) && !this._events.error.length)) {
+	      er = arguments[1];
+	      if (er instanceof Error) {
+	        throw er; // Unhandled 'error' event
+	      }
+	      throw TypeError('Uncaught, unspecified "error" event.');
+	    }
+	  }
+	
+	  handler = this._events[type];
+	
+	  if (isUndefined(handler))
+	    return false;
+	
+	  if (isFunction(handler)) {
+	    switch (arguments.length) {
+	      // fast cases
+	      case 1:
+	        handler.call(this);
+	        break;
+	      case 2:
+	        handler.call(this, arguments[1]);
+	        break;
+	      case 3:
+	        handler.call(this, arguments[1], arguments[2]);
+	        break;
+	      // slower
+	      default:
+	        args = Array.prototype.slice.call(arguments, 1);
+	        handler.apply(this, args);
+	    }
+	  } else if (isObject(handler)) {
+	    args = Array.prototype.slice.call(arguments, 1);
+	    listeners = handler.slice();
+	    len = listeners.length;
+	    for (i = 0; i < len; i++)
+	      listeners[i].apply(this, args);
+	  }
+	
+	  return true;
+	};
+	
+	EventEmitter.prototype.addListener = function(type, listener) {
+	  var m;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // To avoid recursion in the case that type === "newListener"! Before
+	  // adding it to the listeners, first emit "newListener".
+	  if (this._events.newListener)
+	    this.emit('newListener', type,
+	              isFunction(listener.listener) ?
+	              listener.listener : listener);
+	
+	  if (!this._events[type])
+	    // Optimize the case of one listener. Don't need the extra array object.
+	    this._events[type] = listener;
+	  else if (isObject(this._events[type]))
+	    // If we've already got an array, just append.
+	    this._events[type].push(listener);
+	  else
+	    // Adding the second element, need to change to array.
+	    this._events[type] = [this._events[type], listener];
+	
+	  // Check for listener leak
+	  if (isObject(this._events[type]) && !this._events[type].warned) {
+	    if (!isUndefined(this._maxListeners)) {
+	      m = this._maxListeners;
+	    } else {
+	      m = EventEmitter.defaultMaxListeners;
+	    }
+	
+	    if (m && m > 0 && this._events[type].length > m) {
+	      this._events[type].warned = true;
+	      console.error('(node) warning: possible EventEmitter memory ' +
+	                    'leak detected. %d listeners added. ' +
+	                    'Use emitter.setMaxListeners() to increase limit.',
+	                    this._events[type].length);
+	      if (typeof console.trace === 'function') {
+	        // not supported in IE 10
+	        console.trace();
+	      }
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+	
+	EventEmitter.prototype.once = function(type, listener) {
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  var fired = false;
+	
+	  function g() {
+	    this.removeListener(type, g);
+	
+	    if (!fired) {
+	      fired = true;
+	      listener.apply(this, arguments);
+	    }
+	  }
+	
+	  g.listener = listener;
+	  this.on(type, g);
+	
+	  return this;
+	};
+	
+	// emits a 'removeListener' event iff the listener was removed
+	EventEmitter.prototype.removeListener = function(type, listener) {
+	  var list, position, length, i;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events || !this._events[type])
+	    return this;
+	
+	  list = this._events[type];
+	  length = list.length;
+	  position = -1;
+	
+	  if (list === listener ||
+	      (isFunction(list.listener) && list.listener === listener)) {
+	    delete this._events[type];
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	
+	  } else if (isObject(list)) {
+	    for (i = length; i-- > 0;) {
+	      if (list[i] === listener ||
+	          (list[i].listener && list[i].listener === listener)) {
+	        position = i;
+	        break;
+	      }
+	    }
+	
+	    if (position < 0)
+	      return this;
+	
+	    if (list.length === 1) {
+	      list.length = 0;
+	      delete this._events[type];
+	    } else {
+	      list.splice(position, 1);
+	    }
+	
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.removeAllListeners = function(type) {
+	  var key, listeners;
+	
+	  if (!this._events)
+	    return this;
+	
+	  // not listening for removeListener, no need to emit
+	  if (!this._events.removeListener) {
+	    if (arguments.length === 0)
+	      this._events = {};
+	    else if (this._events[type])
+	      delete this._events[type];
+	    return this;
+	  }
+	
+	  // emit removeListener for all listeners on all events
+	  if (arguments.length === 0) {
+	    for (key in this._events) {
+	      if (key === 'removeListener') continue;
+	      this.removeAllListeners(key);
+	    }
+	    this.removeAllListeners('removeListener');
+	    this._events = {};
+	    return this;
+	  }
+	
+	  listeners = this._events[type];
+	
+	  if (isFunction(listeners)) {
+	    this.removeListener(type, listeners);
+	  } else if (listeners) {
+	    // LIFO order
+	    while (listeners.length)
+	      this.removeListener(type, listeners[listeners.length - 1]);
+	  }
+	  delete this._events[type];
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.listeners = function(type) {
+	  var ret;
+	  if (!this._events || !this._events[type])
+	    ret = [];
+	  else if (isFunction(this._events[type]))
+	    ret = [this._events[type]];
+	  else
+	    ret = this._events[type].slice();
+	  return ret;
+	};
+	
+	EventEmitter.prototype.listenerCount = function(type) {
+	  if (this._events) {
+	    var evlistener = this._events[type];
+	
+	    if (isFunction(evlistener))
+	      return 1;
+	    else if (evlistener)
+	      return evlistener.length;
+	  }
+	  return 0;
+	};
+	
+	EventEmitter.listenerCount = function(emitter, type) {
+	  return emitter.listenerCount(type);
+	};
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {exports = module.exports = __webpack_require__(277);
+	exports.Stream = __webpack_require__(274);
+	exports.Readable = exports;
+	exports.Writable = __webpack_require__(282);
+	exports.Duplex = __webpack_require__(281);
+	exports.Transform = __webpack_require__(284);
+	exports.PassThrough = __webpack_require__(285);
+	if (!process.browser && process.env.READABLE_STREAM === 'disable') {
+	  module.exports = __webpack_require__(274);
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	module.exports = Readable;
+	
+	/*<replacement>*/
+	var isArray = __webpack_require__(278);
+	/*</replacement>*/
+	
+	
+	/*<replacement>*/
+	var Buffer = __webpack_require__(144).Buffer;
+	/*</replacement>*/
+	
+	Readable.ReadableState = ReadableState;
+	
+	var EE = __webpack_require__(275).EventEmitter;
+	
+	/*<replacement>*/
+	if (!EE.listenerCount) EE.listenerCount = function(emitter, type) {
+	  return emitter.listeners(type).length;
+	};
+	/*</replacement>*/
+	
+	var Stream = __webpack_require__(274);
+	
+	/*<replacement>*/
+	var util = __webpack_require__(279);
+	util.inherits = __webpack_require__(107);
+	/*</replacement>*/
+	
+	var StringDecoder;
+	
+	
+	/*<replacement>*/
+	var debug = __webpack_require__(280);
+	if (debug && debug.debuglog) {
+	  debug = debug.debuglog('stream');
+	} else {
+	  debug = function () {};
+	}
+	/*</replacement>*/
+	
+	
+	util.inherits(Readable, Stream);
+	
+	function ReadableState(options, stream) {
+	  var Duplex = __webpack_require__(281);
+	
+	  options = options || {};
+	
+	  // the point at which it stops calling _read() to fill the buffer
+	  // Note: 0 is a valid value, means "don't call _read preemptively ever"
+	  var hwm = options.highWaterMark;
+	  var defaultHwm = options.objectMode ? 16 : 16 * 1024;
+	  this.highWaterMark = (hwm || hwm === 0) ? hwm : defaultHwm;
+	
+	  // cast to ints.
+	  this.highWaterMark = ~~this.highWaterMark;
+	
+	  this.buffer = [];
+	  this.length = 0;
+	  this.pipes = null;
+	  this.pipesCount = 0;
+	  this.flowing = null;
+	  this.ended = false;
+	  this.endEmitted = false;
+	  this.reading = false;
+	
+	  // a flag to be able to tell if the onwrite cb is called immediately,
+	  // or on a later tick.  We set this to true at first, because any
+	  // actions that shouldn't happen until "later" should generally also
+	  // not happen before the first write call.
+	  this.sync = true;
+	
+	  // whenever we return null, then we set a flag to say
+	  // that we're awaiting a 'readable' event emission.
+	  this.needReadable = false;
+	  this.emittedReadable = false;
+	  this.readableListening = false;
+	
+	
+	  // object stream flag. Used to make read(n) ignore n and to
+	  // make all the buffer merging and length checks go away
+	  this.objectMode = !!options.objectMode;
+	
+	  if (stream instanceof Duplex)
+	    this.objectMode = this.objectMode || !!options.readableObjectMode;
+	
+	  // Crypto is kind of old and crusty.  Historically, its default string
+	  // encoding is 'binary' so we have to make this configurable.
+	  // Everything else in the universe uses 'utf8', though.
+	  this.defaultEncoding = options.defaultEncoding || 'utf8';
+	
+	  // when piping, we only care about 'readable' events that happen
+	  // after read()ing all the bytes and not getting any pushback.
+	  this.ranOut = false;
+	
+	  // the number of writers that are awaiting a drain event in .pipe()s
+	  this.awaitDrain = 0;
+	
+	  // if true, a maybeReadMore has been scheduled
+	  this.readingMore = false;
+	
+	  this.decoder = null;
+	  this.encoding = null;
+	  if (options.encoding) {
+	    if (!StringDecoder)
+	      StringDecoder = __webpack_require__(283).StringDecoder;
+	    this.decoder = new StringDecoder(options.encoding);
+	    this.encoding = options.encoding;
+	  }
+	}
+	
+	function Readable(options) {
+	  var Duplex = __webpack_require__(281);
+	
+	  if (!(this instanceof Readable))
+	    return new Readable(options);
+	
+	  this._readableState = new ReadableState(options, this);
+	
+	  // legacy
+	  this.readable = true;
+	
+	  Stream.call(this);
+	}
+	
+	// Manually shove something into the read() buffer.
+	// This returns true if the highWaterMark has not been hit yet,
+	// similar to how Writable.write() returns true if you should
+	// write() some more.
+	Readable.prototype.push = function(chunk, encoding) {
+	  var state = this._readableState;
+	
+	  if (util.isString(chunk) && !state.objectMode) {
+	    encoding = encoding || state.defaultEncoding;
+	    if (encoding !== state.encoding) {
+	      chunk = new Buffer(chunk, encoding);
+	      encoding = '';
+	    }
+	  }
+	
+	  return readableAddChunk(this, state, chunk, encoding, false);
+	};
+	
+	// Unshift should *always* be something directly out of read()
+	Readable.prototype.unshift = function(chunk) {
+	  var state = this._readableState;
+	  return readableAddChunk(this, state, chunk, '', true);
+	};
+	
+	function readableAddChunk(stream, state, chunk, encoding, addToFront) {
+	  var er = chunkInvalid(state, chunk);
+	  if (er) {
+	    stream.emit('error', er);
+	  } else if (util.isNullOrUndefined(chunk)) {
+	    state.reading = false;
+	    if (!state.ended)
+	      onEofChunk(stream, state);
+	  } else if (state.objectMode || chunk && chunk.length > 0) {
+	    if (state.ended && !addToFront) {
+	      var e = new Error('stream.push() after EOF');
+	      stream.emit('error', e);
+	    } else if (state.endEmitted && addToFront) {
+	      var e = new Error('stream.unshift() after end event');
+	      stream.emit('error', e);
+	    } else {
+	      if (state.decoder && !addToFront && !encoding)
+	        chunk = state.decoder.write(chunk);
+	
+	      if (!addToFront)
+	        state.reading = false;
+	
+	      // if we want the data now, just emit it.
+	      if (state.flowing && state.length === 0 && !state.sync) {
+	        stream.emit('data', chunk);
+	        stream.read(0);
+	      } else {
+	        // update the buffer info.
+	        state.length += state.objectMode ? 1 : chunk.length;
+	        if (addToFront)
+	          state.buffer.unshift(chunk);
+	        else
+	          state.buffer.push(chunk);
+	
+	        if (state.needReadable)
+	          emitReadable(stream);
+	      }
+	
+	      maybeReadMore(stream, state);
+	    }
+	  } else if (!addToFront) {
+	    state.reading = false;
+	  }
+	
+	  return needMoreData(state);
+	}
+	
+	
+	
+	// if it's past the high water mark, we can push in some more.
+	// Also, if we have no data yet, we can stand some
+	// more bytes.  This is to work around cases where hwm=0,
+	// such as the repl.  Also, if the push() triggered a
+	// readable event, and the user called read(largeNumber) such that
+	// needReadable was set, then we ought to push more, so that another
+	// 'readable' event will be triggered.
+	function needMoreData(state) {
+	  return !state.ended &&
+	         (state.needReadable ||
+	          state.length < state.highWaterMark ||
+	          state.length === 0);
+	}
+	
+	// backwards compatibility.
+	Readable.prototype.setEncoding = function(enc) {
+	  if (!StringDecoder)
+	    StringDecoder = __webpack_require__(283).StringDecoder;
+	  this._readableState.decoder = new StringDecoder(enc);
+	  this._readableState.encoding = enc;
+	  return this;
+	};
+	
+	// Don't raise the hwm > 128MB
+	var MAX_HWM = 0x800000;
+	function roundUpToNextPowerOf2(n) {
+	  if (n >= MAX_HWM) {
+	    n = MAX_HWM;
+	  } else {
+	    // Get the next highest power of 2
+	    n--;
+	    for (var p = 1; p < 32; p <<= 1) n |= n >> p;
+	    n++;
+	  }
+	  return n;
+	}
+	
+	function howMuchToRead(n, state) {
+	  if (state.length === 0 && state.ended)
+	    return 0;
+	
+	  if (state.objectMode)
+	    return n === 0 ? 0 : 1;
+	
+	  if (isNaN(n) || util.isNull(n)) {
+	    // only flow one buffer at a time
+	    if (state.flowing && state.buffer.length)
+	      return state.buffer[0].length;
+	    else
+	      return state.length;
+	  }
+	
+	  if (n <= 0)
+	    return 0;
+	
+	  // If we're asking for more than the target buffer level,
+	  // then raise the water mark.  Bump up to the next highest
+	  // power of 2, to prevent increasing it excessively in tiny
+	  // amounts.
+	  if (n > state.highWaterMark)
+	    state.highWaterMark = roundUpToNextPowerOf2(n);
+	
+	  // don't have that much.  return null, unless we've ended.
+	  if (n > state.length) {
+	    if (!state.ended) {
+	      state.needReadable = true;
+	      return 0;
+	    } else
+	      return state.length;
+	  }
+	
+	  return n;
+	}
+	
+	// you can override either this method, or the async _read(n) below.
+	Readable.prototype.read = function(n) {
+	  debug('read', n);
+	  var state = this._readableState;
+	  var nOrig = n;
+	
+	  if (!util.isNumber(n) || n > 0)
+	    state.emittedReadable = false;
+	
+	  // if we're doing read(0) to trigger a readable event, but we
+	  // already have a bunch of data in the buffer, then just trigger
+	  // the 'readable' event and move on.
+	  if (n === 0 &&
+	      state.needReadable &&
+	      (state.length >= state.highWaterMark || state.ended)) {
+	    debug('read: emitReadable', state.length, state.ended);
+	    if (state.length === 0 && state.ended)
+	      endReadable(this);
+	    else
+	      emitReadable(this);
+	    return null;
+	  }
+	
+	  n = howMuchToRead(n, state);
+	
+	  // if we've ended, and we're now clear, then finish it up.
+	  if (n === 0 && state.ended) {
+	    if (state.length === 0)
+	      endReadable(this);
+	    return null;
+	  }
+	
+	  // All the actual chunk generation logic needs to be
+	  // *below* the call to _read.  The reason is that in certain
+	  // synthetic stream cases, such as passthrough streams, _read
+	  // may be a completely synchronous operation which may change
+	  // the state of the read buffer, providing enough data when
+	  // before there was *not* enough.
+	  //
+	  // So, the steps are:
+	  // 1. Figure out what the state of things will be after we do
+	  // a read from the buffer.
+	  //
+	  // 2. If that resulting state will trigger a _read, then call _read.
+	  // Note that this may be asynchronous, or synchronous.  Yes, it is
+	  // deeply ugly to write APIs this way, but that still doesn't mean
+	  // that the Readable class should behave improperly, as streams are
+	  // designed to be sync/async agnostic.
+	  // Take note if the _read call is sync or async (ie, if the read call
+	  // has returned yet), so that we know whether or not it's safe to emit
+	  // 'readable' etc.
+	  //
+	  // 3. Actually pull the requested chunks out of the buffer and return.
+	
+	  // if we need a readable event, then we need to do some reading.
+	  var doRead = state.needReadable;
+	  debug('need readable', doRead);
+	
+	  // if we currently have less than the highWaterMark, then also read some
+	  if (state.length === 0 || state.length - n < state.highWaterMark) {
+	    doRead = true;
+	    debug('length less than watermark', doRead);
+	  }
+	
+	  // however, if we've ended, then there's no point, and if we're already
+	  // reading, then it's unnecessary.
+	  if (state.ended || state.reading) {
+	    doRead = false;
+	    debug('reading or ended', doRead);
+	  }
+	
+	  if (doRead) {
+	    debug('do read');
+	    state.reading = true;
+	    state.sync = true;
+	    // if the length is currently zero, then we *need* a readable event.
+	    if (state.length === 0)
+	      state.needReadable = true;
+	    // call internal read method
+	    this._read(state.highWaterMark);
+	    state.sync = false;
+	  }
+	
+	  // If _read pushed data synchronously, then `reading` will be false,
+	  // and we need to re-evaluate how much data we can return to the user.
+	  if (doRead && !state.reading)
+	    n = howMuchToRead(nOrig, state);
+	
+	  var ret;
+	  if (n > 0)
+	    ret = fromList(n, state);
+	  else
+	    ret = null;
+	
+	  if (util.isNull(ret)) {
+	    state.needReadable = true;
+	    n = 0;
+	  }
+	
+	  state.length -= n;
+	
+	  // If we have nothing in the buffer, then we want to know
+	  // as soon as we *do* get something into the buffer.
+	  if (state.length === 0 && !state.ended)
+	    state.needReadable = true;
+	
+	  // If we tried to read() past the EOF, then emit end on the next tick.
+	  if (nOrig !== n && state.ended && state.length === 0)
+	    endReadable(this);
+	
+	  if (!util.isNull(ret))
+	    this.emit('data', ret);
+	
+	  return ret;
+	};
+	
+	function chunkInvalid(state, chunk) {
+	  var er = null;
+	  if (!util.isBuffer(chunk) &&
+	      !util.isString(chunk) &&
+	      !util.isNullOrUndefined(chunk) &&
+	      !state.objectMode) {
+	    er = new TypeError('Invalid non-string/buffer chunk');
+	  }
+	  return er;
+	}
+	
+	
+	function onEofChunk(stream, state) {
+	  if (state.decoder && !state.ended) {
+	    var chunk = state.decoder.end();
+	    if (chunk && chunk.length) {
+	      state.buffer.push(chunk);
+	      state.length += state.objectMode ? 1 : chunk.length;
+	    }
+	  }
+	  state.ended = true;
+	
+	  // emit 'readable' now to make sure it gets picked up.
+	  emitReadable(stream);
+	}
+	
+	// Don't emit readable right away in sync mode, because this can trigger
+	// another read() call => stack overflow.  This way, it might trigger
+	// a nextTick recursion warning, but that's not so bad.
+	function emitReadable(stream) {
+	  var state = stream._readableState;
+	  state.needReadable = false;
+	  if (!state.emittedReadable) {
+	    debug('emitReadable', state.flowing);
+	    state.emittedReadable = true;
+	    if (state.sync)
+	      process.nextTick(function() {
+	        emitReadable_(stream);
+	      });
+	    else
+	      emitReadable_(stream);
+	  }
+	}
+	
+	function emitReadable_(stream) {
+	  debug('emit readable');
+	  stream.emit('readable');
+	  flow(stream);
+	}
+	
+	
+	// at this point, the user has presumably seen the 'readable' event,
+	// and called read() to consume some data.  that may have triggered
+	// in turn another _read(n) call, in which case reading = true if
+	// it's in progress.
+	// However, if we're not ended, or reading, and the length < hwm,
+	// then go ahead and try to read some more preemptively.
+	function maybeReadMore(stream, state) {
+	  if (!state.readingMore) {
+	    state.readingMore = true;
+	    process.nextTick(function() {
+	      maybeReadMore_(stream, state);
+	    });
+	  }
+	}
+	
+	function maybeReadMore_(stream, state) {
+	  var len = state.length;
+	  while (!state.reading && !state.flowing && !state.ended &&
+	         state.length < state.highWaterMark) {
+	    debug('maybeReadMore read 0');
+	    stream.read(0);
+	    if (len === state.length)
+	      // didn't get any data, stop spinning.
+	      break;
+	    else
+	      len = state.length;
+	  }
+	  state.readingMore = false;
+	}
+	
+	// abstract method.  to be overridden in specific implementation classes.
+	// call cb(er, data) where data is <= n in length.
+	// for virtual (non-string, non-buffer) streams, "length" is somewhat
+	// arbitrary, and perhaps not very meaningful.
+	Readable.prototype._read = function(n) {
+	  this.emit('error', new Error('not implemented'));
+	};
+	
+	Readable.prototype.pipe = function(dest, pipeOpts) {
+	  var src = this;
+	  var state = this._readableState;
+	
+	  switch (state.pipesCount) {
+	    case 0:
+	      state.pipes = dest;
+	      break;
+	    case 1:
+	      state.pipes = [state.pipes, dest];
+	      break;
+	    default:
+	      state.pipes.push(dest);
+	      break;
+	  }
+	  state.pipesCount += 1;
+	  debug('pipe count=%d opts=%j', state.pipesCount, pipeOpts);
+	
+	  var doEnd = (!pipeOpts || pipeOpts.end !== false) &&
+	              dest !== process.stdout &&
+	              dest !== process.stderr;
+	
+	  var endFn = doEnd ? onend : cleanup;
+	  if (state.endEmitted)
+	    process.nextTick(endFn);
+	  else
+	    src.once('end', endFn);
+	
+	  dest.on('unpipe', onunpipe);
+	  function onunpipe(readable) {
+	    debug('onunpipe');
+	    if (readable === src) {
+	      cleanup();
+	    }
+	  }
+	
+	  function onend() {
+	    debug('onend');
+	    dest.end();
+	  }
+	
+	  // when the dest drains, it reduces the awaitDrain counter
+	  // on the source.  This would be more elegant with a .once()
+	  // handler in flow(), but adding and removing repeatedly is
+	  // too slow.
+	  var ondrain = pipeOnDrain(src);
+	  dest.on('drain', ondrain);
+	
+	  function cleanup() {
+	    debug('cleanup');
+	    // cleanup event handlers once the pipe is broken
+	    dest.removeListener('close', onclose);
+	    dest.removeListener('finish', onfinish);
+	    dest.removeListener('drain', ondrain);
+	    dest.removeListener('error', onerror);
+	    dest.removeListener('unpipe', onunpipe);
+	    src.removeListener('end', onend);
+	    src.removeListener('end', cleanup);
+	    src.removeListener('data', ondata);
+	
+	    // if the reader is waiting for a drain event from this
+	    // specific writer, then it would cause it to never start
+	    // flowing again.
+	    // So, if this is awaiting a drain, then we just call it now.
+	    // If we don't know, then assume that we are waiting for one.
+	    if (state.awaitDrain &&
+	        (!dest._writableState || dest._writableState.needDrain))
+	      ondrain();
+	  }
+	
+	  src.on('data', ondata);
+	  function ondata(chunk) {
+	    debug('ondata');
+	    var ret = dest.write(chunk);
+	    if (false === ret) {
+	      debug('false write response, pause',
+	            src._readableState.awaitDrain);
+	      src._readableState.awaitDrain++;
+	      src.pause();
+	    }
+	  }
+	
+	  // if the dest has an error, then stop piping into it.
+	  // however, don't suppress the throwing behavior for this.
+	  function onerror(er) {
+	    debug('onerror', er);
+	    unpipe();
+	    dest.removeListener('error', onerror);
+	    if (EE.listenerCount(dest, 'error') === 0)
+	      dest.emit('error', er);
+	  }
+	  // This is a brutally ugly hack to make sure that our error handler
+	  // is attached before any userland ones.  NEVER DO THIS.
+	  if (!dest._events || !dest._events.error)
+	    dest.on('error', onerror);
+	  else if (isArray(dest._events.error))
+	    dest._events.error.unshift(onerror);
+	  else
+	    dest._events.error = [onerror, dest._events.error];
+	
+	
+	
+	  // Both close and finish should trigger unpipe, but only once.
+	  function onclose() {
+	    dest.removeListener('finish', onfinish);
+	    unpipe();
+	  }
+	  dest.once('close', onclose);
+	  function onfinish() {
+	    debug('onfinish');
+	    dest.removeListener('close', onclose);
+	    unpipe();
+	  }
+	  dest.once('finish', onfinish);
+	
+	  function unpipe() {
+	    debug('unpipe');
+	    src.unpipe(dest);
+	  }
+	
+	  // tell the dest that it's being piped to
+	  dest.emit('pipe', src);
+	
+	  // start the flow if it hasn't been started already.
+	  if (!state.flowing) {
+	    debug('pipe resume');
+	    src.resume();
+	  }
+	
+	  return dest;
+	};
+	
+	function pipeOnDrain(src) {
+	  return function() {
+	    var state = src._readableState;
+	    debug('pipeOnDrain', state.awaitDrain);
+	    if (state.awaitDrain)
+	      state.awaitDrain--;
+	    if (state.awaitDrain === 0 && EE.listenerCount(src, 'data')) {
+	      state.flowing = true;
+	      flow(src);
+	    }
+	  };
+	}
+	
+	
+	Readable.prototype.unpipe = function(dest) {
+	  var state = this._readableState;
+	
+	  // if we're not piping anywhere, then do nothing.
+	  if (state.pipesCount === 0)
+	    return this;
+	
+	  // just one destination.  most common case.
+	  if (state.pipesCount === 1) {
+	    // passed in one, but it's not the right one.
+	    if (dest && dest !== state.pipes)
+	      return this;
+	
+	    if (!dest)
+	      dest = state.pipes;
+	
+	    // got a match.
+	    state.pipes = null;
+	    state.pipesCount = 0;
+	    state.flowing = false;
+	    if (dest)
+	      dest.emit('unpipe', this);
+	    return this;
+	  }
+	
+	  // slow case. multiple pipe destinations.
+	
+	  if (!dest) {
+	    // remove all.
+	    var dests = state.pipes;
+	    var len = state.pipesCount;
+	    state.pipes = null;
+	    state.pipesCount = 0;
+	    state.flowing = false;
+	
+	    for (var i = 0; i < len; i++)
+	      dests[i].emit('unpipe', this);
+	    return this;
+	  }
+	
+	  // try to find the right one.
+	  var i = indexOf(state.pipes, dest);
+	  if (i === -1)
+	    return this;
+	
+	  state.pipes.splice(i, 1);
+	  state.pipesCount -= 1;
+	  if (state.pipesCount === 1)
+	    state.pipes = state.pipes[0];
+	
+	  dest.emit('unpipe', this);
+	
+	  return this;
+	};
+	
+	// set up data events if they are asked for
+	// Ensure readable listeners eventually get something
+	Readable.prototype.on = function(ev, fn) {
+	  var res = Stream.prototype.on.call(this, ev, fn);
+	
+	  // If listening to data, and it has not explicitly been paused,
+	  // then call resume to start the flow of data on the next tick.
+	  if (ev === 'data' && false !== this._readableState.flowing) {
+	    this.resume();
+	  }
+	
+	  if (ev === 'readable' && this.readable) {
+	    var state = this._readableState;
+	    if (!state.readableListening) {
+	      state.readableListening = true;
+	      state.emittedReadable = false;
+	      state.needReadable = true;
+	      if (!state.reading) {
+	        var self = this;
+	        process.nextTick(function() {
+	          debug('readable nexttick read 0');
+	          self.read(0);
+	        });
+	      } else if (state.length) {
+	        emitReadable(this, state);
+	      }
+	    }
+	  }
+	
+	  return res;
+	};
+	Readable.prototype.addListener = Readable.prototype.on;
+	
+	// pause() and resume() are remnants of the legacy readable stream API
+	// If the user uses them, then switch into old mode.
+	Readable.prototype.resume = function() {
+	  var state = this._readableState;
+	  if (!state.flowing) {
+	    debug('resume');
+	    state.flowing = true;
+	    if (!state.reading) {
+	      debug('resume read 0');
+	      this.read(0);
+	    }
+	    resume(this, state);
+	  }
+	  return this;
+	};
+	
+	function resume(stream, state) {
+	  if (!state.resumeScheduled) {
+	    state.resumeScheduled = true;
+	    process.nextTick(function() {
+	      resume_(stream, state);
+	    });
+	  }
+	}
+	
+	function resume_(stream, state) {
+	  state.resumeScheduled = false;
+	  stream.emit('resume');
+	  flow(stream);
+	  if (state.flowing && !state.reading)
+	    stream.read(0);
+	}
+	
+	Readable.prototype.pause = function() {
+	  debug('call pause flowing=%j', this._readableState.flowing);
+	  if (false !== this._readableState.flowing) {
+	    debug('pause');
+	    this._readableState.flowing = false;
+	    this.emit('pause');
+	  }
+	  return this;
+	};
+	
+	function flow(stream) {
+	  var state = stream._readableState;
+	  debug('flow', state.flowing);
+	  if (state.flowing) {
+	    do {
+	      var chunk = stream.read();
+	    } while (null !== chunk && state.flowing);
+	  }
+	}
+	
+	// wrap an old-style stream as the async data source.
+	// This is *not* part of the readable stream interface.
+	// It is an ugly unfortunate mess of history.
+	Readable.prototype.wrap = function(stream) {
+	  var state = this._readableState;
+	  var paused = false;
+	
+	  var self = this;
+	  stream.on('end', function() {
+	    debug('wrapped end');
+	    if (state.decoder && !state.ended) {
+	      var chunk = state.decoder.end();
+	      if (chunk && chunk.length)
+	        self.push(chunk);
+	    }
+	
+	    self.push(null);
+	  });
+	
+	  stream.on('data', function(chunk) {
+	    debug('wrapped data');
+	    if (state.decoder)
+	      chunk = state.decoder.write(chunk);
+	    if (!chunk || !state.objectMode && !chunk.length)
+	      return;
+	
+	    var ret = self.push(chunk);
+	    if (!ret) {
+	      paused = true;
+	      stream.pause();
+	    }
+	  });
+	
+	  // proxy all the other methods.
+	  // important when wrapping filters and duplexes.
+	  for (var i in stream) {
+	    if (util.isFunction(stream[i]) && util.isUndefined(this[i])) {
+	      this[i] = function(method) { return function() {
+	        return stream[method].apply(stream, arguments);
+	      }}(i);
+	    }
+	  }
+	
+	  // proxy certain important events.
+	  var events = ['error', 'close', 'destroy', 'pause', 'resume'];
+	  forEach(events, function(ev) {
+	    stream.on(ev, self.emit.bind(self, ev));
+	  });
+	
+	  // when we try to consume some more bytes, simply unpause the
+	  // underlying stream.
+	  self._read = function(n) {
+	    debug('wrapped _read', n);
+	    if (paused) {
+	      paused = false;
+	      stream.resume();
+	    }
+	  };
+	
+	  return self;
+	};
+	
+	
+	
+	// exposed for testing purposes only.
+	Readable._fromList = fromList;
+	
+	// Pluck off n bytes from an array of buffers.
+	// Length is the combined lengths of all the buffers in the list.
+	function fromList(n, state) {
+	  var list = state.buffer;
+	  var length = state.length;
+	  var stringMode = !!state.decoder;
+	  var objectMode = !!state.objectMode;
+	  var ret;
+	
+	  // nothing in the list, definitely empty.
+	  if (list.length === 0)
+	    return null;
+	
+	  if (length === 0)
+	    ret = null;
+	  else if (objectMode)
+	    ret = list.shift();
+	  else if (!n || n >= length) {
+	    // read it all, truncate the array.
+	    if (stringMode)
+	      ret = list.join('');
+	    else
+	      ret = Buffer.concat(list, length);
+	    list.length = 0;
+	  } else {
+	    // read just some of it.
+	    if (n < list[0].length) {
+	      // just take a part of the first list item.
+	      // slice is the same for buffers and strings.
+	      var buf = list[0];
+	      ret = buf.slice(0, n);
+	      list[0] = buf.slice(n);
+	    } else if (n === list[0].length) {
+	      // first list is a perfect match
+	      ret = list.shift();
+	    } else {
+	      // complex case.
+	      // we have enough to cover it, but it spans past the first buffer.
+	      if (stringMode)
+	        ret = '';
+	      else
+	        ret = new Buffer(n);
+	
+	      var c = 0;
+	      for (var i = 0, l = list.length; i < l && c < n; i++) {
+	        var buf = list[0];
+	        var cpy = Math.min(n - c, buf.length);
+	
+	        if (stringMode)
+	          ret += buf.slice(0, cpy);
+	        else
+	          buf.copy(ret, c, 0, cpy);
+	
+	        if (cpy < buf.length)
+	          list[0] = buf.slice(cpy);
+	        else
+	          list.shift();
+	
+	        c += cpy;
+	      }
+	    }
+	  }
+	
+	  return ret;
+	}
+	
+	function endReadable(stream) {
+	  var state = stream._readableState;
+	
+	  // If we get here before consuming all the bytes, then that is a
+	  // bug in node.  Should never happen.
+	  if (state.length > 0)
+	    throw new Error('endReadable called on non-empty stream');
+	
+	  if (!state.endEmitted) {
+	    state.ended = true;
+	    process.nextTick(function() {
+	      // Check that we didn't get one last unshift.
+	      if (!state.endEmitted && state.length === 0) {
+	        state.endEmitted = true;
+	        stream.readable = false;
+	        stream.emit('end');
+	      }
+	    });
+	  }
+	}
+	
+	function forEach (xs, f) {
+	  for (var i = 0, l = xs.length; i < l; i++) {
+	    f(xs[i], i);
+	  }
+	}
+	
+	function indexOf (xs, x) {
+	  for (var i = 0, l = xs.length; i < l; i++) {
+	    if (xs[i] === x) return i;
+	  }
+	  return -1;
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 278 */
+/***/ function(module, exports) {
+
+	module.exports = Array.isArray || function (arr) {
+	  return Object.prototype.toString.call(arr) == '[object Array]';
+	};
+
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	// NOTE: These type checking functions intentionally don't use `instanceof`
+	// because it is fragile and can be easily faked with `Object.create()`.
+	
+	function isArray(arg) {
+	  if (Array.isArray) {
+	    return Array.isArray(arg);
+	  }
+	  return objectToString(arg) === '[object Array]';
+	}
+	exports.isArray = isArray;
+	
+	function isBoolean(arg) {
+	  return typeof arg === 'boolean';
+	}
+	exports.isBoolean = isBoolean;
+	
+	function isNull(arg) {
+	  return arg === null;
+	}
+	exports.isNull = isNull;
+	
+	function isNullOrUndefined(arg) {
+	  return arg == null;
+	}
+	exports.isNullOrUndefined = isNullOrUndefined;
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	exports.isNumber = isNumber;
+	
+	function isString(arg) {
+	  return typeof arg === 'string';
+	}
+	exports.isString = isString;
+	
+	function isSymbol(arg) {
+	  return typeof arg === 'symbol';
+	}
+	exports.isSymbol = isSymbol;
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+	exports.isUndefined = isUndefined;
+	
+	function isRegExp(re) {
+	  return objectToString(re) === '[object RegExp]';
+	}
+	exports.isRegExp = isRegExp;
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	exports.isObject = isObject;
+	
+	function isDate(d) {
+	  return objectToString(d) === '[object Date]';
+	}
+	exports.isDate = isDate;
+	
+	function isError(e) {
+	  return (objectToString(e) === '[object Error]' || e instanceof Error);
+	}
+	exports.isError = isError;
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	exports.isFunction = isFunction;
+	
+	function isPrimitive(arg) {
+	  return arg === null ||
+	         typeof arg === 'boolean' ||
+	         typeof arg === 'number' ||
+	         typeof arg === 'string' ||
+	         typeof arg === 'symbol' ||  // ES6 symbol
+	         typeof arg === 'undefined';
+	}
+	exports.isPrimitive = isPrimitive;
+	
+	exports.isBuffer = Buffer.isBuffer;
+	
+	function objectToString(o) {
+	  return Object.prototype.toString.call(o);
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
+
+/***/ },
+/* 280 */
+/***/ function(module, exports) {
+
+	/* (ignored) */
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	// a duplex stream is just a stream that is both readable and writable.
+	// Since JS doesn't have multiple prototypal inheritance, this class
+	// prototypally inherits from Readable, and then parasitically from
+	// Writable.
+	
+	module.exports = Duplex;
+	
+	/*<replacement>*/
+	var objectKeys = Object.keys || function (obj) {
+	  var keys = [];
+	  for (var key in obj) keys.push(key);
+	  return keys;
+	}
+	/*</replacement>*/
+	
+	
+	/*<replacement>*/
+	var util = __webpack_require__(279);
+	util.inherits = __webpack_require__(107);
+	/*</replacement>*/
+	
+	var Readable = __webpack_require__(277);
+	var Writable = __webpack_require__(282);
+	
+	util.inherits(Duplex, Readable);
+	
+	forEach(objectKeys(Writable.prototype), function(method) {
+	  if (!Duplex.prototype[method])
+	    Duplex.prototype[method] = Writable.prototype[method];
+	});
+	
+	function Duplex(options) {
+	  if (!(this instanceof Duplex))
+	    return new Duplex(options);
+	
+	  Readable.call(this, options);
+	  Writable.call(this, options);
+	
+	  if (options && options.readable === false)
+	    this.readable = false;
+	
+	  if (options && options.writable === false)
+	    this.writable = false;
+	
+	  this.allowHalfOpen = true;
+	  if (options && options.allowHalfOpen === false)
+	    this.allowHalfOpen = false;
+	
+	  this.once('end', onend);
+	}
+	
+	// the no-half-open enforcer
+	function onend() {
+	  // if we allow half-open state, or if the writable side ended,
+	  // then we're ok.
+	  if (this.allowHalfOpen || this._writableState.ended)
+	    return;
+	
+	  // no more data can be written.
+	  // But allow more writes to happen in this tick.
+	  process.nextTick(this.end.bind(this));
+	}
+	
+	function forEach (xs, f) {
+	  for (var i = 0, l = xs.length; i < l; i++) {
+	    f(xs[i], i);
+	  }
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	// A bit simpler than readable streams.
+	// Implement an async ._write(chunk, cb), and it'll handle all
+	// the drain event emission and buffering.
+	
+	module.exports = Writable;
+	
+	/*<replacement>*/
+	var Buffer = __webpack_require__(144).Buffer;
+	/*</replacement>*/
+	
+	Writable.WritableState = WritableState;
+	
+	
+	/*<replacement>*/
+	var util = __webpack_require__(279);
+	util.inherits = __webpack_require__(107);
+	/*</replacement>*/
+	
+	var Stream = __webpack_require__(274);
+	
+	util.inherits(Writable, Stream);
+	
+	function WriteReq(chunk, encoding, cb) {
+	  this.chunk = chunk;
+	  this.encoding = encoding;
+	  this.callback = cb;
+	}
+	
+	function WritableState(options, stream) {
+	  var Duplex = __webpack_require__(281);
+	
+	  options = options || {};
+	
+	  // the point at which write() starts returning false
+	  // Note: 0 is a valid value, means that we always return false if
+	  // the entire buffer is not flushed immediately on write()
+	  var hwm = options.highWaterMark;
+	  var defaultHwm = options.objectMode ? 16 : 16 * 1024;
+	  this.highWaterMark = (hwm || hwm === 0) ? hwm : defaultHwm;
+	
+	  // object stream flag to indicate whether or not this stream
+	  // contains buffers or objects.
+	  this.objectMode = !!options.objectMode;
+	
+	  if (stream instanceof Duplex)
+	    this.objectMode = this.objectMode || !!options.writableObjectMode;
+	
+	  // cast to ints.
+	  this.highWaterMark = ~~this.highWaterMark;
+	
+	  this.needDrain = false;
+	  // at the start of calling end()
+	  this.ending = false;
+	  // when end() has been called, and returned
+	  this.ended = false;
+	  // when 'finish' is emitted
+	  this.finished = false;
+	
+	  // should we decode strings into buffers before passing to _write?
+	  // this is here so that some node-core streams can optimize string
+	  // handling at a lower level.
+	  var noDecode = options.decodeStrings === false;
+	  this.decodeStrings = !noDecode;
+	
+	  // Crypto is kind of old and crusty.  Historically, its default string
+	  // encoding is 'binary' so we have to make this configurable.
+	  // Everything else in the universe uses 'utf8', though.
+	  this.defaultEncoding = options.defaultEncoding || 'utf8';
+	
+	  // not an actual buffer we keep track of, but a measurement
+	  // of how much we're waiting to get pushed to some underlying
+	  // socket or file.
+	  this.length = 0;
+	
+	  // a flag to see when we're in the middle of a write.
+	  this.writing = false;
+	
+	  // when true all writes will be buffered until .uncork() call
+	  this.corked = 0;
+	
+	  // a flag to be able to tell if the onwrite cb is called immediately,
+	  // or on a later tick.  We set this to true at first, because any
+	  // actions that shouldn't happen until "later" should generally also
+	  // not happen before the first write call.
+	  this.sync = true;
+	
+	  // a flag to know if we're processing previously buffered items, which
+	  // may call the _write() callback in the same tick, so that we don't
+	  // end up in an overlapped onwrite situation.
+	  this.bufferProcessing = false;
+	
+	  // the callback that's passed to _write(chunk,cb)
+	  this.onwrite = function(er) {
+	    onwrite(stream, er);
+	  };
+	
+	  // the callback that the user supplies to write(chunk,encoding,cb)
+	  this.writecb = null;
+	
+	  // the amount that is being written when _write is called.
+	  this.writelen = 0;
+	
+	  this.buffer = [];
+	
+	  // number of pending user-supplied write callbacks
+	  // this must be 0 before 'finish' can be emitted
+	  this.pendingcb = 0;
+	
+	  // emit prefinish if the only thing we're waiting for is _write cbs
+	  // This is relevant for synchronous Transform streams
+	  this.prefinished = false;
+	
+	  // True if the error was already emitted and should not be thrown again
+	  this.errorEmitted = false;
+	}
+	
+	function Writable(options) {
+	  var Duplex = __webpack_require__(281);
+	
+	  // Writable ctor is applied to Duplexes, though they're not
+	  // instanceof Writable, they're instanceof Readable.
+	  if (!(this instanceof Writable) && !(this instanceof Duplex))
+	    return new Writable(options);
+	
+	  this._writableState = new WritableState(options, this);
+	
+	  // legacy.
+	  this.writable = true;
+	
+	  Stream.call(this);
+	}
+	
+	// Otherwise people can pipe Writable streams, which is just wrong.
+	Writable.prototype.pipe = function() {
+	  this.emit('error', new Error('Cannot pipe. Not readable.'));
+	};
+	
+	
+	function writeAfterEnd(stream, state, cb) {
+	  var er = new Error('write after end');
+	  // TODO: defer error events consistently everywhere, not just the cb
+	  stream.emit('error', er);
+	  process.nextTick(function() {
+	    cb(er);
+	  });
+	}
+	
+	// If we get something that is not a buffer, string, null, or undefined,
+	// and we're not in objectMode, then that's an error.
+	// Otherwise stream chunks are all considered to be of length=1, and the
+	// watermarks determine how many objects to keep in the buffer, rather than
+	// how many bytes or characters.
+	function validChunk(stream, state, chunk, cb) {
+	  var valid = true;
+	  if (!util.isBuffer(chunk) &&
+	      !util.isString(chunk) &&
+	      !util.isNullOrUndefined(chunk) &&
+	      !state.objectMode) {
+	    var er = new TypeError('Invalid non-string/buffer chunk');
+	    stream.emit('error', er);
+	    process.nextTick(function() {
+	      cb(er);
+	    });
+	    valid = false;
+	  }
+	  return valid;
+	}
+	
+	Writable.prototype.write = function(chunk, encoding, cb) {
+	  var state = this._writableState;
+	  var ret = false;
+	
+	  if (util.isFunction(encoding)) {
+	    cb = encoding;
+	    encoding = null;
+	  }
+	
+	  if (util.isBuffer(chunk))
+	    encoding = 'buffer';
+	  else if (!encoding)
+	    encoding = state.defaultEncoding;
+	
+	  if (!util.isFunction(cb))
+	    cb = function() {};
+	
+	  if (state.ended)
+	    writeAfterEnd(this, state, cb);
+	  else if (validChunk(this, state, chunk, cb)) {
+	    state.pendingcb++;
+	    ret = writeOrBuffer(this, state, chunk, encoding, cb);
+	  }
+	
+	  return ret;
+	};
+	
+	Writable.prototype.cork = function() {
+	  var state = this._writableState;
+	
+	  state.corked++;
+	};
+	
+	Writable.prototype.uncork = function() {
+	  var state = this._writableState;
+	
+	  if (state.corked) {
+	    state.corked--;
+	
+	    if (!state.writing &&
+	        !state.corked &&
+	        !state.finished &&
+	        !state.bufferProcessing &&
+	        state.buffer.length)
+	      clearBuffer(this, state);
+	  }
+	};
+	
+	function decodeChunk(state, chunk, encoding) {
+	  if (!state.objectMode &&
+	      state.decodeStrings !== false &&
+	      util.isString(chunk)) {
+	    chunk = new Buffer(chunk, encoding);
+	  }
+	  return chunk;
+	}
+	
+	// if we're already writing something, then just put this
+	// in the queue, and wait our turn.  Otherwise, call _write
+	// If we return false, then we need a drain event, so set that flag.
+	function writeOrBuffer(stream, state, chunk, encoding, cb) {
+	  chunk = decodeChunk(state, chunk, encoding);
+	  if (util.isBuffer(chunk))
+	    encoding = 'buffer';
+	  var len = state.objectMode ? 1 : chunk.length;
+	
+	  state.length += len;
+	
+	  var ret = state.length < state.highWaterMark;
+	  // we must ensure that previous needDrain will not be reset to false.
+	  if (!ret)
+	    state.needDrain = true;
+	
+	  if (state.writing || state.corked)
+	    state.buffer.push(new WriteReq(chunk, encoding, cb));
+	  else
+	    doWrite(stream, state, false, len, chunk, encoding, cb);
+	
+	  return ret;
+	}
+	
+	function doWrite(stream, state, writev, len, chunk, encoding, cb) {
+	  state.writelen = len;
+	  state.writecb = cb;
+	  state.writing = true;
+	  state.sync = true;
+	  if (writev)
+	    stream._writev(chunk, state.onwrite);
+	  else
+	    stream._write(chunk, encoding, state.onwrite);
+	  state.sync = false;
+	}
+	
+	function onwriteError(stream, state, sync, er, cb) {
+	  if (sync)
+	    process.nextTick(function() {
+	      state.pendingcb--;
+	      cb(er);
+	    });
+	  else {
+	    state.pendingcb--;
+	    cb(er);
+	  }
+	
+	  stream._writableState.errorEmitted = true;
+	  stream.emit('error', er);
+	}
+	
+	function onwriteStateUpdate(state) {
+	  state.writing = false;
+	  state.writecb = null;
+	  state.length -= state.writelen;
+	  state.writelen = 0;
+	}
+	
+	function onwrite(stream, er) {
+	  var state = stream._writableState;
+	  var sync = state.sync;
+	  var cb = state.writecb;
+	
+	  onwriteStateUpdate(state);
+	
+	  if (er)
+	    onwriteError(stream, state, sync, er, cb);
+	  else {
+	    // Check if we're actually ready to finish, but don't emit yet
+	    var finished = needFinish(stream, state);
+	
+	    if (!finished &&
+	        !state.corked &&
+	        !state.bufferProcessing &&
+	        state.buffer.length) {
+	      clearBuffer(stream, state);
+	    }
+	
+	    if (sync) {
+	      process.nextTick(function() {
+	        afterWrite(stream, state, finished, cb);
+	      });
+	    } else {
+	      afterWrite(stream, state, finished, cb);
+	    }
+	  }
+	}
+	
+	function afterWrite(stream, state, finished, cb) {
+	  if (!finished)
+	    onwriteDrain(stream, state);
+	  state.pendingcb--;
+	  cb();
+	  finishMaybe(stream, state);
+	}
+	
+	// Must force callback to be called on nextTick, so that we don't
+	// emit 'drain' before the write() consumer gets the 'false' return
+	// value, and has a chance to attach a 'drain' listener.
+	function onwriteDrain(stream, state) {
+	  if (state.length === 0 && state.needDrain) {
+	    state.needDrain = false;
+	    stream.emit('drain');
+	  }
+	}
+	
+	
+	// if there's something in the buffer waiting, then process it
+	function clearBuffer(stream, state) {
+	  state.bufferProcessing = true;
+	
+	  if (stream._writev && state.buffer.length > 1) {
+	    // Fast case, write everything using _writev()
+	    var cbs = [];
+	    for (var c = 0; c < state.buffer.length; c++)
+	      cbs.push(state.buffer[c].callback);
+	
+	    // count the one we are adding, as well.
+	    // TODO(isaacs) clean this up
+	    state.pendingcb++;
+	    doWrite(stream, state, true, state.length, state.buffer, '', function(err) {
+	      for (var i = 0; i < cbs.length; i++) {
+	        state.pendingcb--;
+	        cbs[i](err);
+	      }
+	    });
+	
+	    // Clear buffer
+	    state.buffer = [];
+	  } else {
+	    // Slow case, write chunks one-by-one
+	    for (var c = 0; c < state.buffer.length; c++) {
+	      var entry = state.buffer[c];
+	      var chunk = entry.chunk;
+	      var encoding = entry.encoding;
+	      var cb = entry.callback;
+	      var len = state.objectMode ? 1 : chunk.length;
+	
+	      doWrite(stream, state, false, len, chunk, encoding, cb);
+	
+	      // if we didn't call the onwrite immediately, then
+	      // it means that we need to wait until it does.
+	      // also, that means that the chunk and cb are currently
+	      // being processed, so move the buffer counter past them.
+	      if (state.writing) {
+	        c++;
+	        break;
+	      }
+	    }
+	
+	    if (c < state.buffer.length)
+	      state.buffer = state.buffer.slice(c);
+	    else
+	      state.buffer.length = 0;
+	  }
+	
+	  state.bufferProcessing = false;
+	}
+	
+	Writable.prototype._write = function(chunk, encoding, cb) {
+	  cb(new Error('not implemented'));
+	
+	};
+	
+	Writable.prototype._writev = null;
+	
+	Writable.prototype.end = function(chunk, encoding, cb) {
+	  var state = this._writableState;
+	
+	  if (util.isFunction(chunk)) {
+	    cb = chunk;
+	    chunk = null;
+	    encoding = null;
+	  } else if (util.isFunction(encoding)) {
+	    cb = encoding;
+	    encoding = null;
+	  }
+	
+	  if (!util.isNullOrUndefined(chunk))
+	    this.write(chunk, encoding);
+	
+	  // .end() fully uncorks
+	  if (state.corked) {
+	    state.corked = 1;
+	    this.uncork();
+	  }
+	
+	  // ignore unnecessary end() calls.
+	  if (!state.ending && !state.finished)
+	    endWritable(this, state, cb);
+	};
+	
+	
+	function needFinish(stream, state) {
+	  return (state.ending &&
+	          state.length === 0 &&
+	          !state.finished &&
+	          !state.writing);
+	}
+	
+	function prefinish(stream, state) {
+	  if (!state.prefinished) {
+	    state.prefinished = true;
+	    stream.emit('prefinish');
+	  }
+	}
+	
+	function finishMaybe(stream, state) {
+	  var need = needFinish(stream, state);
+	  if (need) {
+	    if (state.pendingcb === 0) {
+	      prefinish(stream, state);
+	      state.finished = true;
+	      stream.emit('finish');
+	    } else
+	      prefinish(stream, state);
+	  }
+	  return need;
+	}
+	
+	function endWritable(stream, state, cb) {
+	  state.ending = true;
+	  finishMaybe(stream, state);
+	  if (cb) {
+	    if (state.finished)
+	      process.nextTick(cb);
+	    else
+	      stream.once('finish', cb);
+	  }
+	  state.ended = true;
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	var Buffer = __webpack_require__(144).Buffer;
+	
+	var isBufferEncoding = Buffer.isEncoding
+	  || function(encoding) {
+	       switch (encoding && encoding.toLowerCase()) {
+	         case 'hex': case 'utf8': case 'utf-8': case 'ascii': case 'binary': case 'base64': case 'ucs2': case 'ucs-2': case 'utf16le': case 'utf-16le': case 'raw': return true;
+	         default: return false;
+	       }
+	     }
+	
+	
+	function assertEncoding(encoding) {
+	  if (encoding && !isBufferEncoding(encoding)) {
+	    throw new Error('Unknown encoding: ' + encoding);
+	  }
+	}
+	
+	// StringDecoder provides an interface for efficiently splitting a series of
+	// buffers into a series of JS strings without breaking apart multi-byte
+	// characters. CESU-8 is handled as part of the UTF-8 encoding.
+	//
+	// @TODO Handling all encodings inside a single object makes it very difficult
+	// to reason about this code, so it should be split up in the future.
+	// @TODO There should be a utf8-strict encoding that rejects invalid UTF-8 code
+	// points as used by CESU-8.
+	var StringDecoder = exports.StringDecoder = function(encoding) {
+	  this.encoding = (encoding || 'utf8').toLowerCase().replace(/[-_]/, '');
+	  assertEncoding(encoding);
+	  switch (this.encoding) {
+	    case 'utf8':
+	      // CESU-8 represents each of Surrogate Pair by 3-bytes
+	      this.surrogateSize = 3;
+	      break;
+	    case 'ucs2':
+	    case 'utf16le':
+	      // UTF-16 represents each of Surrogate Pair by 2-bytes
+	      this.surrogateSize = 2;
+	      this.detectIncompleteChar = utf16DetectIncompleteChar;
+	      break;
+	    case 'base64':
+	      // Base-64 stores 3 bytes in 4 chars, and pads the remainder.
+	      this.surrogateSize = 3;
+	      this.detectIncompleteChar = base64DetectIncompleteChar;
+	      break;
+	    default:
+	      this.write = passThroughWrite;
+	      return;
+	  }
+	
+	  // Enough space to store all bytes of a single character. UTF-8 needs 4
+	  // bytes, but CESU-8 may require up to 6 (3 bytes per surrogate).
+	  this.charBuffer = new Buffer(6);
+	  // Number of bytes received for the current incomplete multi-byte character.
+	  this.charReceived = 0;
+	  // Number of bytes expected for the current incomplete multi-byte character.
+	  this.charLength = 0;
+	};
+	
+	
+	// write decodes the given buffer and returns it as JS string that is
+	// guaranteed to not contain any partial multi-byte characters. Any partial
+	// character found at the end of the buffer is buffered up, and will be
+	// returned when calling write again with the remaining bytes.
+	//
+	// Note: Converting a Buffer containing an orphan surrogate to a String
+	// currently works, but converting a String to a Buffer (via `new Buffer`, or
+	// Buffer#write) will replace incomplete surrogates with the unicode
+	// replacement character. See https://codereview.chromium.org/121173009/ .
+	StringDecoder.prototype.write = function(buffer) {
+	  var charStr = '';
+	  // if our last write ended with an incomplete multibyte character
+	  while (this.charLength) {
+	    // determine how many remaining bytes this buffer has to offer for this char
+	    var available = (buffer.length >= this.charLength - this.charReceived) ?
+	        this.charLength - this.charReceived :
+	        buffer.length;
+	
+	    // add the new bytes to the char buffer
+	    buffer.copy(this.charBuffer, this.charReceived, 0, available);
+	    this.charReceived += available;
+	
+	    if (this.charReceived < this.charLength) {
+	      // still not enough chars in this buffer? wait for more ...
+	      return '';
+	    }
+	
+	    // remove bytes belonging to the current character from the buffer
+	    buffer = buffer.slice(available, buffer.length);
+	
+	    // get the character that was split
+	    charStr = this.charBuffer.slice(0, this.charLength).toString(this.encoding);
+	
+	    // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+	    var charCode = charStr.charCodeAt(charStr.length - 1);
+	    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+	      this.charLength += this.surrogateSize;
+	      charStr = '';
+	      continue;
+	    }
+	    this.charReceived = this.charLength = 0;
+	
+	    // if there are no more bytes in this buffer, just emit our char
+	    if (buffer.length === 0) {
+	      return charStr;
+	    }
+	    break;
+	  }
+	
+	  // determine and set charLength / charReceived
+	  this.detectIncompleteChar(buffer);
+	
+	  var end = buffer.length;
+	  if (this.charLength) {
+	    // buffer the incomplete character bytes we got
+	    buffer.copy(this.charBuffer, 0, buffer.length - this.charReceived, end);
+	    end -= this.charReceived;
+	  }
+	
+	  charStr += buffer.toString(this.encoding, 0, end);
+	
+	  var end = charStr.length - 1;
+	  var charCode = charStr.charCodeAt(end);
+	  // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+	  if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+	    var size = this.surrogateSize;
+	    this.charLength += size;
+	    this.charReceived += size;
+	    this.charBuffer.copy(this.charBuffer, size, 0, size);
+	    buffer.copy(this.charBuffer, 0, 0, size);
+	    return charStr.substring(0, end);
+	  }
+	
+	  // or just emit the charStr
+	  return charStr;
+	};
+	
+	// detectIncompleteChar determines if there is an incomplete UTF-8 character at
+	// the end of the given buffer. If so, it sets this.charLength to the byte
+	// length that character, and sets this.charReceived to the number of bytes
+	// that are available for this character.
+	StringDecoder.prototype.detectIncompleteChar = function(buffer) {
+	  // determine how many bytes we have to check at the end of this buffer
+	  var i = (buffer.length >= 3) ? 3 : buffer.length;
+	
+	  // Figure out if one of the last i bytes of our buffer announces an
+	  // incomplete char.
+	  for (; i > 0; i--) {
+	    var c = buffer[buffer.length - i];
+	
+	    // See http://en.wikipedia.org/wiki/UTF-8#Description
+	
+	    // 110XXXXX
+	    if (i == 1 && c >> 5 == 0x06) {
+	      this.charLength = 2;
+	      break;
+	    }
+	
+	    // 1110XXXX
+	    if (i <= 2 && c >> 4 == 0x0E) {
+	      this.charLength = 3;
+	      break;
+	    }
+	
+	    // 11110XXX
+	    if (i <= 3 && c >> 3 == 0x1E) {
+	      this.charLength = 4;
+	      break;
+	    }
+	  }
+	  this.charReceived = i;
+	};
+	
+	StringDecoder.prototype.end = function(buffer) {
+	  var res = '';
+	  if (buffer && buffer.length)
+	    res = this.write(buffer);
+	
+	  if (this.charReceived) {
+	    var cr = this.charReceived;
+	    var buf = this.charBuffer;
+	    var enc = this.encoding;
+	    res += buf.slice(0, cr).toString(enc);
+	  }
+	
+	  return res;
+	};
+	
+	function passThroughWrite(buffer) {
+	  return buffer.toString(this.encoding);
+	}
+	
+	function utf16DetectIncompleteChar(buffer) {
+	  this.charReceived = buffer.length % 2;
+	  this.charLength = this.charReceived ? 2 : 0;
+	}
+	
+	function base64DetectIncompleteChar(buffer) {
+	  this.charReceived = buffer.length % 3;
+	  this.charLength = this.charReceived ? 3 : 0;
+	}
+
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	
+	// a transform stream is a readable/writable stream where you do
+	// something with the data.  Sometimes it's called a "filter",
+	// but that's not a great name for it, since that implies a thing where
+	// some bits pass through, and others are simply ignored.  (That would
+	// be a valid example of a transform, of course.)
+	//
+	// While the output is causally related to the input, it's not a
+	// necessarily symmetric or synchronous transformation.  For example,
+	// a zlib stream might take multiple plain-text writes(), and then
+	// emit a single compressed chunk some time in the future.
+	//
+	// Here's how this works:
+	//
+	// The Transform stream has all the aspects of the readable and writable
+	// stream classes.  When you write(chunk), that calls _write(chunk,cb)
+	// internally, and returns false if there's a lot of pending writes
+	// buffered up.  When you call read(), that calls _read(n) until
+	// there's enough pending readable data buffered up.
+	//
+	// In a transform stream, the written data is placed in a buffer.  When
+	// _read(n) is called, it transforms the queued up data, calling the
+	// buffered _write cb's as it consumes chunks.  If consuming a single
+	// written chunk would result in multiple output chunks, then the first
+	// outputted bit calls the readcb, and subsequent chunks just go into
+	// the read buffer, and will cause it to emit 'readable' if necessary.
+	//
+	// This way, back-pressure is actually determined by the reading side,
+	// since _read has to be called to start processing a new chunk.  However,
+	// a pathological inflate type of transform can cause excessive buffering
+	// here.  For example, imagine a stream where every byte of input is
+	// interpreted as an integer from 0-255, and then results in that many
+	// bytes of output.  Writing the 4 bytes {ff,ff,ff,ff} would result in
+	// 1kb of data being output.  In this case, you could write a very small
+	// amount of input, and end up with a very large amount of output.  In
+	// such a pathological inflating mechanism, there'd be no way to tell
+	// the system to stop doing the transform.  A single 4MB write could
+	// cause the system to run out of memory.
+	//
+	// However, even in such a pathological case, only a single written chunk
+	// would be consumed, and then the rest would wait (un-transformed) until
+	// the results of the previous transformed chunk were consumed.
+	
+	module.exports = Transform;
+	
+	var Duplex = __webpack_require__(281);
+	
+	/*<replacement>*/
+	var util = __webpack_require__(279);
+	util.inherits = __webpack_require__(107);
+	/*</replacement>*/
+	
+	util.inherits(Transform, Duplex);
+	
+	
+	function TransformState(options, stream) {
+	  this.afterTransform = function(er, data) {
+	    return afterTransform(stream, er, data);
+	  };
+	
+	  this.needTransform = false;
+	  this.transforming = false;
+	  this.writecb = null;
+	  this.writechunk = null;
+	}
+	
+	function afterTransform(stream, er, data) {
+	  var ts = stream._transformState;
+	  ts.transforming = false;
+	
+	  var cb = ts.writecb;
+	
+	  if (!cb)
+	    return stream.emit('error', new Error('no writecb in Transform class'));
+	
+	  ts.writechunk = null;
+	  ts.writecb = null;
+	
+	  if (!util.isNullOrUndefined(data))
+	    stream.push(data);
+	
+	  if (cb)
+	    cb(er);
+	
+	  var rs = stream._readableState;
+	  rs.reading = false;
+	  if (rs.needReadable || rs.length < rs.highWaterMark) {
+	    stream._read(rs.highWaterMark);
+	  }
+	}
+	
+	
+	function Transform(options) {
+	  if (!(this instanceof Transform))
+	    return new Transform(options);
+	
+	  Duplex.call(this, options);
+	
+	  this._transformState = new TransformState(options, this);
+	
+	  // when the writable side finishes, then flush out anything remaining.
+	  var stream = this;
+	
+	  // start out asking for a readable event once data is transformed.
+	  this._readableState.needReadable = true;
+	
+	  // we have implemented the _read method, and done the other things
+	  // that Readable wants before the first _read call, so unset the
+	  // sync guard flag.
+	  this._readableState.sync = false;
+	
+	  this.once('prefinish', function() {
+	    if (util.isFunction(this._flush))
+	      this._flush(function(er) {
+	        done(stream, er);
+	      });
+	    else
+	      done(stream);
+	  });
+	}
+	
+	Transform.prototype.push = function(chunk, encoding) {
+	  this._transformState.needTransform = false;
+	  return Duplex.prototype.push.call(this, chunk, encoding);
+	};
+	
+	// This is the part where you do stuff!
+	// override this function in implementation classes.
+	// 'chunk' is an input chunk.
+	//
+	// Call `push(newChunk)` to pass along transformed output
+	// to the readable side.  You may call 'push' zero or more times.
+	//
+	// Call `cb(err)` when you are done with this chunk.  If you pass
+	// an error, then that'll put the hurt on the whole operation.  If you
+	// never call cb(), then you'll never get another chunk.
+	Transform.prototype._transform = function(chunk, encoding, cb) {
+	  throw new Error('not implemented');
+	};
+	
+	Transform.prototype._write = function(chunk, encoding, cb) {
+	  var ts = this._transformState;
+	  ts.writecb = cb;
+	  ts.writechunk = chunk;
+	  ts.writeencoding = encoding;
+	  if (!ts.transforming) {
+	    var rs = this._readableState;
+	    if (ts.needTransform ||
+	        rs.needReadable ||
+	        rs.length < rs.highWaterMark)
+	      this._read(rs.highWaterMark);
+	  }
+	};
+	
+	// Doesn't matter what the args are here.
+	// _transform does all the work.
+	// That we got here means that the readable side wants more data.
+	Transform.prototype._read = function(n) {
+	  var ts = this._transformState;
+	
+	  if (!util.isNull(ts.writechunk) && ts.writecb && !ts.transforming) {
+	    ts.transforming = true;
+	    this._transform(ts.writechunk, ts.writeencoding, ts.afterTransform);
+	  } else {
+	    // mark that we need a transform, so that any data that comes in
+	    // will get processed, now that we've asked for it.
+	    ts.needTransform = true;
+	  }
+	};
+	
+	
+	function done(stream, er) {
+	  if (er)
+	    return stream.emit('error', er);
+	
+	  // if there's nothing in the write buffer, then that means
+	  // that nothing more will ever be provided
+	  var ws = stream._writableState;
+	  var ts = stream._transformState;
+	
+	  if (ws.length)
+	    throw new Error('calling transform done when ws.length != 0');
+	
+	  if (ts.transforming)
+	    throw new Error('calling transform done when still transforming');
+	
+	  return stream.push(null);
+	}
+
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	// a passthrough stream.
+	// basically just the most minimal sort of Transform stream.
+	// Every written chunk gets output as-is.
+	
+	module.exports = PassThrough;
+	
+	var Transform = __webpack_require__(284);
+	
+	/*<replacement>*/
+	var util = __webpack_require__(279);
+	util.inherits = __webpack_require__(107);
+	/*</replacement>*/
+	
+	util.inherits(PassThrough, Transform);
+	
+	function PassThrough(options) {
+	  if (!(this instanceof PassThrough))
+	    return new PassThrough(options);
+	
+	  Transform.call(this, options);
+	}
+	
+	PassThrough.prototype._transform = function(chunk, encoding, cb) {
+	  cb(null, chunk);
+	};
+
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(282)
+
+
+/***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(281)
+
+
+/***/ },
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(284)
+
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(285)
+
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDocument, XMLDocumentCB, XMLStreamWriter, XMLStringWriter, assign, isFunction, ref;
+	
+	  ref = __webpack_require__(291), assign = ref.assign, isFunction = ref.isFunction;
+	
+	  XMLDocument = __webpack_require__(292);
+	
+	  XMLDocumentCB = __webpack_require__(310);
+	
+	  XMLStringWriter = __webpack_require__(308);
+	
+	  XMLStreamWriter = __webpack_require__(311);
+	
+	  module.exports.create = function(name, xmldec, doctype, options) {
+	    var doc, root;
+	    if (name == null) {
+	      throw new Error("Root element needs a name");
+	    }
+	    options = assign({}, xmldec, doctype, options);
+	    doc = new XMLDocument(options);
+	    root = doc.element(name);
+	    if (!options.headless) {
+	      doc.declaration(options);
+	      if ((options.pubID != null) || (options.sysID != null)) {
+	        doc.doctype(options);
+	      }
+	    }
+	    return root;
+	  };
+	
+	  module.exports.begin = function(options, onData, onEnd) {
+	    var ref1;
+	    if (isFunction(options)) {
+	      ref1 = [options, onData], onData = ref1[0], onEnd = ref1[1];
+	      options = {};
+	    }
+	    if (onData) {
+	      return new XMLDocumentCB(options, onData, onEnd);
+	    } else {
+	      return new XMLDocument(options);
+	    }
+	  };
+	
+	  module.exports.stringWriter = function(options) {
+	    return new XMLStringWriter(options);
+	  };
+	
+	  module.exports.streamWriter = function(stream, options) {
+	    return new XMLStreamWriter(stream, options);
+	  };
+	
+	}).call(this);
+
+
+/***/ },
+/* 291 */
+/***/ function(module, exports) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var assign, camelCase, capitalize, isArray, isEmpty, isFunction, isObject, isPlainObject, kebabCase, snakeCase, titleCase, words,
+	    slice = [].slice,
+	    hasProp = {}.hasOwnProperty;
+	
+	  assign = function() {
+	    var i, key, len, source, sources, target;
+	    target = arguments[0], sources = 2 <= arguments.length ? slice.call(arguments, 1) : [];
+	    if (isFunction(Object.assign)) {
+	      Object.assign.apply(null, arguments);
+	    } else {
+	      for (i = 0, len = sources.length; i < len; i++) {
+	        source = sources[i];
+	        if (source != null) {
+	          for (key in source) {
+	            if (!hasProp.call(source, key)) continue;
+	            target[key] = source[key];
+	          }
+	        }
+	      }
+	    }
+	    return target;
+	  };
+	
+	  isFunction = function(val) {
+	    return !!val && Object.prototype.toString.call(val) === '[object Function]';
+	  };
+	
+	  isObject = function(val) {
+	    var ref;
+	    return !!val && ((ref = typeof val) === 'function' || ref === 'object');
+	  };
+	
+	  isArray = function(val) {
+	    if (isFunction(Array.isArray)) {
+	      return Array.isArray(val);
+	    } else {
+	      return Object.prototype.toString.call(val) === '[object Array]';
+	    }
+	  };
+	
+	  isEmpty = function(val) {
+	    var key;
+	    if (isArray(val)) {
+	      return !val.length;
+	    } else {
+	      for (key in val) {
+	        if (!hasProp.call(val, key)) continue;
+	        return false;
+	      }
+	      return true;
+	    }
+	  };
+	
+	  isPlainObject = function(val) {
+	    var ctor, proto;
+	    return isObject(val) && (proto = Object.getPrototypeOf(val)) && (ctor = proto.constructor) && (typeof ctor === 'function') && (ctor instanceof ctor) && (Function.prototype.toString.call(ctor) === Function.prototype.toString.call(Object));
+	  };
+	
+	  words = function(val) {
+	    return (val.split(/[-_\s]+|(?=[A-Z][a-z])/) || []).filter(function(n) {
+	      return !!n;
+	    });
+	  };
+	
+	  camelCase = function(val) {
+	    var i, index, len, r, ref, word;
+	    r = '';
+	    ref = words(val);
+	    for (index = i = 0, len = ref.length; i < len; index = ++i) {
+	      word = ref[index];
+	      r += index ? capitalize(word.toLowerCase()) : word.toLowerCase();
+	    }
+	    return r;
+	  };
+	
+	  titleCase = function(val) {
+	    var i, index, len, r, ref, word;
+	    r = '';
+	    ref = words(val);
+	    for (index = i = 0, len = ref.length; i < len; index = ++i) {
+	      word = ref[index];
+	      r += capitalize(word.toLowerCase());
+	    }
+	    return r;
+	  };
+	
+	  kebabCase = function(val) {
+	    var i, index, len, r, ref, word;
+	    r = '';
+	    ref = words(val);
+	    for (index = i = 0, len = ref.length; i < len; index = ++i) {
+	      word = ref[index];
+	      r += (index ? '-' : '') + word.toLowerCase();
+	    }
+	    return r;
+	  };
+	
+	  snakeCase = function(val) {
+	    var i, index, len, r, ref, word;
+	    r = '';
+	    ref = words(val);
+	    for (index = i = 0, len = ref.length; i < len; index = ++i) {
+	      word = ref[index];
+	      r += (index ? '_' : '') + word.toLowerCase();
+	    }
+	    return r;
+	  };
+	
+	  capitalize = function(val) {
+	    return val.charAt(0).toUpperCase() + val.slice(1);
+	  };
+	
+	  module.exports.assign = assign;
+	
+	  module.exports.isFunction = isFunction;
+	
+	  module.exports.isObject = isObject;
+	
+	  module.exports.isArray = isArray;
+	
+	  module.exports.isEmpty = isEmpty;
+	
+	  module.exports.isPlainObject = isPlainObject;
+	
+	  module.exports.camelCase = camelCase;
+	
+	  module.exports.titleCase = titleCase;
+	
+	  module.exports.kebabCase = kebabCase;
+	
+	  module.exports.snakeCase = snakeCase;
+	
+	  module.exports.capitalize = capitalize;
+	
+	  module.exports.words = words;
+	
+	}).call(this);
+
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDocument, XMLNode, XMLStringWriter, XMLStringifier, isPlainObject,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  isPlainObject = __webpack_require__(291).isPlainObject;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  XMLStringifier = __webpack_require__(307);
+	
+	  XMLStringWriter = __webpack_require__(308);
+	
+	  module.exports = XMLDocument = (function(superClass) {
+	    extend(XMLDocument, superClass);
+	
+	    function XMLDocument(options) {
+	      XMLDocument.__super__.constructor.call(this, null);
+	      options || (options = {});
+	      if (!options.writer) {
+	        options.writer = new XMLStringWriter();
+	      }
+	      this.options = options;
+	      this.stringify = new XMLStringifier(options);
+	      this.isDocument = true;
+	    }
+	
+	    XMLDocument.prototype.end = function(writer) {
+	      var writerOptions;
+	      if (!writer) {
+	        writer = this.options.writer;
+	      } else if (isPlainObject(writer)) {
+	        writerOptions = writer;
+	        writer = this.options.writer.set(writerOptions);
+	      }
+	      return writer.document(this);
+	    };
+	
+	    XMLDocument.prototype.toString = function(options) {
+	      return this.options.writer.set(options).document(this);
+	    };
+	
+	    return XMLDocument;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 293 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLCData, XMLComment, XMLDeclaration, XMLDocType, XMLElement, XMLNode, XMLProcessingInstruction, XMLRaw, XMLText, isEmpty, isFunction, isObject, ref,
+	    hasProp = {}.hasOwnProperty;
+	
+	  ref = __webpack_require__(291), isObject = ref.isObject, isFunction = ref.isFunction, isEmpty = ref.isEmpty;
+	
+	  XMLElement = null;
+	
+	  XMLCData = null;
+	
+	  XMLComment = null;
+	
+	  XMLDeclaration = null;
+	
+	  XMLDocType = null;
+	
+	  XMLRaw = null;
+	
+	  XMLText = null;
+	
+	  XMLProcessingInstruction = null;
+	
+	  module.exports = XMLNode = (function() {
+	    function XMLNode(parent) {
+	      this.parent = parent;
+	      if (this.parent) {
+	        this.options = this.parent.options;
+	        this.stringify = this.parent.stringify;
+	      }
+	      this.children = [];
+	      if (!XMLElement) {
+	        XMLElement = __webpack_require__(294);
+	        XMLCData = __webpack_require__(296);
+	        XMLComment = __webpack_require__(297);
+	        XMLDeclaration = __webpack_require__(298);
+	        XMLDocType = __webpack_require__(299);
+	        XMLRaw = __webpack_require__(304);
+	        XMLText = __webpack_require__(305);
+	        XMLProcessingInstruction = __webpack_require__(306);
+	      }
+	    }
+	
+	    XMLNode.prototype.element = function(name, attributes, text) {
+	      var childNode, item, j, k, key, lastChild, len, len1, ref1, val;
+	      lastChild = null;
+	      if (attributes == null) {
+	        attributes = {};
+	      }
+	      attributes = attributes.valueOf();
+	      if (!isObject(attributes)) {
+	        ref1 = [attributes, text], text = ref1[0], attributes = ref1[1];
+	      }
+	      if (name != null) {
+	        name = name.valueOf();
+	      }
+	      if (Array.isArray(name)) {
+	        for (j = 0, len = name.length; j < len; j++) {
+	          item = name[j];
+	          lastChild = this.element(item);
+	        }
+	      } else if (isFunction(name)) {
+	        lastChild = this.element(name.apply());
+	      } else if (isObject(name)) {
+	        for (key in name) {
+	          if (!hasProp.call(name, key)) continue;
+	          val = name[key];
+	          if (isFunction(val)) {
+	            val = val.apply();
+	          }
+	          if ((isObject(val)) && (isEmpty(val))) {
+	            val = null;
+	          }
+	          if (!this.options.ignoreDecorators && this.stringify.convertAttKey && key.indexOf(this.stringify.convertAttKey) === 0) {
+	            lastChild = this.attribute(key.substr(this.stringify.convertAttKey.length), val);
+	          } else if (!this.options.separateArrayItems && Array.isArray(val)) {
+	            for (k = 0, len1 = val.length; k < len1; k++) {
+	              item = val[k];
+	              childNode = {};
+	              childNode[key] = item;
+	              lastChild = this.element(childNode);
+	            }
+	          } else if (isObject(val)) {
+	            lastChild = this.element(key);
+	            lastChild.element(val);
+	          } else {
+	            lastChild = this.element(key, val);
+	          }
+	        }
+	      } else {
+	        if (!this.options.ignoreDecorators && this.stringify.convertTextKey && name.indexOf(this.stringify.convertTextKey) === 0) {
+	          lastChild = this.text(text);
+	        } else if (!this.options.ignoreDecorators && this.stringify.convertCDataKey && name.indexOf(this.stringify.convertCDataKey) === 0) {
+	          lastChild = this.cdata(text);
+	        } else if (!this.options.ignoreDecorators && this.stringify.convertCommentKey && name.indexOf(this.stringify.convertCommentKey) === 0) {
+	          lastChild = this.comment(text);
+	        } else if (!this.options.ignoreDecorators && this.stringify.convertRawKey && name.indexOf(this.stringify.convertRawKey) === 0) {
+	          lastChild = this.raw(text);
+	        } else if (!this.options.ignoreDecorators && this.stringify.convertPIKey && name.indexOf(this.stringify.convertPIKey) === 0) {
+	          lastChild = this.instruction(name.substr(this.stringify.convertPIKey.length), text);
+	        } else {
+	          lastChild = this.node(name, attributes, text);
+	        }
+	      }
+	      if (lastChild == null) {
+	        throw new Error("Could not create any elements with: " + name);
+	      }
+	      return lastChild;
+	    };
+	
+	    XMLNode.prototype.insertBefore = function(name, attributes, text) {
+	      var child, i, removed;
+	      if (this.isRoot) {
+	        throw new Error("Cannot insert elements at root level");
+	      }
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i);
+	      child = this.parent.element(name, attributes, text);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return child;
+	    };
+	
+	    XMLNode.prototype.insertAfter = function(name, attributes, text) {
+	      var child, i, removed;
+	      if (this.isRoot) {
+	        throw new Error("Cannot insert elements at root level");
+	      }
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i + 1);
+	      child = this.parent.element(name, attributes, text);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return child;
+	    };
+	
+	    XMLNode.prototype.remove = function() {
+	      var i, ref1;
+	      if (this.isRoot) {
+	        throw new Error("Cannot remove the root element");
+	      }
+	      i = this.parent.children.indexOf(this);
+	      [].splice.apply(this.parent.children, [i, i - i + 1].concat(ref1 = [])), ref1;
+	      return this.parent;
+	    };
+	
+	    XMLNode.prototype.node = function(name, attributes, text) {
+	      var child, ref1;
+	      if (name != null) {
+	        name = name.valueOf();
+	      }
+	      attributes || (attributes = {});
+	      attributes = attributes.valueOf();
+	      if (!isObject(attributes)) {
+	        ref1 = [attributes, text], text = ref1[0], attributes = ref1[1];
+	      }
+	      child = new XMLElement(this, name, attributes);
+	      if (text != null) {
+	        child.text(text);
+	      }
+	      this.children.push(child);
+	      return child;
+	    };
+	
+	    XMLNode.prototype.text = function(value) {
+	      var child;
+	      child = new XMLText(this, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.cdata = function(value) {
+	      var child;
+	      child = new XMLCData(this, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.comment = function(value) {
+	      var child;
+	      child = new XMLComment(this, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.commentBefore = function(value) {
+	      var child, i, removed;
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i);
+	      child = this.parent.comment(value);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.commentAfter = function(value) {
+	      var child, i, removed;
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i + 1);
+	      child = this.parent.comment(value);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.raw = function(value) {
+	      var child;
+	      child = new XMLRaw(this, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.instruction = function(target, value) {
+	      var insTarget, insValue, instruction, j, len;
+	      if (target != null) {
+	        target = target.valueOf();
+	      }
+	      if (value != null) {
+	        value = value.valueOf();
+	      }
+	      if (Array.isArray(target)) {
+	        for (j = 0, len = target.length; j < len; j++) {
+	          insTarget = target[j];
+	          this.instruction(insTarget);
+	        }
+	      } else if (isObject(target)) {
+	        for (insTarget in target) {
+	          if (!hasProp.call(target, insTarget)) continue;
+	          insValue = target[insTarget];
+	          this.instruction(insTarget, insValue);
+	        }
+	      } else {
+	        if (isFunction(value)) {
+	          value = value.apply();
+	        }
+	        instruction = new XMLProcessingInstruction(this, target, value);
+	        this.children.push(instruction);
+	      }
+	      return this;
+	    };
+	
+	    XMLNode.prototype.instructionBefore = function(target, value) {
+	      var child, i, removed;
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i);
+	      child = this.parent.instruction(target, value);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.instructionAfter = function(target, value) {
+	      var child, i, removed;
+	      i = this.parent.children.indexOf(this);
+	      removed = this.parent.children.splice(i + 1);
+	      child = this.parent.instruction(target, value);
+	      Array.prototype.push.apply(this.parent.children, removed);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.declaration = function(version, encoding, standalone) {
+	      var doc, xmldec;
+	      doc = this.document();
+	      xmldec = new XMLDeclaration(doc, version, encoding, standalone);
+	      if (doc.children[0] instanceof XMLDeclaration) {
+	        doc.children[0] = xmldec;
+	      } else {
+	        doc.children.unshift(xmldec);
+	      }
+	      return doc.root() || doc;
+	    };
+	
+	    XMLNode.prototype.doctype = function(pubID, sysID) {
+	      var child, doc, doctype, i, j, k, len, len1, ref1, ref2;
+	      doc = this.document();
+	      doctype = new XMLDocType(doc, pubID, sysID);
+	      ref1 = doc.children;
+	      for (i = j = 0, len = ref1.length; j < len; i = ++j) {
+	        child = ref1[i];
+	        if (child instanceof XMLDocType) {
+	          doc.children[i] = doctype;
+	          return doctype;
+	        }
+	      }
+	      ref2 = doc.children;
+	      for (i = k = 0, len1 = ref2.length; k < len1; i = ++k) {
+	        child = ref2[i];
+	        if (child.isRoot) {
+	          doc.children.splice(i, 0, doctype);
+	          return doctype;
+	        }
+	      }
+	      doc.children.push(doctype);
+	      return doctype;
+	    };
+	
+	    XMLNode.prototype.up = function() {
+	      if (this.isRoot) {
+	        throw new Error("The root node has no parent. Use doc() if you need to get the document object.");
+	      }
+	      return this.parent;
+	    };
+	
+	    XMLNode.prototype.root = function() {
+	      var node;
+	      node = this;
+	      while (node) {
+	        if (node.isDocument) {
+	          return node.rootObject;
+	        } else if (node.isRoot) {
+	          return node;
+	        } else {
+	          node = node.parent;
+	        }
+	      }
+	    };
+	
+	    XMLNode.prototype.document = function() {
+	      var node;
+	      node = this;
+	      while (node) {
+	        if (node.isDocument) {
+	          return node;
+	        } else {
+	          node = node.parent;
+	        }
+	      }
+	    };
+	
+	    XMLNode.prototype.end = function(options) {
+	      return this.document().end(options);
+	    };
+	
+	    XMLNode.prototype.prev = function() {
+	      var i;
+	      i = this.parent.children.indexOf(this);
+	      if (i < 1) {
+	        throw new Error("Already at the first node");
+	      }
+	      return this.parent.children[i - 1];
+	    };
+	
+	    XMLNode.prototype.next = function() {
+	      var i;
+	      i = this.parent.children.indexOf(this);
+	      if (i === -1 || i === this.parent.children.length - 1) {
+	        throw new Error("Already at the last node");
+	      }
+	      return this.parent.children[i + 1];
+	    };
+	
+	    XMLNode.prototype.importDocument = function(doc) {
+	      var clonedRoot;
+	      clonedRoot = doc.root().clone();
+	      clonedRoot.parent = this;
+	      clonedRoot.isRoot = false;
+	      this.children.push(clonedRoot);
+	      return this;
+	    };
+	
+	    XMLNode.prototype.ele = function(name, attributes, text) {
+	      return this.element(name, attributes, text);
+	    };
+	
+	    XMLNode.prototype.nod = function(name, attributes, text) {
+	      return this.node(name, attributes, text);
+	    };
+	
+	    XMLNode.prototype.txt = function(value) {
+	      return this.text(value);
+	    };
+	
+	    XMLNode.prototype.dat = function(value) {
+	      return this.cdata(value);
+	    };
+	
+	    XMLNode.prototype.com = function(value) {
+	      return this.comment(value);
+	    };
+	
+	    XMLNode.prototype.ins = function(target, value) {
+	      return this.instruction(target, value);
+	    };
+	
+	    XMLNode.prototype.doc = function() {
+	      return this.document();
+	    };
+	
+	    XMLNode.prototype.dec = function(version, encoding, standalone) {
+	      return this.declaration(version, encoding, standalone);
+	    };
+	
+	    XMLNode.prototype.dtd = function(pubID, sysID) {
+	      return this.doctype(pubID, sysID);
+	    };
+	
+	    XMLNode.prototype.e = function(name, attributes, text) {
+	      return this.element(name, attributes, text);
+	    };
+	
+	    XMLNode.prototype.n = function(name, attributes, text) {
+	      return this.node(name, attributes, text);
+	    };
+	
+	    XMLNode.prototype.t = function(value) {
+	      return this.text(value);
+	    };
+	
+	    XMLNode.prototype.d = function(value) {
+	      return this.cdata(value);
+	    };
+	
+	    XMLNode.prototype.c = function(value) {
+	      return this.comment(value);
+	    };
+	
+	    XMLNode.prototype.r = function(value) {
+	      return this.raw(value);
+	    };
+	
+	    XMLNode.prototype.i = function(target, value) {
+	      return this.instruction(target, value);
+	    };
+	
+	    XMLNode.prototype.u = function() {
+	      return this.up();
+	    };
+	
+	    XMLNode.prototype.importXMLBuilder = function(doc) {
+	      return this.importDocument(doc);
+	    };
+	
+	    return XMLNode;
+	
+	  })();
+	
+	}).call(this);
+
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLAttribute, XMLElement, XMLNode, isFunction, isObject, ref,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  ref = __webpack_require__(291), isObject = ref.isObject, isFunction = ref.isFunction;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  XMLAttribute = __webpack_require__(295);
+	
+	  module.exports = XMLElement = (function(superClass) {
+	    extend(XMLElement, superClass);
+	
+	    function XMLElement(parent, name, attributes) {
+	      XMLElement.__super__.constructor.call(this, parent);
+	      if (name == null) {
+	        throw new Error("Missing element name");
+	      }
+	      this.name = this.stringify.eleName(name);
+	      this.attributes = {};
+	      if (attributes != null) {
+	        this.attribute(attributes);
+	      }
+	      if (parent.isDocument) {
+	        this.isRoot = true;
+	        this.documentObject = parent;
+	        parent.rootObject = this;
+	      }
+	    }
+	
+	    XMLElement.prototype.clone = function() {
+	      var att, attName, clonedSelf, ref1;
+	      clonedSelf = Object.create(this);
+	      if (clonedSelf.isRoot) {
+	        clonedSelf.documentObject = null;
+	      }
+	      clonedSelf.attributes = {};
+	      ref1 = this.attributes;
+	      for (attName in ref1) {
+	        if (!hasProp.call(ref1, attName)) continue;
+	        att = ref1[attName];
+	        clonedSelf.attributes[attName] = att.clone();
+	      }
+	      clonedSelf.children = [];
+	      this.children.forEach(function(child) {
+	        var clonedChild;
+	        clonedChild = child.clone();
+	        clonedChild.parent = clonedSelf;
+	        return clonedSelf.children.push(clonedChild);
+	      });
+	      return clonedSelf;
+	    };
+	
+	    XMLElement.prototype.attribute = function(name, value) {
+	      var attName, attValue;
+	      if (name != null) {
+	        name = name.valueOf();
+	      }
+	      if (isObject(name)) {
+	        for (attName in name) {
+	          if (!hasProp.call(name, attName)) continue;
+	          attValue = name[attName];
+	          this.attribute(attName, attValue);
+	        }
+	      } else {
+	        if (isFunction(value)) {
+	          value = value.apply();
+	        }
+	        if (!this.options.skipNullAttributes || (value != null)) {
+	          this.attributes[name] = new XMLAttribute(this, name, value);
+	        }
+	      }
+	      return this;
+	    };
+	
+	    XMLElement.prototype.removeAttribute = function(name) {
+	      var attName, i, len;
+	      if (name == null) {
+	        throw new Error("Missing attribute name");
+	      }
+	      name = name.valueOf();
+	      if (Array.isArray(name)) {
+	        for (i = 0, len = name.length; i < len; i++) {
+	          attName = name[i];
+	          delete this.attributes[attName];
+	        }
+	      } else {
+	        delete this.attributes[name];
+	      }
+	      return this;
+	    };
+	
+	    XMLElement.prototype.toString = function(options) {
+	      return this.options.writer.set(options).element(this);
+	    };
+	
+	    XMLElement.prototype.att = function(name, value) {
+	      return this.attribute(name, value);
+	    };
+	
+	    XMLElement.prototype.a = function(name, value) {
+	      return this.attribute(name, value);
+	    };
+	
+	    return XMLElement;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 295 */
+/***/ function(module, exports) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLAttribute;
+	
+	  module.exports = XMLAttribute = (function() {
+	    function XMLAttribute(parent, name, value) {
+	      this.options = parent.options;
+	      this.stringify = parent.stringify;
+	      if (name == null) {
+	        throw new Error("Missing attribute name of element " + parent.name);
+	      }
+	      if (value == null) {
+	        throw new Error("Missing attribute value for attribute " + name + " of element " + parent.name);
+	      }
+	      this.name = this.stringify.attName(name);
+	      this.value = this.stringify.attValue(value);
+	    }
+	
+	    XMLAttribute.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLAttribute.prototype.toString = function(options) {
+	      return this.options.writer.set(options).attribute(this);
+	    };
+	
+	    return XMLAttribute;
+	
+	  })();
+	
+	}).call(this);
+
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLCData, XMLNode,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLCData = (function(superClass) {
+	    extend(XMLCData, superClass);
+	
+	    function XMLCData(parent, text) {
+	      XMLCData.__super__.constructor.call(this, parent);
+	      if (text == null) {
+	        throw new Error("Missing CDATA text");
+	      }
+	      this.text = this.stringify.cdata(text);
+	    }
+	
+	    XMLCData.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLCData.prototype.toString = function(options) {
+	      return this.options.writer.set(options).cdata(this);
+	    };
+	
+	    return XMLCData;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLComment, XMLNode,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLComment = (function(superClass) {
+	    extend(XMLComment, superClass);
+	
+	    function XMLComment(parent, text) {
+	      XMLComment.__super__.constructor.call(this, parent);
+	      if (text == null) {
+	        throw new Error("Missing comment text");
+	      }
+	      this.text = this.stringify.comment(text);
+	    }
+	
+	    XMLComment.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLComment.prototype.toString = function(options) {
+	      return this.options.writer.set(options).comment(this);
+	    };
+	
+	    return XMLComment;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDeclaration, XMLNode, isObject,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  isObject = __webpack_require__(291).isObject;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLDeclaration = (function(superClass) {
+	    extend(XMLDeclaration, superClass);
+	
+	    function XMLDeclaration(parent, version, encoding, standalone) {
+	      var ref;
+	      XMLDeclaration.__super__.constructor.call(this, parent);
+	      if (isObject(version)) {
+	        ref = version, version = ref.version, encoding = ref.encoding, standalone = ref.standalone;
+	      }
+	      if (!version) {
+	        version = '1.0';
+	      }
+	      this.version = this.stringify.xmlVersion(version);
+	      if (encoding != null) {
+	        this.encoding = this.stringify.xmlEncoding(encoding);
+	      }
+	      if (standalone != null) {
+	        this.standalone = this.stringify.xmlStandalone(standalone);
+	      }
+	    }
+	
+	    XMLDeclaration.prototype.toString = function(options) {
+	      return this.options.writer.set(options).declaration(this);
+	    };
+	
+	    return XMLDeclaration;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDTDAttList, XMLDTDElement, XMLDTDEntity, XMLDTDNotation, XMLDocType, XMLNode, isObject,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  isObject = __webpack_require__(291).isObject;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  XMLDTDAttList = __webpack_require__(300);
+	
+	  XMLDTDEntity = __webpack_require__(301);
+	
+	  XMLDTDElement = __webpack_require__(302);
+	
+	  XMLDTDNotation = __webpack_require__(303);
+	
+	  module.exports = XMLDocType = (function(superClass) {
+	    extend(XMLDocType, superClass);
+	
+	    function XMLDocType(parent, pubID, sysID) {
+	      var ref, ref1;
+	      XMLDocType.__super__.constructor.call(this, parent);
+	      this.documentObject = parent;
+	      if (isObject(pubID)) {
+	        ref = pubID, pubID = ref.pubID, sysID = ref.sysID;
+	      }
+	      if (sysID == null) {
+	        ref1 = [pubID, sysID], sysID = ref1[0], pubID = ref1[1];
+	      }
+	      if (pubID != null) {
+	        this.pubID = this.stringify.dtdPubID(pubID);
+	      }
+	      if (sysID != null) {
+	        this.sysID = this.stringify.dtdSysID(sysID);
+	      }
+	    }
+	
+	    XMLDocType.prototype.element = function(name, value) {
+	      var child;
+	      child = new XMLDTDElement(this, name, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLDocType.prototype.attList = function(elementName, attributeName, attributeType, defaultValueType, defaultValue) {
+	      var child;
+	      child = new XMLDTDAttList(this, elementName, attributeName, attributeType, defaultValueType, defaultValue);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLDocType.prototype.entity = function(name, value) {
+	      var child;
+	      child = new XMLDTDEntity(this, false, name, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLDocType.prototype.pEntity = function(name, value) {
+	      var child;
+	      child = new XMLDTDEntity(this, true, name, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLDocType.prototype.notation = function(name, value) {
+	      var child;
+	      child = new XMLDTDNotation(this, name, value);
+	      this.children.push(child);
+	      return this;
+	    };
+	
+	    XMLDocType.prototype.toString = function(options) {
+	      return this.options.writer.set(options).docType(this);
+	    };
+	
+	    XMLDocType.prototype.ele = function(name, value) {
+	      return this.element(name, value);
+	    };
+	
+	    XMLDocType.prototype.att = function(elementName, attributeName, attributeType, defaultValueType, defaultValue) {
+	      return this.attList(elementName, attributeName, attributeType, defaultValueType, defaultValue);
+	    };
+	
+	    XMLDocType.prototype.ent = function(name, value) {
+	      return this.entity(name, value);
+	    };
+	
+	    XMLDocType.prototype.pent = function(name, value) {
+	      return this.pEntity(name, value);
+	    };
+	
+	    XMLDocType.prototype.not = function(name, value) {
+	      return this.notation(name, value);
+	    };
+	
+	    XMLDocType.prototype.up = function() {
+	      return this.root() || this.documentObject;
+	    };
+	
+	    return XMLDocType;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDTDAttList, XMLNode,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLDTDAttList = (function(superClass) {
+	    extend(XMLDTDAttList, superClass);
+	
+	    function XMLDTDAttList(parent, elementName, attributeName, attributeType, defaultValueType, defaultValue) {
+	      XMLDTDAttList.__super__.constructor.call(this, parent);
+	      if (elementName == null) {
+	        throw new Error("Missing DTD element name");
+	      }
+	      if (attributeName == null) {
+	        throw new Error("Missing DTD attribute name");
+	      }
+	      if (!attributeType) {
+	        throw new Error("Missing DTD attribute type");
+	      }
+	      if (!defaultValueType) {
+	        throw new Error("Missing DTD attribute default");
+	      }
+	      if (defaultValueType.indexOf('#') !== 0) {
+	        defaultValueType = '#' + defaultValueType;
+	      }
+	      if (!defaultValueType.match(/^(#REQUIRED|#IMPLIED|#FIXED|#DEFAULT)$/)) {
+	        throw new Error("Invalid default value type; expected: #REQUIRED, #IMPLIED, #FIXED or #DEFAULT");
+	      }
+	      if (defaultValue && !defaultValueType.match(/^(#FIXED|#DEFAULT)$/)) {
+	        throw new Error("Default value only applies to #FIXED or #DEFAULT");
+	      }
+	      this.elementName = this.stringify.eleName(elementName);
+	      this.attributeName = this.stringify.attName(attributeName);
+	      this.attributeType = this.stringify.dtdAttType(attributeType);
+	      this.defaultValue = this.stringify.dtdAttDefault(defaultValue);
+	      this.defaultValueType = defaultValueType;
+	    }
+	
+	    XMLDTDAttList.prototype.toString = function(options) {
+	      return this.options.writer.set(options).dtdAttList(this);
+	    };
+	
+	    return XMLDTDAttList;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDTDEntity, XMLNode, isObject,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  isObject = __webpack_require__(291).isObject;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLDTDEntity = (function(superClass) {
+	    extend(XMLDTDEntity, superClass);
+	
+	    function XMLDTDEntity(parent, pe, name, value) {
+	      XMLDTDEntity.__super__.constructor.call(this, parent);
+	      if (name == null) {
+	        throw new Error("Missing entity name");
+	      }
+	      if (value == null) {
+	        throw new Error("Missing entity value");
+	      }
+	      this.pe = !!pe;
+	      this.name = this.stringify.eleName(name);
+	      if (!isObject(value)) {
+	        this.value = this.stringify.dtdEntityValue(value);
+	      } else {
+	        if (!value.pubID && !value.sysID) {
+	          throw new Error("Public and/or system identifiers are required for an external entity");
+	        }
+	        if (value.pubID && !value.sysID) {
+	          throw new Error("System identifier is required for a public external entity");
+	        }
+	        if (value.pubID != null) {
+	          this.pubID = this.stringify.dtdPubID(value.pubID);
+	        }
+	        if (value.sysID != null) {
+	          this.sysID = this.stringify.dtdSysID(value.sysID);
+	        }
+	        if (value.nData != null) {
+	          this.nData = this.stringify.dtdNData(value.nData);
+	        }
+	        if (this.pe && this.nData) {
+	          throw new Error("Notation declaration is not allowed in a parameter entity");
+	        }
+	      }
+	    }
+	
+	    XMLDTDEntity.prototype.toString = function(options) {
+	      return this.options.writer.set(options).dtdEntity(this);
+	    };
+	
+	    return XMLDTDEntity;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDTDElement, XMLNode,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLDTDElement = (function(superClass) {
+	    extend(XMLDTDElement, superClass);
+	
+	    function XMLDTDElement(parent, name, value) {
+	      XMLDTDElement.__super__.constructor.call(this, parent);
+	      if (name == null) {
+	        throw new Error("Missing DTD element name");
+	      }
+	      if (!value) {
+	        value = '(#PCDATA)';
+	      }
+	      if (Array.isArray(value)) {
+	        value = '(' + value.join(',') + ')';
+	      }
+	      this.name = this.stringify.eleName(name);
+	      this.value = this.stringify.dtdElementValue(value);
+	    }
+	
+	    XMLDTDElement.prototype.toString = function(options) {
+	      return this.options.writer.set(options).dtdElement(this);
+	    };
+	
+	    return XMLDTDElement;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLDTDNotation, XMLNode,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLDTDNotation = (function(superClass) {
+	    extend(XMLDTDNotation, superClass);
+	
+	    function XMLDTDNotation(parent, name, value) {
+	      XMLDTDNotation.__super__.constructor.call(this, parent);
+	      if (name == null) {
+	        throw new Error("Missing notation name");
+	      }
+	      if (!value.pubID && !value.sysID) {
+	        throw new Error("Public or system identifiers are required for an external entity");
+	      }
+	      this.name = this.stringify.eleName(name);
+	      if (value.pubID != null) {
+	        this.pubID = this.stringify.dtdPubID(value.pubID);
+	      }
+	      if (value.sysID != null) {
+	        this.sysID = this.stringify.dtdSysID(value.sysID);
+	      }
+	    }
+	
+	    XMLDTDNotation.prototype.toString = function(options) {
+	      return this.options.writer.set(options).dtdNotation(this);
+	    };
+	
+	    return XMLDTDNotation;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLNode, XMLRaw,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLRaw = (function(superClass) {
+	    extend(XMLRaw, superClass);
+	
+	    function XMLRaw(parent, text) {
+	      XMLRaw.__super__.constructor.call(this, parent);
+	      if (text == null) {
+	        throw new Error("Missing raw text");
+	      }
+	      this.value = this.stringify.raw(text);
+	    }
+	
+	    XMLRaw.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLRaw.prototype.toString = function(options) {
+	      return this.options.writer.set(options).raw(this);
+	    };
+	
+	    return XMLRaw;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLNode, XMLText,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLText = (function(superClass) {
+	    extend(XMLText, superClass);
+	
+	    function XMLText(parent, text) {
+	      XMLText.__super__.constructor.call(this, parent);
+	      if (text == null) {
+	        throw new Error("Missing element text");
+	      }
+	      this.value = this.stringify.eleText(text);
+	    }
+	
+	    XMLText.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLText.prototype.toString = function(options) {
+	      return this.options.writer.set(options).text(this);
+	    };
+	
+	    return XMLText;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLNode, XMLProcessingInstruction,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLNode = __webpack_require__(293);
+	
+	  module.exports = XMLProcessingInstruction = (function(superClass) {
+	    extend(XMLProcessingInstruction, superClass);
+	
+	    function XMLProcessingInstruction(parent, target, value) {
+	      XMLProcessingInstruction.__super__.constructor.call(this, parent);
+	      if (target == null) {
+	        throw new Error("Missing instruction target");
+	      }
+	      this.target = this.stringify.insTarget(target);
+	      if (value) {
+	        this.value = this.stringify.insValue(value);
+	      }
+	    }
+	
+	    XMLProcessingInstruction.prototype.clone = function() {
+	      return Object.create(this);
+	    };
+	
+	    XMLProcessingInstruction.prototype.toString = function(options) {
+	      return this.options.writer.set(options).processingInstruction(this);
+	    };
+	
+	    return XMLProcessingInstruction;
+	
+	  })(XMLNode);
+	
+	}).call(this);
+
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLStringifier, camelCase, kebabCase, ref, snakeCase, titleCase,
+	    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  ref = __webpack_require__(291), camelCase = ref.camelCase, titleCase = ref.titleCase, kebabCase = ref.kebabCase, snakeCase = ref.snakeCase;
+	
+	  module.exports = XMLStringifier = (function() {
+	    function XMLStringifier(options) {
+	      this.assertLegalChar = bind(this.assertLegalChar, this);
+	      var key, ref1, value;
+	      options || (options = {});
+	      this.allowSurrogateChars = options.allowSurrogateChars;
+	      this.noDoubleEncoding = options.noDoubleEncoding;
+	      this.textCase = options.textCase;
+	      ref1 = options.stringify || {};
+	      for (key in ref1) {
+	        if (!hasProp.call(ref1, key)) continue;
+	        value = ref1[key];
+	        this[key] = value;
+	      }
+	    }
+	
+	    XMLStringifier.prototype.eleName = function(val) {
+	      val = '' + val || '';
+	      val = this.applyCase(val);
+	      return this.assertLegalChar(val);
+	    };
+	
+	    XMLStringifier.prototype.eleText = function(val) {
+	      val = '' + val || '';
+	      return this.assertLegalChar(this.elEscape(val));
+	    };
+	
+	    XMLStringifier.prototype.cdata = function(val) {
+	      val = '' + val || '';
+	      val = val.replace(']]>', ']]]]><![CDATA[>');
+	      return this.assertLegalChar(val);
+	    };
+	
+	    XMLStringifier.prototype.comment = function(val) {
+	      val = '' + val || '';
+	      if (val.match(/--/)) {
+	        throw new Error("Comment text cannot contain double-hypen: " + val);
+	      }
+	      return this.assertLegalChar(val);
+	    };
+	
+	    XMLStringifier.prototype.raw = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.attName = function(val) {
+	      val = '' + val || '';
+	      return val = this.applyCase(val);
+	    };
+	
+	    XMLStringifier.prototype.attValue = function(val) {
+	      val = '' + val || '';
+	      return this.attEscape(val);
+	    };
+	
+	    XMLStringifier.prototype.insTarget = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.insValue = function(val) {
+	      val = '' + val || '';
+	      if (val.match(/\?>/)) {
+	        throw new Error("Invalid processing instruction value: " + val);
+	      }
+	      return val;
+	    };
+	
+	    XMLStringifier.prototype.xmlVersion = function(val) {
+	      val = '' + val || '';
+	      if (!val.match(/1\.[0-9]+/)) {
+	        throw new Error("Invalid version number: " + val);
+	      }
+	      return val;
+	    };
+	
+	    XMLStringifier.prototype.xmlEncoding = function(val) {
+	      val = '' + val || '';
+	      if (!val.match(/^[A-Za-z](?:[A-Za-z0-9._-]|-)*$/)) {
+	        throw new Error("Invalid encoding: " + val);
+	      }
+	      return val;
+	    };
+	
+	    XMLStringifier.prototype.xmlStandalone = function(val) {
+	      if (val) {
+	        return "yes";
+	      } else {
+	        return "no";
+	      }
+	    };
+	
+	    XMLStringifier.prototype.dtdPubID = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.dtdSysID = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.dtdElementValue = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.dtdAttType = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.dtdAttDefault = function(val) {
+	      if (val != null) {
+	        return '' + val || '';
+	      } else {
+	        return val;
+	      }
+	    };
+	
+	    XMLStringifier.prototype.dtdEntityValue = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.dtdNData = function(val) {
+	      return '' + val || '';
+	    };
+	
+	    XMLStringifier.prototype.convertAttKey = '@';
+	
+	    XMLStringifier.prototype.convertPIKey = '?';
+	
+	    XMLStringifier.prototype.convertTextKey = '#text';
+	
+	    XMLStringifier.prototype.convertCDataKey = '#cdata';
+	
+	    XMLStringifier.prototype.convertCommentKey = '#comment';
+	
+	    XMLStringifier.prototype.convertRawKey = '#raw';
+	
+	    XMLStringifier.prototype.assertLegalChar = function(str) {
+	      var chars, chr;
+	      if (this.allowSurrogateChars) {
+	        chars = /[\u0000-\u0008\u000B-\u000C\u000E-\u001F\uFFFE-\uFFFF]/;
+	      } else {
+	        chars = /[\u0000-\u0008\u000B-\u000C\u000E-\u001F\uD800-\uDFFF\uFFFE-\uFFFF]/;
+	      }
+	      chr = str.match(chars);
+	      if (chr) {
+	        throw new Error("Invalid character (" + chr + ") in string: " + str + " at index " + chr.index);
+	      }
+	      return str;
+	    };
+	
+	    XMLStringifier.prototype.applyCase = function(str) {
+	      switch (this.textCase) {
+	        case "camel":
+	          return camelCase(str);
+	        case "title":
+	          return titleCase(str);
+	        case "kebab":
+	        case "lower":
+	          return kebabCase(str);
+	        case "snake":
+	          return snakeCase(str);
+	        case "upper":
+	          return kebabCase(str).toUpperCase();
+	        default:
+	          return str;
+	      }
+	    };
+	
+	    XMLStringifier.prototype.elEscape = function(str) {
+	      var ampregex;
+	      ampregex = this.noDoubleEncoding ? /(?!&\S+;)&/g : /&/g;
+	      return str.replace(ampregex, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\r/g, '&#xD;');
+	    };
+	
+	    XMLStringifier.prototype.attEscape = function(str) {
+	      var ampregex;
+	      ampregex = this.noDoubleEncoding ? /(?!&\S+;)&/g : /&/g;
+	      return str.replace(ampregex, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;').replace(/\t/g, '&#x9;').replace(/\n/g, '&#xA;').replace(/\r/g, '&#xD;');
+	    };
+	
+	    return XMLStringifier;
+	
+	  })();
+	
+	}).call(this);
+
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLCData, XMLComment, XMLDTDAttList, XMLDTDElement, XMLDTDEntity, XMLDTDNotation, XMLDeclaration, XMLDocType, XMLElement, XMLProcessingInstruction, XMLRaw, XMLStringWriter, XMLText, XMLWriterBase,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLDeclaration = __webpack_require__(298);
+	
+	  XMLDocType = __webpack_require__(299);
+	
+	  XMLCData = __webpack_require__(296);
+	
+	  XMLComment = __webpack_require__(297);
+	
+	  XMLElement = __webpack_require__(294);
+	
+	  XMLRaw = __webpack_require__(304);
+	
+	  XMLText = __webpack_require__(305);
+	
+	  XMLProcessingInstruction = __webpack_require__(306);
+	
+	  XMLDTDAttList = __webpack_require__(300);
+	
+	  XMLDTDElement = __webpack_require__(302);
+	
+	  XMLDTDEntity = __webpack_require__(301);
+	
+	  XMLDTDNotation = __webpack_require__(303);
+	
+	  XMLWriterBase = __webpack_require__(309);
+	
+	  module.exports = XMLStringWriter = (function(superClass) {
+	    extend(XMLStringWriter, superClass);
+	
+	    function XMLStringWriter(options) {
+	      XMLStringWriter.__super__.constructor.call(this, options);
+	    }
+	
+	    XMLStringWriter.prototype.document = function(doc) {
+	      var child, i, len, r, ref;
+	      r = '';
+	      ref = doc.children;
+	      for (i = 0, len = ref.length; i < len; i++) {
+	        child = ref[i];
+	        r += (function() {
+	          switch (false) {
+	            case !(child instanceof XMLDeclaration):
+	              return this.declaration(child);
+	            case !(child instanceof XMLDocType):
+	              return this.docType(child);
+	            case !(child instanceof XMLComment):
+	              return this.comment(child);
+	            case !(child instanceof XMLProcessingInstruction):
+	              return this.processingInstruction(child);
+	            default:
+	              return this.element(child, 0);
+	          }
+	        }).call(this);
+	      }
+	      if (this.pretty && r.slice(-this.newline.length) === this.newline) {
+	        r = r.slice(0, -this.newline.length);
+	      }
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.attribute = function(att) {
+	      return ' ' + att.name + '="' + att.value + '"';
+	    };
+	
+	    XMLStringWriter.prototype.cdata = function(node, level) {
+	      return this.space(level) + '<![CDATA[' + node.text + ']]>' + this.newline;
+	    };
+	
+	    XMLStringWriter.prototype.comment = function(node, level) {
+	      return this.space(level) + '<!-- ' + node.text + ' -->' + this.newline;
+	    };
+	
+	    XMLStringWriter.prototype.declaration = function(node, level) {
+	      var r;
+	      r = this.space(level);
+	      r += '<?xml version="' + node.version + '"';
+	      if (node.encoding != null) {
+	        r += ' encoding="' + node.encoding + '"';
+	      }
+	      if (node.standalone != null) {
+	        r += ' standalone="' + node.standalone + '"';
+	      }
+	      r += '?>';
+	      r += this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.docType = function(node, level) {
+	      var child, i, len, r, ref;
+	      level || (level = 0);
+	      r = this.space(level);
+	      r += '<!DOCTYPE ' + node.root().name;
+	      if (node.pubID && node.sysID) {
+	        r += ' PUBLIC "' + node.pubID + '" "' + node.sysID + '"';
+	      } else if (node.sysID) {
+	        r += ' SYSTEM "' + node.sysID + '"';
+	      }
+	      if (node.children.length > 0) {
+	        r += ' [';
+	        r += this.newline;
+	        ref = node.children;
+	        for (i = 0, len = ref.length; i < len; i++) {
+	          child = ref[i];
+	          r += (function() {
+	            switch (false) {
+	              case !(child instanceof XMLDTDAttList):
+	                return this.dtdAttList(child, level + 1);
+	              case !(child instanceof XMLDTDElement):
+	                return this.dtdElement(child, level + 1);
+	              case !(child instanceof XMLDTDEntity):
+	                return this.dtdEntity(child, level + 1);
+	              case !(child instanceof XMLDTDNotation):
+	                return this.dtdNotation(child, level + 1);
+	              case !(child instanceof XMLCData):
+	                return this.cdata(child, level + 1);
+	              case !(child instanceof XMLComment):
+	                return this.comment(child, level + 1);
+	              case !(child instanceof XMLProcessingInstruction):
+	                return this.processingInstruction(child, level + 1);
+	              default:
+	                throw new Error("Unknown DTD node type: " + child.constructor.name);
+	            }
+	          }).call(this);
+	        }
+	        r += ']';
+	      }
+	      r += '>';
+	      r += this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.element = function(node, level) {
+	      var att, child, i, len, name, r, ref, ref1, space;
+	      level || (level = 0);
+	      space = this.space(level);
+	      r = '';
+	      r += space + '<' + node.name;
+	      ref = node.attributes;
+	      for (name in ref) {
+	        if (!hasProp.call(ref, name)) continue;
+	        att = ref[name];
+	        r += this.attribute(att);
+	      }
+	      if (node.children.length === 0 || node.children.every(function(e) {
+	        return e.value === '';
+	      })) {
+	        if (this.allowEmpty) {
+	          r += '></' + node.name + '>' + this.newline;
+	        } else {
+	          r += '/>' + this.newline;
+	        }
+	      } else if (this.pretty && node.children.length === 1 && (node.children[0].value != null)) {
+	        r += '>';
+	        r += node.children[0].value;
+	        r += '</' + node.name + '>' + this.newline;
+	      } else {
+	        r += '>' + this.newline;
+	        ref1 = node.children;
+	        for (i = 0, len = ref1.length; i < len; i++) {
+	          child = ref1[i];
+	          r += (function() {
+	            switch (false) {
+	              case !(child instanceof XMLCData):
+	                return this.cdata(child, level + 1);
+	              case !(child instanceof XMLComment):
+	                return this.comment(child, level + 1);
+	              case !(child instanceof XMLElement):
+	                return this.element(child, level + 1);
+	              case !(child instanceof XMLRaw):
+	                return this.raw(child, level + 1);
+	              case !(child instanceof XMLText):
+	                return this.text(child, level + 1);
+	              case !(child instanceof XMLProcessingInstruction):
+	                return this.processingInstruction(child, level + 1);
+	              default:
+	                throw new Error("Unknown XML node type: " + child.constructor.name);
+	            }
+	          }).call(this);
+	        }
+	        r += space + '</' + node.name + '>' + this.newline;
+	      }
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.processingInstruction = function(node, level) {
+	      var r;
+	      r = this.space(level) + '<?' + node.target;
+	      if (node.value) {
+	        r += ' ' + node.value;
+	      }
+	      r += '?>' + this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.raw = function(node, level) {
+	      return this.space(level) + node.value + this.newline;
+	    };
+	
+	    XMLStringWriter.prototype.text = function(node, level) {
+	      return this.space(level) + node.value + this.newline;
+	    };
+	
+	    XMLStringWriter.prototype.dtdAttList = function(node, level) {
+	      var r;
+	      r = this.space(level) + '<!ATTLIST ' + node.elementName + ' ' + node.attributeName + ' ' + node.attributeType;
+	      if (node.defaultValueType !== '#DEFAULT') {
+	        r += ' ' + node.defaultValueType;
+	      }
+	      if (node.defaultValue) {
+	        r += ' "' + node.defaultValue + '"';
+	      }
+	      r += '>' + this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.dtdElement = function(node, level) {
+	      return this.space(level) + '<!ELEMENT ' + node.name + ' ' + node.value + '>' + this.newline;
+	    };
+	
+	    XMLStringWriter.prototype.dtdEntity = function(node, level) {
+	      var r;
+	      r = this.space(level) + '<!ENTITY';
+	      if (node.pe) {
+	        r += ' %';
+	      }
+	      r += ' ' + node.name;
+	      if (node.value) {
+	        r += ' "' + node.value + '"';
+	      } else {
+	        if (node.pubID && node.sysID) {
+	          r += ' PUBLIC "' + node.pubID + '" "' + node.sysID + '"';
+	        } else if (node.sysID) {
+	          r += ' SYSTEM "' + node.sysID + '"';
+	        }
+	        if (node.nData) {
+	          r += ' NDATA ' + node.nData;
+	        }
+	      }
+	      r += '>' + this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.dtdNotation = function(node, level) {
+	      var r;
+	      r = this.space(level) + '<!NOTATION ' + node.name;
+	      if (node.pubID && node.sysID) {
+	        r += ' PUBLIC "' + node.pubID + '" "' + node.sysID + '"';
+	      } else if (node.pubID) {
+	        r += ' PUBLIC "' + node.pubID + '"';
+	      } else if (node.sysID) {
+	        r += ' SYSTEM "' + node.sysID + '"';
+	      }
+	      r += '>' + this.newline;
+	      return r;
+	    };
+	
+	    XMLStringWriter.prototype.openNode = function(node, level) {
+	      var att, name, r, ref;
+	      level || (level = 0);
+	      if (node instanceof XMLElement) {
+	        r = this.space(level) + '<' + node.name;
+	        ref = node.attributes;
+	        for (name in ref) {
+	          if (!hasProp.call(ref, name)) continue;
+	          att = ref[name];
+	          r += this.attribute(att);
+	        }
+	        r += (node.children ? '>' : '/>') + this.newline;
+	        return r;
+	      } else {
+	        r = this.space(level) + '<!DOCTYPE ' + node.rootNodeName;
+	        if (node.pubID && node.sysID) {
+	          r += ' PUBLIC "' + node.pubID + '" "' + node.sysID + '"';
+	        } else if (node.sysID) {
+	          r += ' SYSTEM "' + node.sysID + '"';
+	        }
+	        r += (node.children ? ' [' : '>') + this.newline;
+	        return r;
+	      }
+	    };
+	
+	    XMLStringWriter.prototype.closeNode = function(node, level) {
+	      level || (level = 0);
+	      switch (false) {
+	        case !(node instanceof XMLElement):
+	          return this.space(level) + '</' + node.name + '>' + this.newline;
+	        case !(node instanceof XMLDocType):
+	          return this.space(level) + ']>' + this.newline;
+	      }
+	    };
+	
+	    return XMLStringWriter;
+	
+	  })(XMLWriterBase);
+	
+	}).call(this);
+
+
+/***/ },
+/* 309 */
+/***/ function(module, exports) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLWriterBase,
+	    hasProp = {}.hasOwnProperty;
+	
+	  module.exports = XMLWriterBase = (function() {
+	    function XMLWriterBase(options) {
+	      var key, ref, ref1, ref2, ref3, ref4, value;
+	      options || (options = {});
+	      this.pretty = options.pretty || false;
+	      this.allowEmpty = (ref = options.allowEmpty) != null ? ref : false;
+	      if (this.pretty) {
+	        this.indent = (ref1 = options.indent) != null ? ref1 : '  ';
+	        this.newline = (ref2 = options.newline) != null ? ref2 : '\n';
+	        this.offset = (ref3 = options.offset) != null ? ref3 : 0;
+	      } else {
+	        this.indent = '';
+	        this.newline = '';
+	        this.offset = 0;
+	      }
+	      ref4 = options.writer || {};
+	      for (key in ref4) {
+	        if (!hasProp.call(ref4, key)) continue;
+	        value = ref4[key];
+	        this[key] = value;
+	      }
+	    }
+	
+	    XMLWriterBase.prototype.set = function(options) {
+	      var key, ref, value;
+	      options || (options = {});
+	      if ("pretty" in options) {
+	        this.pretty = options.pretty;
+	      }
+	      if ("allowEmpty" in options) {
+	        this.allowEmpty = options.allowEmpty;
+	      }
+	      if (this.pretty) {
+	        this.indent = "indent" in options ? options.indent : '  ';
+	        this.newline = "newline" in options ? options.newline : '\n';
+	        this.offset = "offset" in options ? options.offset : 0;
+	      } else {
+	        this.indent = '';
+	        this.newline = '';
+	        this.offset = 0;
+	      }
+	      ref = options.writer || {};
+	      for (key in ref) {
+	        if (!hasProp.call(ref, key)) continue;
+	        value = ref[key];
+	        this[key] = value;
+	      }
+	      return this;
+	    };
+	
+	    XMLWriterBase.prototype.space = function(level) {
+	      if (this.pretty) {
+	        return new Array((level || 0) + this.offset + 1).join(this.indent);
+	      } else {
+	        return '';
+	      }
+	    };
+	
+	    return XMLWriterBase;
+	
+	  })();
+	
+	}).call(this);
+
+
+/***/ },
+/* 310 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLAttribute, XMLCData, XMLComment, XMLDTDAttList, XMLDTDElement, XMLDTDEntity, XMLDTDNotation, XMLDeclaration, XMLDocType, XMLDocumentCB, XMLElement, XMLProcessingInstruction, XMLRaw, XMLStringWriter, XMLStringifier, XMLText, isFunction, isObject, isPlainObject, ref,
+	    hasProp = {}.hasOwnProperty;
+	
+	  ref = __webpack_require__(291), isObject = ref.isObject, isFunction = ref.isFunction, isPlainObject = ref.isPlainObject;
+	
+	  XMLElement = __webpack_require__(294);
+	
+	  XMLCData = __webpack_require__(296);
+	
+	  XMLComment = __webpack_require__(297);
+	
+	  XMLRaw = __webpack_require__(304);
+	
+	  XMLText = __webpack_require__(305);
+	
+	  XMLProcessingInstruction = __webpack_require__(306);
+	
+	  XMLDeclaration = __webpack_require__(298);
+	
+	  XMLDocType = __webpack_require__(299);
+	
+	  XMLDTDAttList = __webpack_require__(300);
+	
+	  XMLDTDEntity = __webpack_require__(301);
+	
+	  XMLDTDElement = __webpack_require__(302);
+	
+	  XMLDTDNotation = __webpack_require__(303);
+	
+	  XMLAttribute = __webpack_require__(295);
+	
+	  XMLStringifier = __webpack_require__(307);
+	
+	  XMLStringWriter = __webpack_require__(308);
+	
+	  module.exports = XMLDocumentCB = (function() {
+	    function XMLDocumentCB(options, onData, onEnd) {
+	      var writerOptions;
+	      options || (options = {});
+	      if (!options.writer) {
+	        options.writer = new XMLStringWriter(options);
+	      } else if (isPlainObject(options.writer)) {
+	        writerOptions = options.writer;
+	        options.writer = new XMLStringWriter(writerOptions);
+	      }
+	      this.options = options;
+	      this.writer = options.writer;
+	      this.stringify = new XMLStringifier(options);
+	      this.onDataCallback = onData || function() {};
+	      this.onEndCallback = onEnd || function() {};
+	      this.currentNode = null;
+	      this.currentLevel = -1;
+	      this.openTags = {};
+	      this.documentStarted = false;
+	      this.documentCompleted = false;
+	      this.root = null;
+	    }
+	
+	    XMLDocumentCB.prototype.node = function(name, attributes, text) {
+	      var ref1;
+	      if (name == null) {
+	        throw new Error("Missing node name");
+	      }
+	      if (this.root && this.currentLevel === -1) {
+	        throw new Error("Document can only have one root node");
+	      }
+	      this.openCurrent();
+	      name = name.valueOf();
+	      if (attributes == null) {
+	        attributes = {};
+	      }
+	      attributes = attributes.valueOf();
+	      if (!isObject(attributes)) {
+	        ref1 = [attributes, text], text = ref1[0], attributes = ref1[1];
+	      }
+	      this.currentNode = new XMLElement(this, name, attributes);
+	      this.currentNode.children = false;
+	      this.currentLevel++;
+	      this.openTags[this.currentLevel] = this.currentNode;
+	      if (text != null) {
+	        this.text(text);
+	      }
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.element = function(name, attributes, text) {
+	      if (this.currentNode && this.currentNode instanceof XMLDocType) {
+	        return this.dtdElement.apply(this, arguments);
+	      } else {
+	        return this.node(name, attributes, text);
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.attribute = function(name, value) {
+	      var attName, attValue;
+	      if (!this.currentNode || this.currentNode.children) {
+	        throw new Error("att() can only be used immediately after an ele() call in callback mode");
+	      }
+	      if (name != null) {
+	        name = name.valueOf();
+	      }
+	      if (isObject(name)) {
+	        for (attName in name) {
+	          if (!hasProp.call(name, attName)) continue;
+	          attValue = name[attName];
+	          this.attribute(attName, attValue);
+	        }
+	      } else {
+	        if (isFunction(value)) {
+	          value = value.apply();
+	        }
+	        if (!this.options.skipNullAttributes || (value != null)) {
+	          this.currentNode.attributes[name] = new XMLAttribute(this, name, value);
+	        }
+	      }
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.text = function(value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLText(this, value);
+	      this.onData(this.writer.text(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.cdata = function(value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLCData(this, value);
+	      this.onData(this.writer.cdata(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.comment = function(value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLComment(this, value);
+	      this.onData(this.writer.comment(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.raw = function(value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLRaw(this, value);
+	      this.onData(this.writer.raw(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.instruction = function(target, value) {
+	      var i, insTarget, insValue, len, node;
+	      this.openCurrent();
+	      if (target != null) {
+	        target = target.valueOf();
+	      }
+	      if (value != null) {
+	        value = value.valueOf();
+	      }
+	      if (Array.isArray(target)) {
+	        for (i = 0, len = target.length; i < len; i++) {
+	          insTarget = target[i];
+	          this.instruction(insTarget);
+	        }
+	      } else if (isObject(target)) {
+	        for (insTarget in target) {
+	          if (!hasProp.call(target, insTarget)) continue;
+	          insValue = target[insTarget];
+	          this.instruction(insTarget, insValue);
+	        }
+	      } else {
+	        if (isFunction(value)) {
+	          value = value.apply();
+	        }
+	        node = new XMLProcessingInstruction(this, target, value);
+	        this.onData(this.writer.processingInstruction(node, this.currentLevel + 1));
+	      }
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.declaration = function(version, encoding, standalone) {
+	      var node;
+	      this.openCurrent();
+	      if (this.documentStarted) {
+	        throw new Error("declaration() must be the first node");
+	      }
+	      node = new XMLDeclaration(this, version, encoding, standalone);
+	      this.onData(this.writer.declaration(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.doctype = function(root, pubID, sysID) {
+	      this.openCurrent();
+	      if (root == null) {
+	        throw new Error("Missing root node name");
+	      }
+	      if (this.root) {
+	        throw new Error("dtd() must come before the root node");
+	      }
+	      this.currentNode = new XMLDocType(this, pubID, sysID);
+	      this.currentNode.rootNodeName = root;
+	      this.currentNode.children = false;
+	      this.currentLevel++;
+	      this.openTags[this.currentLevel] = this.currentNode;
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.dtdElement = function(name, value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLDTDElement(this, name, value);
+	      this.onData(this.writer.dtdElement(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.attList = function(elementName, attributeName, attributeType, defaultValueType, defaultValue) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLDTDAttList(this, elementName, attributeName, attributeType, defaultValueType, defaultValue);
+	      this.onData(this.writer.dtdAttList(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.entity = function(name, value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLDTDEntity(this, false, name, value);
+	      this.onData(this.writer.dtdEntity(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.pEntity = function(name, value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLDTDEntity(this, true, name, value);
+	      this.onData(this.writer.dtdEntity(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.notation = function(name, value) {
+	      var node;
+	      this.openCurrent();
+	      node = new XMLDTDNotation(this, name, value);
+	      this.onData(this.writer.dtdNotation(node, this.currentLevel + 1));
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.up = function() {
+	      if (this.currentLevel < 0) {
+	        throw new Error("The document node has no parent");
+	      }
+	      if (this.currentNode) {
+	        if (this.currentNode.children) {
+	          this.closeNode(this.currentNode);
+	        } else {
+	          this.openNode(this.currentNode);
+	        }
+	        this.currentNode = null;
+	      } else {
+	        this.closeNode(this.openTags[this.currentLevel]);
+	      }
+	      delete this.openTags[this.currentLevel];
+	      this.currentLevel--;
+	      return this;
+	    };
+	
+	    XMLDocumentCB.prototype.end = function() {
+	      while (this.currentLevel >= 0) {
+	        this.up();
+	      }
+	      return this.onEnd();
+	    };
+	
+	    XMLDocumentCB.prototype.openCurrent = function() {
+	      if (this.currentNode) {
+	        this.currentNode.children = true;
+	        return this.openNode(this.currentNode);
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.openNode = function(node) {
+	      if (!node.isOpen) {
+	        if (!this.root && this.currentLevel === 0 && node instanceof XMLElement) {
+	          this.root = node;
+	        }
+	        this.onData(this.writer.openNode(node, this.currentLevel));
+	        return node.isOpen = true;
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.closeNode = function(node) {
+	      if (!node.isClosed) {
+	        this.onData(this.writer.closeNode(node, this.currentLevel));
+	        return node.isClosed = true;
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.onData = function(chunk) {
+	      this.documentStarted = true;
+	      return this.onDataCallback(chunk);
+	    };
+	
+	    XMLDocumentCB.prototype.onEnd = function() {
+	      this.documentCompleted = true;
+	      return this.onEndCallback();
+	    };
+	
+	    XMLDocumentCB.prototype.ele = function() {
+	      return this.element.apply(this, arguments);
+	    };
+	
+	    XMLDocumentCB.prototype.nod = function(name, attributes, text) {
+	      return this.node(name, attributes, text);
+	    };
+	
+	    XMLDocumentCB.prototype.txt = function(value) {
+	      return this.text(value);
+	    };
+	
+	    XMLDocumentCB.prototype.dat = function(value) {
+	      return this.cdata(value);
+	    };
+	
+	    XMLDocumentCB.prototype.com = function(value) {
+	      return this.comment(value);
+	    };
+	
+	    XMLDocumentCB.prototype.ins = function(target, value) {
+	      return this.instruction(target, value);
+	    };
+	
+	    XMLDocumentCB.prototype.dec = function(version, encoding, standalone) {
+	      return this.declaration(version, encoding, standalone);
+	    };
+	
+	    XMLDocumentCB.prototype.dtd = function(root, pubID, sysID) {
+	      return this.doctype(root, pubID, sysID);
+	    };
+	
+	    XMLDocumentCB.prototype.e = function(name, attributes, text) {
+	      return this.element(name, attributes, text);
+	    };
+	
+	    XMLDocumentCB.prototype.n = function(name, attributes, text) {
+	      return this.node(name, attributes, text);
+	    };
+	
+	    XMLDocumentCB.prototype.t = function(value) {
+	      return this.text(value);
+	    };
+	
+	    XMLDocumentCB.prototype.d = function(value) {
+	      return this.cdata(value);
+	    };
+	
+	    XMLDocumentCB.prototype.c = function(value) {
+	      return this.comment(value);
+	    };
+	
+	    XMLDocumentCB.prototype.r = function(value) {
+	      return this.raw(value);
+	    };
+	
+	    XMLDocumentCB.prototype.i = function(target, value) {
+	      return this.instruction(target, value);
+	    };
+	
+	    XMLDocumentCB.prototype.att = function() {
+	      if (this.currentNode && this.currentNode instanceof XMLDocType) {
+	        return this.attList.apply(this, arguments);
+	      } else {
+	        return this.attribute.apply(this, arguments);
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.a = function() {
+	      if (this.currentNode && this.currentNode instanceof XMLDocType) {
+	        return this.attList.apply(this, arguments);
+	      } else {
+	        return this.attribute.apply(this, arguments);
+	      }
+	    };
+	
+	    XMLDocumentCB.prototype.ent = function(name, value) {
+	      return this.entity(name, value);
+	    };
+	
+	    XMLDocumentCB.prototype.pent = function(name, value) {
+	      return this.pEntity(name, value);
+	    };
+	
+	    XMLDocumentCB.prototype.not = function(name, value) {
+	      return this.notation(name, value);
+	    };
+	
+	    return XMLDocumentCB;
+	
+	  })();
+	
+	}).call(this);
+
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.10.0
+	(function() {
+	  var XMLCData, XMLComment, XMLDTDAttList, XMLDTDElement, XMLDTDEntity, XMLDTDNotation, XMLDeclaration, XMLDocType, XMLElement, XMLProcessingInstruction, XMLRaw, XMLStreamWriter, XMLText, XMLWriterBase,
+	    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	    hasProp = {}.hasOwnProperty;
+	
+	  XMLDeclaration = __webpack_require__(298);
+	
+	  XMLDocType = __webpack_require__(299);
+	
+	  XMLCData = __webpack_require__(296);
+	
+	  XMLComment = __webpack_require__(297);
+	
+	  XMLElement = __webpack_require__(294);
+	
+	  XMLRaw = __webpack_require__(304);
+	
+	  XMLText = __webpack_require__(305);
+	
+	  XMLProcessingInstruction = __webpack_require__(306);
+	
+	  XMLDTDAttList = __webpack_require__(300);
+	
+	  XMLDTDElement = __webpack_require__(302);
+	
+	  XMLDTDEntity = __webpack_require__(301);
+	
+	  XMLDTDNotation = __webpack_require__(303);
+	
+	  XMLWriterBase = __webpack_require__(309);
+	
+	  module.exports = XMLStreamWriter = (function(superClass) {
+	    extend(XMLStreamWriter, superClass);
+	
+	    function XMLStreamWriter(stream, options) {
+	      this.stream = stream;
+	      XMLStreamWriter.__super__.constructor.call(this, options);
+	    }
+	
+	    XMLStreamWriter.prototype.document = function(doc) {
+	      var child, i, j, len, len1, ref, ref1, results;
+	      ref = doc.children;
+	      for (i = 0, len = ref.length; i < len; i++) {
+	        child = ref[i];
+	        child.isLastRootNode = false;
+	      }
+	      doc.children[doc.children.length - 1].isLastRootNode = true;
+	      ref1 = doc.children;
+	      results = [];
+	      for (j = 0, len1 = ref1.length; j < len1; j++) {
+	        child = ref1[j];
+	        switch (false) {
+	          case !(child instanceof XMLDeclaration):
+	            results.push(this.declaration(child));
+	            break;
+	          case !(child instanceof XMLDocType):
+	            results.push(this.docType(child));
+	            break;
+	          case !(child instanceof XMLComment):
+	            results.push(this.comment(child));
+	            break;
+	          case !(child instanceof XMLProcessingInstruction):
+	            results.push(this.processingInstruction(child));
+	            break;
+	          default:
+	            results.push(this.element(child));
+	        }
+	      }
+	      return results;
+	    };
+	
+	    XMLStreamWriter.prototype.attribute = function(att) {
+	      return this.stream.write(' ' + att.name + '="' + att.value + '"');
+	    };
+	
+	    XMLStreamWriter.prototype.cdata = function(node, level) {
+	      return this.stream.write(this.space(level) + '<![CDATA[' + node.text + ']]>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.comment = function(node, level) {
+	      return this.stream.write(this.space(level) + '<!-- ' + node.text + ' -->' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.declaration = function(node, level) {
+	      this.stream.write(this.space(level));
+	      this.stream.write('<?xml version="' + node.version + '"');
+	      if (node.encoding != null) {
+	        this.stream.write(' encoding="' + node.encoding + '"');
+	      }
+	      if (node.standalone != null) {
+	        this.stream.write(' standalone="' + node.standalone + '"');
+	      }
+	      this.stream.write('?>');
+	      return this.stream.write(this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.docType = function(node, level) {
+	      var child, i, len, ref;
+	      level || (level = 0);
+	      this.stream.write(this.space(level));
+	      this.stream.write('<!DOCTYPE ' + node.root().name);
+	      if (node.pubID && node.sysID) {
+	        this.stream.write(' PUBLIC "' + node.pubID + '" "' + node.sysID + '"');
+	      } else if (node.sysID) {
+	        this.stream.write(' SYSTEM "' + node.sysID + '"');
+	      }
+	      if (node.children.length > 0) {
+	        this.stream.write(' [');
+	        this.stream.write(this.endline(node));
+	        ref = node.children;
+	        for (i = 0, len = ref.length; i < len; i++) {
+	          child = ref[i];
+	          switch (false) {
+	            case !(child instanceof XMLDTDAttList):
+	              this.dtdAttList(child, level + 1);
+	              break;
+	            case !(child instanceof XMLDTDElement):
+	              this.dtdElement(child, level + 1);
+	              break;
+	            case !(child instanceof XMLDTDEntity):
+	              this.dtdEntity(child, level + 1);
+	              break;
+	            case !(child instanceof XMLDTDNotation):
+	              this.dtdNotation(child, level + 1);
+	              break;
+	            case !(child instanceof XMLCData):
+	              this.cdata(child, level + 1);
+	              break;
+	            case !(child instanceof XMLComment):
+	              this.comment(child, level + 1);
+	              break;
+	            case !(child instanceof XMLProcessingInstruction):
+	              this.processingInstruction(child, level + 1);
+	              break;
+	            default:
+	              throw new Error("Unknown DTD node type: " + child.constructor.name);
+	          }
+	        }
+	        this.stream.write(']');
+	      }
+	      this.stream.write('>');
+	      return this.stream.write(this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.element = function(node, level) {
+	      var att, child, i, len, name, ref, ref1, space;
+	      level || (level = 0);
+	      space = this.space(level);
+	      this.stream.write(space + '<' + node.name);
+	      ref = node.attributes;
+	      for (name in ref) {
+	        if (!hasProp.call(ref, name)) continue;
+	        att = ref[name];
+	        this.attribute(att);
+	      }
+	      if (node.children.length === 0 || node.children.every(function(e) {
+	        return e.value === '';
+	      })) {
+	        if (this.allowEmpty) {
+	          this.stream.write('></' + node.name + '>');
+	        } else {
+	          this.stream.write('/>');
+	        }
+	      } else if (this.pretty && node.children.length === 1 && (node.children[0].value != null)) {
+	        this.stream.write('>');
+	        this.stream.write(node.children[0].value);
+	        this.stream.write('</' + node.name + '>');
+	      } else {
+	        this.stream.write('>' + this.newline);
+	        ref1 = node.children;
+	        for (i = 0, len = ref1.length; i < len; i++) {
+	          child = ref1[i];
+	          switch (false) {
+	            case !(child instanceof XMLCData):
+	              this.cdata(child, level + 1);
+	              break;
+	            case !(child instanceof XMLComment):
+	              this.comment(child, level + 1);
+	              break;
+	            case !(child instanceof XMLElement):
+	              this.element(child, level + 1);
+	              break;
+	            case !(child instanceof XMLRaw):
+	              this.raw(child, level + 1);
+	              break;
+	            case !(child instanceof XMLText):
+	              this.text(child, level + 1);
+	              break;
+	            case !(child instanceof XMLProcessingInstruction):
+	              this.processingInstruction(child, level + 1);
+	              break;
+	            default:
+	              throw new Error("Unknown XML node type: " + child.constructor.name);
+	          }
+	        }
+	        this.stream.write(space + '</' + node.name + '>');
+	      }
+	      return this.stream.write(this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.processingInstruction = function(node, level) {
+	      this.stream.write(this.space(level) + '<?' + node.target);
+	      if (node.value) {
+	        this.stream.write(' ' + node.value);
+	      }
+	      return this.stream.write('?>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.raw = function(node, level) {
+	      return this.stream.write(this.space(level) + node.value + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.text = function(node, level) {
+	      return this.stream.write(this.space(level) + node.value + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.dtdAttList = function(node, level) {
+	      this.stream.write(this.space(level) + '<!ATTLIST ' + node.elementName + ' ' + node.attributeName + ' ' + node.attributeType);
+	      if (node.defaultValueType !== '#DEFAULT') {
+	        this.stream.write(' ' + node.defaultValueType);
+	      }
+	      if (node.defaultValue) {
+	        this.stream.write(' "' + node.defaultValue + '"');
+	      }
+	      return this.stream.write('>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.dtdElement = function(node, level) {
+	      return this.stream.write(this.space(level) + '<!ELEMENT ' + node.name + ' ' + node.value + '>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.dtdEntity = function(node, level) {
+	      this.stream.write(this.space(level) + '<!ENTITY');
+	      if (node.pe) {
+	        this.stream.write(' %');
+	      }
+	      this.stream.write(' ' + node.name);
+	      if (node.value) {
+	        this.stream.write(' "' + node.value + '"');
+	      } else {
+	        if (node.pubID && node.sysID) {
+	          this.stream.write(' PUBLIC "' + node.pubID + '" "' + node.sysID + '"');
+	        } else if (node.sysID) {
+	          this.stream.write(' SYSTEM "' + node.sysID + '"');
+	        }
+	        if (node.nData) {
+	          this.stream.write(' NDATA ' + node.nData);
+	        }
+	      }
+	      return this.stream.write('>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.dtdNotation = function(node, level) {
+	      this.stream.write(this.space(level) + '<!NOTATION ' + node.name);
+	      if (node.pubID && node.sysID) {
+	        this.stream.write(' PUBLIC "' + node.pubID + '" "' + node.sysID + '"');
+	      } else if (node.pubID) {
+	        this.stream.write(' PUBLIC "' + node.pubID + '"');
+	      } else if (node.sysID) {
+	        this.stream.write(' SYSTEM "' + node.sysID + '"');
+	      }
+	      return this.stream.write('>' + this.endline(node));
+	    };
+	
+	    XMLStreamWriter.prototype.endline = function(node) {
+	      if (!node.isLastRootNode) {
+	        return this.newline;
+	      } else {
+	        return '';
+	      }
+	    };
+	
+	    return XMLStreamWriter;
+	
+	  })(XMLWriterBase);
+	
+	}).call(this);
+
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Generated by CoffeeScript 1.6.3
+	(function() {
+	  var xml2js;
+	
+	  xml2js = __webpack_require__(272);
+	
+	  exports.stripBOM = function(str) {
+	    if (str[0] === '\uFEFF') {
+	      return str.substring(1);
+	    } else {
+	      return str;
+	    }
+	  };
+	
+	}).call(this);
+
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var http = module.exports;
+	var EventEmitter = __webpack_require__(275).EventEmitter;
+	var Request = __webpack_require__(314);
+	var url = __webpack_require__(317)
+	
+	http.request = function (params, cb) {
+	    if (typeof params === 'string') {
+	        params = url.parse(params)
+	    }
+	    if (!params) params = {};
+	    if (!params.host && !params.port) {
+	        params.port = parseInt(window.location.port, 10);
+	    }
+	    if (!params.host && params.hostname) {
+	        params.host = params.hostname;
+	    }
+	
+	    if (!params.protocol) {
+	        if (params.scheme) {
+	            params.protocol = params.scheme + ':';
+	        } else {
+	            params.protocol = window.location.protocol;
+	        }
+	    }
+	
+	    if (!params.host) {
+	        params.host = window.location.hostname || window.location.host;
+	    }
+	    if (/:/.test(params.host)) {
+	        if (!params.port) {
+	            params.port = params.host.split(':')[1];
+	        }
+	        params.host = params.host.split(':')[0];
+	    }
+	    if (!params.port) params.port = params.protocol == 'https:' ? 443 : 80;
+	    
+	    var req = new Request(new xhrHttp, params);
+	    if (cb) req.on('response', cb);
+	    return req;
+	};
+	
+	http.get = function (params, cb) {
+	    params.method = 'GET';
+	    var req = http.request(params, cb);
+	    req.end();
+	    return req;
+	};
+	
+	http.Agent = function () {};
+	http.Agent.defaultMaxSockets = 4;
+	
+	var xhrHttp = (function () {
+	    if (typeof window === 'undefined') {
+	        throw new Error('no window object present');
+	    }
+	    else if (window.XMLHttpRequest) {
+	        return window.XMLHttpRequest;
+	    }
+	    else if (window.ActiveXObject) {
+	        var axs = [
+	            'Msxml2.XMLHTTP.6.0',
+	            'Msxml2.XMLHTTP.3.0',
+	            'Microsoft.XMLHTTP'
+	        ];
+	        for (var i = 0; i < axs.length; i++) {
+	            try {
+	                var ax = new(window.ActiveXObject)(axs[i]);
+	                return function () {
+	                    if (ax) {
+	                        var ax_ = ax;
+	                        ax = null;
+	                        return ax_;
+	                    }
+	                    else {
+	                        return new(window.ActiveXObject)(axs[i]);
+	                    }
+	                };
+	            }
+	            catch (e) {}
+	        }
+	        throw new Error('ajax not supported in this browser')
+	    }
+	    else {
+	        throw new Error('ajax not supported in this browser');
+	    }
+	})();
+	
+	http.STATUS_CODES = {
+	    100 : 'Continue',
+	    101 : 'Switching Protocols',
+	    102 : 'Processing',                 // RFC 2518, obsoleted by RFC 4918
+	    200 : 'OK',
+	    201 : 'Created',
+	    202 : 'Accepted',
+	    203 : 'Non-Authoritative Information',
+	    204 : 'No Content',
+	    205 : 'Reset Content',
+	    206 : 'Partial Content',
+	    207 : 'Multi-Status',               // RFC 4918
+	    300 : 'Multiple Choices',
+	    301 : 'Moved Permanently',
+	    302 : 'Moved Temporarily',
+	    303 : 'See Other',
+	    304 : 'Not Modified',
+	    305 : 'Use Proxy',
+	    307 : 'Temporary Redirect',
+	    400 : 'Bad Request',
+	    401 : 'Unauthorized',
+	    402 : 'Payment Required',
+	    403 : 'Forbidden',
+	    404 : 'Not Found',
+	    405 : 'Method Not Allowed',
+	    406 : 'Not Acceptable',
+	    407 : 'Proxy Authentication Required',
+	    408 : 'Request Time-out',
+	    409 : 'Conflict',
+	    410 : 'Gone',
+	    411 : 'Length Required',
+	    412 : 'Precondition Failed',
+	    413 : 'Request Entity Too Large',
+	    414 : 'Request-URI Too Large',
+	    415 : 'Unsupported Media Type',
+	    416 : 'Requested Range Not Satisfiable',
+	    417 : 'Expectation Failed',
+	    418 : 'I\'m a teapot',              // RFC 2324
+	    422 : 'Unprocessable Entity',       // RFC 4918
+	    423 : 'Locked',                     // RFC 4918
+	    424 : 'Failed Dependency',          // RFC 4918
+	    425 : 'Unordered Collection',       // RFC 4918
+	    426 : 'Upgrade Required',           // RFC 2817
+	    428 : 'Precondition Required',      // RFC 6585
+	    429 : 'Too Many Requests',          // RFC 6585
+	    431 : 'Request Header Fields Too Large',// RFC 6585
+	    500 : 'Internal Server Error',
+	    501 : 'Not Implemented',
+	    502 : 'Bad Gateway',
+	    503 : 'Service Unavailable',
+	    504 : 'Gateway Time-out',
+	    505 : 'HTTP Version Not Supported',
+	    506 : 'Variant Also Negotiates',    // RFC 2295
+	    507 : 'Insufficient Storage',       // RFC 4918
+	    509 : 'Bandwidth Limit Exceeded',
+	    510 : 'Not Extended',               // RFC 2774
+	    511 : 'Network Authentication Required' // RFC 6585
+	};
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stream = __webpack_require__(274);
+	var Response = __webpack_require__(315);
+	var Base64 = __webpack_require__(316);
+	var inherits = __webpack_require__(107);
+	
+	var Request = module.exports = function (xhr, params) {
+	    var self = this;
+	    self.writable = true;
+	    self.xhr = xhr;
+	    self.body = [];
+	    
+	    self.uri = (params.protocol || 'http:') + '//'
+	        + params.host
+	        + (params.port ? ':' + params.port : '')
+	        + (params.path || '/')
+	    ;
+	    
+	    if (typeof params.withCredentials === 'undefined') {
+	        params.withCredentials = true;
+	    }
+	
+	    try { xhr.withCredentials = params.withCredentials }
+	    catch (e) {}
+	    
+	    if (params.responseType) try { xhr.responseType = params.responseType }
+	    catch (e) {}
+	    
+	    xhr.open(
+	        params.method || 'GET',
+	        self.uri,
+	        true
+	    );
+	
+	    xhr.onerror = function(event) {
+	        self.emit('error', new Error('Network error'));
+	    };
+	
+	    self._headers = {};
+	    
+	    if (params.headers) {
+	        var keys = objectKeys(params.headers);
+	        for (var i = 0; i < keys.length; i++) {
+	            var key = keys[i];
+	            if (!self.isSafeRequestHeader(key)) continue;
+	            var value = params.headers[key];
+	            self.setHeader(key, value);
+	        }
+	    }
+	    
+	    if (params.auth) {
+	        //basic auth
+	        this.setHeader('Authorization', 'Basic ' + Base64.btoa(params.auth));
+	    }
+	
+	    var res = new Response;
+	    res.on('close', function () {
+	        self.emit('close');
+	    });
+	    
+	    res.on('ready', function () {
+	        self.emit('response', res);
+	    });
+	
+	    res.on('error', function (err) {
+	        self.emit('error', err);
+	    });
+	    
+	    xhr.onreadystatechange = function () {
+	        // Fix for IE9 bug
+	        // SCRIPT575: Could not complete the operation due to error c00c023f
+	        // It happens when a request is aborted, calling the success callback anyway with readyState === 4
+	        if (xhr.__aborted) return;
+	        res.handle(xhr);
+	    };
+	};
+	
+	inherits(Request, Stream);
+	
+	Request.prototype.setHeader = function (key, value) {
+	    this._headers[key.toLowerCase()] = value
+	};
+	
+	Request.prototype.getHeader = function (key) {
+	    return this._headers[key.toLowerCase()]
+	};
+	
+	Request.prototype.removeHeader = function (key) {
+	    delete this._headers[key.toLowerCase()]
+	};
+	
+	Request.prototype.write = function (s) {
+	    this.body.push(s);
+	};
+	
+	Request.prototype.destroy = function (s) {
+	    this.xhr.__aborted = true;
+	    this.xhr.abort();
+	    this.emit('close');
+	};
+	
+	Request.prototype.end = function (s) {
+	    if (s !== undefined) this.body.push(s);
+	
+	    var keys = objectKeys(this._headers);
+	    for (var i = 0; i < keys.length; i++) {
+	        var key = keys[i];
+	        var value = this._headers[key];
+	        if (isArray(value)) {
+	            for (var j = 0; j < value.length; j++) {
+	                this.xhr.setRequestHeader(key, value[j]);
+	            }
+	        }
+	        else this.xhr.setRequestHeader(key, value)
+	    }
+	
+	    if (this.body.length === 0) {
+	        this.xhr.send('');
+	    }
+	    else if (typeof this.body[0] === 'string') {
+	        this.xhr.send(this.body.join(''));
+	    }
+	    else if (isArray(this.body[0])) {
+	        var body = [];
+	        for (var i = 0; i < this.body.length; i++) {
+	            body.push.apply(body, this.body[i]);
+	        }
+	        this.xhr.send(body);
+	    }
+	    else if (/Array/.test(Object.prototype.toString.call(this.body[0]))) {
+	        var len = 0;
+	        for (var i = 0; i < this.body.length; i++) {
+	            len += this.body[i].length;
+	        }
+	        var body = new(this.body[0].constructor)(len);
+	        var k = 0;
+	        
+	        for (var i = 0; i < this.body.length; i++) {
+	            var b = this.body[i];
+	            for (var j = 0; j < b.length; j++) {
+	                body[k++] = b[j];
+	            }
+	        }
+	        this.xhr.send(body);
+	    }
+	    else if (isXHR2Compatible(this.body[0])) {
+	        this.xhr.send(this.body[0]);
+	    }
+	    else {
+	        var body = '';
+	        for (var i = 0; i < this.body.length; i++) {
+	            body += this.body[i].toString();
+	        }
+	        this.xhr.send(body);
+	    }
+	};
+	
+	// Taken from http://dxr.mozilla.org/mozilla/mozilla-central/content/base/src/nsXMLHttpRequest.cpp.html
+	Request.unsafeHeaders = [
+	    "accept-charset",
+	    "accept-encoding",
+	    "access-control-request-headers",
+	    "access-control-request-method",
+	    "connection",
+	    "content-length",
+	    "cookie",
+	    "cookie2",
+	    "content-transfer-encoding",
+	    "date",
+	    "expect",
+	    "host",
+	    "keep-alive",
+	    "origin",
+	    "referer",
+	    "te",
+	    "trailer",
+	    "transfer-encoding",
+	    "upgrade",
+	    "user-agent",
+	    "via"
+	];
+	
+	Request.prototype.isSafeRequestHeader = function (headerName) {
+	    if (!headerName) return false;
+	    return indexOf(Request.unsafeHeaders, headerName.toLowerCase()) === -1;
+	};
+	
+	var objectKeys = Object.keys || function (obj) {
+	    var keys = [];
+	    for (var key in obj) keys.push(key);
+	    return keys;
+	};
+	
+	var isArray = Array.isArray || function (xs) {
+	    return Object.prototype.toString.call(xs) === '[object Array]';
+	};
+	
+	var indexOf = function (xs, x) {
+	    if (xs.indexOf) return xs.indexOf(x);
+	    for (var i = 0; i < xs.length; i++) {
+	        if (xs[i] === x) return i;
+	    }
+	    return -1;
+	};
+	
+	var isXHR2Compatible = function (obj) {
+	    if (typeof Blob !== 'undefined' && obj instanceof Blob) return true;
+	    if (typeof ArrayBuffer !== 'undefined' && obj instanceof ArrayBuffer) return true;
+	    if (typeof FormData !== 'undefined' && obj instanceof FormData) return true;
+	};
+
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stream = __webpack_require__(274);
+	var util = __webpack_require__(105);
+	
+	var Response = module.exports = function (res) {
+	    this.offset = 0;
+	    this.readable = true;
+	};
+	
+	util.inherits(Response, Stream);
+	
+	var capable = {
+	    streaming : true,
+	    status2 : true
+	};
+	
+	function parseHeaders (res) {
+	    var lines = res.getAllResponseHeaders().split(/\r?\n/);
+	    var headers = {};
+	    for (var i = 0; i < lines.length; i++) {
+	        var line = lines[i];
+	        if (line === '') continue;
+	        
+	        var m = line.match(/^([^:]+):\s*(.*)/);
+	        if (m) {
+	            var key = m[1].toLowerCase(), value = m[2];
+	            
+	            if (headers[key] !== undefined) {
+	            
+	                if (isArray(headers[key])) {
+	                    headers[key].push(value);
+	                }
+	                else {
+	                    headers[key] = [ headers[key], value ];
+	                }
+	            }
+	            else {
+	                headers[key] = value;
+	            }
+	        }
+	        else {
+	            headers[line] = true;
+	        }
+	    }
+	    return headers;
+	}
+	
+	Response.prototype.getResponse = function (xhr) {
+	    var respType = String(xhr.responseType).toLowerCase();
+	    if (respType === 'blob') return xhr.responseBlob || xhr.response;
+	    if (respType === 'arraybuffer') return xhr.response;
+	    return xhr.responseText;
+	}
+	
+	Response.prototype.getHeader = function (key) {
+	    return this.headers[key.toLowerCase()];
+	};
+	
+	Response.prototype.handle = function (res) {
+	    if (res.readyState === 2 && capable.status2) {
+	        try {
+	            this.statusCode = res.status;
+	            this.headers = parseHeaders(res);
+	        }
+	        catch (err) {
+	            capable.status2 = false;
+	        }
+	        
+	        if (capable.status2) {
+	            this.emit('ready');
+	        }
+	    }
+	    else if (capable.streaming && res.readyState === 3) {
+	        try {
+	            if (!this.statusCode) {
+	                this.statusCode = res.status;
+	                this.headers = parseHeaders(res);
+	                this.emit('ready');
+	            }
+	        }
+	        catch (err) {}
+	        
+	        try {
+	            this._emitData(res);
+	        }
+	        catch (err) {
+	            capable.streaming = false;
+	        }
+	    }
+	    else if (res.readyState === 4) {
+	        if (!this.statusCode) {
+	            this.statusCode = res.status;
+	            this.emit('ready');
+	        }
+	        this._emitData(res);
+	        
+	        if (res.error) {
+	            this.emit('error', this.getResponse(res));
+	        }
+	        else this.emit('end');
+	        
+	        this.emit('close');
+	    }
+	};
+	
+	Response.prototype._emitData = function (res) {
+	    var respBody = this.getResponse(res);
+	    if (respBody.toString().match(/ArrayBuffer/)) {
+	        this.emit('data', new Uint8Array(respBody, this.offset));
+	        this.offset = respBody.byteLength;
+	        return;
+	    }
+	    if (respBody.length > this.offset) {
+	        this.emit('data', respBody.slice(this.offset));
+	        this.offset = respBody.length;
+	    }
+	};
+	
+	var isArray = Array.isArray || function (xs) {
+	    return Object.prototype.toString.call(xs) === '[object Array]';
+	};
+
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	;(function () {
+	
+	  var object =  true ? exports : this; // #8: web workers
+	  var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+	
+	  function InvalidCharacterError(message) {
+	    this.message = message;
+	  }
+	  InvalidCharacterError.prototype = new Error;
+	  InvalidCharacterError.prototype.name = 'InvalidCharacterError';
+	
+	  // encoder
+	  // [https://gist.github.com/999166] by [https://github.com/nignag]
+	  object.btoa || (
+	  object.btoa = function (input) {
+	    for (
+	      // initialize result and counter
+	      var block, charCode, idx = 0, map = chars, output = '';
+	      // if the next input index does not exist:
+	      //   change the mapping table to "="
+	      //   check if d has no fractional digits
+	      input.charAt(idx | 0) || (map = '=', idx % 1);
+	      // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+	      output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+	    ) {
+	      charCode = input.charCodeAt(idx += 3/4);
+	      if (charCode > 0xFF) {
+	        throw new InvalidCharacterError("'btoa' failed: The string to be encoded contains characters outside of the Latin1 range.");
+	      }
+	      block = block << 8 | charCode;
+	    }
+	    return output;
+	  });
+	
+	  // decoder
+	  // [https://gist.github.com/1020396] by [https://github.com/atk]
+	  object.atob || (
+	  object.atob = function (input) {
+	    input = input.replace(/=+$/, '');
+	    if (input.length % 4 == 1) {
+	      throw new InvalidCharacterError("'atob' failed: The string to be decoded is not correctly encoded.");
+	    }
+	    for (
+	      // initialize result and counters
+	      var bc = 0, bs, buffer, idx = 0, output = '';
+	      // get next character
+	      buffer = input.charAt(idx++);
+	      // character found in table? initialize bit storage and add its ascii value;
+	      ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer,
+	        // and if not first of each 4 characters,
+	        // convert the first 8 bits to one ascii character
+	        bc++ % 4) ? output += String.fromCharCode(255 & bs >> (-2 * bc & 6)) : 0
+	    ) {
+	      // try to find character in table (0-63, not found => -1)
+	      buffer = chars.indexOf(buffer);
+	    }
+	    return output;
+	  });
+	
+	}());
+
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	var punycode = __webpack_require__(318);
+	
+	exports.parse = urlParse;
+	exports.resolve = urlResolve;
+	exports.resolveObject = urlResolveObject;
+	exports.format = urlFormat;
+	
+	exports.Url = Url;
+	
+	function Url() {
+	  this.protocol = null;
+	  this.slashes = null;
+	  this.auth = null;
+	  this.host = null;
+	  this.port = null;
+	  this.hostname = null;
+	  this.hash = null;
+	  this.search = null;
+	  this.query = null;
+	  this.pathname = null;
+	  this.path = null;
+	  this.href = null;
+	}
+	
+	// Reference: RFC 3986, RFC 1808, RFC 2396
+	
+	// define these here so at least they only have to be
+	// compiled once on the first module load.
+	var protocolPattern = /^([a-z0-9.+-]+:)/i,
+	    portPattern = /:[0-9]*$/,
+	
+	    // RFC 2396: characters reserved for delimiting URLs.
+	    // We actually just auto-escape these.
+	    delims = ['<', '>', '"', '`', ' ', '\r', '\n', '\t'],
+	
+	    // RFC 2396: characters not allowed for various reasons.
+	    unwise = ['{', '}', '|', '\\', '^', '`'].concat(delims),
+	
+	    // Allowed by RFCs, but cause of XSS attacks.  Always escape these.
+	    autoEscape = ['\''].concat(unwise),
+	    // Characters that are never ever allowed in a hostname.
+	    // Note that any invalid chars are also handled, but these
+	    // are the ones that are *expected* to be seen, so we fast-path
+	    // them.
+	    nonHostChars = ['%', '/', '?', ';', '#'].concat(autoEscape),
+	    hostEndingChars = ['/', '?', '#'],
+	    hostnameMaxLen = 255,
+	    hostnamePartPattern = /^[a-z0-9A-Z_-]{0,63}$/,
+	    hostnamePartStart = /^([a-z0-9A-Z_-]{0,63})(.*)$/,
+	    // protocols that can allow "unsafe" and "unwise" chars.
+	    unsafeProtocol = {
+	      'javascript': true,
+	      'javascript:': true
+	    },
+	    // protocols that never have a hostname.
+	    hostlessProtocol = {
+	      'javascript': true,
+	      'javascript:': true
+	    },
+	    // protocols that always contain a // bit.
+	    slashedProtocol = {
+	      'http': true,
+	      'https': true,
+	      'ftp': true,
+	      'gopher': true,
+	      'file': true,
+	      'http:': true,
+	      'https:': true,
+	      'ftp:': true,
+	      'gopher:': true,
+	      'file:': true
+	    },
+	    querystring = __webpack_require__(320);
+	
+	function urlParse(url, parseQueryString, slashesDenoteHost) {
+	  if (url && isObject(url) && url instanceof Url) return url;
+	
+	  var u = new Url;
+	  u.parse(url, parseQueryString, slashesDenoteHost);
+	  return u;
+	}
+	
+	Url.prototype.parse = function(url, parseQueryString, slashesDenoteHost) {
+	  if (!isString(url)) {
+	    throw new TypeError("Parameter 'url' must be a string, not " + typeof url);
+	  }
+	
+	  var rest = url;
+	
+	  // trim before proceeding.
+	  // This is to support parse stuff like "  http://foo.com  \n"
+	  rest = rest.trim();
+	
+	  var proto = protocolPattern.exec(rest);
+	  if (proto) {
+	    proto = proto[0];
+	    var lowerProto = proto.toLowerCase();
+	    this.protocol = lowerProto;
+	    rest = rest.substr(proto.length);
+	  }
+	
+	  // figure out if it's got a host
+	  // user@server is *always* interpreted as a hostname, and url
+	  // resolution will treat //foo/bar as host=foo,path=bar because that's
+	  // how the browser resolves relative URLs.
+	  if (slashesDenoteHost || proto || rest.match(/^\/\/[^@\/]+@[^@\/]+/)) {
+	    var slashes = rest.substr(0, 2) === '//';
+	    if (slashes && !(proto && hostlessProtocol[proto])) {
+	      rest = rest.substr(2);
+	      this.slashes = true;
+	    }
+	  }
+	
+	  if (!hostlessProtocol[proto] &&
+	      (slashes || (proto && !slashedProtocol[proto]))) {
+	
+	    // there's a hostname.
+	    // the first instance of /, ?, ;, or # ends the host.
+	    //
+	    // If there is an @ in the hostname, then non-host chars *are* allowed
+	    // to the left of the last @ sign, unless some host-ending character
+	    // comes *before* the @-sign.
+	    // URLs are obnoxious.
+	    //
+	    // ex:
+	    // http://a@b@c/ => user:a@b host:c
+	    // http://a@b?@c => user:a host:c path:/?@c
+	
+	    // v0.12 TODO(isaacs): This is not quite how Chrome does things.
+	    // Review our test case against browsers more comprehensively.
+	
+	    // find the first instance of any hostEndingChars
+	    var hostEnd = -1;
+	    for (var i = 0; i < hostEndingChars.length; i++) {
+	      var hec = rest.indexOf(hostEndingChars[i]);
+	      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd))
+	        hostEnd = hec;
+	    }
+	
+	    // at this point, either we have an explicit point where the
+	    // auth portion cannot go past, or the last @ char is the decider.
+	    var auth, atSign;
+	    if (hostEnd === -1) {
+	      // atSign can be anywhere.
+	      atSign = rest.lastIndexOf('@');
+	    } else {
+	      // atSign must be in auth portion.
+	      // http://a@b/c@d => host:b auth:a path:/c@d
+	      atSign = rest.lastIndexOf('@', hostEnd);
+	    }
+	
+	    // Now we have a portion which is definitely the auth.
+	    // Pull that off.
+	    if (atSign !== -1) {
+	      auth = rest.slice(0, atSign);
+	      rest = rest.slice(atSign + 1);
+	      this.auth = decodeURIComponent(auth);
+	    }
+	
+	    // the host is the remaining to the left of the first non-host char
+	    hostEnd = -1;
+	    for (var i = 0; i < nonHostChars.length; i++) {
+	      var hec = rest.indexOf(nonHostChars[i]);
+	      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd))
+	        hostEnd = hec;
+	    }
+	    // if we still have not hit it, then the entire thing is a host.
+	    if (hostEnd === -1)
+	      hostEnd = rest.length;
+	
+	    this.host = rest.slice(0, hostEnd);
+	    rest = rest.slice(hostEnd);
+	
+	    // pull out port.
+	    this.parseHost();
+	
+	    // we've indicated that there is a hostname,
+	    // so even if it's empty, it has to be present.
+	    this.hostname = this.hostname || '';
+	
+	    // if hostname begins with [ and ends with ]
+	    // assume that it's an IPv6 address.
+	    var ipv6Hostname = this.hostname[0] === '[' &&
+	        this.hostname[this.hostname.length - 1] === ']';
+	
+	    // validate a little.
+	    if (!ipv6Hostname) {
+	      var hostparts = this.hostname.split(/\./);
+	      for (var i = 0, l = hostparts.length; i < l; i++) {
+	        var part = hostparts[i];
+	        if (!part) continue;
+	        if (!part.match(hostnamePartPattern)) {
+	          var newpart = '';
+	          for (var j = 0, k = part.length; j < k; j++) {
+	            if (part.charCodeAt(j) > 127) {
+	              // we replace non-ASCII char with a temporary placeholder
+	              // we need this to make sure size of hostname is not
+	              // broken by replacing non-ASCII by nothing
+	              newpart += 'x';
+	            } else {
+	              newpart += part[j];
+	            }
+	          }
+	          // we test again with ASCII char only
+	          if (!newpart.match(hostnamePartPattern)) {
+	            var validParts = hostparts.slice(0, i);
+	            var notHost = hostparts.slice(i + 1);
+	            var bit = part.match(hostnamePartStart);
+	            if (bit) {
+	              validParts.push(bit[1]);
+	              notHost.unshift(bit[2]);
+	            }
+	            if (notHost.length) {
+	              rest = '/' + notHost.join('.') + rest;
+	            }
+	            this.hostname = validParts.join('.');
+	            break;
+	          }
+	        }
+	      }
+	    }
+	
+	    if (this.hostname.length > hostnameMaxLen) {
+	      this.hostname = '';
+	    } else {
+	      // hostnames are always lower case.
+	      this.hostname = this.hostname.toLowerCase();
+	    }
+	
+	    if (!ipv6Hostname) {
+	      // IDNA Support: Returns a puny coded representation of "domain".
+	      // It only converts the part of the domain name that
+	      // has non ASCII characters. I.e. it dosent matter if
+	      // you call it with a domain that already is in ASCII.
+	      var domainArray = this.hostname.split('.');
+	      var newOut = [];
+	      for (var i = 0; i < domainArray.length; ++i) {
+	        var s = domainArray[i];
+	        newOut.push(s.match(/[^A-Za-z0-9_-]/) ?
+	            'xn--' + punycode.encode(s) : s);
+	      }
+	      this.hostname = newOut.join('.');
+	    }
+	
+	    var p = this.port ? ':' + this.port : '';
+	    var h = this.hostname || '';
+	    this.host = h + p;
+	    this.href += this.host;
+	
+	    // strip [ and ] from the hostname
+	    // the host field still retains them, though
+	    if (ipv6Hostname) {
+	      this.hostname = this.hostname.substr(1, this.hostname.length - 2);
+	      if (rest[0] !== '/') {
+	        rest = '/' + rest;
+	      }
+	    }
+	  }
+	
+	  // now rest is set to the post-host stuff.
+	  // chop off any delim chars.
+	  if (!unsafeProtocol[lowerProto]) {
+	
+	    // First, make 100% sure that any "autoEscape" chars get
+	    // escaped, even if encodeURIComponent doesn't think they
+	    // need to be.
+	    for (var i = 0, l = autoEscape.length; i < l; i++) {
+	      var ae = autoEscape[i];
+	      var esc = encodeURIComponent(ae);
+	      if (esc === ae) {
+	        esc = escape(ae);
+	      }
+	      rest = rest.split(ae).join(esc);
+	    }
+	  }
+	
+	
+	  // chop off from the tail first.
+	  var hash = rest.indexOf('#');
+	  if (hash !== -1) {
+	    // got a fragment string.
+	    this.hash = rest.substr(hash);
+	    rest = rest.slice(0, hash);
+	  }
+	  var qm = rest.indexOf('?');
+	  if (qm !== -1) {
+	    this.search = rest.substr(qm);
+	    this.query = rest.substr(qm + 1);
+	    if (parseQueryString) {
+	      this.query = querystring.parse(this.query);
+	    }
+	    rest = rest.slice(0, qm);
+	  } else if (parseQueryString) {
+	    // no query string, but parseQueryString still requested
+	    this.search = '';
+	    this.query = {};
+	  }
+	  if (rest) this.pathname = rest;
+	  if (slashedProtocol[lowerProto] &&
+	      this.hostname && !this.pathname) {
+	    this.pathname = '/';
+	  }
+	
+	  //to support http.request
+	  if (this.pathname || this.search) {
+	    var p = this.pathname || '';
+	    var s = this.search || '';
+	    this.path = p + s;
+	  }
+	
+	  // finally, reconstruct the href based on what has been validated.
+	  this.href = this.format();
+	  return this;
+	};
+	
+	// format a parsed object into a url string
+	function urlFormat(obj) {
+	  // ensure it's an object, and not a string url.
+	  // If it's an obj, this is a no-op.
+	  // this way, you can call url_format() on strings
+	  // to clean up potentially wonky urls.
+	  if (isString(obj)) obj = urlParse(obj);
+	  if (!(obj instanceof Url)) return Url.prototype.format.call(obj);
+	  return obj.format();
+	}
+	
+	Url.prototype.format = function() {
+	  var auth = this.auth || '';
+	  if (auth) {
+	    auth = encodeURIComponent(auth);
+	    auth = auth.replace(/%3A/i, ':');
+	    auth += '@';
+	  }
+	
+	  var protocol = this.protocol || '',
+	      pathname = this.pathname || '',
+	      hash = this.hash || '',
+	      host = false,
+	      query = '';
+	
+	  if (this.host) {
+	    host = auth + this.host;
+	  } else if (this.hostname) {
+	    host = auth + (this.hostname.indexOf(':') === -1 ?
+	        this.hostname :
+	        '[' + this.hostname + ']');
+	    if (this.port) {
+	      host += ':' + this.port;
+	    }
+	  }
+	
+	  if (this.query &&
+	      isObject(this.query) &&
+	      Object.keys(this.query).length) {
+	    query = querystring.stringify(this.query);
+	  }
+	
+	  var search = this.search || (query && ('?' + query)) || '';
+	
+	  if (protocol && protocol.substr(-1) !== ':') protocol += ':';
+	
+	  // only the slashedProtocols get the //.  Not mailto:, xmpp:, etc.
+	  // unless they had them to begin with.
+	  if (this.slashes ||
+	      (!protocol || slashedProtocol[protocol]) && host !== false) {
+	    host = '//' + (host || '');
+	    if (pathname && pathname.charAt(0) !== '/') pathname = '/' + pathname;
+	  } else if (!host) {
+	    host = '';
+	  }
+	
+	  if (hash && hash.charAt(0) !== '#') hash = '#' + hash;
+	  if (search && search.charAt(0) !== '?') search = '?' + search;
+	
+	  pathname = pathname.replace(/[?#]/g, function(match) {
+	    return encodeURIComponent(match);
+	  });
+	  search = search.replace('#', '%23');
+	
+	  return protocol + host + pathname + search + hash;
+	};
+	
+	function urlResolve(source, relative) {
+	  return urlParse(source, false, true).resolve(relative);
+	}
+	
+	Url.prototype.resolve = function(relative) {
+	  return this.resolveObject(urlParse(relative, false, true)).format();
+	};
+	
+	function urlResolveObject(source, relative) {
+	  if (!source) return relative;
+	  return urlParse(source, false, true).resolveObject(relative);
+	}
+	
+	Url.prototype.resolveObject = function(relative) {
+	  if (isString(relative)) {
+	    var rel = new Url();
+	    rel.parse(relative, false, true);
+	    relative = rel;
+	  }
+	
+	  var result = new Url();
+	  Object.keys(this).forEach(function(k) {
+	    result[k] = this[k];
+	  }, this);
+	
+	  // hash is always overridden, no matter what.
+	  // even href="" will remove it.
+	  result.hash = relative.hash;
+	
+	  // if the relative url is empty, then there's nothing left to do here.
+	  if (relative.href === '') {
+	    result.href = result.format();
+	    return result;
+	  }
+	
+	  // hrefs like //foo/bar always cut to the protocol.
+	  if (relative.slashes && !relative.protocol) {
+	    // take everything except the protocol from relative
+	    Object.keys(relative).forEach(function(k) {
+	      if (k !== 'protocol')
+	        result[k] = relative[k];
+	    });
+	
+	    //urlParse appends trailing / to urls like http://www.example.com
+	    if (slashedProtocol[result.protocol] &&
+	        result.hostname && !result.pathname) {
+	      result.path = result.pathname = '/';
+	    }
+	
+	    result.href = result.format();
+	    return result;
+	  }
+	
+	  if (relative.protocol && relative.protocol !== result.protocol) {
+	    // if it's a known url protocol, then changing
+	    // the protocol does weird things
+	    // first, if it's not file:, then we MUST have a host,
+	    // and if there was a path
+	    // to begin with, then we MUST have a path.
+	    // if it is file:, then the host is dropped,
+	    // because that's known to be hostless.
+	    // anything else is assumed to be absolute.
+	    if (!slashedProtocol[relative.protocol]) {
+	      Object.keys(relative).forEach(function(k) {
+	        result[k] = relative[k];
+	      });
+	      result.href = result.format();
+	      return result;
+	    }
+	
+	    result.protocol = relative.protocol;
+	    if (!relative.host && !hostlessProtocol[relative.protocol]) {
+	      var relPath = (relative.pathname || '').split('/');
+	      while (relPath.length && !(relative.host = relPath.shift()));
+	      if (!relative.host) relative.host = '';
+	      if (!relative.hostname) relative.hostname = '';
+	      if (relPath[0] !== '') relPath.unshift('');
+	      if (relPath.length < 2) relPath.unshift('');
+	      result.pathname = relPath.join('/');
+	    } else {
+	      result.pathname = relative.pathname;
+	    }
+	    result.search = relative.search;
+	    result.query = relative.query;
+	    result.host = relative.host || '';
+	    result.auth = relative.auth;
+	    result.hostname = relative.hostname || relative.host;
+	    result.port = relative.port;
+	    // to support http.request
+	    if (result.pathname || result.search) {
+	      var p = result.pathname || '';
+	      var s = result.search || '';
+	      result.path = p + s;
+	    }
+	    result.slashes = result.slashes || relative.slashes;
+	    result.href = result.format();
+	    return result;
+	  }
+	
+	  var isSourceAbs = (result.pathname && result.pathname.charAt(0) === '/'),
+	      isRelAbs = (
+	          relative.host ||
+	          relative.pathname && relative.pathname.charAt(0) === '/'
+	      ),
+	      mustEndAbs = (isRelAbs || isSourceAbs ||
+	                    (result.host && relative.pathname)),
+	      removeAllDots = mustEndAbs,
+	      srcPath = result.pathname && result.pathname.split('/') || [],
+	      relPath = relative.pathname && relative.pathname.split('/') || [],
+	      psychotic = result.protocol && !slashedProtocol[result.protocol];
+	
+	  // if the url is a non-slashed url, then relative
+	  // links like ../.. should be able
+	  // to crawl up to the hostname, as well.  This is strange.
+	  // result.protocol has already been set by now.
+	  // Later on, put the first path part into the host field.
+	  if (psychotic) {
+	    result.hostname = '';
+	    result.port = null;
+	    if (result.host) {
+	      if (srcPath[0] === '') srcPath[0] = result.host;
+	      else srcPath.unshift(result.host);
+	    }
+	    result.host = '';
+	    if (relative.protocol) {
+	      relative.hostname = null;
+	      relative.port = null;
+	      if (relative.host) {
+	        if (relPath[0] === '') relPath[0] = relative.host;
+	        else relPath.unshift(relative.host);
+	      }
+	      relative.host = null;
+	    }
+	    mustEndAbs = mustEndAbs && (relPath[0] === '' || srcPath[0] === '');
+	  }
+	
+	  if (isRelAbs) {
+	    // it's absolute.
+	    result.host = (relative.host || relative.host === '') ?
+	                  relative.host : result.host;
+	    result.hostname = (relative.hostname || relative.hostname === '') ?
+	                      relative.hostname : result.hostname;
+	    result.search = relative.search;
+	    result.query = relative.query;
+	    srcPath = relPath;
+	    // fall through to the dot-handling below.
+	  } else if (relPath.length) {
+	    // it's relative
+	    // throw away the existing file, and take the new path instead.
+	    if (!srcPath) srcPath = [];
+	    srcPath.pop();
+	    srcPath = srcPath.concat(relPath);
+	    result.search = relative.search;
+	    result.query = relative.query;
+	  } else if (!isNullOrUndefined(relative.search)) {
+	    // just pull out the search.
+	    // like href='?foo'.
+	    // Put this after the other two cases because it simplifies the booleans
+	    if (psychotic) {
+	      result.hostname = result.host = srcPath.shift();
+	      //occationaly the auth can get stuck only in host
+	      //this especialy happens in cases like
+	      //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
+	      var authInHost = result.host && result.host.indexOf('@') > 0 ?
+	                       result.host.split('@') : false;
+	      if (authInHost) {
+	        result.auth = authInHost.shift();
+	        result.host = result.hostname = authInHost.shift();
+	      }
+	    }
+	    result.search = relative.search;
+	    result.query = relative.query;
+	    //to support http.request
+	    if (!isNull(result.pathname) || !isNull(result.search)) {
+	      result.path = (result.pathname ? result.pathname : '') +
+	                    (result.search ? result.search : '');
+	    }
+	    result.href = result.format();
+	    return result;
+	  }
+	
+	  if (!srcPath.length) {
+	    // no path at all.  easy.
+	    // we've already handled the other stuff above.
+	    result.pathname = null;
+	    //to support http.request
+	    if (result.search) {
+	      result.path = '/' + result.search;
+	    } else {
+	      result.path = null;
+	    }
+	    result.href = result.format();
+	    return result;
+	  }
+	
+	  // if a url ENDs in . or .., then it must get a trailing slash.
+	  // however, if it ends in anything else non-slashy,
+	  // then it must NOT get a trailing slash.
+	  var last = srcPath.slice(-1)[0];
+	  var hasTrailingSlash = (
+	      (result.host || relative.host) && (last === '.' || last === '..') ||
+	      last === '');
+	
+	  // strip single dots, resolve double dots to parent dir
+	  // if the path tries to go above the root, `up` ends up > 0
+	  var up = 0;
+	  for (var i = srcPath.length; i >= 0; i--) {
+	    last = srcPath[i];
+	    if (last == '.') {
+	      srcPath.splice(i, 1);
+	    } else if (last === '..') {
+	      srcPath.splice(i, 1);
+	      up++;
+	    } else if (up) {
+	      srcPath.splice(i, 1);
+	      up--;
+	    }
+	  }
+	
+	  // if the path is allowed to go above the root, restore leading ..s
+	  if (!mustEndAbs && !removeAllDots) {
+	    for (; up--; up) {
+	      srcPath.unshift('..');
+	    }
+	  }
+	
+	  if (mustEndAbs && srcPath[0] !== '' &&
+	      (!srcPath[0] || srcPath[0].charAt(0) !== '/')) {
+	    srcPath.unshift('');
+	  }
+	
+	  if (hasTrailingSlash && (srcPath.join('/').substr(-1) !== '/')) {
+	    srcPath.push('');
+	  }
+	
+	  var isAbsolute = srcPath[0] === '' ||
+	      (srcPath[0] && srcPath[0].charAt(0) === '/');
+	
+	  // put the host back
+	  if (psychotic) {
+	    result.hostname = result.host = isAbsolute ? '' :
+	                                    srcPath.length ? srcPath.shift() : '';
+	    //occationaly the auth can get stuck only in host
+	    //this especialy happens in cases like
+	    //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
+	    var authInHost = result.host && result.host.indexOf('@') > 0 ?
+	                     result.host.split('@') : false;
+	    if (authInHost) {
+	      result.auth = authInHost.shift();
+	      result.host = result.hostname = authInHost.shift();
+	    }
+	  }
+	
+	  mustEndAbs = mustEndAbs || (result.host && srcPath.length);
+	
+	  if (mustEndAbs && !isAbsolute) {
+	    srcPath.unshift('');
+	  }
+	
+	  if (!srcPath.length) {
+	    result.pathname = null;
+	    result.path = null;
+	  } else {
+	    result.pathname = srcPath.join('/');
+	  }
+	
+	  //to support request.http
+	  if (!isNull(result.pathname) || !isNull(result.search)) {
+	    result.path = (result.pathname ? result.pathname : '') +
+	                  (result.search ? result.search : '');
+	  }
+	  result.auth = relative.auth || result.auth;
+	  result.slashes = result.slashes || relative.slashes;
+	  result.href = result.format();
+	  return result;
+	};
+	
+	Url.prototype.parseHost = function() {
+	  var host = this.host;
+	  var port = portPattern.exec(host);
+	  if (port) {
+	    port = port[0];
+	    if (port !== ':') {
+	      this.port = port.substr(1);
+	    }
+	    host = host.substr(0, host.length - port.length);
+	  }
+	  if (host) this.hostname = host;
+	};
+	
+	function isString(arg) {
+	  return typeof arg === "string";
+	}
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	
+	function isNull(arg) {
+	  return arg === null;
+	}
+	function isNullOrUndefined(arg) {
+	  return  arg == null;
+	}
+
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/punycode v1.3.2 by @mathias */
+	;(function(root) {
+	
+		/** Detect free variables */
+		var freeExports = typeof exports == 'object' && exports &&
+			!exports.nodeType && exports;
+		var freeModule = typeof module == 'object' && module &&
+			!module.nodeType && module;
+		var freeGlobal = typeof global == 'object' && global;
+		if (
+			freeGlobal.global === freeGlobal ||
+			freeGlobal.window === freeGlobal ||
+			freeGlobal.self === freeGlobal
+		) {
+			root = freeGlobal;
+		}
+	
+		/**
+		 * The `punycode` object.
+		 * @name punycode
+		 * @type Object
+		 */
+		var punycode,
+	
+		/** Highest positive signed 32-bit float value */
+		maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
+	
+		/** Bootstring parameters */
+		base = 36,
+		tMin = 1,
+		tMax = 26,
+		skew = 38,
+		damp = 700,
+		initialBias = 72,
+		initialN = 128, // 0x80
+		delimiter = '-', // '\x2D'
+	
+		/** Regular expressions */
+		regexPunycode = /^xn--/,
+		regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
+		regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
+	
+		/** Error messages */
+		errors = {
+			'overflow': 'Overflow: input needs wider integers to process',
+			'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
+			'invalid-input': 'Invalid input'
+		},
+	
+		/** Convenience shortcuts */
+		baseMinusTMin = base - tMin,
+		floor = Math.floor,
+		stringFromCharCode = String.fromCharCode,
+	
+		/** Temporary variable */
+		key;
+	
+		/*--------------------------------------------------------------------------*/
+	
+		/**
+		 * A generic error utility function.
+		 * @private
+		 * @param {String} type The error type.
+		 * @returns {Error} Throws a `RangeError` with the applicable error message.
+		 */
+		function error(type) {
+			throw RangeError(errors[type]);
+		}
+	
+		/**
+		 * A generic `Array#map` utility function.
+		 * @private
+		 * @param {Array} array The array to iterate over.
+		 * @param {Function} callback The function that gets called for every array
+		 * item.
+		 * @returns {Array} A new array of values returned by the callback function.
+		 */
+		function map(array, fn) {
+			var length = array.length;
+			var result = [];
+			while (length--) {
+				result[length] = fn(array[length]);
+			}
+			return result;
+		}
+	
+		/**
+		 * A simple `Array#map`-like wrapper to work with domain name strings or email
+		 * addresses.
+		 * @private
+		 * @param {String} domain The domain name or email address.
+		 * @param {Function} callback The function that gets called for every
+		 * character.
+		 * @returns {Array} A new string of characters returned by the callback
+		 * function.
+		 */
+		function mapDomain(string, fn) {
+			var parts = string.split('@');
+			var result = '';
+			if (parts.length > 1) {
+				// In email addresses, only the domain name should be punycoded. Leave
+				// the local part (i.e. everything up to `@`) intact.
+				result = parts[0] + '@';
+				string = parts[1];
+			}
+			// Avoid `split(regex)` for IE8 compatibility. See #17.
+			string = string.replace(regexSeparators, '\x2E');
+			var labels = string.split('.');
+			var encoded = map(labels, fn).join('.');
+			return result + encoded;
+		}
+	
+		/**
+		 * Creates an array containing the numeric code points of each Unicode
+		 * character in the string. While JavaScript uses UCS-2 internally,
+		 * this function will convert a pair of surrogate halves (each of which
+		 * UCS-2 exposes as separate characters) into a single code point,
+		 * matching UTF-16.
+		 * @see `punycode.ucs2.encode`
+		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+		 * @memberOf punycode.ucs2
+		 * @name decode
+		 * @param {String} string The Unicode input string (UCS-2).
+		 * @returns {Array} The new array of code points.
+		 */
+		function ucs2decode(string) {
+			var output = [],
+			    counter = 0,
+			    length = string.length,
+			    value,
+			    extra;
+			while (counter < length) {
+				value = string.charCodeAt(counter++);
+				if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+					// high surrogate, and there is a next character
+					extra = string.charCodeAt(counter++);
+					if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+						output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+					} else {
+						// unmatched surrogate; only append this code unit, in case the next
+						// code unit is the high surrogate of a surrogate pair
+						output.push(value);
+						counter--;
+					}
+				} else {
+					output.push(value);
+				}
+			}
+			return output;
+		}
+	
+		/**
+		 * Creates a string based on an array of numeric code points.
+		 * @see `punycode.ucs2.decode`
+		 * @memberOf punycode.ucs2
+		 * @name encode
+		 * @param {Array} codePoints The array of numeric code points.
+		 * @returns {String} The new Unicode string (UCS-2).
+		 */
+		function ucs2encode(array) {
+			return map(array, function(value) {
+				var output = '';
+				if (value > 0xFFFF) {
+					value -= 0x10000;
+					output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+					value = 0xDC00 | value & 0x3FF;
+				}
+				output += stringFromCharCode(value);
+				return output;
+			}).join('');
+		}
+	
+		/**
+		 * Converts a basic code point into a digit/integer.
+		 * @see `digitToBasic()`
+		 * @private
+		 * @param {Number} codePoint The basic numeric code point value.
+		 * @returns {Number} The numeric value of a basic code point (for use in
+		 * representing integers) in the range `0` to `base - 1`, or `base` if
+		 * the code point does not represent a value.
+		 */
+		function basicToDigit(codePoint) {
+			if (codePoint - 48 < 10) {
+				return codePoint - 22;
+			}
+			if (codePoint - 65 < 26) {
+				return codePoint - 65;
+			}
+			if (codePoint - 97 < 26) {
+				return codePoint - 97;
+			}
+			return base;
+		}
+	
+		/**
+		 * Converts a digit/integer into a basic code point.
+		 * @see `basicToDigit()`
+		 * @private
+		 * @param {Number} digit The numeric value of a basic code point.
+		 * @returns {Number} The basic code point whose value (when used for
+		 * representing integers) is `digit`, which needs to be in the range
+		 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
+		 * used; else, the lowercase form is used. The behavior is undefined
+		 * if `flag` is non-zero and `digit` has no uppercase form.
+		 */
+		function digitToBasic(digit, flag) {
+			//  0..25 map to ASCII a..z or A..Z
+			// 26..35 map to ASCII 0..9
+			return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
+		}
+	
+		/**
+		 * Bias adaptation function as per section 3.4 of RFC 3492.
+		 * http://tools.ietf.org/html/rfc3492#section-3.4
+		 * @private
+		 */
+		function adapt(delta, numPoints, firstTime) {
+			var k = 0;
+			delta = firstTime ? floor(delta / damp) : delta >> 1;
+			delta += floor(delta / numPoints);
+			for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
+				delta = floor(delta / baseMinusTMin);
+			}
+			return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
+		}
+	
+		/**
+		 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
+		 * symbols.
+		 * @memberOf punycode
+		 * @param {String} input The Punycode string of ASCII-only symbols.
+		 * @returns {String} The resulting string of Unicode symbols.
+		 */
+		function decode(input) {
+			// Don't use UCS-2
+			var output = [],
+			    inputLength = input.length,
+			    out,
+			    i = 0,
+			    n = initialN,
+			    bias = initialBias,
+			    basic,
+			    j,
+			    index,
+			    oldi,
+			    w,
+			    k,
+			    digit,
+			    t,
+			    /** Cached calculation results */
+			    baseMinusT;
+	
+			// Handle the basic code points: let `basic` be the number of input code
+			// points before the last delimiter, or `0` if there is none, then copy
+			// the first basic code points to the output.
+	
+			basic = input.lastIndexOf(delimiter);
+			if (basic < 0) {
+				basic = 0;
+			}
+	
+			for (j = 0; j < basic; ++j) {
+				// if it's not a basic code point
+				if (input.charCodeAt(j) >= 0x80) {
+					error('not-basic');
+				}
+				output.push(input.charCodeAt(j));
+			}
+	
+			// Main decoding loop: start just after the last delimiter if any basic code
+			// points were copied; start at the beginning otherwise.
+	
+			for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
+	
+				// `index` is the index of the next character to be consumed.
+				// Decode a generalized variable-length integer into `delta`,
+				// which gets added to `i`. The overflow checking is easier
+				// if we increase `i` as we go, then subtract off its starting
+				// value at the end to obtain `delta`.
+				for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
+	
+					if (index >= inputLength) {
+						error('invalid-input');
+					}
+	
+					digit = basicToDigit(input.charCodeAt(index++));
+	
+					if (digit >= base || digit > floor((maxInt - i) / w)) {
+						error('overflow');
+					}
+	
+					i += digit * w;
+					t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+	
+					if (digit < t) {
+						break;
+					}
+	
+					baseMinusT = base - t;
+					if (w > floor(maxInt / baseMinusT)) {
+						error('overflow');
+					}
+	
+					w *= baseMinusT;
+	
+				}
+	
+				out = output.length + 1;
+				bias = adapt(i - oldi, out, oldi == 0);
+	
+				// `i` was supposed to wrap around from `out` to `0`,
+				// incrementing `n` each time, so we'll fix that now:
+				if (floor(i / out) > maxInt - n) {
+					error('overflow');
+				}
+	
+				n += floor(i / out);
+				i %= out;
+	
+				// Insert `n` at position `i` of the output
+				output.splice(i++, 0, n);
+	
+			}
+	
+			return ucs2encode(output);
+		}
+	
+		/**
+		 * Converts a string of Unicode symbols (e.g. a domain name label) to a
+		 * Punycode string of ASCII-only symbols.
+		 * @memberOf punycode
+		 * @param {String} input The string of Unicode symbols.
+		 * @returns {String} The resulting Punycode string of ASCII-only symbols.
+		 */
+		function encode(input) {
+			var n,
+			    delta,
+			    handledCPCount,
+			    basicLength,
+			    bias,
+			    j,
+			    m,
+			    q,
+			    k,
+			    t,
+			    currentValue,
+			    output = [],
+			    /** `inputLength` will hold the number of code points in `input`. */
+			    inputLength,
+			    /** Cached calculation results */
+			    handledCPCountPlusOne,
+			    baseMinusT,
+			    qMinusT;
+	
+			// Convert the input in UCS-2 to Unicode
+			input = ucs2decode(input);
+	
+			// Cache the length
+			inputLength = input.length;
+	
+			// Initialize the state
+			n = initialN;
+			delta = 0;
+			bias = initialBias;
+	
+			// Handle the basic code points
+			for (j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+				if (currentValue < 0x80) {
+					output.push(stringFromCharCode(currentValue));
+				}
+			}
+	
+			handledCPCount = basicLength = output.length;
+	
+			// `handledCPCount` is the number of code points that have been handled;
+			// `basicLength` is the number of basic code points.
+	
+			// Finish the basic string - if it is not empty - with a delimiter
+			if (basicLength) {
+				output.push(delimiter);
+			}
+	
+			// Main encoding loop:
+			while (handledCPCount < inputLength) {
+	
+				// All non-basic code points < n have been handled already. Find the next
+				// larger one:
+				for (m = maxInt, j = 0; j < inputLength; ++j) {
+					currentValue = input[j];
+					if (currentValue >= n && currentValue < m) {
+						m = currentValue;
+					}
+				}
+	
+				// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
+				// but guard against overflow
+				handledCPCountPlusOne = handledCPCount + 1;
+				if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
+					error('overflow');
+				}
+	
+				delta += (m - n) * handledCPCountPlusOne;
+				n = m;
+	
+				for (j = 0; j < inputLength; ++j) {
+					currentValue = input[j];
+	
+					if (currentValue < n && ++delta > maxInt) {
+						error('overflow');
+					}
+	
+					if (currentValue == n) {
+						// Represent delta as a generalized variable-length integer
+						for (q = delta, k = base; /* no condition */; k += base) {
+							t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+							if (q < t) {
+								break;
+							}
+							qMinusT = q - t;
+							baseMinusT = base - t;
+							output.push(
+								stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
+							);
+							q = floor(qMinusT / baseMinusT);
+						}
+	
+						output.push(stringFromCharCode(digitToBasic(q, 0)));
+						bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
+						delta = 0;
+						++handledCPCount;
+					}
+				}
+	
+				++delta;
+				++n;
+	
+			}
+			return output.join('');
+		}
+	
+		/**
+		 * Converts a Punycode string representing a domain name or an email address
+		 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
+		 * it doesn't matter if you call it on a string that has already been
+		 * converted to Unicode.
+		 * @memberOf punycode
+		 * @param {String} input The Punycoded domain name or email address to
+		 * convert to Unicode.
+		 * @returns {String} The Unicode representation of the given Punycode
+		 * string.
+		 */
+		function toUnicode(input) {
+			return mapDomain(input, function(string) {
+				return regexPunycode.test(string)
+					? decode(string.slice(4).toLowerCase())
+					: string;
+			});
+		}
+	
+		/**
+		 * Converts a Unicode string representing a domain name or an email address to
+		 * Punycode. Only the non-ASCII parts of the domain name will be converted,
+		 * i.e. it doesn't matter if you call it with a domain that's already in
+		 * ASCII.
+		 * @memberOf punycode
+		 * @param {String} input The domain name or email address to convert, as a
+		 * Unicode string.
+		 * @returns {String} The Punycode representation of the given domain name or
+		 * email address.
+		 */
+		function toASCII(input) {
+			return mapDomain(input, function(string) {
+				return regexNonASCII.test(string)
+					? 'xn--' + encode(string)
+					: string;
+			});
+		}
+	
+		/*--------------------------------------------------------------------------*/
+	
+		/** Define the public API */
+		punycode = {
+			/**
+			 * A string representing the current Punycode.js version number.
+			 * @memberOf punycode
+			 * @type String
+			 */
+			'version': '1.3.2',
+			/**
+			 * An object of methods to convert from JavaScript's internal character
+			 * representation (UCS-2) to Unicode code points, and back.
+			 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+			 * @memberOf punycode
+			 * @type Object
+			 */
+			'ucs2': {
+				'decode': ucs2decode,
+				'encode': ucs2encode
+			},
+			'decode': decode,
+			'encode': encode,
+			'toASCII': toASCII,
+			'toUnicode': toUnicode
+		};
+	
+		/** Expose `punycode` */
+		// Some AMD build optimizers, like r.js, check for specific condition patterns
+		// like the following:
+		if (
+			true
+		) {
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+				return punycode;
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else if (freeExports && freeModule) {
+			if (module.exports == freeExports) { // in Node.js or RingoJS v0.8.0+
+				freeModule.exports = punycode;
+			} else { // in Narwhal or RingoJS v0.7.0-
+				for (key in punycode) {
+					punycode.hasOwnProperty(key) && (freeExports[key] = punycode[key]);
+				}
+			}
+		} else { // in Rhino or a web browser
+			root.punycode = punycode;
+		}
+	
+	}(this));
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(319)(module), (function() { return this; }())))
+
+/***/ },
+/* 319 */
+/***/ function(module, exports) {
+
+	module.exports = function(module) {
+		if(!module.webpackPolyfill) {
+			module.deprecate = function() {};
+			module.paths = [];
+			// module.parent = undefined by default
+			module.children = [];
+			module.webpackPolyfill = 1;
+		}
+		return module;
+	}
+
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.decode = exports.parse = __webpack_require__(321);
+	exports.encode = exports.stringify = __webpack_require__(322);
+
+
+/***/ },
+/* 321 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	'use strict';
+	
+	// If obj.hasOwnProperty has been overridden, then calling
+	// obj.hasOwnProperty(prop) will break.
+	// See: https://github.com/joyent/node/issues/1707
+	function hasOwnProperty(obj, prop) {
+	  return Object.prototype.hasOwnProperty.call(obj, prop);
+	}
+	
+	module.exports = function(qs, sep, eq, options) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  var obj = {};
+	
+	  if (typeof qs !== 'string' || qs.length === 0) {
+	    return obj;
+	  }
+	
+	  var regexp = /\+/g;
+	  qs = qs.split(sep);
+	
+	  var maxKeys = 1000;
+	  if (options && typeof options.maxKeys === 'number') {
+	    maxKeys = options.maxKeys;
+	  }
+	
+	  var len = qs.length;
+	  // maxKeys <= 0 means that we should not limit keys count
+	  if (maxKeys > 0 && len > maxKeys) {
+	    len = maxKeys;
+	  }
+	
+	  for (var i = 0; i < len; ++i) {
+	    var x = qs[i].replace(regexp, '%20'),
+	        idx = x.indexOf(eq),
+	        kstr, vstr, k, v;
+	
+	    if (idx >= 0) {
+	      kstr = x.substr(0, idx);
+	      vstr = x.substr(idx + 1);
+	    } else {
+	      kstr = x;
+	      vstr = '';
+	    }
+	
+	    k = decodeURIComponent(kstr);
+	    v = decodeURIComponent(vstr);
+	
+	    if (!hasOwnProperty(obj, k)) {
+	      obj[k] = v;
+	    } else if (Array.isArray(obj[k])) {
+	      obj[k].push(v);
+	    } else {
+	      obj[k] = [obj[k], v];
+	    }
+	  }
+	
+	  return obj;
+	};
+
+
+/***/ },
+/* 322 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	'use strict';
+	
+	var stringifyPrimitive = function(v) {
+	  switch (typeof v) {
+	    case 'string':
+	      return v;
+	
+	    case 'boolean':
+	      return v ? 'true' : 'false';
+	
+	    case 'number':
+	      return isFinite(v) ? v : '';
+	
+	    default:
+	      return '';
+	  }
+	};
+	
+	module.exports = function(obj, sep, eq, name) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  if (obj === null) {
+	    obj = undefined;
+	  }
+	
+	  if (typeof obj === 'object') {
+	    return Object.keys(obj).map(function(k) {
+	      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
+	      if (Array.isArray(obj[k])) {
+	        return obj[k].map(function(v) {
+	          return ks + encodeURIComponent(stringifyPrimitive(v));
+	        }).join(sep);
+	      } else {
+	        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
+	      }
+	    }).join(sep);
+	
+	  }
+	
+	  if (!name) return '';
+	  return encodeURIComponent(stringifyPrimitive(name)) + eq +
+	         encodeURIComponent(stringifyPrimitive(obj));
+	};
+
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var http = __webpack_require__(313);
+	
+	var https = module.exports;
+	
+	for (var key in http) {
+	    if (http.hasOwnProperty(key)) https[key] = http[key];
+	};
+	
+	https.request = function (params, cb) {
+	    if (!params) params = {};
+	    params.scheme = 'https';
+	    return http.request.call(this, params, cb);
+	}
+
+
+/***/ },
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(console) {var exec = __webpack_require__(4).exec;
+	var shelly = __webpack_require__(325);
+	var exiftoolExec = 'exiftool';
+	
+	var coordinate2degree = function(data) {
+		var values = data.split(',');
+		var deg = parseFloat(values[0]), min = parseFloat(values[1]), sec = parseFloat(values[2]);
+	
+		return deg + (min / 60 ) + (sec / 3600);
+	};
+	var getLatitudeSign = function(ref) {
+		if(ref == 'W')
+			return -1;
+		return 1;
+	};
+	var getLongitudeSign = function(ref) {
+		if(ref == 'S')
+			return -1;
+		return 1;
+	};
+	var converters = {
+		'GPSLatitude' : function(data) {
+			return coordinate2degree(data);
+		},
+		'GPSLongitude' : function(data) {
+			return coordinate2degree(data);
+		},
+		'GPSAltitude' : function(data) {
+			return parseInt(data);
+		},
+		'GPSTimeStamp' : function(data) {
+			return data;
+		},
+		'GPSImgDirection' : function(data) {
+			return data;
+		},
+		'GPSLatitudeRef' : function(data) {
+			if(data == 'North') {
+				return 'N';
+			}
+			return 'S';
+		},
+		'GPSLongitudeRef' : function(data) {
+			if(data == 'East') {
+				return 'E';
+			}
+			return 'W';
+		}
+	}
+	
+	var fetchGpsInfo = function(data) {
+		var gpsKeys, i, len, gpsData, key;
+		try {
+			gpsData = {};
+			gpsKeys = Object.keys(data);
+			for( i = 0, len = gpsKeys.length; i < len; i++) {
+				if(converters[gpsKeys[i]]) {
+					gpsData[gpsKeys[i]] = converters[gpsKeys[i]](data[gpsKeys[i]]);
+				} else {
+					gpsData[gpsKeys[i]] = data[gpsKeys[i]];
+				}
+			}
+			if(gpsData['GPSLatitude'] && gpsData['GPSLatitudeRef']) {
+				gpsData['GPSLatitude'] *= getLatitudeSign(gpsData['GPSLatitudeRef']);
+			}
+			if(gpsData['GPSLongitude'] && gpsData['GPSLongitudeRef']) {
+				gpsData['GPSLongitude'] *= getLongitudeSign(gpsData['GPSLongitudeRef']);
+			}
+			return gpsData;
+		} catch(e) {
+			console.error(e);
+		}
+		return null;
+	};
+	
+	module.exports = function(file, callback) {
+		var cmd = shelly("? -lang en -j -c '%d,%d,%.15f,' '-GPS*' ?", exiftoolExec, file);
+		exec(cmd, function(err, result) {
+			try {
+				result = JSON.parse(result);
+				result = result[0];
+			} catch(e) {
+				return callback(e, null);
+			}
+	
+			if(result.hasOwnProperty('GPSLatitude')) {
+				return callback(null, fetchGpsInfo(result));
+			}
+	
+			return callback(null, null);
+		});
+	};
+	
+	module.exports.delAll = function(file, callback) {
+		var cmd = shelly('? -lang en -gps:all= ?', exiftoolExec, file);
+		exec(cmd, function(err, result) {
+			if(err) {
+				return callback(err, null);
+			}
+	
+			callback(null, result.trim() == '1 image files updated');
+		});
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 325 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	module.exports = __webpack_require__(326);
+
+/***/ },
+/* 326 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Module dependencies.
+	 */
+	
+	var shellwords = __webpack_require__(327);
+	
+	module.exports = function(cmd){
+	  var args = arguments;
+	  var len = args.length;
+	  var i = 1;
+	
+	  cmd = cmd.replace(/\?/g, function(){
+	    return shellwords.escape(String(args[i++]));
+	  });
+	
+	  while (i < len) {
+	    cmd += ' ' + shellwords.escape(String(args[i++]));
+	  }
+	
+	  return cmd;
+	};
+
+/***/ },
+/* 327 */
+/***/ function(module, exports) {
+
+	// Generated by CoffeeScript 1.3.3
+	(function() {
+	  var scan;
+	
+	  scan = function(string, pattern, callback) {
+	    var match, result;
+	    result = "";
+	    while (string.length > 0) {
+	      match = string.match(pattern);
+	      if (match) {
+	        result += string.slice(0, match.index);
+	        result += callback(match);
+	        string = string.slice(match.index + match[0].length);
+	      } else {
+	        result += string;
+	        string = "";
+	      }
+	    }
+	    return result;
+	  };
+	
+	  exports.split = function(line) {
+	    var field, words;
+	    if (line == null) {
+	      line = "";
+	    }
+	    words = [];
+	    field = "";
+	    scan(line, /\s*(?:([^\s\\\'\"]+)|'((?:[^\'\\]|\\.)*)'|"((?:[^\"\\]|\\.)*)"|(\\.?)|(\S))(\s|$)?/, function(match) {
+	      var dq, escape, garbage, raw, seperator, sq, word;
+	      raw = match[0], word = match[1], sq = match[2], dq = match[3], escape = match[4], garbage = match[5], seperator = match[6];
+	      if (garbage != null) {
+	        throw new Error("Unmatched quote");
+	      }
+	      field += word || (sq || dq || escape).replace(/\\(?=.)/, "");
+	      if (seperator != null) {
+	        words.push(field);
+	        return field = "";
+	      }
+	    });
+	    if (field) {
+	      words.push(field);
+	    }
+	    return words;
+	  };
+	
+	  exports.escape = function(str) {
+	    if (str == null) {
+	      str = "";
+	    }
+	    if (str == null) {
+	      return "''";
+	    }
+	    return str.replace(/([^A-Za-z0-9_\-.,:\/@\n])/g, "\\$1").replace(/\n/g, "'\n'");
+	  };
+	
+	}).call(this);
+
+
+/***/ },
+/* 328 */
+/***/ function(module, exports) {
+
+	var getDMSLongitudeNotation = function(decDegrees) {
+		if(decDegrees < 0)
+			return "W";
+		return "E";
+	};
+	var getDMSLatitudeNotation = function(decDegrees) {
+		if(decDegrees < 0)
+			return "S";
+		return "N";
+	};
+	var getDMSLongitude = function(decDegrees) {
+		var dd = toDMS(decDegrees);
+		return dd.degrees + "° " + dd.minutes + "' " + dd.seconds + "\" " + getDMSLongitudeNotation(decDegrees);
+	};
+	var getDMSLatitude = function(decDegrees) {
+		var dd = toDMS(decDegrees);
+		return dd.degrees + "° " + dd.minutes + "' " + dd.seconds + "\" " + getDMSLatitudeNotation(decDegrees);
+	};
+	var toDMS = function(decDegrees) {
+		var dd = {};
+		decDegrees = Math.abs(decDegrees);
+		dd.degrees = Math.floor(decDegrees);
+		dd.minutes = Math.floor(decDegrees * 60) % 60;
+		dd.seconds = Math.round(100 * ((decDegrees * 3600) % 60)) / 100;
+		return dd;
+	};
+	
+	var toDD = function(degrees, minutes, seconds) {
+		var d = degrees;
+		d += minutes/60;
+		d += seconds/3600;
+		return Math.round(10000 * d) / 10000;
+	};
+	
+	module.exports = {
+		toDD : toDD,
+		getDMSLatitude : getDMSLatitude,
+		getDMSLongitude : getDMSLongitude,
+		toDMS : toDMS
+	};
+
+
+/***/ },
+/* 329 */
+/***/ function(module, exports) {
+
+	/**
+	 * http://en.wikipedia.org/wiki/Geohash
+	 */
+	var base32String = '0123456789bcdefghjkmnpqrstuvwxyz';
+	
+	var encode = function(latitude, longitude, precision) {
+		var precision = precision || 12;
+		var geohash = [], bits = [16, 8, 4, 2, 1], bit = 0;
+		var maxLat = 90, minLat = -90;
+		var maxLng = 180, minLng = -180;
+		var mid, hashPos, even = true, bitsLen = bits.length;
+		while(geohash.length < precision) {
+			for( hashPos = 0, bit = 0; bit < bitsLen; bit++) {
+				if(even) {
+					mid = (maxLng + minLng) / 2;
+					if(longitude > mid) {
+						hashPos |= bits[bit];
+						minLng = mid;
+					} else {
+						maxLng = mid;
+					}
+				} else {
+					mid = (maxLat + minLat) / 2;
+					if(latitude > mid) {
+						hashPos |= bits[bit];
+						minLat = mid;
+					} else {
+						maxLat = mid;
+					}
+				}
+				even = !even;
+			}
+			geohash.push(base32String[hashPos]);
+		}
+		return geohash.join('');
+	};
+	
+	var decode = function(hash) {
+		var maxLat = 90, minLat = -90;
+		var maxLng = 180, minLng = -180;
+		var i, len, even = true, bit, hashPos, mid;
+		var lat, lng;
+		for( i = 0, len = hash.length; i < len; i++) {
+			hashPos = base32String.indexOf(hash[i]);
+			if(hashPos == -1) {
+				throw new Error('Invalid hash character');
+			}
+			for( bit = 4; bit >= 0; bit--) {
+				if(even) {
+					mid = (maxLng + minLng) / 2;
+					if(((hashPos >> bit) & 1) == 1) {
+						minLng = mid;
+					} else {
+						maxLng = mid;
+					}
+				} else {
+					mid = (maxLat + minLat) / 2;
+					if(((hashPos >> bit) & 1) == 1) {
+						minLat = mid;
+					} else {
+						maxLat = mid;
+					}
+				}
+				even = !even;
+			}
+		}
+		lat = (minLat + maxLat) / 2;
+		lng = (minLng + maxLng) / 2;
+		return {
+			latitude : lat,
+			longitude : lng,
+			error : {
+				latitude : maxLat - lat,
+				longitude : maxLng - lng,
+			}
+		};
+	};
+	
+	module.exports = {
+		geohashDecode : decode,
+		geohashEncode : encode
+	}
+
+/***/ },
+/* 330 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var exiftool = __webpack_require__(324);
+	var imageGpsInfo = function(image, callback) {
+		return exiftool(image, callback);
+	};
+	
+	var removeGPSInfo = function(image, callback) {
+		return exiftool.delAll(image, callback);
+	};
+	
+	module.exports = {
+		imageGpsInfo : imageGpsInfo,
+		removeGPSInfo : removeGPSInfo
+	};
+
+
+/***/ },
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Buffer) {var xml2js = __webpack_require__(272), parser = new xml2js.Parser();
+	
+	var http = __webpack_require__(313);
+	var https = __webpack_require__(323);
+	
+	var ATTRIBUTE_NAME = '$';
+	
+	var Trackpoint = function() {
+		this.lat = null;
+		this.lng = null;
+		this.altitude = null;
+		this.time = null;
+		this.speed = null;
+		this.distance = null;
+	};
+	var getTrackpoint = function(trackPoint) {
+		var point = new Trackpoint();
+		if(trackPoint.Position) {
+			point.lat = parseFloat(trackPoint.Position[0].LatitudeDegrees);
+			point.lng = parseFloat(trackPoint.Position[0].LongitudeDegrees);
+		}
+		point.altitude = parseFloat(trackPoint.AltitudeMeters);
+		point.distance = parseFloat(trackPoint.DistanceMeters);
+		if(trackPoint.Extensions) {
+			point.speed = parseFloat(trackPoint.Extensions[0].TPX[0].Speed);
+		}
+		point.time = new Date(trackPoint.Time);
+		return point;
+	};
+	var getTrk = function(trks) {
+		var returnTrks = [], trkpts, trkpt;
+		var i, len, j, jlen;
+		if(!( trks instanceof Array)) {
+			trks = [trks];
+		}
+		for( i = 0, len = trks.length; i < len; i++) {
+			trkpts = trks[i].Lap[0].Track[0].Trackpoint;
+			for( j = 0, jlen = trkpts.length; j < jlen; j++) {
+				trkpt = getTrackpoint(trkpts[j]);
+				returnTrks.push(trkpt);
+			}
+		}
+	
+		return returnTrks;
+	};
+	var tcxParse = function(data, callback) {
+		parser.parseString(data, function(err, result) {
+			if(err) {
+				return callback(err, null);
+			}
+			if(result.TrainingCenterDatabase && result.TrainingCenterDatabase.Activities) {
+				return callback(null, getTrk(result.TrainingCenterDatabase.Activities[0].Activity));
+			} else {
+				return callback(new Error('Unexpected data'), null);
+			}
+		});
+	};
+	var tcxParseFile = function(filename, callback) {
+	    fs.readFile(filename, function(err, result) {
+			if(err) {
+				return callback(err, null);
+			}
+			return tcxParse(result, callback);
+		});
+	};
+	var tcxParseURL = function(url, callback, secure) {
+		var h = secure? https : http;
+	
+		h.get(url, function(res) {
+			var data = '';
+			res.on('data', function(chunk) {
+				data += chunk;
+			});
+			res.on('end', function() {
+				if(res.statusCode == 200) {
+					return tcxParse(new Buffer(data), callback);
+				} else {
+					return callback(new Error('Got unexpected response code'), null);
+				}
+			});
+		}).on('error', function(err) {
+			return callback(err, null);
+		});
+	};
+	
+	module.exports = {
+		tcxParse : tcxParse,
+		tcxParseFile : tcxParseFile,
+		tcxParseURL : tcxParseURL
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
+
+/***/ },
+/* 332 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n <!--  <nav id='menu'>\n    <a :class='{'active' : Contours}' @click.prevent.stop='ContoursShow'>Contours</a>\n    <a :class='{'active' : Museums}'  @click.prevent.stop='MuseumsShow'>Museums</a>\n  </nav> -->\n  <div id='map'></div>\n</div>\n";
+
+/***/ },
+/* 333 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(console) {var __vue_script__, __vue_template__
-	__webpack_require__(263)
-	__vue_script__ = __webpack_require__(266)
+	__webpack_require__(334)
+	__vue_script__ = __webpack_require__(337)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] vue/components/about.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(267)
+	__vue_template__ = __webpack_require__(338)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -55458,13 +69874,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 263 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(264);
+	var content = __webpack_require__(335);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(34)(content, {});
@@ -55484,7 +69900,7 @@
 	}
 
 /***/ },
-/* 264 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(33)();
@@ -55492,34 +69908,33 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n.index-first-section {\n  position: relative;\n  height: 800px;\n  width: auto;\n  background-color: #f3f3f3;\n  background: url(" + __webpack_require__(265) + ") center 30% no-repeat;\n  background-size: cover;\n}\n\n.logo-font {\n  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n  line-height: 1;\n  color: #767777;\n  font-weight: 500;\n}\n\n.index-slogan {\n  font-size: 60px;\n  padding-top: 160px;\n}\n\n.index-sub-slogan {\n  font-size: 21px;\n  padding-top: 24px;\n}\n", "", {"version":3,"sources":["/./vue/components/about.vue?48cf374b"],"names":[],"mappings":";;AAyBA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,0BAAA;EACA,+DAAA;EACA,uBAAA;CACA;;AAEA;EACA,wDAAA;EACA,eAAA;EACA,eAAA;EACA,iBAAA;CACA;;AAEA;EACA,gBAAA;EACA,mBAAA;CACA;;AAEA;EACA,gBAAA;EACA,kBAAA;CACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: 'Introduction page'\n      };\n    },\n    route: { },\n    created () {},\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 800px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 160px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n.index-first-section {\n  position: relative;\n  height: 800px;\n  width: auto;\n  background-color: #f3f3f3;\n  background: url(" + __webpack_require__(336) + ") center 30% no-repeat;\n  background-size: cover;\n}\n\n.logo-font {\n  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n  line-height: 1;\n  color: #767777;\n  font-weight: 500;\n}\n\n.index-slogan {\n  font-size: 60px;\n  padding-top: 160px;\n}\n\n.index-sub-slogan {\n  font-size: 21px;\n  padding-top: 24px;\n}\n", "", {"version":3,"sources":["/./vue/components/about.vue?a57903bc"],"names":[],"mappings":";;AA+BA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,0BAAA;EACA,+DAAA;EACA,uBAAA;CACA;;AAEA;EACA,wDAAA;EACA,eAAA;EACA,eAAA;EACA,iBAAA;CACA;;AAEA;EACA,gBAAA;EACA,mBAAA;CACA;;AAEA;EACA,gBAAA;EACA,kBAAA;CACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n  </div>\n</template>\n\n<script>\n  import mdl from 'material-design-lite/material.js';\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: 'Introduction page'\n      };\n    },\n    route: { },\n    created () {},\n    ready () {\n      this.$nextTick(function(){\n        componentHandler.upgradeAllRegistered();\n      })\n    },\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 800px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 160px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 265 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cd09afada5c49be5b2e00d95a35c9b6d.jpg";
 
 /***/ },
-/* 266 */
-/***/ function(module, exports) {
+/* 337 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	// <template>
-	//   <div class="index-first-section mdl-typography--text-center">
-	//     <div class="logo-font index-slogan">{{Description}}</div>
-	//     <div class="logo-font index-sub-slogan">welcome to Open Venue! Find the best venue for your meetup.</div>
-	//   </div>
-	// </template>
-	//
-	// <script>
+	
+	var _material = __webpack_require__(261);
+	
+	var _material2 = _interopRequireDefault(_material);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	exports.default = {
 	  name: 'IndexView',
 	  data: function data() {
@@ -55530,6 +69945,11 @@
 	
 	  route: {},
 	  created: function created() {},
+	  ready: function ready() {
+	    this.$nextTick(function () {
+	      componentHandler.upgradeAllRegistered();
+	    });
+	  },
 	  destroyed: function destroyed() {},
 	
 	  methods: {},
@@ -55566,25 +69986,33 @@
 	//   }
 	// </style>
 	/* generated by vue-loader */
+	// <template>
+	//   <div class="index-first-section mdl-typography--text-center">
+	//     <div class="logo-font index-slogan">{{Description}}</div>
+	//     <div class="logo-font index-sub-slogan">welcome to Open Venue! Find the best venue for your meetup.</div>
+	//   </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
-/* 267 */
+/* 338 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"index-first-section mdl-typography--text-center\">\n  <div class=\"logo-font index-slogan\">{{Description}}</div>\n  <div class=\"logo-font index-sub-slogan\">welcome to Open Venue! Find the best venue for your meetup.</div>\n</div>\n";
 
 /***/ },
-/* 268 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {var __vue_script__, __vue_template__
-	__webpack_require__(269)
-	__vue_script__ = __webpack_require__(271)
+	__webpack_require__(340)
+	__vue_script__ = __webpack_require__(342)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] vue/components/addVenue.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(272)
+	  console.warn("[vue-loader] vue/components/venue.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(343)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -55594,7 +70022,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/charlie/Charlie/Mywork/side-project/openVenue/openVenue-frontend/vue/components/addVenue.vue"
+	  var id = "/Users/charlie/Charlie/Mywork/side-project/openVenue/openVenue-frontend/vue/components/venue.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -55604,13 +70032,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 269 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(270);
+	var content = __webpack_require__(341);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(34)(content, {});
@@ -55619,8 +70047,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./addVenue.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./addVenue.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./venue.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./venue.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -55630,7 +70058,7 @@
 	}
 
 /***/ },
-/* 270 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(33)();
@@ -55638,13 +70066,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\nimg.article-image {\n  width: 100%;\n  height: auto;\n}\n.form-max-width {\n  max-width: 900px;\n  margin: auto;\n  width: 100%;\n}\n.form-max-width form {\n  max-width: 550px;\n  margin: auto;\n}\n.form-max-width h3 {\n  margin-top: 36px;\n  margin-bottom: 16px;\n}\n.form-max-width .mdl-textfield {\n  width: 100%;\n}\n.form-max-width .mdl-checkbox {\n  width: 100%;\n  margin-bottom: 10px;\n}\n.form-max-width .mdl-selectfield {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/./vue/components/addVenue.vue?18f42e58"],"names":[],"mappings":";AA8GA;EACA,YAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;EACA,YAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA;AACA;EACA,YAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA","file":"addVenue.vue","sourcesContent":["<template>\n  <div class=\"mdl-grid form-max-width\">\n    <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n      <div class=\"mdl-card__media\">\n          <img class=\"article-image\" src=\"../assets/contact-image.jpg\" border=\"0\" alt=\"\">\n      </div>\n      <div class=\"mdl-card__supporting-text\">\n          <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n            <h3>房源信息</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n              <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n              <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n            </div>\n            <h3>房主/寻合租者</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n              <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n              <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n              <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n            </div>\n            <p>\n              <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n                Submit\n              </button>\n            </p>\n          </form>\n      </div>\n    </div>\n    <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n      <div class=\"mdl-snackbar__text\"></div>\n      <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n    </div>\n  </div>\n</template>\n\n<script>\n  'use strict';\n  import auth from '../auth'\n\n  export default {\n    name: 'AddVenueView',\n    data () {\n      return {\n        VenueName: '',\n        UserName: '',\n        Password: '',\n        Wechat: '',\n        Other: ''\n      };\n    },\n    watch: {},\n    route: {},\n    created () {},\n    destroyed () {},\n    methods: {\n      onSubmit () {\n        if(!this.VenueName) {\n          this.popUp('You must set the fuck venue name.')\n        }\n        else if(!this.Other) {\n          this.popUp('You must set the information.')\n        }\n        else if(!this.UserName) {\n          this.popUp('You must set the fuck username.')\n        }\n        else if(!this.Password) {\n          this.popUp('You must set the fuck password.')\n        }\n        else if(!this.Wechat) {\n          this.popUp('You must set the fuck wechat.')\n        } \n        else {\n          //sign up\n          let credentials = {\n            data: {\n              username: this.UserName,\n              password: this.Password,\n              wechat: this.Wechat,\n              venueName: this.VenueName,\n              other: this.Other\n            }\n          };\n          auth.addVenue(this, credentials, 'map').then((res) => {\n            if(res) {\n              this.popUp(res);\n            }\n          });\n        }\n      },\n      popUp (msg) {\n        let snackbarContainer = document.querySelector('#snackbar');\n        let data = {message: msg};\n        snackbarContainer.MaterialSnackbar.showSnackbar(data);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style>\n  img.article-image {\n    width: 100%;\n    height: auto;\n  }\n  .form-max-width {\n    max-width: 900px;\n    margin: auto;\n    width: 100%;\n  }\n  .form-max-width form {\n    max-width: 550px;\n    margin: auto;\n  }\n  .form-max-width h3 {\n    margin-top: 36px;\n    margin-bottom: 16px;\n  }\n  .form-max-width .mdl-textfield {\n    width: 100%;\n  }\n  .form-max-width .mdl-checkbox {\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  .form-max-width .mdl-selectfield {\n    width: 100%;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\nimg.article-image {\n  width: 100%;\n  height: auto;\n}\n.form-max-width {\n  max-width: 900px;\n  margin: auto;\n  width: 100%;\n}\n.form-max-width form {\n  max-width: 550px;\n  margin: auto;\n}\n.form-max-width h3 {\n  margin-top: 36px;\n  margin-bottom: 16px;\n}\n.form-max-width .mdl-textfield {\n  width: 100%;\n}\n.form-max-width .mdl-checkbox {\n  width: 100%;\n  margin-bottom: 10px;\n}\n.form-max-width .mdl-selectfield {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/./vue/components/venue.vue?0639d62d"],"names":[],"mappings":";AA8JA;EACA,YAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;EACA,YAAA;CACA;AACA;EACA,iBAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA;AACA;EACA,YAAA;EACA,oBAAA;CACA;AACA;EACA,YAAA;CACA","file":"venue.vue","sourcesContent":["<template>\n  <div class=\"mdl-grid form-max-width\">\n    <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n      <div class=\"mdl-card__media\">\n          <img class=\"article-image\" src=\"../assets/contact-image.jpg\" border=\"0\" alt=\"\">\n      </div>\n      <div class=\"mdl-card__supporting-text\">\n          <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n            <h3>房源信息</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n              <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n              <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n            </div>\n            <h3>房主/寻合租者</h3>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n              <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n              <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n            </div>\n            <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n              <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n              <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n            </div>\n            <p>\n              <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored\" type=\"submit\">\n                提交/更新\n              </button>\n              <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" @click.prevent.stop=\"onDelete\">\n                删除\n              </button>\n            </p>\n          </form>\n      </div>\n    </div>\n    <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n      <div class=\"mdl-snackbar__text\"></div>\n      <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n    </div>\n  </div>\n</template>\n\n<script>\n  'use strict';\n  import auth from '../auth';\n  import mdl from 'material-design-lite/material';\n  import geo from 'gps-util';\n\n  export default {\n    name: 'VenueView',\n    data () {\n      return {\n        VenueName: '',\n        UserName: '',\n        Password: '',\n        Wechat: '',\n        Other: '',\n        Coordinate: {},\n        geoHash: ''\n      };\n    },\n    watch: {},\n    route: {\n      data ({ to }) {\n        document.title = 'OpenVenue - Venue';\n        this.geoHash = to.params.geohash;\n        this.Coordinate.lng = geo.geohashDecode(this.geoHash).longitude;\n        this.Coordinate.lat = geo.geohashDecode(this.geoHash).latitude;\n        auth.findVenue(this, {\n          data: {\n            geoHash: this.geoHash,\n          }\n        }).then((res) => {\n          this.VenueName = res.venueName;\n          this.UserName = res.username;\n          this.Wechat = res.wechat;\n          this.Other = res.other;\n        });\n      }\n    },\n    created () {\n      mdl;\n    },\n    ready () {\n      this.$nextTick(function(){\n        componentHandler.upgradeAllRegistered();\n      })\n    },\n    destroyed () {},\n    methods: {\n      onSubmit () {\n        if(!this.Coordinate.lng || !this.Coordinate.lat) {\n          this.popUp('You must set the fuck coordinate in map first.')\n        }\n        else if(!this.VenueName) {\n          this.popUp('You must set the fuck venue name.')\n        }\n        else if(!this.Other) {\n          this.popUp('You must set the information.')\n        }\n        else if(!this.UserName) {\n          this.popUp('You must set the fuck username.')\n        }\n        else if(!this.Password) {\n          this.popUp('You must set the fuck password.')\n        }\n        else if(!this.Wechat) {\n          this.popUp('You must set the fuck wechat.')\n        } \n        else {\n          //sign up\n          let credentials = {\n            data: {\n              geoHash: this.geoHash,\n              username: this.UserName,\n              password: this.Password,\n              wechat: this.Wechat,\n              venueName: this.VenueName,\n              other: this.Other,\n              coordinate: this.Coordinate\n            }\n          };\n          auth.addVenue(this, credentials, '/map').then((res) => {\n            if(res) {\n              this.popUp(res);\n            }\n          });\n        }\n      },\n      onDelete () {\n        if(!this.geoHash) {\n          this.popUp('You must set the fuck venue name.')\n        }\n        else if(!this.Password) {\n          this.popUp('You must set the fuck password.')\n        }\n        else {\n\n        }\n        this.popUp('delete.');\n      },\n      popUp (msg) {\n        let snackbarContainer = document.querySelector('#snackbar');\n        let data = {message: msg};\n        snackbarContainer.MaterialSnackbar.showSnackbar(data);\n      }\n    },\n    filters: {}\n  }\n</script>\n\n<style>\n  img.article-image {\n    width: 100%;\n    height: auto;\n  }\n  .form-max-width {\n    max-width: 900px;\n    margin: auto;\n    width: 100%;\n  }\n  .form-max-width form {\n    max-width: 550px;\n    margin: auto;\n  }\n  .form-max-width h3 {\n    margin-top: 36px;\n    margin-bottom: 16px;\n  }\n  .form-max-width .mdl-textfield {\n    width: 100%;\n  }\n  .form-max-width .mdl-checkbox {\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  .form-max-width .mdl-selectfield {\n    width: 100%;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 271 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// <template>
@@ -55678,8 +70106,11 @@
 	//               <label class="mdl-textfield__label" for="WeChat">微信</label>
 	//             </div>
 	//             <p>
-	//               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-	//                 Submit
+	//               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">
+	//                 提交/更新
+	//               </button>
+	//               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" @click.prevent.stop="onDelete">
+	//                 删除
 	//               </button>
 	//             </p>
 	//           </form>
@@ -55703,30 +70134,70 @@
 	
 	var _auth2 = _interopRequireDefault(_auth);
 	
+	var _material = __webpack_require__(261);
+	
+	var _material2 = _interopRequireDefault(_material);
+	
+	var _gpsUtil = __webpack_require__(262);
+	
+	var _gpsUtil2 = _interopRequireDefault(_gpsUtil);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = {
-	  name: 'AddVenueView',
+	  name: 'VenueView',
 	  data: function data() {
 	    return {
 	      VenueName: '',
 	      UserName: '',
 	      Password: '',
 	      Wechat: '',
-	      Other: ''
+	      Other: '',
+	      Coordinate: {},
+	      geoHash: ''
 	    };
 	  },
 	
 	  watch: {},
-	  route: {},
-	  created: function created() {},
+	  route: {
+	    data: function data(_ref) {
+	      var _this = this;
+	
+	      var to = _ref.to;
+	
+	      document.title = 'OpenVenue - Venue';
+	      this.geoHash = to.params.geohash;
+	      this.Coordinate.lng = _gpsUtil2.default.geohashDecode(this.geoHash).longitude;
+	      this.Coordinate.lat = _gpsUtil2.default.geohashDecode(this.geoHash).latitude;
+	      _auth2.default.findVenue(this, {
+	        data: {
+	          geoHash: this.geoHash
+	        }
+	      }).then(function (res) {
+	        _this.VenueName = res.venueName;
+	        _this.UserName = res.username;
+	        _this.Wechat = res.wechat;
+	        _this.Other = res.other;
+	      });
+	    }
+	  },
+	  created: function created() {
+	    _material2.default;
+	  },
+	  ready: function ready() {
+	    this.$nextTick(function () {
+	      componentHandler.upgradeAllRegistered();
+	    });
+	  },
 	  destroyed: function destroyed() {},
 	
 	  methods: {
 	    onSubmit: function onSubmit() {
-	      var _this = this;
+	      var _this2 = this;
 	
-	      if (!this.VenueName) {
+	      if (!this.Coordinate.lng || !this.Coordinate.lat) {
+	        this.popUp('You must set the fuck coordinate in map first.');
+	      } else if (!this.VenueName) {
 	        this.popUp('You must set the fuck venue name.');
 	      } else if (!this.Other) {
 	        this.popUp('You must set the information.');
@@ -55740,19 +70211,29 @@
 	        //sign up
 	        var credentials = {
 	          data: {
+	            geoHash: this.geoHash,
 	            username: this.UserName,
 	            password: this.Password,
 	            wechat: this.Wechat,
 	            venueName: this.VenueName,
-	            other: this.Other
+	            other: this.Other,
+	            coordinate: this.Coordinate
 	          }
 	        };
-	        _auth2.default.addVenue(this, credentials, 'map').then(function (res) {
+	        _auth2.default.addVenue(this, credentials, '/map').then(function (res) {
 	          if (res) {
-	            _this.popUp(res);
+	            _this2.popUp(res);
 	          }
 	        });
 	      }
+	    },
+	    onDelete: function onDelete() {
+	      if (!this.geoHash) {
+	        this.popUp('You must set the fuck venue name.');
+	      } else if (!this.Password) {
+	        this.popUp('You must set the fuck password.');
+	      } else {}
+	      this.popUp('delete.');
 	    },
 	    popUp: function popUp(msg) {
 	      var snackbarContainer = document.querySelector('#snackbar');
@@ -55796,13 +70277,13 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 272 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n<div class=\"mdl-grid form-max-width\">\n  <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n    <div class=\"mdl-card__media\">\n        <img class=\"article-image\" src=\"" + __webpack_require__(273) + "\" border=\"0\" alt=\"\">\n    </div>\n    <div class=\"mdl-card__supporting-text\">\n        <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n          <h3>房源信息</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n            <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n            <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n          </div>\n          <h3>房主/寻合租者</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n            <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n            <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n            <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n          </div>\n          <p>\n            <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" type=\"submit\">\n              Submit\n            </button>\n          </p>\n        </form>\n    </div>\n  </div>\n  <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n    <div class=\"mdl-snackbar__text\"></div>\n    <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n  </div>\n</div>\n";
+	module.exports = "\n<div class=\"mdl-grid form-max-width\">\n  <div class=\"mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp\">\n    <div class=\"mdl-card__media\">\n        <img class=\"article-image\" src=\"" + __webpack_require__(344) + "\" border=\"0\" alt=\"\">\n    </div>\n    <div class=\"mdl-card__supporting-text\">\n        <form id=\"signIn\" @submit.prevent.stop=\"onSubmit\">\n          <h3>房源信息</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"venueName\" v-model=\"VenueName\">\n            <label class=\"mdl-textfield__label\" for=\"venueName\">房源叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <textarea class=\"mdl-textfield__input\" type=\"text\" rows=\"5\" id=\"Other\" v-model=\"Other\"></textarea>\n            <label class=\"mdl-textfield__label\" for=\"Other\">还有啥！？(房子的信息，租房条件，基友要求等等)</label>\n          </div>\n          <h3>房主/寻合租者</h3>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"Name\" v-model=\"UserName\">\n            <label class=\"mdl-textfield__label\" for=\"Name\">你叫啥</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"password\" id=\"Pwd\" v-model=\"Password\">\n            <label class=\"mdl-textfield__label\" for=\"Pwd\">密码</label>\n          </div>\n          <div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">\n            <input class=\"mdl-textfield__input\" type=\"text\" id=\"WeChat\" v-model=\"Wechat\">\n            <label class=\"mdl-textfield__label\" for=\"WeChat\">微信</label>\n          </div>\n          <p>\n            <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored\" type=\"submit\">\n              提交/更新\n            </button>\n            <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\" @click.prevent.stop=\"onDelete\">\n              删除\n            </button>\n          </p>\n        </form>\n    </div>\n  </div>\n  <div id=\"snackbar\" class=\"mdl-js-snackbar mdl-snackbar\">\n    <div class=\"mdl-snackbar__text\"></div>\n    <button class=\"mdl-snackbar__action\" type=\"button\"></button>\n  </div>\n</div>\n";
 
 /***/ },
-/* 273 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8416519ae2b5a1cf9a15b750afaf3994.jpg";

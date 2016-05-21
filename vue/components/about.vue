@@ -6,6 +6,7 @@
 </template>
 
 <script>
+  import mdl from 'material-design-lite/material.js';
   export default {
     name: 'IndexView',
     data () {
@@ -15,6 +16,11 @@
     },
     route: { },
     created () {},
+    ready () {
+      this.$nextTick(function(){
+        componentHandler.upgradeAllRegistered();
+      })
+    },
     destroyed () {},
     methods: {},
     filters: {}
