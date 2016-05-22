@@ -1,7 +1,10 @@
 <template>
   <div class="index-first-section mdl-typography--text-center">
     <div class="logo-font index-slogan">{{Description}}</div>
-    <div class="logo-font index-sub-slogan">welcome to Open Venue! Find the best venue for your meetup.</div>
+    <div class="logo-font index-sub-slogan">使用方式：地图定位->填写信息->更新/删除</div>
+    <div class="logo-font index-create-character">
+      Developed by <a href="https://github.com/ccharlieli">Charlie</a>
+    </div>
   </div>
 </template>
 
@@ -11,7 +14,7 @@
     name: 'IndexView',
     data () {
       return {
-        Description: 'Introduction page'
+        Description: '魔都合租互助小分队'
       };
     },
     route: { },
@@ -31,7 +34,8 @@
   
   .index-first-section {
     position: relative;
-    height: 800px;
+    height: 100%;
+    bottom:0px;
     width: auto;
     background-color: #f3f3f3;
     background: url('../assets/slide01.jpg') center 30% no-repeat;
@@ -47,11 +51,22 @@
 
   .index-slogan {
     font-size: 60px;
-    padding-top: 160px;
+    padding-top: 140px;
   }
 
   .index-sub-slogan {
     font-size: 21px;
     padding-top: 24px;
+  }
+
+  .index-create-character {
+  font-size: 21px;
+  padding-top: 300px;
+}
+
+  .index-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
   }
 </style>
