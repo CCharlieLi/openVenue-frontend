@@ -52,6 +52,10 @@
         componentHandler.upgradeAllRegistered();
       })
 
+      if (!DataAPI.MapBox.supported()) {
+        alert('Your browser does not support Mapbox GL');
+      }
+
       // Map Source
       let source;
       this.Map = new DataAPI.MapBox.Map({
@@ -126,7 +130,9 @@
             'type': 'Feature',
             'properties': {
               'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">[待完善]</h2></div><div class="mdl-card__supporting-text">[待完善]</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + this.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"></div></div>',
-              'marker-symbol': 'star'
+              "marker-symbol": "star",
+              "marker-size": "large",
+              "marker-color": "#f44"
             },
             'geometry': {
               'type': 'Point',
@@ -174,7 +180,9 @@
               'type': 'Feature',
               'properties': {
                 'description': '<div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">'+ re.venueName +'</h2></div><div class="mdl-card__supporting-text">'+ re.other +'</div><div class="mdl-card__actions mdl-card--border"><a href="#!/venue/' + re.geoHash + '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">详细信息</a></div><div class="mdl-card__menu"></div></div>',
-                'marker-symbol': 'star'
+                "marker-symbol": "star",
+                "marker-size": "large",
+                "marker-color": "#f44"
               },
               'geometry': {
                 'type': 'Point',
@@ -188,6 +196,7 @@
         this.addFlag = !this.addFlag;
         if(!this.addFlag){
           clickFlag = false;
+          this.getVenues();
         }
       }
     },

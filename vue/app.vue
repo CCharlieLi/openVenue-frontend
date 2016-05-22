@@ -3,7 +3,7 @@
         <div class="index-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <span class="index-title mdl-layout-title">
-                OpenVenues
+                <a>OpenVenues</a>
                   <!-- <img class="index-logo-image" src="assets/index-logo.png"> -->
                 </span>
                 <!-- Add spacer, to align navigation to the right in desktop -->
