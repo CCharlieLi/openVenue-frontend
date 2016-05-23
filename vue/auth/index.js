@@ -64,7 +64,9 @@ export default {
     });
   },
 
-
+  redirectUrl(redirect) {
+    router.go(redirect);    
+  },
 
   getAuthHeader() {
     return {
