@@ -1,7 +1,7 @@
 <template>
   <div class="index-first-section mdl-typography--text-center">
     <div class="logo-font index-slogan">{{Description}}</div>
-    <div class="logo-font index-sub-slogan">使用方式：地图定位->填写信息->更新/删除</div>
+    <div class="logo-font index-sub-slogan">使用方式：查询位置->地图定位->填写信息->更新/删除</div>
     <div class="logo-font index-create-character">
       Developed by <a href="https://github.com/ccharlieli">Charlie</a>
     </div>
@@ -51,7 +51,7 @@
 
   .index-slogan {
     font-size: 60px;
-    padding-top: 140px;
+    padding-top: 30px;
   }
 
   .index-sub-slogan {

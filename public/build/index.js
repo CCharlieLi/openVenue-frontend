@@ -32655,7 +32655,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n  \n  .index-first-section {\n    position: relative;\n    height: 100%;\n    bottom:0px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url(" + __webpack_require__(160) + ") center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 140px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n\n  .index-create-character {\n  font-size: 21px;\n  padding-top: 300px;\n}\n\n  .index-create-character a {\n    text-decoration: none;\n    color: #767777;\n    font-weight: 300;\n  }\n", "", {"version":3,"sources":["/./vue/components/about.vue?f5e6b2ce"],"names":[],"mappings":";;EAkCA;IACA,mBAAA;IACA,aAAA;IACA,WAAA;IACA,YAAA;IACA,0BAAA;IACA,+DAAA;IACA,uBAAA;GACA;;EAEA;IACA,wDAAA;IACA,eAAA;IACA,eAAA;IACA,iBAAA;GACA;;EAEA;IACA,gBAAA;IACA,mBAAA;GACA;;EAEA;IACA,gBAAA;IACA,kBAAA;GACA;;EAEA;EACA,gBAAA;EACA,mBAAA;CACA;;EAEA;IACA,sBAAA;IACA,eAAA;IACA,iBAAA;GACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">使用方式：地图定位->填写信息->更新/删除</div>\n    <div class=\"logo-font index-create-character\">\n      Developed by <a href=\"https://github.com/ccharlieli\">Charlie</a>\n    </div>\n  </div>\n</template>\n\n<script>\n  import mdl from 'material-design-lite/material.js';\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: '魔都合租互助小分队'\n      };\n    },\n    route: { },\n    created () {},\n    ready () {\n      this.$nextTick(function(){\n        componentHandler.upgradeAllRegistered();\n      })\n    },\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 100%;\n    bottom:0px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 140px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n\n  .index-create-character {\n  font-size: 21px;\n  padding-top: 300px;\n}\n\n  .index-create-character a {\n    text-decoration: none;\n    color: #767777;\n    font-weight: 300;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n  \n  .index-first-section {\n    position: relative;\n    height: 100%;\n    bottom:0px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url(" + __webpack_require__(160) + ") center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 30px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n\n  .index-create-character {\n  font-size: 21px;\n  padding-top: 300px;\n}\n\n  .index-create-character a {\n    text-decoration: none;\n    color: #767777;\n    font-weight: 300;\n  }\n", "", {"version":3,"sources":["/./vue/components/about.vue?743a4d48"],"names":[],"mappings":";;EAkCA;IACA,mBAAA;IACA,aAAA;IACA,WAAA;IACA,YAAA;IACA,0BAAA;IACA,+DAAA;IACA,uBAAA;GACA;;EAEA;IACA,wDAAA;IACA,eAAA;IACA,eAAA;IACA,iBAAA;GACA;;EAEA;IACA,gBAAA;IACA,kBAAA;GACA;;EAEA;IACA,gBAAA;IACA,kBAAA;GACA;;EAEA;EACA,gBAAA;EACA,mBAAA;CACA;;EAEA;IACA,sBAAA;IACA,eAAA;IACA,iBAAA;GACA","file":"about.vue","sourcesContent":["<template>\n  <div class=\"index-first-section mdl-typography--text-center\">\n    <div class=\"logo-font index-slogan\">{{Description}}</div>\n    <div class=\"logo-font index-sub-slogan\">使用方式：查询位置->地图定位->填写信息->更新/删除</div>\n    <div class=\"logo-font index-create-character\">\n      Developed by <a href=\"https://github.com/ccharlieli\">Charlie</a>\n    </div>\n  </div>\n</template>\n\n<script>\n  import mdl from 'material-design-lite/material.js';\n  export default {\n    name: 'IndexView',\n    data () {\n      return {\n        Description: '魔都合租互助小分队'\n      };\n    },\n    route: { },\n    created () {},\n    ready () {\n      this.$nextTick(function(){\n        componentHandler.upgradeAllRegistered();\n      })\n    },\n    destroyed () {},\n    methods: {},\n    filters: {}\n  }\n</script>\n\n<style type=\"text/css\">\n  \n  .index-first-section {\n    position: relative;\n    height: 100%;\n    bottom:0px;\n    width: auto;\n    background-color: #f3f3f3;\n    background: url('../assets/slide01.jpg') center 30% no-repeat;\n    background-size: cover;\n  }\n\n  .logo-font {\n    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\n    line-height: 1;\n    color: #767777;\n    font-weight: 500;\n  }\n\n  .index-slogan {\n    font-size: 60px;\n    padding-top: 30px;\n  }\n\n  .index-sub-slogan {\n    font-size: 21px;\n    padding-top: 24px;\n  }\n\n  .index-create-character {\n  font-size: 21px;\n  padding-top: 300px;\n}\n\n  .index-create-character a {\n    text-decoration: none;\n    color: #767777;\n    font-weight: 300;\n  }\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -32725,7 +32725,7 @@
 	//
 	//   .index-slogan {
 	//     font-size: 60px;
-	//     padding-top: 140px;
+	//     padding-top: 30px;
 	//   }
 	//
 	//   .index-sub-slogan {
@@ -32748,7 +32748,7 @@
 	// <template>
 	//   <div class="index-first-section mdl-typography--text-center">
 	//     <div class="logo-font index-slogan">{{Description}}</div>
-	//     <div class="logo-font index-sub-slogan">使用方式：地图定位->填写信息->更新/删除</div>
+	//     <div class="logo-font index-sub-slogan">使用方式：查询位置->地图定位->填写信息->更新/删除</div>
 	//     <div class="logo-font index-create-character">
 	//       Developed by <a href="https://github.com/ccharlieli">Charlie</a>
 	//     </div>
@@ -32761,7 +32761,7 @@
 /* 162 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"index-first-section mdl-typography--text-center\">\n  <div class=\"logo-font index-slogan\">{{Description}}</div>\n  <div class=\"logo-font index-sub-slogan\">使用方式：地图定位->填写信息->更新/删除</div>\n  <div class=\"logo-font index-create-character\">\n    Developed by <a href=\"https://github.com/ccharlieli\">Charlie</a>\n  </div>\n</div>\n";
+	module.exports = "\n<div class=\"index-first-section mdl-typography--text-center\">\n  <div class=\"logo-font index-slogan\">{{Description}}</div>\n  <div class=\"logo-font index-sub-slogan\">使用方式：查询位置->地图定位->填写信息->更新/删除</div>\n  <div class=\"logo-font index-create-character\">\n    Developed by <a href=\"https://github.com/ccharlieli\">Charlie</a>\n  </div>\n</div>\n";
 
 /***/ },
 /* 163 */
