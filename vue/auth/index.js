@@ -21,10 +21,13 @@ export default {
       }
     }).catch((err) => {
       if(err.status === 409) {
-        return 'Venue name already occupied.'
+        return 'Venue name already occupied.';
+      }
+      else if(err.status === 403) {
+        return 'Password wrong.';
       }
       else {
-        return 'Submit error.'
+        return 'Submit error.';
       }
     });
   },
