@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack && webpack-dev-server --inline --hot --no-info --content-base .",
+    "dev": "webpack && webpack-dev-server --host 0.0.0.0 --port 80 --inline --hot --no-info --content-base .",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "author": "ccharlieli",
