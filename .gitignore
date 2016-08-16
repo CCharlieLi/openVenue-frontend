@@ -5,6 +5,7 @@
 .LSOverride
 *.sh
 *.out
+public/build/index.js
 
 # Icon must end with two \r
 Icon
